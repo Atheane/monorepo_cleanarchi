@@ -1,0 +1,9 @@
+{
+  "name": "Oney Digital Bank",
+  "hideGenerator": true,
+  "includeVersion": true,
+  "out": "docs",
+  "theme": "default",
+  "entryPoints": ["./typedoc.ts"],
+  "exclude": ["**/src/test/*", "**/*.test.ts", "**/__tests__/*", "**/__mocks__/*"]
+}

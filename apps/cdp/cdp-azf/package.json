@@ -1,0 +1,32 @@
+{
+    "name": "cdp-cdp-azf",
+    "version": "0.0.1",
+    "scripts": {
+        "build": "tsc",
+        "build:production": "npm run prestart && npm prune --production",
+        "watch": "tsc --w",
+        "prestart": "npm run build && func extensions install",
+        "start:host": "func start",
+        "start": "npm-run-all --parallel start:host watch"
+    },
+    "description": "",
+    "dependencies": {
+        "@oney/common-core": "./libs/common-core",
+        "@oney/ddd": "./libs/ddd",
+        "@oney/payment-messages": "./libs/payment-messages",
+        "reflect-metadata": "^0.1.13",
+        "@azure/functions": "^1.2.2",
+        "@oney/env": "^0.3.2",
+        "@oney/cdp-messages": "./libs/cdp-messages",
+        "@oney/messages-core": "./libs/messages-core",
+        "inversify": "^5.0.1",
+        "@oney/cdp-core": "./libs/cdp-core",
+        "class-transformer": "0.3.1",
+        "class-validator": "0.12.2",
+        "@oney/az-servicebus-adapters": "./libs/az-servicebus-adapters",
+        "@oney/logger-adapters": "./libs/logger-adapters",
+        "@oney/logger-core": "./libs/logger-core",
+        "tslib": "1.10.0"
+    },
+    "devDependencies": {}
+}

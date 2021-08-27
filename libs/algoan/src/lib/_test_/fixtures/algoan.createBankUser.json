@@ -1,0 +1,110 @@
+[
+    {
+        "scope": "https://api.preprod.algoan.com:443",
+        "method": "POST",
+        "path": "/v1/oauth/token",
+        "body": "client_id=oney-score-1&client_secret=42cbb0bd-dbf1-49a7-88e9-6524c195be6c&grant_type=client_credentials",
+        "status": 200,
+        "response": {
+            "access_token": "eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJXTDVieGNMS09VYTJ0NTJNaWh3djhfZVZkbmgyT20zRTR6clB1UlJZTlYwIn0.eyJqdGkiOiJhZWVjOGU1NC02NDFkLTQ2NTktODQyNS0xYjcyYjI4NDFlYjEiLCJleHAiOjE2MTczNjI2OTAsIm5iZiI6MCwiaWF0IjoxNjE3MzYyMzkwLCJpc3MiOiJodHRwczovL2tleWNsb2FrLnByZXByb2QuYWxnb2FuLmNvbS9hdXRoL3JlYWxtcy9hbGdvYW4iLCJhdWQiOlsicmVzdGhvb2ttYW5hZ2VyIiwiYWdncmVnYXRpb25tYW5hZ2VyIl0sInN1YiI6IjIwOWEyNWQyLTE4OWYtNDRiNS1iNjhlLTNmOWZhMDk3OGIzZSIsInR5cCI6IkJlYXJlciIsImF6cCI6Im9uZXktc2NvcmUtMSIsImF1dGhfdGltZSI6MCwic2Vzc2lvbl9zdGF0ZSI6IjkwNzc4M2ViLTViZjctNDIxMC04MjE1LTMyMmM1NDNjMWNhMSIsImFjciI6IjEiLCJyZXNvdXJjZV9hY2Nlc3MiOnsicmVzdGhvb2ttYW5hZ2VyIjp7InJvbGVzIjpbImVkaXRvciIsInJlYWRlciJdfSwiYWdncmVnYXRpb25tYW5hZ2VyIjp7InJvbGVzIjpbIkFERU5fcmVhZGVyIiwiQUNfZWRpdG9yIiwiQlVfcmVhZGVyIiwiQUNfcmVhZGVyIiwiQlVfZWRpdG9yIiwiVFJfZWRpdG9yIiwiVFJfcmVhZGVyIl19LCJvbmV5LXNjb3JlLTEiOnsicm9sZXMiOlsidW1hX3Byb3RlY3Rpb24iXX19LCJzY29wZSI6InByb2ZpbGUgZW1haWwiLCJjbGllbnRJZCI6Im9uZXktc2NvcmUtMSIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwiY2xpZW50SG9zdCI6Ijg3LjIzMS4xMDguOTIiLCJjaGF0Zmxvd0lkcyI6Im5vbmUiLCJvcmdhbml6YXRpb25JZHMiOiI1ZmEyYjRkMGFmMDhmMjAwMmEwMDhkOTYiLCJwcmVmZXJyZWRfdXNlcm5hbWUiOiJzZXJ2aWNlLWFjY291bnQtb25leS1zY29yZS0xIiwiY2xpZW50QWRkcmVzcyI6Ijg3LjIzMS4xMDguOTIifQ.L2gtK0jheeIZUT0Gta-pVALPUR3qfi1ULsKVUh7yVN7gziI4G1GTI2i41JzIv8jt7cYDes0ViaCt9O0WEq6XDNeEk7OfjXPIkC4y3XXy-KGbQ90IwNe7EQ6M7axaFkV3kCnj_A6sTECBH0NAoZMET7Q36jd0bRdZdNqGejb4Jy-fvOgx38Yyod_QHujSBw38rGERXHnvsGVKEr8Y3xggsh4amd6fdvwKGuY6go6Pu1pN_BvoBlO5TMxR4uckuTbYcWblYOvPfNqfctYM88LmFHTP-_vM1-VpyR_P-8EFcCWLpKxzd5sWtBvQqM06c3F757SrslHMNEmKjaFQ5dXsEg",
+            "expires_in": 300,
+            "refresh_expires_in": 2592000,
+            "refresh_token": "eyJhbGciOiJIUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJlOTdmYjQ2Ni1lNGIxLTQyNmMtYTRmYS05NDVhZGRmNzA2NGQifQ.eyJqdGkiOiJkNjdkODY3YS1iYWYxLTQ3YjMtYTc5Ny05ZDMzOWYxYzVjYTMiLCJleHAiOjE2MTk5NTQzOTAsIm5iZiI6MCwiaWF0IjoxNjE3MzYyMzkwLCJpc3MiOiJodHRwczovL2tleWNsb2FrLnByZXByb2QuYWxnb2FuLmNvbS9hdXRoL3JlYWxtcy9hbGdvYW4iLCJhdWQiOiJodHRwczovL2tleWNsb2FrLnByZXByb2QuYWxnb2FuLmNvbS9hdXRoL3JlYWxtcy9hbGdvYW4iLCJzdWIiOiIyMDlhMjVkMi0xODlmLTQ0YjUtYjY4ZS0zZjlmYTA5NzhiM2UiLCJ0eXAiOiJSZWZyZXNoIiwiYXpwIjoib25leS1zY29yZS0xIiwiYXV0aF90aW1lIjowLCJzZXNzaW9uX3N0YXRlIjoiOTA3NzgzZWItNWJmNy00MjEwLTgyMTUtMzIyYzU0M2MxY2ExIiwicmVzb3VyY2VfYWNjZXNzIjp7InJlc3Rob29rbWFuYWdlciI6eyJyb2xlcyI6WyJlZGl0b3IiLCJyZWFkZXIiXX0sImFnZ3JlZ2F0aW9ubWFuYWdlciI6eyJyb2xlcyI6WyJBREVOX3JlYWRlciIsIkFDX2VkaXRvciIsIkJVX3JlYWRlciIsIkFDX3JlYWRlciIsIkJVX2VkaXRvciIsIlRSX2VkaXRvciIsIlRSX3JlYWRlciJdfSwib25leS1zY29yZS0xIjp7InJvbGVzIjpbInVtYV9wcm90ZWN0aW9uIl19fSwic2NvcGUiOiJwcm9maWxlIGVtYWlsIn0.4g3d56RHkUzK8DMb4tg5cnLg6oEOElmwejHx3-JFo9I",
+            "token_type": "bearer",
+            "not-before-policy": 1565701970,
+            "session_state": "907783eb-5bf7-4210-8215-322c543c1ca1",
+            "scope": "profile email"
+        },
+        "rawHeaders": [
+            "Date",
+            "Fri, 02 Apr 2021 11:19:50 GMT",
+            "Content-Type",
+            "application/json",
+            "Content-Length",
+            "2767",
+            "Cache-Control",
+            "no-store",
+            "Set-Cookie",
+            "KC_RESTART=; Version=1; Expires=Thu, 01-Jan-1970 00:00:10 GMT; Max-Age=0; Path=/auth/realms/algoan/; Secure; HttpOnly",
+            "Pragma",
+            "no-cache",
+            "Access-Control-Allow-Methods",
+            "GET, POST, PATCH, PUT, DELETE, OPTIONS",
+            "Access-Control-Allow-Headers",
+            "DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type",
+            "Strict-Transport-Security",
+            "max-age=31536000; includeSubDomains",
+            "X-Frame-Options",
+            "SAMEORIGIN",
+            "X-Content-Type-Options",
+            "nosniff",
+            "X-XSS-Protection",
+            "1; mode=block",
+            "Referrer-Policy",
+            "no-referrer",
+            "Via",
+            "1.1 google",
+            "Alt-Svc",
+            "clear",
+            "Connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "https://api.preprod.algoan.com:443",
+        "method": "POST",
+        "path": "/v1/banks-users",
+        "body": {
+            "adenTriggers": {
+                "onSynchronizationFinished": true
+            }
+        },
+        "status": 201,
+        "response": {
+            "status": "NEW",
+            "adenTriggers": {
+                "onSynchronizationFinished": true
+            },
+            "scores": [],
+            "scoreTriggers": {},
+            "aden": [],
+            "id": "6066fdd6c9624826de78b6f7"
+        },
+        "rawHeaders": [
+            "Date",
+            "Fri, 02 Apr 2021 11:19:50 GMT",
+            "Content-Type",
+            "application/json; charset=utf-8",
+            "Content-Length",
+            "139",
+            "X-Powered-By",
+            "Express",
+            "Access-Control-Allow-Origin",
+            "*",
+            "ETag",
+            "W/\"8b-NnJ7novBms56NGM5oPEOhfX7gyY\"",
+            "Access-Control-Allow-Methods",
+            "GET, POST, PATCH, PUT, DELETE, OPTIONS",
+            "Access-Control-Allow-Headers",
+            "DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type",
+            "Strict-Transport-Security",
+            "max-age=31536000; includeSubDomains",
+            "X-Frame-Options",
+            "SAMEORIGIN",
+            "X-Content-Type-Options",
+            "nosniff",
+            "X-XSS-Protection",
+            "1; mode=block",
+            "Referrer-Policy",
+            "no-referrer",
+            "Via",
+            "1.1 google",
+            "Alt-Svc",
+            "clear",
+            "Connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    }
+]

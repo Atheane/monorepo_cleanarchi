@@ -1,0 +1,25 @@
+{
+    "name": "pfm-azf",
+    "version": "0.0.1",
+    "scripts": {
+        "build": "tsc --project tsconfig.build.json",
+        "build:production": "npm run prestart && npm prune --production",
+        "watch": "tsc --w",
+        "prestart": "npm run build && func extensions install",
+        "start:host": "func start",
+        "start": "npm-run-all --parallel start:host watch"
+    },
+    "description": "",
+    "dependencies": {
+        "reflect-metadata": "^0.1.13",
+        "@azure/functions": "^1.2.2",
+        "@oney/pfm-core": "./libs/pfm-core",
+        "mongoose": "5.10.19",
+        "@oney/pfm-adapters": "./libs/pfm-adapters",
+        "@oney/env": "^0.3.2",
+        "@oney/identity-adapters": "./libs/identity-adapters",
+        "@oney/identity-core": "./libs/identity-core",
+        "tslib": "1.10.0"
+    },
+    "devDependencies": {}
+}

@@ -1,0 +1,112 @@
+[
+  {
+    "scope": "https://api-staging.oney.io:443",
+    "method": "POST",
+    "path": "/resources/authorizations/v1/oauth/token",
+    "body": "client_id=PTAIL_BQ_DIGIT&client_secret=426ba2d4-c2df-4cb1-a6d4-c8c858964718&grant_type=client_credentials",
+    "status": 200,
+    "response": {
+      "access_token": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IjZmNzgxNDUwLTI3MGUtNDg3OC1iZTdmLWQxNjcyNGM0NTQ3YiJ9.eyJhdWQiOlsib25leS1hcGkiXSwic2NvcGUiOlsiY3VzdG9tZXIucmVhZCIsIm9mZmxpbmVfYWNjZXNzX3Rva2VuX2FwaSIsIm9mZmxpbmVfYXV0aGVudGljYXRpb24iXSwiaXNzIjoiSXNhYWMiLCJleHAiOjE2MTQ3OTA0NzQsImlhdCI6MTYxNDc4OTYzNCwiYXV0aG9yaXRpZXMiOlsiY2xpZW50IiwiY2xpZW50X2NyZWRlbnRpYWxzIiwiY29uc2VpbGxlciIsInRlbXBvcmFyeV9hY2Nlc3NfY29kZSJdLCJqdGkiOiIzYjBhNjk2MC0zYmY4LTQwMTEtYmJjOC1kYzYxNTc5OTk1MzUiLCJjbGllbnRfaWQiOiJQVEFJTF9CUV9ESUdJVCJ9.MrjKruo3128vsQ8n_9mRyHDEOkxUTv37qPqckFrS06ZaB1Z4zy9Rn2BaQl5F0vT8iiBlve3_T5hO42Yv6aEOimTS1qOqJ7PHqJ3-IF-V-YYr39Mmez3lbMMRc4qXVDUHZHpKtl5Fj92Lrgp3FRD2L96fYCz0Gl8oDt5a04ohqN6BmFKmgomEXbBEaZbW83HMNCDSXxFviCiyAqQJDIXfteRTI9jkiliNssPinM6-guLODiU-nxrJTxexhW8_oKpEwRKPb9IZPTct49S5Kjt0s0eqf_CR1l6pBHxRfHSPVjLbeYbWQh4Oz7nms62M5RL-IRVAJyTeKaciN_ZXsscoCw",
+      "token_type": "bearer",
+      "expires_in": 839,
+      "scope": "customer.read offline_access_token_api offline_authentication"
+    },
+    "rawHeaders": [
+      "Cache-Control",
+      "private, max-age=0, must-revalidate,no-store",
+      "Pragma",
+      "no-cache,no-cache",
+      "Transfer-Encoding",
+      "chunked",
+      "Content-Type",
+      "application/json;charset=UTF-8",
+      "X-Content-Type-Options",
+      "nosniff",
+      "X-XSS-Protection",
+      "1; mode=block",
+      "Strict-Transport-Security",
+      "max-age=31536000 ; includeSubDomains",
+      "X-Frame-Options",
+      "DENY",
+      "X-Oney-SSL",
+      "on",
+      "X-Oney-TTS",
+      "l1rqt=1614789634,l1rpt=1614789634",
+      "X-Oney-Message-Id",
+      "d53f4e7b-4257-4f2a-8e9a-62752f6c73d8",
+      "Date",
+      "Wed, 03 Mar 2021 16:40:34 GMT",
+      "Connection",
+      "close"
+    ],
+    "responseIsBinary": false
+  },
+  {
+    "scope": "https://api-staging.oney.io:443",
+    "method": "GET",
+    "path": "/b2c/authentication/v1/digital_identities?selector_type=authentication_factor&selector_subtype=EML&selector_value=nacimiphone8%40yopmail.com",
+    "body": "",
+    "status": 200,
+    "response": [
+      {
+        "id": 1003833146,
+        "type": "INO",
+        "creation_date": "2020-11-04T13:57:14,000+01:00",
+        "last_connection_date": null,
+        "identifiers": [
+          {
+            "id": "kTOzQe74xZy28yTXjrDjSYchhx_AU55wBqbJcBqxpK-SVqAt",
+            "type": "FP"
+          }
+        ],
+        "authentication_factors": [
+          {
+            "id": 1818030,
+            "type": "EML",
+            "public_value": "nacimiphone8@yopmail.com",
+            "status_code": "AAC",
+            "status_date": "2020-11-04T13:57:14,000+01:00"
+          },
+          {
+            "id": 555555,
+            "type": "PHO",
+            "public_value": "0669696969",
+            "status_code": "ACT",
+            "status_date": "2020-11-04T13:57:14,000+01:00"
+          }
+        ]
+      }
+    ],
+    "rawHeaders": [
+      "Cache-Control",
+      "private, max-age=0, must-revalidate",
+      "Pragma",
+      "no-cache",
+      "Transfer-Encoding",
+      "chunked",
+      "Content-Type",
+      "application/json;charset=UTF-8",
+      "Expires",
+      "0",
+      "X-Content-Type-Options",
+      "nosniff",
+      "X-XSS-Protection",
+      "1; mode=block",
+      "X-Frame-Options",
+      "DENY",
+      "X-Application-Context",
+      "fasme-authentication:qlf:8008",
+      "X-Oney-SSL",
+      "off",
+      "X-Oney-TTS",
+      "l1rqt=1614789635,l1rpt=1614789635",
+      "X-Oney-Message-Id",
+      "5d28b843-e534-49cc-9365-883d0d5de9d3",
+      "Date",
+      "Wed, 03 Mar 2021 16:40:35 GMT",
+      "Connection",
+      "close"
+    ],
+    "responseIsBinary": false
+  }
+]

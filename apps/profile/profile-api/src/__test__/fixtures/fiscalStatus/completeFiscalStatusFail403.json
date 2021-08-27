@@ -1,0 +1,162 @@
+[
+    {
+        "scope": "http://localhost:3022",
+        "method": "PATCH",
+        "path": "/payment/user/ow_KFDTZq",
+        "body": {
+            "economicActivity": 11,
+            "phone": "+33643455455",
+            "fiscalReference": {
+                "country": "FR",
+                "nif": "123456"
+            }
+        },
+        "status": 200,
+        "response": "",
+        "rawHeaders": [
+            "Access-Control-Allow-Origin",
+            "*",
+            "Content-Security-Policy",
+            "default-src 'self';base-uri 'self';block-all-mixed-content;font-src 'self' https: data:;frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests",
+            "X-DNS-Prefetch-Control",
+            "off",
+            "Expect-CT",
+            "max-age=0",
+            "X-Frame-Options",
+            "SAMEORIGIN",
+            "Strict-Transport-Security",
+            "max-age=15552000; includeSubDomains",
+            "X-Download-Options",
+            "noopen",
+            "X-Content-Type-Options",
+            "nosniff",
+            "X-Permitted-Cross-Domain-Policies",
+            "none",
+            "Referrer-Policy",
+            "no-referrer",
+            "X-XSS-Protection",
+            "0",
+            "Date",
+            "Fri, 22 Jan 2021 11:08:52 GMT",
+            "Connection",
+            "close",
+            "Content-Length",
+            "0"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "https://api-staging.oneytrust.com:443",
+        "method": "PATCH",
+        "path": "/tulipe/v2/3000001341/cases/SP_2021119__fMZo_lKM_h8LUZS2Wb/form-data",
+        "body": {
+            "login": "api-3000001341-1@oneytrust.com",
+            "customerRank": 0,
+            "address": {},
+            "birthDate": "Invalid date",
+            "gender": "X",
+            "caseReference": "SP_2021119__fMZo_lKM_h8LUZS2Wb",
+            "currency": "EUR",
+            "income": {
+                "earningsAmount": 1
+            },
+            "personalSituation": {
+                "idNumber": "pX0Q2B_wBy12L8cVLgWnNVZsQD8GQIfudtWrWMCWxBBchwRq"
+            }
+        },
+        "status": 201,
+        "response": {
+            "url": "https://api-staging.oneytrust.com/web-services/api/v2/3000001341/cases/SP_2021119__fMZo_lKM_h8LUZS2Wb/form-data"
+        },
+        "rawHeaders": [
+            "Date",
+            "Fri, 22 Jan 2021 11:08:52 GMT",
+            "Server",
+            "Apache",
+            "Access-Control-Allow-Origin",
+            "*",
+            "Access-Control-Allow-Methods",
+            "POST, GET, PUT, OPTIONS, DELETE, PATCH",
+            "Access-Control-Max-Age",
+            "3600",
+            "Access-Control-Allow-Headers",
+            "Origin, X-Requested-With, Content-Type, Accept, x-checksum",
+            "X-Application-Context",
+            "application:8085",
+            "Content-Type",
+            "application/json;charset=UTF-8",
+            "Connection",
+            "close",
+            "Transfer-Encoding",
+            "chunked"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "http://127.0.0.1:63334",
+        "method": "POST",
+        "path": "/profile/otherid/onboarding/step/fiscalStatus",
+        "body": {
+            "earningsAmount": 1,
+            "economicActivity": 11,
+            "fiscalReference": {
+                "country": "FR",
+                "nif": "123456"
+            }
+        },
+        "status": 200,
+        "response": {
+            "uid": "ow_KFDTZq",
+            "email": "ozzj@yopmail.com",
+            "biometric_key": null,
+            "is_validated": true,
+            "profile": {
+                "status": "onBoarding",
+                "phone": "+33643455455",
+                "earnings_amount": 1,
+                "economic_activity": 11
+            },
+            "steps": [
+                "civilStatus",
+                "facematch",
+                "address",
+                "contract"
+            ]
+        },
+        "rawHeaders": [
+            "Access-Control-Allow-Origin",
+            "*",
+            "Content-Security-Policy",
+            "default-src 'self';base-uri 'self';block-all-mixed-content;font-src 'self' https: data:;frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests",
+            "X-DNS-Prefetch-Control",
+            "off",
+            "Expect-CT",
+            "max-age=0",
+            "X-Frame-Options",
+            "SAMEORIGIN",
+            "Strict-Transport-Security",
+            "max-age=15552000; includeSubDomains",
+            "X-Download-Options",
+            "noopen",
+            "X-Content-Type-Options",
+            "nosniff",
+            "X-Permitted-Cross-Domain-Policies",
+            "none",
+            "Referrer-Policy",
+            "no-referrer",
+            "X-XSS-Protection",
+            "0",
+            "Content-Type",
+            "application/json; charset=utf-8",
+            "Content-Length",
+            "244",
+            "ETag",
+            "W/\"f4-gEnfzqdi9V5vHE8DEzNLx3L1tVM\"",
+            "Date",
+            "Fri, 22 Jan 2021 11:08:52 GMT",
+            "Connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    }
+]

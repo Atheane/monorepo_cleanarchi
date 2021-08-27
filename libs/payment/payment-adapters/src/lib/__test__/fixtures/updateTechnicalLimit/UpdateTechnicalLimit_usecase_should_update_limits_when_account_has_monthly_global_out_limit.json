@@ -1,0 +1,270 @@
+[
+    {
+        "scope": "http://localhost:3022",
+        "method": "GET",
+        "path": "/credit/users/kTDhDRrHv/details",
+        "body": "",
+        "status": 200,
+        "response": [
+            {
+              "initialTransactionId":"gARvQWf56",
+              "subscriptionDate":"2020-10-23T21:50:06.868Z",
+              "productCode":"DF003",
+              "contractNumber":"gw6rZreLm",
+              "apr":0.1926,
+              "status":"IN_PROGRESS",
+              "paymentScheduleExecution":[
+                {
+                  "key":"fee",
+                  "amount":0.01,
+                  "dueDate":"2020-10-23T21:49:53.329Z",
+                  "status":"PAID",
+                  "paymentDate":"2020-11-09T13:00:05.967Z",
+                  "transactionId":"CADEDB03323"
+                },
+                {
+                  "key":"001",
+                  "amount":0.33,
+                  "dueDate":"2020-10-23T21:49:53.329Z",
+                  "status":"PAID",
+                  "paymentDate":"2020-11-09T13:00:08.763Z",
+                  "transactionId":"DEBDCD43431"
+                },
+                {
+                  "key":"002",
+                  "amount":0.33,
+                  "dueDate":"2020-11-23T21:49:53.329Z",
+                  "status":"PAID",
+                  "paymentDate":"2020-11-23T22:00:00.288Z",
+                  "transactionId":"ABBFCF32443"
+                },
+                {
+                  "key":"003",
+                  "amount":35,
+                  "dueDate":"2021-04-23T21:49:53.329Z",
+                  "status":"TODO",
+                  "transactionId":"AEFBBC20012"
+                },
+                {
+                  "key":"funding",
+                  "amount":1,
+                  "dueDate":"2020-10-23T21:50:06.963Z",
+                  "status":"PAID",
+                  "paymentDate":"2020-11-17T10:30:00.273Z",
+                  "transactionId":"CBADFE32410"
+                }
+              ]
+            },
+            {
+              "initialTransactionId":"BCDBCD20223",
+              "subscriptionDate":"2020-10-27T12:51:33.416Z",
+              "productCode":"DF004",
+              "contractNumber":"KvEj0OpTI",
+              "apr":1.5087,
+              "status":"IN_PROGRESS",
+              "paymentScheduleExecution":[
+                {
+                  "key":"fee",
+                  "amount":0.07,
+                  "dueDate":"2020-10-27T12:51:06.278Z",
+                  "status":"PAID",
+                  "paymentDate":"2020-11-09T13:01:22.231Z",
+                  "transactionId":"FCABAA31313"
+                },
+                {
+                  "key":"001",
+                  "amount":0.75,
+                  "dueDate":"2020-10-27T12:51:06.278Z",
+                  "status":"PAID",
+                  "paymentDate":"2020-11-09T13:01:25.410Z",
+                  "transactionId":"EDAAEA23120"
+                },
+                {
+                  "key":"002",
+                  "amount":0.75,
+                  "dueDate":"2020-11-27T12:51:06.278Z",
+                  "status":"PAID",
+                  "paymentDate":"2020-11-27T13:00:00.258Z",
+                  "transactionId":"EBEBFC11224"
+                },
+                {
+                  "key":"003",
+                  "amount":0.75,
+                  "dueDate":"2020-12-27T12:51:06.278Z",
+                  "status":"PAID",
+                  "paymentDate":"2020-12-28T13:00:15.998Z",
+                  "transactionId":"DEFBAA30121"
+                },
+                {
+                  "key":"004",
+                  "amount":20,
+                  "dueDate":"2021-04-27T12:51:06.278Z",
+                  "status":"TODO",
+                  "transactionId":"CBABAE04244"
+                },
+                {
+                  "key":"funding",
+                  "amount":3,
+                  "dueDate":"2020-10-27T12:51:33.521Z",
+                  "status":"PAID",
+                  "paymentDate":"2020-11-09T13:01:19.088Z",
+                  "transactionId":"EEFABB21231"
+                }
+              ]
+            },
+            {
+              "initialTransactionId":"BCDBCD20221",
+              "subscriptionDate":"2020-10-27T12:51:33.416Z",
+              "productCode":"DF004",
+              "contractNumber":"KvEj0OpTI",
+              "apr":1.5087,
+              "status":"IN_PROGRESS",
+              "paymentScheduleExecution":[
+                {
+                  "key":"fee",
+                  "amount":0.07,
+                  "dueDate":"2020-10-27T12:51:06.278Z",
+                  "status":"PAID",
+                  "paymentDate":"2020-11-09T13:01:22.231Z",
+                  "transactionId":"FCABAA31313"
+                },
+                {
+                  "key":"001",
+                  "amount":0.75,
+                  "dueDate":"2020-10-27T12:51:06.278Z",
+                  "status":"PAID",
+                  "paymentDate":"2020-11-09T13:01:25.410Z",
+                  "transactionId":"EDAAEA23120"
+                },
+                {
+                  "key":"002",
+                  "amount":15,
+                  "dueDate":"2021-04-27T12:51:06.278Z",
+                  "status":"TODO",
+                  "paymentDate":"2020-11-27T13:00:00.258Z",
+                  "transactionId":"EBEBFC11224"
+                },
+                {
+                  "key":"003",
+                  "amount":0.75,
+                  "dueDate":"2021-05-27T12:51:06.278Z",
+                  "status":"TODO",
+                  "paymentDate":"2020-12-28T13:00:15.998Z",
+                  "transactionId":"DEFBAA30121"
+                },
+                {
+                  "key":"004",
+                  "amount":0.75,
+                  "dueDate":"2021-06-27T12:51:06.278Z",
+                  "status":"TODO",
+                  "transactionId":"CBABAE04244"
+                },
+                {
+                  "key":"funding",
+                  "amount":3,
+                  "dueDate":"2020-10-27T12:51:33.521Z",
+                  "status":"PAID",
+                  "paymentDate":"2020-11-09T13:01:19.088Z",
+                  "transactionId":"EEFABB21231"
+                }
+              ]
+            }
+        ],
+        "rawHeaders": [
+            "Content-Length",
+            "127440",
+            "Content-Type",
+            "application/json; charset=utf-8",
+            "ETag",
+            "W/\"1f1d0-Z/vQggNhcfpnO38CkWXktSKytkc\"",
+            "request-context",
+            "appId=cid-v1:650bc794-e889-4f2c-a051-a4008c145c47",
+            "Access-Control-Allow-Origin",
+            "*",
+            "Content-Security-Policy",
+            "default-src 'self';base-uri 'self';block-all-mixed-content;font-src 'self' https: data:;frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests",
+            "X-DNS-Prefetch-Control",
+            "off",
+            "Expect-CT",
+            "max-age=0",
+            "X-Frame-Options",
+            "SAMEORIGIN",
+            "Strict-Transport-Security",
+            "max-age=15552000; includeSubDomains",
+            "X-Download-Options",
+            "noopen",
+            "X-Content-Type-Options",
+            "nosniff",
+            "X-Permitted-Cross-Domain-Policies",
+            "none",
+            "Referrer-Policy",
+            "no-referrer",
+            "X-XSS-Protection",
+            "0",
+            "X-Azure-Ref",
+            "0FT50YAAAAAA5fwkXj1CCRIoBjof4+rbtUFJBRURHRTEyMTEANDIyZWYzYzMtODQ2YS00NWQzLWFiYzEtYWQ1MjcyYjE5OGQ5",
+            "Date",
+            "Mon, 12 Apr 2021 12:33:25 GMT",
+            "Connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "https://sb-api.xpollens.com:443",
+        "method": "PUT",
+        "path": "/api/V1.1/users/kTDhDRrHv/limits",
+        "body": {
+            "GlobalOut": {
+                "AnnualAllowance": 4500000,
+                "MonthlyAllowance": 193000,
+                "WeeklyAllowance": 193000
+            }
+        },
+        "status": 200,
+        "response": {
+            "GlobalIn": {
+                "AnnualAllowance": 4500000,
+                "UsedAllowance": 1018907,
+                "RenewalDate": "2021-09-21T00:00:00",
+                "MonthlyAllowance": 300000,
+                "MonthlyUsedAllowance": 295000,
+                "MonthlyRenewalDate": "2021-02-01T00:00:00",
+                "WeeklyAllowance": null,
+                "WeeklyUsedAllowance": 0,
+                "WeeklyRenewalDate": null
+            },
+            "GlobalOut": {
+                "AnnualAllowance": 4500000,
+                "UsedAllowance": 500324,
+                "RenewalDate": "2021-09-21T00:00:00",
+                "MonthlyAllowance": 193000,
+                "MonthlyUsedAllowance": 160879,
+                "MonthlyRenewalDate": "2021-03-01T00:00:00",
+                "WeeklyAllowance": null,
+                "WeeklyUsedAllowance": 0,
+                "WeeklyRenewalDate": null
+            },
+            "BalanceLimit": 300000
+        },
+        "rawHeaders": [
+            "Date",
+            "Mon, 12 Apr 2021 12:33:27 GMT",
+            "Content-Type",
+            "application/json; charset=utf-8",
+            "Content-Length",
+            "563",
+            "Cache-Control",
+            "no-cache",
+            "Pragma",
+            "no-cache",
+            "Expires",
+            "-1",
+            "Request-Context",
+            "appId=cid-v1:40d43092-8aee-4b2b-8b7f-34d2d69e09b7",
+            "Connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    }
+]

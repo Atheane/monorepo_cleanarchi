@@ -1,0 +1,64 @@
+[
+    {
+        "scope": "https://api-staging.oney.io:443",
+        "method": "POST",
+        "path": "/b2b/customers/v2/contracts_references",
+        "body": {
+            "contract_reference": {
+                "number": "4604",
+                "type_code": "CAPPED",
+                "family_code": "PAYMENT_ACCOUNT",
+                "subscription_date": null,
+                "person_roles": [
+                    {
+                        "person_role_code": "SUBSCRIBER",
+                        "application_code": "BQ_DIGIT",
+                        "application_person_id_field": "SID",
+                        "application_person_id": "yDvDwEHPq"
+                    }
+                ],
+                "payment_account_contract_references": {
+                    "start_date": null
+                }
+            }
+        },
+        "status": 201,
+        "response": {
+            "failIfInvalid": "false",
+            "contract_reference": {
+                "number": "4604",
+                "type_code": "CAPPED",
+                "family_code": "PAYMENT_ACCOUNT",
+                "subscription_date": null,
+                "person_roles": [
+                    {
+                        "person_role_code": "SUBSCRIBER",
+                        "application_code": "BQ_DIGIT",
+                        "application_person_id_field": "SID",
+                        "application_person_id": "yDvDwEHPq"
+                    }
+                ],
+                "payment_account_contract_references": {
+                    "start_date": null
+                }
+            }
+        },
+        "rawHeaders": [
+            "Content-Length",
+            "353",
+            "Content-Type",
+            "application/json; charset=UTF-8",
+            "X-Oney-SSL",
+            "on",
+            "X-Oney-TTS",
+            "l1rqt=1615818955,l1rpt=1615818957",
+            "X-Oney-Message-Id",
+            "6a8a4367-c790-4612-8a77-7a7eb9f2a79f",
+            "Date",
+            "Mon, 15 Mar 2021 14:35:57 GMT",
+            "Connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    }
+]

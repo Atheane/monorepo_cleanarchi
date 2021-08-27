@@ -1,0 +1,59 @@
+[
+  {
+    "scope": "https://sb-api.xpollens.com:443",
+    "method": "PUT",
+    "path": "/api/V1.1/users/kTDhDRrHv/limits",
+    "body": {
+      "GlobalOut": {
+        "AnnualAllowance": 4500000,
+        "MonthlyAllowance": 207300,
+        "WeeklyAllowance": 207300
+      }
+    },
+    "status": 200,
+    "response": {
+      "GlobalIn": {
+        "AnnualAllowance": 4500000,
+        "UsedAllowance": 1018907,
+        "RenewalDate": "2021-09-21T00:00:00",
+        "MonthlyAllowance": 300000,
+        "MonthlyUsedAllowance": 295000,
+        "MonthlyRenewalDate": "2021-02-01T00:00:00",
+        "WeeklyAllowance": null,
+        "WeeklyUsedAllowance": 0,
+        "WeeklyRenewalDate": null
+      },
+      "GlobalOut": {
+        "AnnualAllowance": 4500000,
+        "UsedAllowance": 500324,
+        "RenewalDate": "2021-09-21T00:00:00",
+        "MonthlyAllowance": 207300,
+        "MonthlyUsedAllowance": 160879,
+        "MonthlyRenewalDate": "2021-03-01T00:00:00",
+        "WeeklyAllowance": null,
+        "WeeklyUsedAllowance": 0,
+        "WeeklyRenewalDate": null
+      },
+      "BalanceLimit": 300000
+    },
+    "rawHeaders": [
+      "Date",
+      "Mon, 12 Apr 2021 12:35:43 GMT",
+      "Content-Type",
+      "application/json; charset=utf-8",
+      "Content-Length",
+      "563",
+      "Cache-Control",
+      "no-cache",
+      "Pragma",
+      "no-cache",
+      "Expires",
+      "-1",
+      "Request-Context",
+      "appId=cid-v1:40d43092-8aee-4b2b-8b7f-34d2d69e09b7",
+      "Connection",
+      "close"
+    ],
+    "responseIsBinary": false
+  }
+]

@@ -1,0 +1,6 @@
+export const userWithNoAggregatedAccounts = {
+  userId: 'gMsKPDZlK',
+  // eslint-disable-next-line max-len
+  userToken:
+    'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7InVzZXIiOnsiZW1haWwiOiJhdGhlYW5AbWFpbGluYXRvci5jb20iLCJ1aWQiOiJnTXNLUERabEsifX0sImlhdCI6MTYwMDg3Nzc1OSwiZXhwIjozMjAyNTA1MDgzLCJhdWQiOiJvZGJfYXV0aGVudGljYXRpb25fZGV2IiwiaXNzIjoib2RiX2F1dGhlbnRpY2F0aW9uIn0.0wgeNisOkaskE9v4FKux3twG9hG5ItuwK7r3jPO4QLg',
+};

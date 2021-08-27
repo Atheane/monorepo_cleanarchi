@@ -1,0 +1,8 @@
+{
+  "name": "@oney/aggregation-core",
+  "version": "0.21.0",
+  "publishConfig": {
+    "access": "public",
+    "directory": "../../../dist/libs/aggregation-core"
+  }
+}

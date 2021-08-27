@@ -1,0 +1,59 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "id": "AzfFunction",
+  "title": "Azf function prompter",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "",
+      "$default": {
+        "$source": "argv",
+        "index": 0
+      },
+      "x-prompt": "What name would you like to use?"
+    },
+    "prefix": {
+      "description": "Write your own project prefix",
+      "type": "string",
+      "minLength": 1,
+      "x-prompt": "What is your bounded context ? (will create a parent folder if not exist)"
+    },
+    "tags": {
+      "type": "string",
+      "description": "Add tags to the project (used for linting)",
+      "alias": "t"
+    },
+    "directory": {
+      "type": "string",
+      "description": "A directory where the project is placed",
+      "alias": "d"
+    },
+    "skipFormat": {
+      "description": "Skip formatting files",
+      "type": "boolean",
+      "default": false
+    },
+    "skipPackageJson": {
+      "type": "boolean",
+      "default": false,
+      "description": "Do not add dependencies to package.json."
+    },
+    "linter": {
+      "description": "The tool to use for running lint checks.",
+      "type": "string",
+      "default": "eslint"
+    },
+    "unitTestRunner": {
+      "type": "string",
+      "enum": ["jest", "none"],
+      "description": "Test runner to use for unit tests",
+      "default": "jest"
+    },
+    "nxVersion": {
+      "type": "string",
+      "description": "*"
+    }
+  },
+  "required": ["name"]
+}

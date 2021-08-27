@@ -1,0 +1,209 @@
+[
+    {
+        "scope": "https://api-staging.oney.io:443",
+        "method": "POST",
+        "path": "/resources/authorizations/v1/oauth/token",
+        "body": "client_id=PTAIL_BQ_DIGIT&client_secret=426ba2d4-c2df-4cb1-a6d4-c8c858964718&grant_type=client_credentials",
+        "status": 200,
+        "response": {
+            "access_token": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IjZmNzgxNDUwLTI3MGUtNDg3OC1iZTdmLWQxNjcyNGM0NTQ3YiJ9.eyJhdWQiOlsib25leS1hcGkiXSwic2NvcGUiOlsiY3VzdG9tZXIucmVhZCIsIm9mZmxpbmVfYWNjZXNzX3Rva2VuX2FwaSIsIm9mZmxpbmVfYXV0aGVudGljYXRpb24iXSwiaXNzIjoiSXNhYWMiLCJleHAiOjE2MTczMDM5MzMsImlhdCI6MTYxNzMwMzA5MywiYXV0aG9yaXRpZXMiOlsiY2xpZW50IiwiY2xpZW50X2NyZWRlbnRpYWxzIiwiY29uc2VpbGxlciIsInRlbXBvcmFyeV9hY2Nlc3NfY29kZSJdLCJqdGkiOiJhODg0ZWFmYy0yYjg2LTQ4M2EtYWY3ZS1lNmE4YWVhNDAyNDkiLCJjbGllbnRfaWQiOiJQVEFJTF9CUV9ESUdJVCJ9.Mr5NSjpnyEu-HugBb_-_gANhDY-a3UFy7bJ7mD8YmuVdVL_EUV7JSQcV2VAqh_sdWeNt4WK6nyIZCvtJ8GtRJpXGZElAMDKQX_hz90t6Wvr5jCXYUDiZngKW_SeRWA5SlRPf9BWSfGymNRZMDrp48WzarUeZXT0r14dQyUYK62EGV_bfK3dh5CWdLcfOE5GZP9r6tYaZGaNte-swbDljypM1FefghPI_7gcB_SQq7g-U6zASvqXZXU4VQWZH5cLEXAlsoahoWxZCmojlOdHNyMW09CR9Ud5N5kXw1lgC7pixAgwLy03b_u7y9T1n7eIXosuEeaLkO9xQX365g8k_kA",
+            "token_type": "bearer",
+            "expires_in": 839,
+            "scope": "customer.read offline_access_token_api offline_authentication"
+        },
+        "rawHeaders": [
+            "Cache-Control",
+            "private, max-age=0, must-revalidate,no-store",
+            "Pragma",
+            "no-cache,no-cache",
+            "Transfer-Encoding",
+            "chunked",
+            "Content-Type",
+            "application/json;charset=UTF-8",
+            "X-Content-Type-Options",
+            "nosniff",
+            "X-XSS-Protection",
+            "1; mode=block",
+            "Strict-Transport-Security",
+            "max-age=31536000 ; includeSubDomains",
+            "X-Frame-Options",
+            "DENY",
+            "X-Oney-SSL",
+            "on",
+            "X-Oney-TTS",
+            "l1rqt=1617303093,l1rpt=1617303093",
+            "X-Oney-Message-Id",
+            "a00d3f7b-69dd-4f35-9fef-fd0165d41c5e",
+            "Date",
+            "Thu, 01 Apr 2021 18:51:33 GMT",
+            "Connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "https://api-staging.oney.io:443",
+        "method": "GET",
+        "path": "/b2c/authentication/v1/digital_identities?selector_type=authentication_factor&selector_subtype=EML&selector_value=ozzj%40yopmail.com",
+        "body": "",
+        "status": 200,
+        "response": [
+            {
+                "id": 1003875716,
+                "type": "INO",
+                "creation_date": "2021-01-20T19:20:42,000+01:00",
+                "last_connection_date": null,
+                "identifiers": [
+                    {
+                        "id": "NGFOHFx8UsrrnWmnYCebQb7qqsEB3ZUg_6CLS3EMVHPaMP1a",
+                        "type": "FP"
+                    }
+                ],
+                "authentication_factors": [
+                    {
+                        "id": 1851564,
+                        "type": "EML",
+                        "public_value": "ozzj@yopmail.com",
+                        "status_code": "AAC",
+                        "status_date": "2021-01-20T19:20:42,000+01:00"
+                    }
+                ]
+            }
+        ],
+        "rawHeaders": [
+            "Cache-Control",
+            "private, max-age=0, must-revalidate",
+            "Pragma",
+            "no-cache",
+            "Transfer-Encoding",
+            "chunked",
+            "Content-Type",
+            "application/json;charset=UTF-8",
+            "Expires",
+            "0",
+            "X-Content-Type-Options",
+            "nosniff",
+            "X-XSS-Protection",
+            "1; mode=block",
+            "X-Frame-Options",
+            "DENY",
+            "X-Application-Context",
+            "fasme-authentication:qlf:8008",
+            "X-Oney-SSL",
+            "off",
+            "X-Oney-TTS",
+            "l1rqt=1617303093,l1rpt=1617303093",
+            "X-Oney-Message-Id",
+            "f6ff7ecd-db13-4e36-aa15-3ea9df91dceb",
+            "Date",
+            "Thu, 01 Apr 2021 18:51:33 GMT",
+            "Connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "https://api-staging.oney.io:443",
+        "method": "POST",
+        "path": "/resources/authorizations/v1/oauth/token",
+        "body": "client_id=PTAIL_BQ_DIGIT&client_secret=426ba2d4-c2df-4cb1-a6d4-c8c858964718&grant_type=urn%3Aietf%3Aparams%3Aoauth%3Agrant-type%3Ajwt-bearer&assertion=eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IjVjODA5MGZhLWQ3NjgtNDhjZS04MzVkLTI5ZDZmYWFiNWRiZSJ9.eyJmbG93c3RlcHMiOlsiU0NBX0lOQVBQIl0sImNsaWVudF9pZCI6IlBUQUlMX0JRX0RJR0lUIiwiaWRlbnRpZmllcnMiOlt7ImlkIjoiTkdGT0hGeDhVc3JybldtbllDZWJRYjdxcXNFQjNaVWdfNkNMUzNFTVZIUGFNUDFhIiwidHlwZSI6IkZQIn1dLCJpYXQiOjE2MTcyMzUyMDAsImV4cCI6MTYxOTgyNzIwMCwiaXNzIjoiT0RCIiwic3ViIjoiaW5vaWQxMDAzODc1NzE2In0.hbij_zKBydXjPz42C9mqMECWNsuF7yQE5HlSH67jyEMTd58gXVs2JUjbmoSfyMfvJBIFfNZmYJzUrkJFecfrrZ7glw9BY244gRXPkuXpTC6sy98oDqM7nShJoxchDY1QL_I6lQMvTMVj1K7UeZtUl3gPo67Oqyn54mlb09yEt8y1lJfHqcOc9dj8t_ub_Ds48Htq09KtllZRVt9fidY-Xpv8LcB7aglhN0WIjZp4Yzs6_KY_wDhLzp2AcgIoESrmVDRFN-ClSP6Nve7CPuBs61Th7b32HOdxT82RkXA3Op8_q9dJmsXplIvJRhYrrBtWD2OfDIcFSOxoXJ0dtWiacFDtXwJaJKTLcI0K3nStO-T4UvjVllxXtKiN36iHJ_dhRbtpUL2w21X4lDdLOUt9aAl_SHziTDlUf4YnZv0PUXQQHVjJDRzoQaIl6v_njA0Iy9EMGRqtdZA1RwzuueY-7qoMigHLitxUONnOA0zq5OTkd8Ek0wnlWXYPXfHBGT34f_ccPeWyLMBeIvSu_qCmsk8ALwcE1X0ACT7IywHSIRiOhbNs4Sq73ZCalRJx6zsLGCwk-p-60dZc-4jOj8POeqvXLnF8J-EghbMiX5VjIdK8rBWEO_mu2-cSavlSepMiZGOxk3ji66mYnq-pJ4HO0y3q6dmtRxW305LPq7iCazA",
+        "status": 200,
+        "response": {
+            "access_token": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IjZmNzgxNDUwLTI3MGUtNDg3OC1iZTdmLWQxNjcyNGM0NTQ3YiJ9.eyJzdWIiOiJpbm9pZDEwMDM4NzU3MTYiLCJhdWQiOlsib25leS1hcGkiXSwidXNlcl9uYW1lIjoiaW5vaWQxMDAzODc1NzE2IiwiaWRlbnRpZmllcnMiOlt7ImlkIjoiTkdGT0hGeDhVc3JybldtbllDZWJRYjdxcXNFQjNaVWdfNkNMUzNFTVZIUGFNUDFhIiwidHlwZSI6IkZQIn1dLCJzY29wZSI6WyJjdXN0b21lci5WMi5yZWFkIiwiY29udHJhY3RfcmVmZXJlbmNlLlYyLndyaXRlIiwib25saW5lX2F1dGhlbnRpY2F0aW9uIiwiY29udHJhY3RfcmVmZXJlbmNlLlYyLmNyZWF0ZSIsImN1c3RvbWVyLlYyLndyaXRlIiwiQlFfRElHSVQiLCJjdXN0b21lci5WMi5jcmVhdGUiLCJjb250cmFjdF9yZWZlcmVuY2UuVjIucmVhZCJdLCJpc3MiOiJJc2FhYyIsImZsb3dzdGVwcyI6WyJTQ0FfSU5BUFAiXSwiZXhwIjoxNjE3MzAzOTMzLCJpYXQiOjE2MTczMDMwOTMsImp0aSI6IjMwYTI1NTY3LWFmZGUtNDI1My05NzZjLWMzYjI2YzVmNmVmYiIsImF1dGhlbnRfaWF0IjoxNjE3MjM1MjAwLCJjbGllbnRfaWQiOiJQVEFJTF9CUV9ESUdJVCJ9.WJFxWwMJ_PFpsiHx2YWZyECOrLpwakVSvX81OYv92WSFf6V4ZASbf97kT2cP39LCpfgo1CBXByn1Muxau8QAIsG8J0bKVUamGIuHNaTCEKTBl_Popum-qi1hSpBoJpgNtTkSxtkNXpcRvLLUsJgvVwqQ_YuIDtTvii6GUqY4UQLNYhXJwNR6De0xuCkeEPnmMSogg-bBtNVeS9T0g7vJYRUd_BC2GYGG6ts-9_222sOG25uJYZ0dVNx0l4HwBDHi7rLUxZC_Pwk7NQMMGMkiwrNchoK78HCPDuWYuNT_mzNkVmqWXY5mEU4JbF4r5jVYyloPJ-Oq8VUxsdB4t5HvzA",
+            "token_type": "bearer",
+            "refresh_token": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IjZmNzgxNDUwLTI3MGUtNDg3OC1iZTdmLWQxNjcyNGM0NTQ3YiJ9.eyJzdWIiOiJpbm9pZDEwMDM4NzU3MTYiLCJ1c2VyX25hbWUiOiJpbm9pZDEwMDM4NzU3MTYiLCJpZGVudGlmaWVycyI6W3siaWQiOiJOR0ZPSEZ4OFVzcnJuV21uWUNlYlFiN3Fxc0VCM1pVZ182Q0xTM0VNVkhQYU1QMWEiLCJ0eXBlIjoiRlAifV0sImlzcyI6IklzYWFjIiwiZmxvd3N0ZXBzIjpbIlNDQV9JTkFQUCJdLCJhdXRoZW50X2lhdCI6MTYxNzIzNTIwMCwiY2xpZW50X2lkIjoiUFRBSUxfQlFfRElHSVQiLCJhdWQiOlsib25leS1hcGkiXSwic2NvcGUiOlsiY3VzdG9tZXIuVjIucmVhZCIsImNvbnRyYWN0X3JlZmVyZW5jZS5WMi53cml0ZSIsIm9ubGluZV9hdXRoZW50aWNhdGlvbiIsImNvbnRyYWN0X3JlZmVyZW5jZS5WMi5jcmVhdGUiLCJjdXN0b21lci5WMi53cml0ZSIsIkJRX0RJR0lUIiwiY3VzdG9tZXIuVjIuY3JlYXRlIiwiY29udHJhY3RfcmVmZXJlbmNlLlYyLnJlYWQiXSwiYXRpIjoiMzBhMjU1NjctYWZkZS00MjUzLTk3NmMtYzNiMjZjNWY2ZWZiIiwiZXhwIjoxNjE3MzA0ODkzLCJpYXQiOjE2MTczMDMwOTMsImp0aSI6IjI4ZThjYTFhLTRhMDQtNDNkMy04MjNlLWQ0MDA5ZjI3M2I0MyJ9.MJkzMS75z2OruLZA-hNI89Wawxw3KiYbjXvMp_lfpB4d_ujl3lffhTMv_oc2672nRyTKh40Zw3OG4Phime4tuRj47L4k5TuVAcJaKcr9TOSMLGVRvq1rJUb1aVJDIsmFE9Fyu64oluSnXYb9Hh-CJUr5c1B3PIG2RMOvbKoBbUHKZVJJqZ3PFIsPGTDd7xx-xmVO_kRXxp6UetBQL_5XdzvghhSK--3TKowkAMQ4vw8cDsk3yHUFjPEh9_PHhSCSbACTslXbveqiY2uGMDtP3vglWAZmQg9uQeYXJDzeiE3tIb5qIzzmzpjgjDdvK9MObHBjnRbOqUIIUptWBIj8vQ",
+            "expires_in": 839,
+            "scope": "customer.V2.read contract_reference.V2.write online_authentication contract_reference.V2.create customer.V2.write BQ_DIGIT customer.V2.create contract_reference.V2.read"
+        },
+        "rawHeaders": [
+            "Cache-Control",
+            "private, max-age=0, must-revalidate,no-store",
+            "Pragma",
+            "no-cache,no-cache",
+            "Transfer-Encoding",
+            "chunked",
+            "Content-Type",
+            "application/json;charset=UTF-8",
+            "X-Content-Type-Options",
+            "nosniff",
+            "X-XSS-Protection",
+            "1; mode=block",
+            "Strict-Transport-Security",
+            "max-age=31536000 ; includeSubDomains",
+            "X-Frame-Options",
+            "DENY",
+            "X-Oney-SSL",
+            "on",
+            "X-Oney-TTS",
+            "l1rqt=1617303093,l1rpt=1617303093",
+            "X-Oney-Message-Id",
+            "7f9aac92-437f-40c8-acba-0a89d302a471",
+            "Date",
+            "Thu, 01 Apr 2021 18:51:33 GMT",
+            "Connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "https://api-staging.oney.io:443",
+        "method": "PUT",
+        "path": "/b2c/customers/v2/customers",
+        "body": {
+            "customer": {
+                "adresses": [
+                    {
+                        "country_code": "FR",
+                        "line1": " POUSTERLE DE PARIS",
+                        "line2": "appartement 00",
+                        "municipality": "AUCH",
+                        "postal_code": "32000",
+                        "type_code": "HOME"
+                    }
+                ],
+                "phones": [
+                    {
+                        "number": "0643455455",
+                        "type_code": "MPRS",
+                        "country_dialing_code": "+33"
+                    }
+                ],
+                "emails": [
+                    {
+                        "address": "ozzj@yopmail.com",
+                        "type_code": "PRS"
+                    }
+                ],
+                "birth_country": "France",
+                "birth_country_code": "FR",
+                "cnil_oney_flag": "1",
+                "cnil_partner_flag": "1",
+                "len_oney_flag": "1",
+                "len_partner_flag": "1"
+            }
+        },
+        "status": 200,
+        "response": {
+            "person_ids.application_code": "IDTT_NUMR",
+            "person_ids.application_person_id_field": "SECURE_ID",
+            "person_ids.application_person_id": "NGFOHFx8UsrrnWmnYCebQb7qqsEB3ZUg_6CLS3EMVHPaMP1a"
+        },
+        "rawHeaders": [
+            "Content-Length",
+            "182",
+            "Content-Type",
+            "application/json; charset=UTF-8",
+            "X-Oney-SSL",
+            "off",
+            "X-Oney-TTS",
+            "l1rqt=1617303093,l1rpt=1617303094",
+            "X-Oney-Message-Id",
+            "18653373-5406-4e01-b493-1799f433cd99",
+            "Date",
+            "Thu, 01 Apr 2021 18:51:33 GMT",
+            "Connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    }
+]

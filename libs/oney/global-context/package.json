@@ -1,0 +1,9 @@
+{
+  "name": "@oney/global-context",
+  "version": "0.1.0",
+  "config": {
+    "mongodbMemoryServer": {
+      "version": "latest"
+    }
+  }
+}

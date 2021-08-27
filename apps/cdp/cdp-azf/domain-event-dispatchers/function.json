@@ -1,0 +1,12 @@
+{
+  "bindings": [
+    {
+      "type": "eventHubTrigger",
+      "name": "eventContent",
+      "direction": "in",
+      "eventHubName": "EVENT_HUB_NAME",
+      "connection": "EventHubConnectionString",
+      "consumerGroup": "oney"
+    }
+  ]
+}

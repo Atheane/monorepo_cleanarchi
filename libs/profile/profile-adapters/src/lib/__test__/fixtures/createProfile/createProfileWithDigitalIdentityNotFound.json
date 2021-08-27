@@ -1,0 +1,198 @@
+[
+    {
+        "scope": "https://api-staging.oney.io:443",
+        "method": "POST",
+        "path": "/resources/authorizations/v1/oauth/token",
+        "body": "client_id=PTAIL_BQ_DIGIT&client_secret=426ba2d4-c2df-4cb1-a6d4-c8c858964718&grant_type=client_credentials",
+        "status": 200,
+        "response": {
+            "access_token": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IjZmNzgxNDUwLTI3MGUtNDg3OC1iZTdmLWQxNjcyNGM0NTQ3YiJ9.eyJhdWQiOlsib25leS1hcGkiXSwic2NvcGUiOlsiY3VzdG9tZXIucmVhZCIsIm9mZmxpbmVfYWNjZXNzX3Rva2VuX2FwaSIsIm9mZmxpbmVfYXV0aGVudGljYXRpb24iXSwiaXNzIjoiSXNhYWMiLCJleHAiOjE2MTQ3OTA0NzUsImlhdCI6MTYxNDc4OTYzNSwiYXV0aG9yaXRpZXMiOlsiY2xpZW50IiwiY2xpZW50X2NyZWRlbnRpYWxzIiwiY29uc2VpbGxlciIsInRlbXBvcmFyeV9hY2Nlc3NfY29kZSJdLCJqdGkiOiIxOTc0ZGIyYi02ZjJmLTRmZjQtOWIxYy01M2VmYTNmZTJhOWMiLCJjbGllbnRfaWQiOiJQVEFJTF9CUV9ESUdJVCJ9.DQ-Q8g5bmsN9oYQb-tohdKpYfjTyn_WiEJgCukkHgxbOkrKSPU_4ZQy-Oznole05UTU5Ffpe9xLdQbo6ppPt2Qe0y-3zesUMBBxRcV71Rx_2u6WRualNvhAqo8PUeFvbNH8bVhT7p3JWx3cs_SezZ_96nQ3H82J506tssi0mn0bWBdUhRZ0MQHh6Z6c4O68lxNrb6U9Kn9e-mmCPJ6CXEQDA88Aggh9W8pW98pIWQ_J6P2xZm1iBgEf_rKB67jUnHaMy66y6BshhOU9LhP5KAU5KPexUcEBj0zyVXac7S9sYwvuqsrd1Cz_4Hs36J6QlEJbnY1qKW6Quq0UZQQ_IVA",
+            "token_type": "bearer",
+            "expires_in": 839,
+            "scope": "customer.read offline_access_token_api offline_authentication"
+        },
+        "rawHeaders": [
+            "Cache-Control",
+            "private, max-age=0, must-revalidate,no-store",
+            "Pragma",
+            "no-cache,no-cache",
+            "Transfer-Encoding",
+            "chunked",
+            "Content-Type",
+            "application/json;charset=UTF-8",
+            "X-Content-Type-Options",
+            "nosniff",
+            "X-XSS-Protection",
+            "1; mode=block",
+            "Strict-Transport-Security",
+            "max-age=31536000 ; includeSubDomains",
+            "X-Frame-Options",
+            "DENY",
+            "X-Oney-SSL",
+            "on",
+            "X-Oney-TTS",
+            "l1rqt=1614789635,l1rpt=1614789635",
+            "X-Oney-Message-Id",
+            "3315043c-f4e0-49bc-8163-4c762c9f21c6",
+            "Date",
+            "Wed, 03 Mar 2021 16:40:34 GMT",
+            "Connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "https://api-staging.oney.io:443",
+        "method": "GET",
+        "path": "/b2c/authentication/v1/digital_identities?selector_type=authentication_factor&selector_subtype=EML&selector_value=IdentityNotFound%40yopmail.com",
+        "body": "",
+        "status": 404,
+        "response": {
+            "language_code": "fr",
+            "errors": [
+                {
+                    "field": null,
+                    "code": "IDENTIFIER_NOT_FOUND",
+                    "label": "[FunctionalError] L’identifiant n’existe pas"
+                }
+            ]
+        },
+        "rawHeaders": [
+            "Cache-Control",
+            "private, max-age=0, must-revalidate",
+            "Pragma",
+            "no-cache",
+            "Content-Length",
+            "174",
+            "Content-Type",
+            "application/json;charset=UTF-8",
+            "Expires",
+            "0",
+            "X-Content-Type-Options",
+            "nosniff",
+            "X-XSS-Protection",
+            "1; mode=block",
+            "X-Frame-Options",
+            "DENY",
+            "X-Application-Context",
+            "fasme-authentication:qlf:8008",
+            "X-Oney-SSL",
+            "on",
+            "X-Oney-TTS",
+            "l1rqt=1614789636,l1rpt=1614789636",
+            "X-Oney-Message-Id",
+            "ca0d8564-577b-4fe0-8e02-b323eae0ae43",
+            "Date",
+            "Wed, 03 Mar 2021 16:40:35 GMT",
+            "Connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "https://api-staging.oney.io:443",
+        "method": "POST",
+        "path": "/resources/authorizations/v1/oauth/token",
+        "body": "client_id=PTAIL_BQ_DIGIT&client_secret=426ba2d4-c2df-4cb1-a6d4-c8c858964718&grant_type=client_credentials",
+        "status": 200,
+        "response": {
+            "access_token": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IjZmNzgxNDUwLTI3MGUtNDg3OC1iZTdmLWQxNjcyNGM0NTQ3YiJ9.eyJhdWQiOlsib25leS1hcGkiXSwic2NvcGUiOlsiY3VzdG9tZXIucmVhZCIsIm9mZmxpbmVfYWNjZXNzX3Rva2VuX2FwaSIsIm9mZmxpbmVfYXV0aGVudGljYXRpb24iXSwiaXNzIjoiSXNhYWMiLCJleHAiOjE2MTQ3OTA0NzYsImlhdCI6MTYxNDc4OTYzNiwiYXV0aG9yaXRpZXMiOlsiY2xpZW50IiwiY2xpZW50X2NyZWRlbnRpYWxzIiwiY29uc2VpbGxlciIsInRlbXBvcmFyeV9hY2Nlc3NfY29kZSJdLCJqdGkiOiIxMzI2NmM1ZC0wNWYwLTRkOTAtOGY3Yy03MWUzNDcyODM2NWYiLCJjbGllbnRfaWQiOiJQVEFJTF9CUV9ESUdJVCJ9.HnbYY3JWhto75Ih5R1Yb865k6mB-EwGYywqjah18wN58YbKZK5BIWSEDNn_-Eu_9OAKNAM7V2eIJnkUsJXjlVGlw1BNJLvF5qyKe68TAdNowSNdl5JUgBZJEnYk95HhLE-vbFkiZMGnCCVuiN4MGRhX8Zu3xe_IlcWQJlV2bK36AlD16dlgnEaPnu9OyUpMMVPljNkbMG_kDmJDhoMASTCetlvOteXVaay7h3Yub0v6FkRFEE6-Qd2mHfVudOGOiWCnYCUlm0Yf-b4YE1y9ndRzzM8wxgsS739BDQ_5bAlOwmpGto99iXtEpKK4Yjei32yLR1p7pgvTZ8ul1SRShKw",
+            "token_type": "bearer",
+            "expires_in": 839,
+            "scope": "customer.read offline_access_token_api offline_authentication"
+        },
+        "rawHeaders": [
+            "Cache-Control",
+            "private, max-age=0, must-revalidate,no-store",
+            "Pragma",
+            "no-cache,no-cache",
+            "Transfer-Encoding",
+            "chunked",
+            "Content-Type",
+            "application/json;charset=UTF-8",
+            "X-Content-Type-Options",
+            "nosniff",
+            "X-XSS-Protection",
+            "1; mode=block",
+            "Strict-Transport-Security",
+            "max-age=31536000 ; includeSubDomains",
+            "X-Frame-Options",
+            "DENY",
+            "X-Oney-SSL",
+            "on",
+            "X-Oney-TTS",
+            "l1rqt=1614789636,l1rpt=1614789636",
+            "X-Oney-Message-Id",
+            "2a5d01e4-1a48-4b53-97b0-d34236e910fa",
+            "Date",
+            "Wed, 03 Mar 2021 16:40:36 GMT",
+            "Connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "https://api-staging.oney.io:443",
+        "method": "POST",
+        "path": "/b2c/authentication/v1/digital_identities",
+        "body": {
+            "authentication_factor": {
+                "type": "EML",
+                "public_value": "IdentityNotFound@yopmail.com"
+            }
+        },
+        "status": 201,
+        "response": {
+            "id": 1003897882,
+            "type": "INO",
+            "creation_date": "2021-03-03T17:40:36,000+01:00",
+            "identifiers": [
+                {
+                    "id": "_nad5Npkog4jjGX9A7erWTsCBpJ3XqUd9RDZwIqioRMgG98T",
+                    "type": "FP"
+                }
+            ],
+            "authentication_factors": [
+                {
+                    "id": 1870422,
+                    "type": "EML",
+                    "public_value": "IdentityNotFound@yopmail.com",
+                    "status_code": "AAC",
+                    "status_date": "2021-03-03T17:40:36,000+01:00"
+                }
+            ],
+            "activation_token": "8netMzOxArH3_d7yD3rEhFjx1UZQcmM8GgTSpzQ9phU"
+        },
+        "rawHeaders": [
+            "Cache-Control",
+            "private, max-age=0, must-revalidate",
+            "Pragma",
+            "no-cache",
+            "Transfer-Encoding",
+            "chunked",
+            "Content-Type",
+            "application/json;charset=UTF-8",
+            "Expires",
+            "0",
+            "X-Content-Type-Options",
+            "nosniff",
+            "X-XSS-Protection",
+            "1; mode=block",
+            "X-Frame-Options",
+            "DENY",
+            "X-Application-Context",
+            "fasme-authentication:qlf:8008",
+            "X-Oney-SSL",
+            "on",
+            "X-Oney-TTS",
+            "l1rqt=1614789636,l1rpt=1614789636",
+            "X-Oney-Message-Id",
+            "8b88de93-d2ad-4af3-9f5c-9c63837bd676",
+            "Date",
+            "Wed, 03 Mar 2021 16:40:36 GMT",
+            "Connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    }
+]

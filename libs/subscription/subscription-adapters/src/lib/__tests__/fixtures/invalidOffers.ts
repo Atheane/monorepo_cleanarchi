@@ -1,0 +1,86 @@
+import { CustomerType, OfferCategory, OfferRef, Periodicity } from '@oney/subscription-messages';
+import { DurationType } from '@oney/subscription-core';
+
+export const invalidOffers = [
+  {
+    id: 'periodicityInvalid',
+    name: 'Account management fee',
+    description: 'Frais de gestion de compte',
+    price: 1.5,
+    type: 6,
+    ref: OfferRef.ACCOUNT_FEE,
+    freeWithdrawal: 0,
+    category: OfferCategory.ONEY_PLUS,
+    periodicity: null,
+    offersIncentives: [],
+    card: null,
+    insurances: [],
+    discounts: [],
+  },
+  {
+    id: 'annualOffer',
+    name: 'Account management fee',
+    description: 'Frais de gestion de compte',
+    price: 1.5,
+    type: 6,
+    ref: OfferRef.ONEY_FIRST,
+    freeWithdrawal: 0,
+    category: OfferCategory.ONEY_PLUS,
+    periodicity: Periodicity.ANNUAL,
+    offersIncentives: [],
+    card: null,
+    insurances: [],
+    discounts: [
+      {
+        discountName: 'Pack Classic launching campaign',
+        discountDescription: '3 mois gratuit MVP',
+        discountValue: {
+          type: 'RATE',
+          value: 1,
+        },
+        discountApplicationRules: {
+          matchingTags: ['launchingCampaign'],
+          matchingCustomerType: [CustomerType.DEFAULT],
+          duration: DurationType.FIXED,
+          campaignStart: '06/01/2021',
+          campaignEnd: '08/31/2021',
+          nbIndex: 3,
+        },
+        cumulative: false,
+      },
+    ],
+  },
+  {
+    id: 'invalidDiscountType',
+    name: 'Account management fee',
+    description: 'Frais de gestion de compte',
+    price: 1.5,
+    type: 6,
+    ref: OfferRef.ONEY_FIRST,
+    freeWithdrawal: 0,
+    category: OfferCategory.ONEY_PLUS,
+    periodicity: 'annual',
+    offersIncentives: [],
+    card: null,
+    insurances: [],
+    discounts: [
+      {
+        discountName: 'Pack Classic launching campaign',
+        discountDescription: '3 mois gratuit MVP',
+        discountValue: {
+          type: null,
+          value: 1,
+        },
+        discountApplicationRules: {
+          matchingTags: ['launchingCampaign'],
+          matchingCustomerType: [],
+          duration: DurationType.FIXED,
+          campaignStart: '06/01/2021',
+          campaignEnd: '08/31/2021',
+          nbIndex: 3,
+        },
+        cumulative: false,
+      },
+    ],
+  },
+];

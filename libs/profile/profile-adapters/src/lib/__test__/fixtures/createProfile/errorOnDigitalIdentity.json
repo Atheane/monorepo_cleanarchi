@@ -1,0 +1,68 @@
+[
+    {
+        "scope": "https://api-staging.oney.io:443",
+        "method": "POST",
+        "path": "/resources/authorizations/v1/oauth/token",
+        "body": "client_id=PTAIL_BQ_DIGIT&client_secret=426ba2d4-c2df-4cb1-a6d4-c8c858964718&grant_type=client_credentials",
+        "status": 200,
+        "response": {
+            "access_token": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IjZmNzgxNDUwLTI3MGUtNDg3OC1iZTdmLWQxNjcyNGM0NTQ3YiJ9.eyJhdWQiOlsib25leS1hcGkiXSwic2NvcGUiOlsiY3VzdG9tZXIucmVhZCIsIm9mZmxpbmVfYWNjZXNzX3Rva2VuX2FwaSIsIm9mZmxpbmVfYXV0aGVudGljYXRpb24iXSwiaXNzIjoiSXNhYWMiLCJleHAiOjE2MTQ3OTE0MDMsImlhdCI6MTYxNDc5MDU2MywiYXV0aG9yaXRpZXMiOlsiY2xpZW50IiwiY2xpZW50X2NyZWRlbnRpYWxzIiwiY29uc2VpbGxlciIsInRlbXBvcmFyeV9hY2Nlc3NfY29kZSJdLCJqdGkiOiI5NWQ2N2EwZC01MWQ2LTRjMDMtODZmYi0zYmFkYmY3NzQ2ZDciLCJjbGllbnRfaWQiOiJQVEFJTF9CUV9ESUdJVCJ9.HirT9tnCvEVwg9bnPHsFrLY8N5TK9h0ErOUIhMz3t-c9x0Ot6zKTAi-4wmOB0h8GPATpKzJsPQo9RT8oc4yoirSBWptgtTTV4N8-CzXuJNipWecDfghUPVcucD4QQhJD457Gyso6ToSyGdBq84NrmDO6OvWkbuYF6iw0MivF3acOfngEy-NcKFgmiPfbMjPQIVOyOrWSDt9P9GH9m-g9sJtp8GXaiBVIs9-Bn2VSZu95tUg0E2Jmkmp0RwR-DXRc6sGyK-y7gLgtKAvgaf63yThfEBnnIMCHGrxJau1aZqB1KTsDuYPf8B2QlFUOhCDlDpPVmqybbSQ6F2LpK9WTvQ",
+            "token_type": "bearer",
+            "expires_in": 839,
+            "scope": "customer.read offline_access_token_api offline_authentication"
+        },
+        "rawHeaders": [
+            "Cache-Control",
+            "private, max-age=0, must-revalidate,no-store",
+            "Pragma",
+            "no-cache,no-cache",
+            "Transfer-Encoding",
+            "chunked",
+            "Content-Type",
+            "application/json;charset=UTF-8",
+            "X-Content-Type-Options",
+            "nosniff",
+            "X-XSS-Protection",
+            "1; mode=block",
+            "Strict-Transport-Security",
+            "max-age=31536000 ; includeSubDomains",
+            "X-Frame-Options",
+            "DENY",
+            "X-Oney-SSL",
+            "on",
+            "X-Oney-TTS",
+            "l1rqt=1614790563,l1rpt=1614790563",
+            "X-Oney-Message-Id",
+            "a7a41032-7bc6-48ca-a49d-8b665bdff10b",
+            "Date",
+            "Wed, 03 Mar 2021 16:56:03 GMT",
+            "Connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "https://api-staging.oney.io:443",
+        "method": "GET",
+        "path": "/b2c/authentication/v1/digital_identities?selector_type=authentication_factor&selector_subtype=EML&selector_value=digitalIdentityNotFound%40yopmail.com",
+        "body": "",
+        "status": 401,
+        "response": {
+            "statusCode": 401,
+            "message": "Access denied due to invalid subscription key. Make sure to provide a valid key for an active subscription."
+        },
+        "rawHeaders": [
+            "Content-Length",
+            "143",
+            "Content-Type",
+            "application/json",
+            "WWW-Authenticate",
+            "AzureApiManagementKey realm=\"https://api-staging.oney.io/b2c/authentication\",name=\"X-Oney-Authorization\",type=\"header\"",
+            "Date",
+            "Wed, 03 Mar 2021 16:56:03 GMT",
+            "Connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    }
+]

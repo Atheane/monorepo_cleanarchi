@@ -1,0 +1,30 @@
+[
+    {
+        "scope": "https://api-staging.fr.oney.io:443",
+        "method": "POST",
+        "path": "/risks_management/bdf/v2/fcc_requests/123/reply",
+        "body": {
+            "request_cause_code": "BQ_DIGIT"
+        },
+        "status": 500,
+        "response": {
+            "errorCode": "PPJBK97_973-50",
+            "errorMessage": "ERREUR APPLICATIVE CODE 50 PROGRAMME PPJBK97 FONCTION 973 MESSAGE "
+        },
+        "rawHeaders": [
+            "Content-Length",
+            "114",
+            "Content-Type",
+            "application/json; charset=UTF-8",
+            "X-Oney-SSL",
+            "on",
+            "X-Oney-Message-Id",
+            "9570c567-70d1-49ca-bab9-9833e0f8f023",
+            "Date",
+            "Wed, 28 Apr 2021 13:35:21 GMT",
+            "Connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    }
+]

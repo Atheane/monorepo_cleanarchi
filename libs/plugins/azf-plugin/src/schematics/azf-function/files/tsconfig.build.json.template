@@ -1,0 +1,9 @@
+{
+  "extends": "./tsconfig.json",
+  "exclude": ["**/*.test.ts", "**/fixtures"],
+  "include": [
+    "**/*.ts",
+    "../../../node_modules/@types/jest/index.d.ts",
+    "**/*.json", "tools/*.js"
+  ]
+}

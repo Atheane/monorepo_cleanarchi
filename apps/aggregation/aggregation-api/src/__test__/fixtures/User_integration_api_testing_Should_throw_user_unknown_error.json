@@ -1,0 +1,48 @@
+[
+    {
+        "scope": "http://127.0.0.1:65424",
+        "method": "GET",
+        "path": "/aggregation/users/ezknproiuzge/connections",
+        "body": "",
+        "status": 404,
+        "response": {
+            "error": "UserUnknown",
+            "code": "USER_UNKNOWN"
+        },
+        "rawHeaders": [
+            "Access-Control-Allow-Origin",
+            "*",
+            "Content-Security-Policy",
+            "default-src 'self';base-uri 'self';block-all-mixed-content;font-src 'self' https: data:;frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests",
+            "X-DNS-Prefetch-Control",
+            "off",
+            "Expect-CT",
+            "max-age=0",
+            "X-Frame-Options",
+            "SAMEORIGIN",
+            "Strict-Transport-Security",
+            "max-age=15552000; includeSubDomains",
+            "X-Download-Options",
+            "noopen",
+            "X-Content-Type-Options",
+            "nosniff",
+            "X-Permitted-Cross-Domain-Policies",
+            "none",
+            "Referrer-Policy",
+            "no-referrer",
+            "X-XSS-Protection",
+            "0",
+            "Content-Type",
+            "application/json; charset=utf-8",
+            "Content-Length",
+            "45",
+            "ETag",
+            "W/\"2d-SBkVbpqkV9t9gdRBaX9oAAPu8oY\"",
+            "Date",
+            "Thu, 01 Apr 2021 19:23:53 GMT",
+            "Connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    }
+]

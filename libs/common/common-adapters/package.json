@@ -1,0 +1,8 @@
+{
+  "name": "@oney/common-adapters",
+  "version": "0.24.0",
+  "publishConfig": {
+    "access": "public",
+    "directory": "../../../dist/libs/common-adapters"
+  }
+}

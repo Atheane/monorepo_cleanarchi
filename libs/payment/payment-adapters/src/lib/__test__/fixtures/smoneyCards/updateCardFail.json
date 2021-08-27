@@ -1,0 +1,38 @@
+[
+    {
+        "scope": "https://sb-api.xpollens.com:443",
+        "method": "PUT",
+        "path": "/api/V1.1/users/zCDOH_UvA/cards/card-BjHjzuN5V",
+        "body": {
+            "Blocked": 0,
+            "InternetPaymentBlocked": 0,
+            "ForeignPaymentBlocked": 0,
+            "CardLimits": {
+                "ATMWeeklyAllowance": 350000000,
+                "MonthlyAllowance": 950
+            }
+        },
+        "status": 404,
+        "response": {
+            "Code": 1066,
+            "ErrorMessage": "Incorrect limit value",
+            "Title": "Operation cannot be completed",
+            "Priority": 2
+        },
+        "rawHeaders": [
+            "Date",
+            "Mon, 02 Nov 2020 18:52:45 GMT",
+            "Content-Type",
+            "application/json",
+            "Content-Length",
+            "105",
+            "Connection",
+            "close",
+            "Server",
+            "Kestrel",
+            "Request-Context",
+            "appId=cid-v1:40d43092-8aee-4b2b-8b7f-34d2d69e09b7"
+        ],
+        "responseIsBinary": false
+    }
+]

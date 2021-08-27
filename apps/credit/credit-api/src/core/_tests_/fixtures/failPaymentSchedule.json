@@ -1,0 +1,527 @@
+[
+    {
+        "scope": "https://dev-api.onbadi.com:443",
+        "method": "POST",
+        "path": "/payment/p2p",
+        "body": {
+            "ref": 7,
+            "amount": 399,
+            "message": "Financement 3x",
+            "senderId": "BAD_ID_1",
+            "contractNumber": "BDADAE541110"
+        },
+        "status": 403,
+        "response": {
+            "error": "ApiResponseError",
+            "message": "SMONEY_API_ERROR",
+            "cause": {
+                "message": "Request failed with status code 403",
+                "config": {
+                    "url": "users/OxREbmNhO/payments",
+                    "headers": {
+                        "Accept": "application/json, text/plain, */*",
+                        "Content-Type": "application/json;charset=utf-8",
+                        "Authorization": "Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6Ijc4Q0QwNDc2MDM2RUQxMDAwMEQzNjRFNEJCQzQ2RjE2NzFFNkIzNDJSUzI1NiIsInR5cCI6ImF0K2p3dCIsIng1dCI6ImVNMEVkZ051MFFBQTAyVGt1OFJ2Rm5IbXMwSSJ9.eyJuYmYiOjE2MTUyODQ3NjksImV4cCI6MTYxNTI4ODM2OSwiaXNzIjoiaHR0cHM6Ly9zYi1jb25uZWN0Lnhwb2xsZW5zLmNvbSIsImF1ZCI6IkFQSS5HYXRld2F5IiwiY2xpZW50X2lkIjoiT25leS5UZXN0IiwicGFydG5lcl9jb2RlIjoib25leSIsImp0aSI6IkY5NUFEMzBBQjY0REU3RTNBMTYzOUY0NUE2QzEyRDU4IiwiaWF0IjoxNjE1Mjg0NzY5LCJzY29wZSI6WyJwYXJ0bmVyIl19.QqPR8HRI_OcMVPb6Uv7_C5_YZqo9ltxGL6fopxISQTDLDneD0Hxix1M9DzB3j5eDO0OCUjuXxLzDf7HIcsydpR1Qx2O-S-gzPvQDdNsLOLrBU5yfqt4JGXx6r7EObxIkcFz3t6bn3ytWYPn1tMUMcdHnyBohSoeYzIdO4KDc03MoOlBxMCxaXbLvkmWnTHLsj1tDzSpKgXIlDpD0NYlnnz5mlEZCCuj1p60buWXVlET_gDqkx42KKlPeHpX_Lbjx-Ed_1o94GjJFPOAfKyu_RB8TyuzrJh3mMBXerm_yDTNSq4fYRHu0RbYW6jRY3xmX2ItZQbqay9XjpYjZNkT-ig",
+                        "User-Agent": "axios/0.21.1",
+                        "Content-Length": 261
+                    },
+                    "method": "post"
+                },
+                "apiErrorReason": {
+                    "Code": 147,
+                    "ErrorMessage": "Votre saisie ne correspond pas à un utilisateur S-money",
+                    "Title": "L'opération ne peut pas aboutir",
+                    "Priority": 2
+                },
+                "status": 403
+            }
+        },
+        "rawHeaders": [
+            "Content-Length",
+            "1324",
+            "Content-Type",
+            "application/json; charset=utf-8",
+            "ETag",
+            "W/\"52c-s93V7g4EiWoBwI2lvvEApvZdwP4\"",
+            "Access-Control-Allow-Origin",
+            "*",
+            "Content-Security-Policy",
+            "default-src 'self';base-uri 'self';block-all-mixed-content;font-src 'self' https: data:;frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests",
+            "X-DNS-Prefetch-Control",
+            "off",
+            "Expect-CT",
+            "max-age=0",
+            "X-Frame-Options",
+            "SAMEORIGIN",
+            "Strict-Transport-Security",
+            "max-age=15552000; includeSubDomains",
+            "X-Download-Options",
+            "noopen",
+            "X-Content-Type-Options",
+            "nosniff",
+            "X-Permitted-Cross-Domain-Policies",
+            "none",
+            "Referrer-Policy",
+            "no-referrer",
+            "X-XSS-Protection",
+            "0",
+            "X-Azure-Ref",
+            "0Q0pHYAAAAADuNmjKG3imTYkJdxMMFTiuUFJBRURHRTEzMTgANDIyZWYzYzMtODQ2YS00NWQzLWFiYzEtYWQ1MjcyYjE5OGQ5",
+            "Date",
+            "Tue, 09 Mar 2021 10:13:23 GMT",
+            "Connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "https://dev-api.onbadi.com:443",
+        "method": "POST",
+        "path": "/payment/p2p",
+        "body": {
+            "ref": 37,
+            "amount": 5.79,
+            "message": "Frais de fractionnement 3x",
+            "senderId": "BAD_ID_1",
+            "contractNumber": "BDADAE541110"
+        },
+        "status": 400,
+        "response": {
+            "error": "ApiResponseError",
+            "message": "SMONEY_API_ERROR",
+            "cause": {
+                "message": "Request failed with status code 400",
+                "config": {
+                    "url": "users/BAD_ID_1/payments",
+                    "headers": {
+                        "Accept": "application/json, text/plain, */*",
+                        "Content-Type": "application/json;charset=utf-8",
+                        "Authorization": "Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6Ijc4Q0QwNDc2MDM2RUQxMDAwMEQzNjRFNEJCQzQ2RjE2NzFFNkIzNDJSUzI1NiIsInR5cCI6ImF0K2p3dCIsIng1dCI6ImVNMEVkZ051MFFBQTAyVGt1OFJ2Rm5IbXMwSSJ9.eyJuYmYiOjE2MTUyODQ3NjksImV4cCI6MTYxNTI4ODM2OSwiaXNzIjoiaHR0cHM6Ly9zYi1jb25uZWN0Lnhwb2xsZW5zLmNvbSIsImF1ZCI6IkFQSS5HYXRld2F5IiwiY2xpZW50X2lkIjoiT25leS5UZXN0IiwicGFydG5lcl9jb2RlIjoib25leSIsImp0aSI6IkY5NUFEMzBBQjY0REU3RTNBMTYzOUY0NUE2QzEyRDU4IiwiaWF0IjoxNjE1Mjg0NzY5LCJzY29wZSI6WyJwYXJ0bmVyIl19.QqPR8HRI_OcMVPb6Uv7_C5_YZqo9ltxGL6fopxISQTDLDneD0Hxix1M9DzB3j5eDO0OCUjuXxLzDf7HIcsydpR1Qx2O-S-gzPvQDdNsLOLrBU5yfqt4JGXx6r7EObxIkcFz3t6bn3ytWYPn1tMUMcdHnyBohSoeYzIdO4KDc03MoOlBxMCxaXbLvkmWnTHLsj1tDzSpKgXIlDpD0NYlnnz5mlEZCCuj1p60buWXVlET_gDqkx42KKlPeHpX_Lbjx-Ed_1o94GjJFPOAfKyu_RB8TyuzrJh3mMBXerm_yDTNSq4fYRHu0RbYW6jRY3xmX2ItZQbqay9XjpYjZNkT-ig",
+                        "User-Agent": "axios/0.21.1",
+                        "Content-Length": 276
+                    },
+                    "method": "post"
+                },
+                "apiErrorReason": {
+                    "Code": 147,
+                    "ErrorMessage": "Votre saisie ne correspond pas à un utilisateur S-money",
+                    "Title": "L'opération ne peut pas aboutir",
+                    "Priority": 2
+                },
+                "status": 400
+            }
+        },
+        "rawHeaders": [
+            "Content-Length",
+            "1323",
+            "Content-Type",
+            "application/json; charset=utf-8",
+            "ETag",
+            "W/\"52b-P0WGrshMLmQKcPsNLJSwiEUA8oU\"",
+            "Access-Control-Allow-Origin",
+            "*",
+            "Content-Security-Policy",
+            "default-src 'self';base-uri 'self';block-all-mixed-content;font-src 'self' https: data:;frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests",
+            "X-DNS-Prefetch-Control",
+            "off",
+            "Expect-CT",
+            "max-age=0",
+            "X-Frame-Options",
+            "SAMEORIGIN",
+            "Strict-Transport-Security",
+            "max-age=15552000; includeSubDomains",
+            "X-Download-Options",
+            "noopen",
+            "X-Content-Type-Options",
+            "nosniff",
+            "X-Permitted-Cross-Domain-Policies",
+            "none",
+            "Referrer-Policy",
+            "no-referrer",
+            "X-XSS-Protection",
+            "0",
+            "X-Azure-Ref",
+            "0R0pHYAAAAABYmwK54GpAQr1NQV8aIwViUFJBRURHRTEzMTAANDIyZWYzYzMtODQ2YS00NWQzLWFiYzEtYWQ1MjcyYjE5OGQ5",
+            "Date",
+            "Tue, 09 Mar 2021 10:13:27 GMT",
+            "Connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "https://dev-api.onbadi.com:443",
+        "method": "POST",
+        "path": "/payment/p2p",
+        "body": {
+            "ref": 37,
+            "amount": 5.79,
+            "message": "Frais de fractionnement 3x",
+            "senderId": "BAD_ID_1",
+            "contractNumber": "BDADAE541110"
+        },
+        "status": 400,
+        "response": {
+            "error": "ApiResponseError",
+            "message": "SMONEY_API_ERROR",
+            "cause": {
+                "message": "Request failed with status code 400",
+                "config": {
+                    "url": "users/BAD_ID_1/payments",
+                    "headers": {
+                        "Accept": "application/json, text/plain, */*",
+                        "Content-Type": "application/json;charset=utf-8",
+                        "Authorization": "Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6Ijc4Q0QwNDc2MDM2RUQxMDAwMEQzNjRFNEJCQzQ2RjE2NzFFNkIzNDJSUzI1NiIsInR5cCI6ImF0K2p3dCIsIng1dCI6ImVNMEVkZ051MFFBQTAyVGt1OFJ2Rm5IbXMwSSJ9.eyJuYmYiOjE2MTUyODQ3NjksImV4cCI6MTYxNTI4ODM2OSwiaXNzIjoiaHR0cHM6Ly9zYi1jb25uZWN0Lnhwb2xsZW5zLmNvbSIsImF1ZCI6IkFQSS5HYXRld2F5IiwiY2xpZW50X2lkIjoiT25leS5UZXN0IiwicGFydG5lcl9jb2RlIjoib25leSIsImp0aSI6IkY5NUFEMzBBQjY0REU3RTNBMTYzOUY0NUE2QzEyRDU4IiwiaWF0IjoxNjE1Mjg0NzY5LCJzY29wZSI6WyJwYXJ0bmVyIl19.QqPR8HRI_OcMVPb6Uv7_C5_YZqo9ltxGL6fopxISQTDLDneD0Hxix1M9DzB3j5eDO0OCUjuXxLzDf7HIcsydpR1Qx2O-S-gzPvQDdNsLOLrBU5yfqt4JGXx6r7EObxIkcFz3t6bn3ytWYPn1tMUMcdHnyBohSoeYzIdO4KDc03MoOlBxMCxaXbLvkmWnTHLsj1tDzSpKgXIlDpD0NYlnnz5mlEZCCuj1p60buWXVlET_gDqkx42KKlPeHpX_Lbjx-Ed_1o94GjJFPOAfKyu_RB8TyuzrJh3mMBXerm_yDTNSq4fYRHu0RbYW6jRY3xmX2ItZQbqay9XjpYjZNkT-ig",
+                        "User-Agent": "axios/0.21.1",
+                        "Content-Length": 276
+                    },
+                    "method": "post"
+                },
+                "apiErrorReason": {
+                    "Code": 147,
+                    "ErrorMessage": "Votre saisie ne correspond pas à un utilisateur S-money",
+                    "Title": "L'opération ne peut pas aboutir",
+                    "Priority": 2
+                },
+                "status": 400
+            }
+        },
+        "rawHeaders": [
+            "Content-Length",
+            "1323",
+            "Content-Type",
+            "application/json; charset=utf-8",
+            "ETag",
+            "W/\"52b-P0WGrshMLmQKcPsNLJSwiEUA8oU\"",
+            "Access-Control-Allow-Origin",
+            "*",
+            "Content-Security-Policy",
+            "default-src 'self';base-uri 'self';block-all-mixed-content;font-src 'self' https: data:;frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests",
+            "X-DNS-Prefetch-Control",
+            "off",
+            "Expect-CT",
+            "max-age=0",
+            "X-Frame-Options",
+            "SAMEORIGIN",
+            "Strict-Transport-Security",
+            "max-age=15552000; includeSubDomains",
+            "X-Download-Options",
+            "noopen",
+            "X-Content-Type-Options",
+            "nosniff",
+            "X-Permitted-Cross-Domain-Policies",
+            "none",
+            "Referrer-Policy",
+            "no-referrer",
+            "X-XSS-Protection",
+            "0",
+            "X-Azure-Ref",
+            "0SEpHYAAAAABVwJJ9HR4pRoycZCBbBw++UFJBRURHRTEzMTQANDIyZWYzYzMtODQ2YS00NWQzLWFiYzEtYWQ1MjcyYjE5OGQ5",
+            "Date",
+            "Tue, 09 Mar 2021 10:13:28 GMT",
+            "Connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "https://dev-api.onbadi.com:443",
+        "method": "POST",
+        "path": "/payment/p2p",
+        "body": {
+            "ref": 37,
+            "amount": 5.79,
+            "message": "Frais de fractionnement 3x",
+            "senderId": "BAD_ID_1",
+            "contractNumber": "BDADAE541110"
+        },
+        "status": 400,
+        "response": {
+            "error": "ApiResponseError",
+            "message": "SMONEY_API_ERROR",
+            "cause": {
+                "message": "Request failed with status code 400",
+                "config": {
+                    "url": "users/BAD_ID_1/payments",
+                    "headers": {
+                        "Accept": "application/json, text/plain, */*",
+                        "Content-Type": "application/json;charset=utf-8",
+                        "Authorization": "Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6Ijc4Q0QwNDc2MDM2RUQxMDAwMEQzNjRFNEJCQzQ2RjE2NzFFNkIzNDJSUzI1NiIsInR5cCI6ImF0K2p3dCIsIng1dCI6ImVNMEVkZ051MFFBQTAyVGt1OFJ2Rm5IbXMwSSJ9.eyJuYmYiOjE2MTUyODQ3NjksImV4cCI6MTYxNTI4ODM2OSwiaXNzIjoiaHR0cHM6Ly9zYi1jb25uZWN0Lnhwb2xsZW5zLmNvbSIsImF1ZCI6IkFQSS5HYXRld2F5IiwiY2xpZW50X2lkIjoiT25leS5UZXN0IiwicGFydG5lcl9jb2RlIjoib25leSIsImp0aSI6IkY5NUFEMzBBQjY0REU3RTNBMTYzOUY0NUE2QzEyRDU4IiwiaWF0IjoxNjE1Mjg0NzY5LCJzY29wZSI6WyJwYXJ0bmVyIl19.QqPR8HRI_OcMVPb6Uv7_C5_YZqo9ltxGL6fopxISQTDLDneD0Hxix1M9DzB3j5eDO0OCUjuXxLzDf7HIcsydpR1Qx2O-S-gzPvQDdNsLOLrBU5yfqt4JGXx6r7EObxIkcFz3t6bn3ytWYPn1tMUMcdHnyBohSoeYzIdO4KDc03MoOlBxMCxaXbLvkmWnTHLsj1tDzSpKgXIlDpD0NYlnnz5mlEZCCuj1p60buWXVlET_gDqkx42KKlPeHpX_Lbjx-Ed_1o94GjJFPOAfKyu_RB8TyuzrJh3mMBXerm_yDTNSq4fYRHu0RbYW6jRY3xmX2ItZQbqay9XjpYjZNkT-ig",
+                        "User-Agent": "axios/0.21.1",
+                        "Content-Length": 276
+                    },
+                    "method": "post"
+                },
+                "apiErrorReason": {
+                    "Code": 147,
+                    "ErrorMessage": "Votre saisie ne correspond pas à un utilisateur S-money",
+                    "Title": "L'opération ne peut pas aboutir",
+                    "Priority": 2
+                },
+                "status": 400
+            }
+        },
+        "rawHeaders": [
+            "Content-Length",
+            "1323",
+            "Content-Type",
+            "application/json; charset=utf-8",
+            "ETag",
+            "W/\"52b-P0WGrshMLmQKcPsNLJSwiEUA8oU\"",
+            "Access-Control-Allow-Origin",
+            "*",
+            "Content-Security-Policy",
+            "default-src 'self';base-uri 'self';block-all-mixed-content;font-src 'self' https: data:;frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests",
+            "X-DNS-Prefetch-Control",
+            "off",
+            "Expect-CT",
+            "max-age=0",
+            "X-Frame-Options",
+            "SAMEORIGIN",
+            "Strict-Transport-Security",
+            "max-age=15552000; includeSubDomains",
+            "X-Download-Options",
+            "noopen",
+            "X-Content-Type-Options",
+            "nosniff",
+            "X-Permitted-Cross-Domain-Policies",
+            "none",
+            "Referrer-Policy",
+            "no-referrer",
+            "X-XSS-Protection",
+            "0",
+            "X-Azure-Ref",
+            "0SUpHYAAAAAATVQheIjjsSZdoZrsPSiidUFJBRURHRTEyMTEANDIyZWYzYzMtODQ2YS00NWQzLWFiYzEtYWQ1MjcyYjE5OGQ5",
+            "Date",
+            "Tue, 09 Mar 2021 10:13:29 GMT",
+            "Connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "https://dev-api.onbadi.com:443",
+        "method": "POST",
+        "path": "/payment/p2p",
+        "body": {
+            "ref": 1,
+            "amount": 133,
+            "message": "Échéance 1 fractionnement en 3x",
+            "senderId": "BAD_ID_1",
+            "contractNumber": "BDADAE541110"
+        },
+        "status": 400,
+        "response": {
+            "error": "ApiResponseError",
+            "message": "SMONEY_API_ERROR",
+            "cause": {
+                "message": "Request failed with status code 400",
+                "config": {
+                    "url": "users/BAD_ID_1/payments",
+                    "headers": {
+                        "Accept": "application/json, text/plain, */*",
+                        "Content-Type": "application/json;charset=utf-8",
+                        "Authorization": "Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6Ijc4Q0QwNDc2MDM2RUQxMDAwMEQzNjRFNEJCQzQ2RjE2NzFFNkIzNDJSUzI1NiIsInR5cCI6ImF0K2p3dCIsIng1dCI6ImVNMEVkZ051MFFBQTAyVGt1OFJ2Rm5IbXMwSSJ9.eyJuYmYiOjE2MTUyODQ3NjksImV4cCI6MTYxNTI4ODM2OSwiaXNzIjoiaHR0cHM6Ly9zYi1jb25uZWN0Lnhwb2xsZW5zLmNvbSIsImF1ZCI6IkFQSS5HYXRld2F5IiwiY2xpZW50X2lkIjoiT25leS5UZXN0IiwicGFydG5lcl9jb2RlIjoib25leSIsImp0aSI6IkY5NUFEMzBBQjY0REU3RTNBMTYzOUY0NUE2QzEyRDU4IiwiaWF0IjoxNjE1Mjg0NzY5LCJzY29wZSI6WyJwYXJ0bmVyIl19.QqPR8HRI_OcMVPb6Uv7_C5_YZqo9ltxGL6fopxISQTDLDneD0Hxix1M9DzB3j5eDO0OCUjuXxLzDf7HIcsydpR1Qx2O-S-gzPvQDdNsLOLrBU5yfqt4JGXx6r7EObxIkcFz3t6bn3ytWYPn1tMUMcdHnyBohSoeYzIdO4KDc03MoOlBxMCxaXbLvkmWnTHLsj1tDzSpKgXIlDpD0NYlnnz5mlEZCCuj1p60buWXVlET_gDqkx42KKlPeHpX_Lbjx-Ed_1o94GjJFPOAfKyu_RB8TyuzrJh3mMBXerm_yDTNSq4fYRHu0RbYW6jRY3xmX2ItZQbqay9XjpYjZNkT-ig",
+                        "User-Agent": "axios/0.21.1",
+                        "Content-Length": 280
+                    },
+                    "method": "post"
+                },
+                "apiErrorReason": {
+                    "Code": 147,
+                    "ErrorMessage": "Votre saisie ne correspond pas à un utilisateur S-money",
+                    "Title": "L'opération ne peut pas aboutir",
+                    "Priority": 2
+                },
+                "status": 400
+            }
+        },
+        "rawHeaders": [
+            "Content-Length",
+            "1323",
+            "Content-Type",
+            "application/json; charset=utf-8",
+            "ETag",
+            "W/\"52b-nwrIpscXZCCgjGpczInrKZvzBhc\"",
+            "Access-Control-Allow-Origin",
+            "*",
+            "Content-Security-Policy",
+            "default-src 'self';base-uri 'self';block-all-mixed-content;font-src 'self' https: data:;frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests",
+            "X-DNS-Prefetch-Control",
+            "off",
+            "Expect-CT",
+            "max-age=0",
+            "X-Frame-Options",
+            "SAMEORIGIN",
+            "Strict-Transport-Security",
+            "max-age=15552000; includeSubDomains",
+            "X-Download-Options",
+            "noopen",
+            "X-Content-Type-Options",
+            "nosniff",
+            "X-Permitted-Cross-Domain-Policies",
+            "none",
+            "Referrer-Policy",
+            "no-referrer",
+            "X-XSS-Protection",
+            "0",
+            "X-Azure-Ref",
+            "0S0pHYAAAAAASuEBjhY2NQrI/gVmxZS2/UFJBRURHRTEyMTMANDIyZWYzYzMtODQ2YS00NWQzLWFiYzEtYWQ1MjcyYjE5OGQ5",
+            "Date",
+            "Tue, 09 Mar 2021 10:13:31 GMT",
+            "Connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "https://dev-api.onbadi.com:443",
+        "method": "POST",
+        "path": "/payment/p2p",
+        "body": {
+            "ref": 1,
+            "amount": 133,
+            "message": "Échéance 1 fractionnement en 3x",
+            "senderId": "BAD_ID_1",
+            "contractNumber": "BDADAE541110"
+        },
+        "status": 400,
+        "response": {
+            "error": "ApiResponseError",
+            "message": "SMONEY_API_ERROR",
+            "cause": {
+                "message": "Request failed with status code 400",
+                "config": {
+                    "url": "users/BAD_ID_1/payments",
+                    "headers": {
+                        "Accept": "application/json, text/plain, */*",
+                        "Content-Type": "application/json;charset=utf-8",
+                        "Authorization": "Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6Ijc4Q0QwNDc2MDM2RUQxMDAwMEQzNjRFNEJCQzQ2RjE2NzFFNkIzNDJSUzI1NiIsInR5cCI6ImF0K2p3dCIsIng1dCI6ImVNMEVkZ051MFFBQTAyVGt1OFJ2Rm5IbXMwSSJ9.eyJuYmYiOjE2MTUyODQ3NjksImV4cCI6MTYxNTI4ODM2OSwiaXNzIjoiaHR0cHM6Ly9zYi1jb25uZWN0Lnhwb2xsZW5zLmNvbSIsImF1ZCI6IkFQSS5HYXRld2F5IiwiY2xpZW50X2lkIjoiT25leS5UZXN0IiwicGFydG5lcl9jb2RlIjoib25leSIsImp0aSI6IkY5NUFEMzBBQjY0REU3RTNBMTYzOUY0NUE2QzEyRDU4IiwiaWF0IjoxNjE1Mjg0NzY5LCJzY29wZSI6WyJwYXJ0bmVyIl19.QqPR8HRI_OcMVPb6Uv7_C5_YZqo9ltxGL6fopxISQTDLDneD0Hxix1M9DzB3j5eDO0OCUjuXxLzDf7HIcsydpR1Qx2O-S-gzPvQDdNsLOLrBU5yfqt4JGXx6r7EObxIkcFz3t6bn3ytWYPn1tMUMcdHnyBohSoeYzIdO4KDc03MoOlBxMCxaXbLvkmWnTHLsj1tDzSpKgXIlDpD0NYlnnz5mlEZCCuj1p60buWXVlET_gDqkx42KKlPeHpX_Lbjx-Ed_1o94GjJFPOAfKyu_RB8TyuzrJh3mMBXerm_yDTNSq4fYRHu0RbYW6jRY3xmX2ItZQbqay9XjpYjZNkT-ig",
+                        "User-Agent": "axios/0.21.1",
+                        "Content-Length": 280
+                    },
+                    "method": "post"
+                },
+                "apiErrorReason": {
+                    "Code": 147,
+                    "ErrorMessage": "Votre saisie ne correspond pas à un utilisateur S-money",
+                    "Title": "L'opération ne peut pas aboutir",
+                    "Priority": 2
+                },
+                "status": 400
+            }
+        },
+        "rawHeaders": [
+            "Content-Length",
+            "1323",
+            "Content-Type",
+            "application/json; charset=utf-8",
+            "ETag",
+            "W/\"52b-nwrIpscXZCCgjGpczInrKZvzBhc\"",
+            "Access-Control-Allow-Origin",
+            "*",
+            "Content-Security-Policy",
+            "default-src 'self';base-uri 'self';block-all-mixed-content;font-src 'self' https: data:;frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests",
+            "X-DNS-Prefetch-Control",
+            "off",
+            "Expect-CT",
+            "max-age=0",
+            "X-Frame-Options",
+            "SAMEORIGIN",
+            "Strict-Transport-Security",
+            "max-age=15552000; includeSubDomains",
+            "X-Download-Options",
+            "noopen",
+            "X-Content-Type-Options",
+            "nosniff",
+            "X-Permitted-Cross-Domain-Policies",
+            "none",
+            "Referrer-Policy",
+            "no-referrer",
+            "X-XSS-Protection",
+            "0",
+            "X-Azure-Ref",
+            "0TEpHYAAAAADRlRWfCizGS4aFZREFWUVtUFJBRURHRTEzMTEANDIyZWYzYzMtODQ2YS00NWQzLWFiYzEtYWQ1MjcyYjE5OGQ5",
+            "Date",
+            "Tue, 09 Mar 2021 10:13:31 GMT",
+            "Connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "https://dev-api.onbadi.com:443",
+        "method": "POST",
+        "path": "/payment/p2p",
+        "body": {
+            "ref": 1,
+            "amount": 133,
+            "message": "Échéance 1 fractionnement en 3x",
+            "senderId": "BAD_ID_1",
+            "contractNumber": "BDADAE541110"
+        },
+        "status": 400,
+        "response": {
+            "error": "ApiResponseError",
+            "message": "SMONEY_API_ERROR",
+            "cause": {
+                "message": "Request failed with status code 400",
+                "config": {
+                    "url": "users/BAD_ID_1/payments",
+                    "headers": {
+                        "Accept": "application/json, text/plain, */*",
+                        "Content-Type": "application/json;charset=utf-8",
+                        "Authorization": "Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6Ijc4Q0QwNDc2MDM2RUQxMDAwMEQzNjRFNEJCQzQ2RjE2NzFFNkIzNDJSUzI1NiIsInR5cCI6ImF0K2p3dCIsIng1dCI6ImVNMEVkZ051MFFBQTAyVGt1OFJ2Rm5IbXMwSSJ9.eyJuYmYiOjE2MTUyODQ3NjksImV4cCI6MTYxNTI4ODM2OSwiaXNzIjoiaHR0cHM6Ly9zYi1jb25uZWN0Lnhwb2xsZW5zLmNvbSIsImF1ZCI6IkFQSS5HYXRld2F5IiwiY2xpZW50X2lkIjoiT25leS5UZXN0IiwicGFydG5lcl9jb2RlIjoib25leSIsImp0aSI6IkY5NUFEMzBBQjY0REU3RTNBMTYzOUY0NUE2QzEyRDU4IiwiaWF0IjoxNjE1Mjg0NzY5LCJzY29wZSI6WyJwYXJ0bmVyIl19.QqPR8HRI_OcMVPb6Uv7_C5_YZqo9ltxGL6fopxISQTDLDneD0Hxix1M9DzB3j5eDO0OCUjuXxLzDf7HIcsydpR1Qx2O-S-gzPvQDdNsLOLrBU5yfqt4JGXx6r7EObxIkcFz3t6bn3ytWYPn1tMUMcdHnyBohSoeYzIdO4KDc03MoOlBxMCxaXbLvkmWnTHLsj1tDzSpKgXIlDpD0NYlnnz5mlEZCCuj1p60buWXVlET_gDqkx42KKlPeHpX_Lbjx-Ed_1o94GjJFPOAfKyu_RB8TyuzrJh3mMBXerm_yDTNSq4fYRHu0RbYW6jRY3xmX2ItZQbqay9XjpYjZNkT-ig",
+                        "User-Agent": "axios/0.21.1",
+                        "Content-Length": 280
+                    },
+                    "method": "post"
+                },
+                "apiErrorReason": {
+                    "Code": 147,
+                    "ErrorMessage": "Votre saisie ne correspond pas à un utilisateur S-money",
+                    "Title": "L'opération ne peut pas aboutir",
+                    "Priority": 2
+                },
+                "status": 400
+            }
+        },
+        "rawHeaders": [
+            "Content-Length",
+            "1323",
+            "Content-Type",
+            "application/json; charset=utf-8",
+            "ETag",
+            "W/\"52b-nwrIpscXZCCgjGpczInrKZvzBhc\"",
+            "Access-Control-Allow-Origin",
+            "*",
+            "Content-Security-Policy",
+            "default-src 'self';base-uri 'self';block-all-mixed-content;font-src 'self' https: data:;frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests",
+            "X-DNS-Prefetch-Control",
+            "off",
+            "Expect-CT",
+            "max-age=0",
+            "X-Frame-Options",
+            "SAMEORIGIN",
+            "Strict-Transport-Security",
+            "max-age=15552000; includeSubDomains",
+            "X-Download-Options",
+            "noopen",
+            "X-Content-Type-Options",
+            "nosniff",
+            "X-Permitted-Cross-Domain-Policies",
+            "none",
+            "Referrer-Policy",
+            "no-referrer",
+            "X-XSS-Protection",
+            "0",
+            "X-Azure-Ref",
+            "0TUpHYAAAAAA08bcf6S4BQLJQAEX6Nb/oUFJBRURHRTEzMTMANDIyZWYzYzMtODQ2YS00NWQzLWFiYzEtYWQ1MjcyYjE5OGQ5",
+            "Date",
+            "Tue, 09 Mar 2021 10:13:33 GMT",
+            "Connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    }
+]

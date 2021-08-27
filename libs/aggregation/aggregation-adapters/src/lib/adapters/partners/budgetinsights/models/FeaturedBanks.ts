@@ -1,0 +1,11 @@
+export const featuredBanks = [
+  'de508df8-aa37-537e-a05f-1379526dfa84',
+  '13949b61-e3e6-50ed-9d82-451943ec35d0',
+  'd840908d-5157-5819-8296-474fa4534564',
+  'f711dd7a-6289-5bda-b3a4-f2febda8c046',
+  '07d76adf-ae35-5b38-aca8-67aafba13169',
+  '33f88657-7ab0-5dbe-b8c3-c98e614afc28',
+  'fc6e059f-c3e6-52d7-8139-6e5e0297fe24',
+  'ad5928c7-89ce-5977-a66d-3360e3aa4029',
+  'f5c29767-1bc8-5337-9e4e-68a0fbd91c9a',
+];

@@ -1,0 +1,12 @@
+{
+  "extends": "<%= offsetFromRoot %>tsconfig.base.json",
+  "compilerOptions": {
+    "types": ["jest", "node"],
+    "allowJs": true,
+    "outDir": "../../../dist",
+    "module": "commonjs",
+    "resolveJsonModule": true,
+    "skipLibCheck": true
+  },
+  "include": ["**/*.ts", "**/*.json", "tools/*.js"]
+}

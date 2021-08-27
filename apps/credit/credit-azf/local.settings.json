@@ -1,0 +1,24 @@
+{
+  "IsEncrypted": false,
+  "Values": {
+    "NODE_ENV": "development",
+    "FUNCTIONS_WORKER_RUNTIME": "node",
+    "AzureWebJobsStorage": "UseDevelopmentStorage=true",
+    "ODB_PAYMENT_RETRY_DELAY": 500,
+    "ODB_PAYMENT_MAX_RETRIES": 3,
+    "ODB_PAYMENT_BASE_URL": "https://dev-api.onbadi.com/payment",
+    "SCHEDULE_FREQUENCY": "0,30 * * * * *",
+    "CLOSE_CONTRACT_FREQUENCY": "0,30 * * * * *",
+    "dbProvider": "mongodb://root:password@localhost:27017/credit?authSource=admin",
+    "odbPaymentAuthKey": "bWFsYWlrYTpzdXBlcnNlY3JldA==",
+    "serviceBusConnectionString": "connectionStringToReplace",
+    "SCHEDULER_FUNCTION_BUS_SUBSCRIPTION": "credit-azf-subscription-test",
+    "SCHEDULER_FUNCTION_TOPIC": "odb_credit_topic"
+
+  },
+  "Host": {
+    "LocalHttpPort": 7071,
+    "CORS": "*",
+    "CORSCredentials": false
+  }
+}

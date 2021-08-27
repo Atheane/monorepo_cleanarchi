@@ -1,0 +1,24 @@
+{
+  "IsEncrypted": false,
+  "Values": {
+    "FUNCTIONS_WORKER_RUNTIME": "node",
+    "NODE_ENV": "production",
+    "AzureWebJobsStorage": "UseDevelopmentStorage=true",
+
+    "AUTH_KEY_VAULT_URI": "",
+    "FIREBASE_BASE_URL": "",
+    "PUSH_SUBSCRIPTION_POLICY": "",
+    "SMS_SUBSCRIPTION_POLICY": "",
+    "PDF_SUBSCRIPTION_POLICY": "",
+
+    "TWILIO_SID": "",
+    "TWILIO_TOKEN": "",
+
+    "FROM_EMAIL_ADDRESS": "noreply@dev.bank.oney.com",
+    "EMAIL_SUBSCRIPTION_POLICY": "",
+    "EMAIL_SENDGRID_KEY": "",
+
+    "BLOB_STORAGE_CS": "",
+    "BLOB_STORAGE_CONTAINER_NAME": "documents"
+  }
+}

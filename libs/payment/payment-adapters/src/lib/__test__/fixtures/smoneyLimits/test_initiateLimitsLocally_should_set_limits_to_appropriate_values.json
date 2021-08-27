@@ -1,0 +1,65 @@
+[
+    {
+        "scope": "https://sb-api.xpollens.com:443",
+        "method": "PUT",
+        "path": "/api/V1.1/users/tstUsr106/limits",
+        "body": {
+            "GlobalIn": {
+                "AnnualAllowance": 4500000,
+                "MonthlyAllowance": 300000,
+                "WeeklyAllowance": 300000
+            },
+            "GlobalOut": {
+                "AnnualAllowance": 4500000,
+                "MonthlyAllowance": 100000,
+                "WeeklyAllowance": 100000
+            },
+            "BalanceLimit": 100000
+        },
+        "status": 200,
+        "response": {
+            "GlobalIn": {
+                "AnnualAllowance": 4500000,
+                "UsedAllowance": 0,
+                "RenewalDate": null,
+                "MonthlyAllowance": 300000,
+                "MonthlyUsedAllowance": 0,
+                "MonthlyRenewalDate": null,
+                "WeeklyAllowance": null,
+                "WeeklyUsedAllowance": 0,
+                "WeeklyRenewalDate": null
+            },
+            "GlobalOut": {
+                "AnnualAllowance": 4500000,
+                "UsedAllowance": 0,
+                "RenewalDate": null,
+                "MonthlyAllowance": 100000,
+                "MonthlyUsedAllowance": 0,
+                "MonthlyRenewalDate": null,
+                "WeeklyAllowance": null,
+                "WeeklyUsedAllowance": 0,
+                "WeeklyRenewalDate": null
+            },
+            "BalanceLimit": 100000
+        },
+        "rawHeaders": [
+            "Date",
+            "Wed, 21 Apr 2021 13:00:15 GMT",
+            "Content-Type",
+            "application/json; charset=utf-8",
+            "Content-Length",
+            "474",
+            "Cache-Control",
+            "no-cache",
+            "Pragma",
+            "no-cache",
+            "Expires",
+            "-1",
+            "Request-Context",
+            "appId=cid-v1:40d43092-8aee-4b2b-8b7f-34d2d69e09b7",
+            "Connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    }
+]

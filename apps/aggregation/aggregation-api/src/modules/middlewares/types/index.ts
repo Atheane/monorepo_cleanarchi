@@ -1,0 +1,1 @@
+export { AuthentifiedRequest } from './AuthentifiedRequest';

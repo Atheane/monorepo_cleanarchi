@@ -1,0 +1,177 @@
+import { ScheduleKey } from '@oney/credit-messages';
+import { BankAccountType, SplitProduct } from '../../../../core/src/domain/types';
+
+export type TagMapProperties = {
+  ref: number;
+  outstandingCode: string;
+  operationCodeType: string;
+  productCode: string;
+  countryCode: string;
+  subscriptionMontlyNumber: Omit<ScheduleKey, 'fee' | 'funding'>;
+  senderType: BankAccountType;
+  beneficiaryType: BankAccountType;
+  checkLimits: boolean;
+  checkUnPaid: boolean;
+  generateUnpaid?: boolean;
+  verifyLimits?: boolean;
+  generatedTag?: string;
+  key?: string;
+  label?: string;
+};
+
+export const P2PReferences: TagMapProperties[] = [
+  {
+    ref: 1,
+    outstandingCode: '',
+    operationCodeType: 'ECHEANCE3X',
+    productCode: SplitProduct.DF003,
+    countryCode: 'FRA',
+    subscriptionMontlyNumber: ScheduleKey.M1,
+    senderType: BankAccountType.USER_ACCOUNT,
+    beneficiaryType: BankAccountType.CREDIT_ACCOUNT,
+    checkLimits: false,
+    checkUnPaid: false,
+    key: `${SplitProduct.DF003} ${ScheduleKey.M1}`,
+    label: 'échéance 1 fractionnement en 3x',
+  },
+  {
+    ref: 61,
+    outstandingCode: '',
+    operationCodeType: 'ECHEANCE3X',
+    productCode: SplitProduct.DF003,
+    countryCode: 'FRA',
+    subscriptionMontlyNumber: ScheduleKey.M2,
+    senderType: BankAccountType.USER_ACCOUNT,
+    beneficiaryType: BankAccountType.CREDIT_ACCOUNT,
+    checkLimits: false,
+    checkUnPaid: false,
+    key: `${SplitProduct.DF003} ${ScheduleKey.M2}`,
+    label: 'échéance 2 fractionnement en 3x',
+  },
+  {
+    ref: 62,
+    outstandingCode: '',
+    operationCodeType: 'ECHEANCE3X',
+    productCode: SplitProduct.DF003,
+    countryCode: 'FRA',
+    subscriptionMontlyNumber: ScheduleKey.M3,
+    senderType: BankAccountType.USER_ACCOUNT,
+    beneficiaryType: BankAccountType.CREDIT_ACCOUNT,
+    checkLimits: false,
+    checkUnPaid: false,
+    key: `${SplitProduct.DF003} ${ScheduleKey.M3}`,
+    label: 'échéance 3 fractionnement en 3x',
+  },
+  {
+    ref: 2,
+    outstandingCode: '',
+    operationCodeType: 'ECHEANCE4X',
+    productCode: SplitProduct.DF004,
+    countryCode: 'FRA',
+    subscriptionMontlyNumber: ScheduleKey.M1,
+    senderType: BankAccountType.USER_ACCOUNT,
+    beneficiaryType: BankAccountType.CREDIT_ACCOUNT,
+    checkLimits: false,
+    checkUnPaid: false,
+    key: `${SplitProduct.DF004} ${ScheduleKey.M1}`,
+    label: 'échéance 1 fractionnement en 4x',
+  },
+  {
+    ref: 63,
+    outstandingCode: '',
+    operationCodeType: 'ECHEANCE4X',
+    productCode: SplitProduct.DF004,
+    countryCode: 'FRA',
+    subscriptionMontlyNumber: ScheduleKey.M2,
+    senderType: BankAccountType.USER_ACCOUNT,
+    beneficiaryType: BankAccountType.CREDIT_ACCOUNT,
+    checkLimits: false,
+    checkUnPaid: false,
+    key: `${SplitProduct.DF004} ${ScheduleKey.M2}`,
+    label: 'échéance 2 fractionnement en 4x',
+  },
+  {
+    ref: 64,
+    outstandingCode: '',
+    operationCodeType: 'ECHEANCE4X',
+    productCode: SplitProduct.DF004,
+    countryCode: 'FRA',
+    subscriptionMontlyNumber: ScheduleKey.M3,
+    senderType: BankAccountType.USER_ACCOUNT,
+    beneficiaryType: BankAccountType.CREDIT_ACCOUNT,
+    checkLimits: false,
+    checkUnPaid: false,
+    key: `${SplitProduct.DF004} ${ScheduleKey.M3}`,
+    label: 'échéance 3 fractionnement en 4x',
+  },
+  {
+    ref: 65,
+    outstandingCode: '',
+    operationCodeType: 'ECHEANCE4X',
+    productCode: SplitProduct.DF004,
+    countryCode: 'FRA',
+    subscriptionMontlyNumber: ScheduleKey.M4,
+    senderType: BankAccountType.USER_ACCOUNT,
+    beneficiaryType: BankAccountType.CREDIT_ACCOUNT,
+    checkLimits: false,
+    checkUnPaid: false,
+    key: `${SplitProduct.DF004} ${ScheduleKey.M4}`,
+    label: 'échéance 4 fractionnement en 4x',
+  },
+  {
+    ref: 37,
+    outstandingCode: '',
+    operationCodeType: 'FRAIS FRACTIONMT3X',
+    productCode: 'FRAIS',
+    countryCode: 'FRA',
+    subscriptionMontlyNumber: ScheduleKey.M1,
+    senderType: BankAccountType.USER_ACCOUNT,
+    beneficiaryType: BankAccountType.BILLING_ACCOUNT,
+    checkLimits: false,
+    checkUnPaid: false,
+    key: `${SplitProduct.DF003} ${ScheduleKey.FEE}`,
+    label: 'Frais de fractionnement 3x',
+  },
+  {
+    ref: 38,
+    outstandingCode: '',
+    operationCodeType: 'FRAIS FRACTIONMT4X',
+    productCode: 'FRAIS',
+    countryCode: 'FRA',
+    subscriptionMontlyNumber: ScheduleKey.M1,
+    senderType: BankAccountType.USER_ACCOUNT,
+    beneficiaryType: BankAccountType.BILLING_ACCOUNT,
+    checkLimits: false,
+    checkUnPaid: false,
+    key: `${SplitProduct.DF004} ${ScheduleKey.FEE}`,
+    label: 'Frais de fractionnement 4x',
+  },
+  {
+    ref: 7,
+    outstandingCode: '',
+    operationCodeType: 'FINANCEMENT3X',
+    productCode: SplitProduct.DF003,
+    countryCode: 'FRA',
+    subscriptionMontlyNumber: '000',
+    senderType: BankAccountType.CREDIT_ACCOUNT,
+    beneficiaryType: BankAccountType.USER_ACCOUNT,
+    checkLimits: false,
+    checkUnPaid: false,
+    key: `${SplitProduct.DF003} ${ScheduleKey.FUNDING}`,
+    label: 'Financement 3x',
+  },
+  {
+    ref: 8,
+    outstandingCode: '',
+    operationCodeType: 'FINANCEMENT4X',
+    productCode: SplitProduct.DF004,
+    countryCode: 'FRA',
+    subscriptionMontlyNumber: '000',
+    senderType: BankAccountType.CREDIT_ACCOUNT,
+    beneficiaryType: BankAccountType.USER_ACCOUNT,
+    checkLimits: false,
+    checkUnPaid: false,
+    key: `${SplitProduct.DF004} ${ScheduleKey.FUNDING}`,
+    label: 'Financement 4x',
+  },
+];

@@ -1,0 +1,87 @@
+[
+    {
+        "scope": "https://sb-api.xpollens.com:443",
+        "method": "POST",
+        "path": "/api/V1.1/cards/card-BGBpCxjZO/hmac",
+        "body": {
+            "RSAPublicKey": "LS0tLS1CRUdJTiBQVUJMSUMgS0VZLS0tLS0KTUlJQ0lqQU5CZ2txaGtpRzl3MEJBUUVGQUFPQ0FnOEFNSUlDQ2dLQ0FnRUE1YnQ3UzZvSy9kNldNdUZvQk9SNktKcnJyc1oxRWhtR3VIMnRMMkc4T1d6UmY4L1ltaHRxY3NXQWxIU3pQRHJUeDdxbktVUWRObFVHN1hGVEswanZoWnduazVpcVh6WEJsSElaakFHTklLcXFOcG5KSkt6SHYreUhPNGdFY3dEQVFtZUdSbVNkMVRkcGlhKzlSNUtKOEJsMFZPUSttb3FBTjhQL1ZnQUFla2d0U3ZqbHl1UURjTm9qVEFZVEp0RjRkYnR4YldJcHM3U3FPckFNUFJySmNGeUs5dzFSVUxKeElIQnFFdzJQYTRVVldFeUE0djRmYm44VGlNcjNpOU9MZURFdERnZElOLys5aHduRng2Wm5nZnBEK3IrQ210WS9yY0ljYUZBYWN3emJFaDBDdERCL1loVUh2c3lUeXU3SjZYN0xzaFU5dVdkMUJEWWwvNUwxK3o2QnRaQjgvaUtQT1lpMHNNM2tRZDNWUWh1QXFHaXJpOUZVZGNmeVNMM2NSRlc4di9Ma0tYL1JWL29NOW5RNmpNajZmd0pIcmdGYnNybU9JQVhyNXV4ZWxkUExJTlB2RVplRFBpVEx4TnlodUkyN1lMYnZZNFllbmtoek93ZkRSOS82dEFkWFJDSitraVBTUXUwa1hvbjByY1o5WlkxY1FZWDlUSUg2MUxJUnJMWEpHdGFuL1BYVnpnY1IvVXlGUXFXamJJVlIvZFVVdi9mUzRwWFUrUEp3TUNzdWZsQXlwbTFpOEJwVk5zejA1amw4RlV6T1ZQNUFUeTdQNkZNNlA0d1NjRHphWnpCaVkvSFU2Nm9mbVZJQ2p2M0d3dHkxTnYrVnhUdTQwSUsyZmo4NzZvNHduNU5Ma0swMCtFUEVZYjFrYUFvRExkV290dnNhOU9QdHdpRUNBd0VBQVE9PQotLS0tLUVORCBQVUJMSUMgS0VZLS0tLS0=",
+            "HmacData": "MzMzMDMwMzAzNzMxMzIzODM2MzkzMDMwMzAzMDMyNzkzMjQzMzU1MjQzNDE1NDc1NTU1NzQzNjQzNzMxNkY1QTRGNzA3MzZENDEzMTM2MzEzOTMwMzIzMTM3MzkzNg=="
+        },
+        "status": 200,
+        "response": {
+            "TransactionIdentifier": "213514",
+            "cardIDToken": "             card-BGBpCxjZO",
+            "signKeyIndex": null,
+            "encryptKeyIndex": null,
+            "signature": null,
+            "buffer": {
+                "encryptedData": "LdeMdlL6JhPjvmTmc/SkRFzXIOQdpNZRB2bMkkTNvKE91hiNTFX1rADCbjwRoWuqEjV4mza3SGANxN++6oBjqKRTONRi2huSkeweyjU2ye534ch8MWtK5WFErdqWMw8qTaIfX4rWXHliM709xmWmh/v6i/QXWr2sX6skvSC2EKFGW1+OYshQ8IjPanrsvmgNtOzYe5PiRXA7droCd8T+sPrDB1ddy4XSzLC/JzPInTzeInVbKAn+AhxcWjnygEZqWcoJmoDUNU+PjVMkBVNGePGKPfLaKxaSeQUiDkx3/s9sqkSyqP+Fij2Q8pxPcz0CXF0rnVxjcPrEbhbruvrJ3kVbIutBUx+KMBiWWVpz1NPDPTmZbjLubd/u4vsj115PMCKdCs8lFX4zV/JgQ0HX/7NpeJawA5VLr/tPwn7AvYgnWt2oR3h3u4tJ82yDA/oSTI3uOzKnI32ASD8/xQmtfuzuh9yjEUCXnKDMmZ6iW4r60bkPu0Vl7aalPjgdzCe2U3GWTmxYHUsPrcisSGo3AjyL7u8DEpd8J/W28fhgB3T1G6QUTSnZtb0L9D8yjKE7QHIV0+G6jiezWs9HeBjjKDtiZUMB7qFPxnAPlCFXAxElZD2/yB+BlQMQ3Q2GWyY/iL1R8pto3Wce7mh/xjsN3l7kqSCHxjX6j7lG0xFfpZg="
+            },
+            "IsSuccess": true
+        },
+        "rawHeaders": [
+            "Date",
+            "Tue, 27 Apr 2021 08:51:36 GMT",
+            "Content-Type",
+            "application/json; charset=utf-8",
+            "Content-Length",
+            "869",
+            "Cache-Control",
+            "private",
+            "Request-Context",
+            "appId=cid-v1:40d43092-8aee-4b2b-8b7f-34d2d69e09b7",
+            "Connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "http://127.0.0.1:60807",
+        "method": "POST",
+        "path": "/payment/accounts/UpmekTXcJ/card/card-BGBpCxjZO/hmac",
+        "body": {
+            "rsaPublicKey": "LS0tLS1CRUdJTiBQVUJMSUMgS0VZLS0tLS0KTUlJQ0lqQU5CZ2txaGtpRzl3MEJBUUVGQUFPQ0FnOEFNSUlDQ2dLQ0FnRUE1YnQ3UzZvSy9kNldNdUZvQk9SNktKcnJyc1oxRWhtR3VIMnRMMkc4T1d6UmY4L1ltaHRxY3NXQWxIU3pQRHJUeDdxbktVUWRObFVHN1hGVEswanZoWnduazVpcVh6WEJsSElaakFHTklLcXFOcG5KSkt6SHYreUhPNGdFY3dEQVFtZUdSbVNkMVRkcGlhKzlSNUtKOEJsMFZPUSttb3FBTjhQL1ZnQUFla2d0U3ZqbHl1UURjTm9qVEFZVEp0RjRkYnR4YldJcHM3U3FPckFNUFJySmNGeUs5dzFSVUxKeElIQnFFdzJQYTRVVldFeUE0djRmYm44VGlNcjNpOU9MZURFdERnZElOLys5aHduRng2Wm5nZnBEK3IrQ210WS9yY0ljYUZBYWN3emJFaDBDdERCL1loVUh2c3lUeXU3SjZYN0xzaFU5dVdkMUJEWWwvNUwxK3o2QnRaQjgvaUtQT1lpMHNNM2tRZDNWUWh1QXFHaXJpOUZVZGNmeVNMM2NSRlc4di9Ma0tYL1JWL29NOW5RNmpNajZmd0pIcmdGYnNybU9JQVhyNXV4ZWxkUExJTlB2RVplRFBpVEx4TnlodUkyN1lMYnZZNFllbmtoek93ZkRSOS82dEFkWFJDSitraVBTUXUwa1hvbjByY1o5WlkxY1FZWDlUSUg2MUxJUnJMWEpHdGFuL1BYVnpnY1IvVXlGUXFXamJJVlIvZFVVdi9mUzRwWFUrUEp3TUNzdWZsQXlwbTFpOEJwVk5zejA1amw4RlV6T1ZQNUFUeTdQNkZNNlA0d1NjRHphWnpCaVkvSFU2Nm9mbVZJQ2p2M0d3dHkxTnYrVnhUdTQwSUsyZmo4NzZvNHduNU5Ma0swMCtFUEVZYjFrYUFvRExkV290dnNhOU9QdHdpRUNBd0VBQVE9PQotLS0tLUVORCBQVUJMSUMgS0VZLS0tLS0=",
+            "hmacData": "MzMzMDMwMzAzNzMxMzIzODM2MzkzMDMwMzAzMDMyNzkzMjQzMzU1MjQzNDE1NDc1NTU1NzQzNjQzNzMxNkY1QTRGNzA3MzZENDEzMTM2MzEzOTMwMzIzMTM3MzkzNg=="
+        },
+        "status": 200,
+        "response": {
+            "encryptedData": "LdeMdlL6JhPjvmTmc/SkRFzXIOQdpNZRB2bMkkTNvKE91hiNTFX1rADCbjwRoWuqEjV4mza3SGANxN++6oBjqKRTONRi2huSkeweyjU2ye534ch8MWtK5WFErdqWMw8qTaIfX4rWXHliM709xmWmh/v6i/QXWr2sX6skvSC2EKFGW1+OYshQ8IjPanrsvmgNtOzYe5PiRXA7droCd8T+sPrDB1ddy4XSzLC/JzPInTzeInVbKAn+AhxcWjnygEZqWcoJmoDUNU+PjVMkBVNGePGKPfLaKxaSeQUiDkx3/s9sqkSyqP+Fij2Q8pxPcz0CXF0rnVxjcPrEbhbruvrJ3kVbIutBUx+KMBiWWVpz1NPDPTmZbjLubd/u4vsj115PMCKdCs8lFX4zV/JgQ0HX/7NpeJawA5VLr/tPwn7AvYgnWt2oR3h3u4tJ82yDA/oSTI3uOzKnI32ASD8/xQmtfuzuh9yjEUCXnKDMmZ6iW4r60bkPu0Vl7aalPjgdzCe2U3GWTmxYHUsPrcisSGo3AjyL7u8DEpd8J/W28fhgB3T1G6QUTSnZtb0L9D8yjKE7QHIV0+G6jiezWs9HeBjjKDtiZUMB7qFPxnAPlCFXAxElZD2/yB+BlQMQ3Q2GWyY/iL1R8pto3Wce7mh/xjsN3l7kqSCHxjX6j7lG0xFfpZg=",
+            "isSuccess": true
+        },
+        "rawHeaders": [
+            "Access-Control-Allow-Origin",
+            "*",
+            "Content-Security-Policy",
+            "default-src 'self';base-uri 'self';block-all-mixed-content;font-src 'self' https: data:;frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests",
+            "X-DNS-Prefetch-Control",
+            "off",
+            "Expect-CT",
+            "max-age=0",
+            "X-Frame-Options",
+            "SAMEORIGIN",
+            "Strict-Transport-Security",
+            "max-age=15552000; includeSubDomains",
+            "X-Download-Options",
+            "noopen",
+            "X-Content-Type-Options",
+            "nosniff",
+            "X-Permitted-Cross-Domain-Policies",
+            "none",
+            "Referrer-Policy",
+            "no-referrer",
+            "X-XSS-Protection",
+            "0",
+            "Content-Type",
+            "application/json; charset=utf-8",
+            "Content-Length",
+            "721",
+            "ETag",
+            "W/\"2d1-pTAdyHUFDRr3Fgj/W66e+YGZixk\"",
+            "Date",
+            "Tue, 27 Apr 2021 08:51:36 GMT",
+            "Connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    }
+]

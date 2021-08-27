@@ -1,0 +1,32 @@
+{
+  "IsEncrypted": false,
+  "Values": {
+    "NODE_ENV": "development",
+    "AzureWebJobsStorage": "UseDevelopmentStorage=true",
+    "FUNCTIONS_WORKER_RUNTIME": "node",
+    "ODB_STATEMENTS_GENERATED_STATEMENT_TOPIC": "topic_odb-transactions-generated_statement",
+    "ODB_FRONT_DOOR_URL": "https://dev-api.onbadi.com",
+    "ODB_DB_PFM_NAME": "odb_pfm",
+    "ODB_DB_ACCOUNT_NAME": "odb_account",
+    "ODB_DB_EVENT_STORE_NAME": "odb_eventstore",
+    "ODB_DB_TRANSACTION_NAME": "odb_transactions",
+    "SMONEY_API_URL": "https://sb-api.xpollens.com/api/v1.0",
+    "SCHEDULE_FREQUENCY": "0 0 2 4 1/1 *",
+    "smoneyToken": "MTM7MTg7NVVjUUk2UTFONw==",
+    "cosmosDbConnectionString": "mongodb://odb-data-dev:Z0bExsN1rWDMIo8vrPuzGNAyz73qfk4qxkuk3xkdfFHd5Fk4YVlpYcMZN7Rx8kECrjHnbRrJhpnFSUd9p5zKpw==@odb-data-dev.mongo.cosmos.azure.com:10255/?retrywrites=false&ssl=true&replicaSet=globaldb&maxIdleTimeMS=120000&appName=@odb-data-dev@",
+    "busConnectionString": "Endpoint=sb://odb-bus-dev.servicebus.windows.net/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=Hwricl9f9o24h7gKmjMHiNTOblygbauoppxlKM1oiDY=",
+    "jwtSignatureKey": "weshpoto",
+    "SERVICE_BUS_SUBSCRIPTION": "odb_sub_pfm",
+    "SERVICE_BUS_PAYMENT_TOPIC": "odb_payment_topic",
+    "SERVICE_BUS_PFM_TOPIC": "odb_pfm_topic",
+    "SERVICE_BUS_PFM_STATEMENT_TOPIC": "topic_odb-pfm-generate_rdc",
+    "RDC_SUBSCRIPTION_POLICY": "Endpoint=sb://odb-bus-dev.servicebus.windows.net/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=Hwricl9f9o24h7gKmjMHiNTOblygbauoppxlKM1oiDY=",
+    "DB_CONNECTION_POOL_SIZE": "5",
+    "DB_CONNECTION_MAX_POOL_SIZE": "10"
+  },
+  "Host": {
+    "LocalHttpPort": 7071,
+    "CORS": "*",
+    "CORSCredentials": false
+  }
+}

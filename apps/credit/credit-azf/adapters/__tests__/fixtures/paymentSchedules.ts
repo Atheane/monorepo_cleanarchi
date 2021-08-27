@@ -1,0 +1,137 @@
+import { ContractStatus, PaymentStatus, SplitProduct } from '../../../core/src/domain/types';
+
+export const paymentSchedules = [
+  {
+    id: 'paymentScheduleId1',
+    bankAccountId: '1388',
+    userId: 'K-oZktdWv',
+    status: ContractStatus.IN_PROGRESS,
+    contractNumber: 'azeaze',
+    productCode: SplitProduct.DF003,
+    initialTransactionId: 'azeacabjshkj',
+    fundingExecution: {
+      key: 'funding',
+      amount: 399,
+      dueDate: new Date('1994-04-21T00:00:00.000Z'),
+      status: PaymentStatus.PAID,
+      transactionId: 'CDCEDE14204',
+      paymentDate: new Date('1994-04-21T00:00:00.000Z'),
+    },
+    paymentsExecution: [
+      {
+        key: 'fee',
+        amount: 5.79,
+        dueDate: new Date('1994-04-21T00:00:00.000Z'),
+        status: PaymentStatus.PAID,
+        transactionId: 'DDFEDE10232',
+        paymentDate: new Date('1994-04-21T00:00:00.000Z'),
+      },
+      {
+        key: '001',
+        amount: 133,
+        dueDate: new Date('1994-04-21T00:00:00.000Z'),
+        status: PaymentStatus.PAID,
+        transactionId: 'BDDBFC13014',
+        paymentDate: new Date('1994-04-21T00:00:00.000Z'),
+      },
+      {
+        key: '002',
+        amount: 133,
+        dueDate: new Date('1994-05-21T00:00:00.000Z'),
+        status: PaymentStatus.TODO,
+      },
+      {
+        key: '003',
+        amount: 133,
+        dueDate: new Date('1994-06-21T00:00:00.000Z'),
+        status: PaymentStatus.TODO,
+      },
+    ],
+  },
+  {
+    id: 'paymentScheduleId2',
+    bankAccountId: '1388',
+    userId: 'K-oZktdWv',
+    status: ContractStatus.IN_PROGRESS,
+    contractNumber: 'kqsdkjhqsdhjk',
+    productCode: SplitProduct.DF003,
+    fundingExecution: {
+      key: 'funding',
+      amount: 399,
+      dueDate: new Date('1994-05-21T00:00:00.000Z'),
+      status: PaymentStatus.TODO,
+    },
+    paymentsExecution: [
+      {
+        key: 'fee',
+        amount: 5.79,
+        dueDate: new Date('1994-05-21T00:00:00.000Z'),
+        status: PaymentStatus.TODO,
+      },
+      {
+        key: '001',
+        amount: 133,
+        dueDate: new Date('1994-05-21T00:00:00.000Z'),
+        status: PaymentStatus.TODO,
+      },
+      {
+        key: '002',
+        amount: 133,
+        dueDate: new Date('1994-06-21T00:00:00.000Z'),
+        status: PaymentStatus.TODO,
+      },
+      {
+        key: '003',
+        amount: 133,
+        dueDate: new Date('1994-07-21T00:00:00.000Z'),
+        status: PaymentStatus.TODO,
+      },
+    ],
+  },
+  {
+    id: 'paymentScheduleId3',
+    bankAccountId: '3177',
+    userId: 'zCDOH_UvA',
+    status: ContractStatus.IN_PROGRESS,
+    contractNumber: 'azeazeaezqsdaz',
+    productCode: SplitProduct.DF004,
+    fundingExecution: {
+      key: 'funding',
+      amount: 300,
+      dueDate: new Date('1994-05-21T00:00:00.000Z'),
+      status: PaymentStatus.TODO,
+    },
+    paymentsExecution: [
+      {
+        key: 'fee',
+        amount: 6.6,
+        dueDate: new Date('1994-05-21T00:00:00.000Z'),
+        status: PaymentStatus.TODO,
+      },
+      {
+        key: '001',
+        amount: 75,
+        dueDate: new Date('1994-05-21T00:00:00.000Z'),
+        status: PaymentStatus.TODO,
+      },
+      {
+        key: '002',
+        amount: 75,
+        dueDate: new Date('1994-06-21T00:00:00.000Z'),
+        status: PaymentStatus.TODO,
+      },
+      {
+        key: '003',
+        amount: 75,
+        dueDate: new Date('1994-07-21T00:00:00.000Z'),
+        status: PaymentStatus.TODO,
+      },
+      {
+        key: '004',
+        amount: 75,
+        dueDate: new Date('1994-08-21T00:00:00.000Z'),
+        status: PaymentStatus.TODO,
+      },
+    ],
+  },
+];

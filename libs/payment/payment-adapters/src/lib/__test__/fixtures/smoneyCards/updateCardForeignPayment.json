@@ -1,0 +1,45 @@
+[
+    {
+        "scope": "https://sb-api.xpollens.com:443",
+        "method": "PUT",
+        "path": "/api/V1.1/users/zCDOH_UvA/cards/card-BjHjzuN5V",
+        "body": {
+            "Blocked": 1,
+            "ForeignPaymentBlocked": 1,
+            "InternetPaymentBlocked": 0,
+            "CardLimits": {
+                "ATMWeeklyAllowance": 300,
+                "MonthlyAllowance": 1000
+            }
+        },
+        "status": 200,
+        "response": {
+            "Name": null,
+            "CardLimits": {
+                "Transaction": null,
+                "ATMWeeklyAllowance": 300,
+                "ATMWeeklyUsedAllowance": 0,
+                "MonthlyAllowance": 1000,
+                "MonthlyUsedAllowance": 0
+            },
+            "Blocked": 1,
+            "ForeignPaymentBlocked": 1,
+            "InternetPaymentBlocked": 0
+        },
+        "rawHeaders": [
+            "Date",
+            "Mon, 30 Nov 2020 09:49:14 GMT",
+            "Content-Type",
+            "application/json; charset=utf-8",
+            "Content-Length",
+            "213",
+            "Connection",
+            "close",
+            "Server",
+            "Kestrel",
+            "Request-Context",
+            "appId=cid-v1:40d43092-8aee-4b2b-8b7f-34d2d69e09b7"
+        ],
+        "responseIsBinary": false
+    }
+]

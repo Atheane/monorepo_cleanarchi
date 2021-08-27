@@ -1,0 +1,29 @@
+[
+    {
+        "scope": "https://sb-api.xpollens.com:443",
+        "method": "GET",
+        "path": "/api/V1.1/cardoperations/clearingreport/1003",
+        "body": "",
+        "status": 200,
+        "response": {
+            "callback_type": 24,
+            "batch_reference": 1003,
+            "clearings": []
+        },
+        "rawHeaders": [
+            "Date",
+            "Fri, 16 Apr 2021 12:21:10 GMT",
+            "Content-Type",
+            "application/json; charset=utf-8",
+            "Content-Length",
+            "75",
+            "Cache-Control",
+            "private",
+            "Request-Context",
+            "appId=cid-v1:40d43092-8aee-4b2b-8b7f-34d2d69e09b7",
+            "Connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    }
+]

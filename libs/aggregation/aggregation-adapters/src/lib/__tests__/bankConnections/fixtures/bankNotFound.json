@@ -1,0 +1,33 @@
+[
+    {
+        "scope": "https://oney-dev-sandbox.biapi.pro:443",
+        "method": "GET",
+        "path": "/2.0/connectors/null?capabilities=bank&expand=fields,logos",
+        "body": "",
+        "status": 404,
+        "response": "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 3.2 Final//EN\">\n<title>404 Not Found</title>\n<h1>Not Found</h1>\n<p>The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again.</p>\n",
+        "rawHeaders": [
+            "Date",
+            "Thu, 08 Apr 2021 08:01:13 GMT",
+            "Content-Type",
+            "text/html; charset=utf-8",
+            "Content-Length",
+            "233",
+            "Connection",
+            "close",
+            "Vary",
+            "Authorization,Origin",
+            "Server",
+            "Budgea/2.21.18 Weboob/1.6+budgea.878",
+            "X-Recruiting",
+            "Budget Insight is hiring! Do not hesitate to contact us at jobs@budget-insight.com or on #budget-insight @ Freenode",
+            "X-Request-ID",
+            "a681dbd0-ccb1-448d-ae09-eecfe192b9ff",
+            "Strict-Transport-Security",
+            "max-age=31536000; includeSubDomains; preload",
+            "X-Frame-Options",
+            "DENY"
+        ],
+        "responseIsBinary": false
+    }
+]

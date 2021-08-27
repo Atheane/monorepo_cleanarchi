@@ -1,0 +1,57 @@
+[
+    {
+      "scope": "http://localhost:3022",
+      "method": "GET",
+      "path": "/payment/user/AWzclPFyN/bankaccount",
+      "status": 200,
+      "response": {
+        "bankAccountId": "3915",
+        "beneficiaries": [],
+        "bic": "BACCFR23XXX",
+        "cards": [],
+        "debts": [],
+        "iban": "FR0512869000020PC0000030Q63",
+        "uid": "zARoItBES"
+      },
+      "rawHeaders": [
+        "Content-Length",
+        "182",
+        "Content-Type",
+        "application/json; charset=UTF-8",
+        "X-Oney-SSL",
+        "off",
+        "X-Oney-Message-Id",
+        "e1dcc7f2-d084-4ced-aa7d-8858067d8b4e",
+        "Date",
+        "Thu, 21 Jan 2021 18:13:37 GMT",
+        "Connection",
+        "close"
+      ],
+      "responseIsBinary": false
+    },
+    {
+        "scope": "https://api-staging.oney.io:443",
+        "method": "PUT",
+        "path": "/b2b/customers/v2/contracts_references/PAYMENT_ACCOUNT/3915",
+        "body": {"contract_reference":{"type_code":"CAPPED","subscription_date":"2021-02-18","payment_account_contract_references":{"start_date":"2021-02-18"}}},
+        "status": 200,
+        "response": 	{"$resourceID":"PAYMENT_ACCOUNT","$path":"3915","contract_reference":{"type_code":"CAPPED","subscription_date":"2021-02-18","payment_account_contract_references":{"start_date":"2021-02-18"}}},
+        "rawHeaders": [
+            "Content-Length",
+            "353",
+            "Content-Type",
+            "application/json; charset=UTF-8",
+            "X-Oney-SSL",
+            "on",
+            "X-Oney-TTS",
+            "l1rqt=1615818955,l1rpt=1615818957",
+            "X-Oney-Message-Id",
+            "6a8a4367-c790-4612-8a77-7a7eb9f2a79f",
+            "Date",
+            "Mon, 15 Mar 2021 14:35:57 GMT",
+            "Connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    }
+]

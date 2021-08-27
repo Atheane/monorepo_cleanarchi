@@ -1,0 +1,8 @@
+{
+  "name": "@oney/profile-messages",
+  "version": "0.17.0",
+  "publishConfig": {
+    "access": "public",
+    "directory": "../../../dist/libs/profile-messages"
+  }
+}

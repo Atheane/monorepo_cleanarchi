@@ -1,0 +1,9 @@
+{
+  "name": "@oney/mongoose",
+  "version": "0.1.0",
+  "config": {
+    "mongodbMemoryServer": {
+      "version": "latest"
+    }
+  }
+}

@@ -1,0 +1,30 @@
+[
+    {
+        "scope": "https://api-staging.fr.oney.io:443",
+        "method": "POST",
+        "path": "/risks_management/bdf/v2/ficp_requests/24424939/reply",
+        "body": {
+            "request_cause_code": "BQ_DIGIT"
+        },
+        "status": 200,
+        "response": {
+            "ficp_flag": "0",
+            "namesake_flag": "0"
+        },
+        "rawHeaders": [
+            "Content-Length",
+            "37",
+            "Content-Type",
+            "application/json; charset=UTF-8",
+            "X-Oney-SSL",
+            "on",
+            "X-Oney-Message-Id",
+            "68f7d7be-00ee-4b2f-8c72-a3309672d26b",
+            "Date",
+            "Wed, 28 Apr 2021 13:35:21 GMT",
+            "Connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    }
+]

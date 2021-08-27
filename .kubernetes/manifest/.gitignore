@@ -1,0 +1,4 @@
+startup_function_secret_dev.env
+startup_function_secret_prod.env
+startup_function_secret_preprod.env
+startup_function_secret_qa.env

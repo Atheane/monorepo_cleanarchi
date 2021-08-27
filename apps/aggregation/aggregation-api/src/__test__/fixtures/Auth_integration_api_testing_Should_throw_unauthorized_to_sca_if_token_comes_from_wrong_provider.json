@@ -1,0 +1,57 @@
+[
+    {
+        "scope": "http://127.0.0.1:54304",
+        "method": "POST",
+        "path": "/aggregation/auth/sca",
+        "body": {
+            "connectionId": "jazieugaze",
+            "form": [
+                {
+                    "name": "openapisms",
+                    "value": "abcd"
+                }
+            ]
+        },
+        "status": 401,
+        "response": {
+            "error": "UserCannotWrite",
+            "code": "USER_CANNOT_WRITE",
+            "cause": "user test401api not allowed to write on aggregation"
+        },
+        "rawHeaders": [
+            "Access-Control-Allow-Origin",
+            "*",
+            "Content-Security-Policy",
+            "default-src 'self';base-uri 'self';block-all-mixed-content;font-src 'self' https: data:;frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests",
+            "X-DNS-Prefetch-Control",
+            "off",
+            "Expect-CT",
+            "max-age=0",
+            "X-Frame-Options",
+            "SAMEORIGIN",
+            "Strict-Transport-Security",
+            "max-age=15552000; includeSubDomains",
+            "X-Download-Options",
+            "noopen",
+            "X-Content-Type-Options",
+            "nosniff",
+            "X-Permitted-Cross-Domain-Policies",
+            "none",
+            "Referrer-Policy",
+            "no-referrer",
+            "X-XSS-Protection",
+            "0",
+            "Content-Type",
+            "application/json; charset=utf-8",
+            "Content-Length",
+            "116",
+            "ETag",
+            "W/\"74-ExVYGgCohYeo8q0W1OP2IJFlye8\"",
+            "Date",
+            "Thu, 01 Apr 2021 22:19:08 GMT",
+            "Connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    }
+]

@@ -1,0 +1,9 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "typeRoots": ["./node_modules/@types", "./nodes_modules/@jest/globals"],
+    "types": ["node", "express", "jest"]
+  },
+  "exclude": ["**/*.test.ts"],
+  "include": ["**/*.ts", "../../../node_modules/@types/jest/index.d.ts", "../../../nodes_modules/@nest"]
+}

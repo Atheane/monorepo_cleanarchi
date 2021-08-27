@@ -1,0 +1,140 @@
+[
+    {
+        "scope": "https://odb0storage0dev.blob.core.windows.net:443",
+        "method": "PUT",
+        "path": "/documents/HYO_xK-Ca%2Fkyc%2Fid-front.jpg",
+        "body": "--",
+        "status": 201,
+        "response": "",
+        "rawHeaders": [
+            "Content-Length",
+            "0",
+            "Content-MD5",
+            "rH5/M6AVoDPVbxXJgzQuVA==",
+            "Last-Modified",
+            "Tue, 09 Feb 2021 19:07:21 GMT",
+            "ETag",
+            "\"0x8D8CD2DED9C2441\"",
+            "Server",
+            "Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0",
+            "x-ms-request-id",
+            "a65001f9-001e-009b-3916-ff2516000000",
+            "x-ms-client-request-id",
+            "eda54096-9e82-4138-a34a-cebe7ee5d1af",
+            "x-ms-version",
+            "2020-04-08",
+            "x-ms-content-crc64",
+            "m/h5VU+nfos=",
+            "x-ms-request-server-encrypted",
+            "true",
+            "Date",
+            "Tue, 09 Feb 2021 19:07:20 GMT"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "https://api-staging.oneytrust.com:443",
+        "method": "POST",
+        "path": "/tulipe/v2/3000001341/cases/SP_2021212_beGe_flCm_frDNGY01Y/files",
+        "body": "--",
+        "status": 201,
+        "response": {
+          "url": "https://api-staging.oneytrust.com/web-services/api/v2/3000001341/cases/SP_2021212_beGe_flCm_frDNGY01Y/files",
+          "fileIds": [
+            "58232"
+          ],
+          "caseReference": "SP_2021119__fMZo_lKM_h8LUZS2Wb"
+        },
+        "rawHeaders": [
+            "Date",
+            "Tue, 09 Feb 2021 19:07:21 GMT",
+            "Server",
+            "Apache",
+            "Access-Control-Allow-Origin",
+            "*",
+            "Access-Control-Allow-Methods",
+            "POST, GET, PUT, OPTIONS, DELETE, PATCH",
+            "Access-Control-Max-Age",
+            "3600",
+            "Access-Control-Allow-Headers",
+            "Origin, X-Requested-With, Content-Type, Accept, x-checksum",
+            "X-Application-Context",
+            "application:8085",
+            "Content-Type",
+            "application/json;charset=UTF-8",
+            "Connection",
+            "close",
+            "Transfer-Encoding",
+            "chunked"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "http://127.0.0.1:58805",
+        "method": "POST",
+        "path": "/profile/HYO_xK-Ca/onboarding/step/identity-document",
+        "body": "--",
+        "status": 200,
+        "response": {
+            "id": "HYO_xK-Ca",
+            "events": [],
+            "props": {
+                "enabled": true,
+                "uid": "HYO_xK-Ca",
+                "biometricKey": null,
+                "digitalIdentityId": "pX0Q2B_wBy12L8cVLgWnNVZsQD8GQIfudtWrWMCWxBBchwRq",
+                "email": "ozzj@yopmail.com",
+                "informations": {
+                    "phone": "+33643455455",
+                    "status": "onBoarding"
+                },
+                "kyc": {
+                    "caseReference": "SP_2021119__fMZo_lKM_h8LUZS2Wb",
+                    "steps": [
+                        "civilStatus",
+                        "facematch",
+                        "address",
+                        "fiscalStatus",
+                        "contract"
+                    ],
+                    "url": "https://pad-staging.api-ot.com/api/v2/static/dist/index.html?technicalId=19FB30ABFAF96749041028D7CB781CCDBCA79D1025943F380EA2E5E00E816D39EC9ACBA69D577F0B1F39C5C8FDB2CD890C45091FB08FBA2D019C2BBC8571352A&token=07084wQ0"
+                }
+            }
+        },
+        "rawHeaders": [
+            "Access-Control-Allow-Origin",
+            "*",
+            "Content-Security-Policy",
+            "default-src 'self';base-uri 'self';block-all-mixed-content;font-src 'self' https: data:;frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests",
+            "X-DNS-Prefetch-Control",
+            "off",
+            "Expect-CT",
+            "max-age=0",
+            "X-Frame-Options",
+            "SAMEORIGIN",
+            "Strict-Transport-Security",
+            "max-age=15552000; includeSubDomains",
+            "X-Download-Options",
+            "noopen",
+            "X-Content-Type-Options",
+            "nosniff",
+            "X-Permitted-Cross-Domain-Policies",
+            "none",
+            "Referrer-Policy",
+            "no-referrer",
+            "X-XSS-Protection",
+            "0",
+            "Content-Type",
+            "application/json; charset=utf-8",
+            "Content-Length",
+            "606",
+            "ETag",
+            "W/\"25e-AMP/kAjVjtHZ3epKwlD4pyUHNK8\"",
+            "Date",
+            "Tue, 09 Feb 2021 19:07:22 GMT",
+            "Connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    }
+]

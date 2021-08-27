@@ -1,0 +1,67 @@
+[
+    {
+        "scope": "http://localhost:3022",
+        "method": "GET",
+        "path": "/profile/user/_lHXbttPN",
+        "body": "",
+        "status": 200,
+        "response": {
+            "uid": "_lHXbttPN",
+            "email": "chalom3@yopmail.com",
+            "biometric_key": null,
+            "is_validated": true,
+            "profile": {
+                "status": "onBoarding",
+                "phone": "+33643454453",
+                "birth_city": "Bxfj",
+                "birth_country": "AD",
+                "birth_date": "1993-01-24T23:00:00.000Z",
+                "birth_name": "chalom",
+                "first_name": "ellezam",
+                "honorific_code": "2"
+            },
+            "steps": [
+                "address",
+                "fiscalStatus",
+                "contract"
+            ]
+        },
+        "rawHeaders": [
+            "request-context",
+            "appId=cid-v1:",
+            "Access-Control-Allow-Origin",
+            "*",
+            "Content-Security-Policy",
+            "default-src 'self';base-uri 'self';block-all-mixed-content;font-src 'self' https: data:;frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests",
+            "X-DNS-Prefetch-Control",
+            "off",
+            "Expect-CT",
+            "max-age=0",
+            "X-Frame-Options",
+            "SAMEORIGIN",
+            "Strict-Transport-Security",
+            "max-age=15552000; includeSubDomains",
+            "X-Download-Options",
+            "noopen",
+            "X-Content-Type-Options",
+            "nosniff",
+            "X-Permitted-Cross-Domain-Policies",
+            "none",
+            "Referrer-Policy",
+            "no-referrer",
+            "X-XSS-Protection",
+            "0",
+            "Content-Type",
+            "application/json; charset=utf-8",
+            "Content-Length",
+            "338",
+            "ETag",
+            "W/\"152-r+Sp5jd6M5F0SaGy3AY1htIQ878\"",
+            "Date",
+            "Mon, 25 Jan 2021 12:16:59 GMT",
+            "Connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    }
+]

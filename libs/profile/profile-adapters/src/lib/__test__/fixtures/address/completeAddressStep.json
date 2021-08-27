@@ -1,0 +1,287 @@
+[
+    {
+        "scope": "https://api-staging.oneytrust.com:443",
+        "method": "PATCH",
+        "path": "/tulipe/v2/3000001341/cases/SP_2021119__fMZo_lKM_h8LUZS2Wb/form-data",
+        "body": {
+            "login": "api-3000001341-1@oneytrust.com",
+            "customerRank": 0,
+            "address": {
+                "locality": "Muerta Island",
+                "postCode": "00000",
+                "streetName1": "Rue saint domingue",
+                "streetName2": "appartement 00",
+                "country": "MI"
+            },
+            "birthDate": "Invalid date",
+            "gender": "X",
+            "caseReference": "SP_2021119__fMZo_lKM_h8LUZS2Wb",
+            "currency": "EUR",
+            "personalSituation": {
+                "idNumber": "pX0Q2B_wBy12L8cVLgWnNVZsQD8GQIfudtWrWMCWxBBchwRq"
+            },
+            "ipAddress": "aaazzz"
+        },
+        "status": 201,
+        "response": {
+            "url": "https://api-staging.oneytrust.com/web-services/api/v2/3000001341/cases/SP_2021119__fMZo_lKM_h8LUZS2Wb/form-data"
+        },
+        "rawHeaders": [
+            "Date",
+            "Thu, 21 Jan 2021 18:13:35 GMT",
+            "Server",
+            "Apache",
+            "Access-Control-Allow-Origin",
+            "*",
+            "Access-Control-Allow-Methods",
+            "POST, GET, PUT, OPTIONS, DELETE, PATCH",
+            "Access-Control-Max-Age",
+            "3600",
+            "Access-Control-Allow-Headers",
+            "Origin, X-Requested-With, Content-Type, Accept, x-checksum",
+            "X-Application-Context",
+            "application:8085",
+            "Content-Type",
+            "application/json;charset=UTF-8",
+            "Connection",
+            "close",
+            "Transfer-Encoding",
+            "chunked"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "https://api-staging.oney.io:443",
+        "method": "POST",
+        "path": "/resources/authorizations/v1/oauth/token",
+        "body": "client_id=PTAIL_BQ_DIGIT&client_secret=426ba2d4-c2df-4cb1-a6d4-c8c858964718&grant_type=client_credentials",
+        "status": 200,
+        "response": {
+            "access_token": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IjZmNzgxNDUwLTI3MGUtNDg3OC1iZTdmLWQxNjcyNGM0NTQ3YiJ9.eyJhdWQiOlsib25leS1hcGkiXSwic2NvcGUiOlsiY3VzdG9tZXIucmVhZCIsIm9mZmxpbmVfYWNjZXNzX3Rva2VuX2FwaSIsIm9mZmxpbmVfYXV0aGVudGljYXRpb24iXSwiaXNzIjoiSXNhYWMiLCJleHAiOjE2MTEyNTM3MTUsImlhdCI6MTYxMTI1MjgxNSwiYXV0aG9yaXRpZXMiOlsiY2xpZW50IiwiY2xpZW50X2NyZWRlbnRpYWxzIiwiY29uc2VpbGxlciIsInRlbXBvcmFyeV9hY2Nlc3NfY29kZSJdLCJqdGkiOiJlYThhYTc3NS02ZDE5LTQyMDAtYTgxNS03ZjhmMWU1YTQxMDMiLCJjbGllbnRfaWQiOiJQVEFJTF9CUV9ESUdJVCJ9.N5ciA-to13MWjtL-EdKtC0MLPiRbk13UIejXVV_tnXbL0b57NFnqw4WGcjuQrfomZ4PR9U3zOhAhCbC5YBusKs2SRxYuSWZOvGGiJKxHsRCYdazt8bYVozZbTTzCagVv1-1QtKYOkCsmVc658T-ECciVfnXG07Ja5xKQPvqKqIygfUKZugnRgDMSXrYBYSgsPyi3H2YZJdHdHK4GuWRYhO_7CZSwp91JlW7uulSPV97LANiEfXuOwH8orlKUK5MLXyGc59IyxO0vOdSVize8JIWRFWlbazYHNW5FZ3HEk62IY0_BicpsrowuRBNzCMJTWnPSU-7V_HnsolNg5fVVYA",
+            "token_type": "bearer",
+            "expires_in": 899,
+            "scope": "customer.read offline_access_token_api offline_authentication"
+        },
+        "rawHeaders": [
+            "Cache-Control",
+            "private, max-age=0, must-revalidate,no-store",
+            "Pragma",
+            "no-cache,no-cache",
+            "Transfer-Encoding",
+            "chunked",
+            "Content-Type",
+            "application/json;charset=UTF-8",
+            "X-Content-Type-Options",
+            "nosniff",
+            "X-XSS-Protection",
+            "1; mode=block",
+            "Strict-Transport-Security",
+            "max-age=31536000 ; includeSubDomains",
+            "X-Frame-Options",
+            "DENY",
+            "X-Oney-SSL",
+            "on",
+            "X-Oney-Message-Id",
+            "482138a6-a453-4ad6-8806-3d6662c200bc",
+            "Date",
+            "Thu, 21 Jan 2021 18:13:35 GMT",
+            "Connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "https://api-staging.oney.io:443",
+        "method": "GET",
+        "path": "/b2c/authentication/v1/digital_identities?selector_type=authentication_factor&selector_subtype=EML&selector_value=ozzj@yopmail.com",
+        "body": "",
+        "status": 200,
+        "response": [
+            {
+                "id": 1003875716,
+                "type": "INO",
+                "creation_date": "2021-01-20T19:20:42,000+01:00",
+                "last_connection_date": null,
+                "identifiers": [
+                    {
+                        "id": "NGFOHFx8UsrrnWmnYCebQb7qqsEB3ZUg_6CLS3EMVHPaMP1a",
+                        "type": "FP"
+                    }
+                ],
+                "authentication_factors": [
+                    {
+                        "id": 1851564,
+                        "type": "EML",
+                        "public_value": "ozzj@yopmail.com",
+                        "status_code": "AAC",
+                        "status_date": "2021-01-20T19:20:42,000+01:00"
+                    }
+                ]
+            }
+        ],
+        "rawHeaders": [
+            "Cache-Control",
+            "private, max-age=0, must-revalidate",
+            "Pragma",
+            "no-cache",
+            "Transfer-Encoding",
+            "chunked",
+            "Content-Type",
+            "application/json;charset=UTF-8",
+            "Expires",
+            "0",
+            "X-Content-Type-Options",
+            "nosniff",
+            "X-XSS-Protection",
+            "1; mode=block",
+            "X-Frame-Options",
+            "DENY",
+            "X-Application-Context",
+            "fasme-authentication:qlf:8008",
+            "X-Oney-SSL",
+            "off",
+            "X-Oney-Message-Id",
+            "fd210c94-f045-471e-8272-66d388cc0ec3",
+            "Date",
+            "Thu, 21 Jan 2021 18:13:35 GMT",
+            "Connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "https://api-staging.oney.io:443",
+        "method": "POST",
+        "path": "/resources/authorizations/v1/oauth/token",
+        "body": "client_id=PTAIL_BQ_DIGIT&client_secret=426ba2d4-c2df-4cb1-a6d4-c8c858964718&grant_type=urn:ietf:params:oauth:grant-type:jwt-bearer&assertion=eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IjE1MTIwNDgzLWE4ZjgtNDViMS05N2JiLWU0ZGQ4NzZiNTlhMCJ9.eyJmbG93c3RlcHMiOlsiU0NBX0lOQVBQIl0sImNsaWVudF9pZCI6IlBUQUlMX0JRX0RJR0lUIiwiaWRlbnRpZmllcnMiOlt7ImlkIjoiTkdGT0hGeDhVc3JybldtbllDZWJRYjdxcXNFQjNaVWdfNkNMUzNFTVZIUGFNUDFhIiwidHlwZSI6IkZQIn1dLCJpYXQiOjE2MTEyNTI4MTYsImV4cCI6MTYxMzg0NDgxNiwiaXNzIjoiT0RCIiwic3ViIjoiaW5vaWQxMDAzODc1NzE2In0.H0hlicswSpQ1-xUkirCE-ZQ-ymk5ec0Kh8BZhCUf0zDW-pd0n1lw2kzbehkHFHDt3EHjWQauaXuz6sqK_q7qfzbeuN0kElI4xHQ3FKA-pkfHlrbSWRjmN5xDFBMGfuao_Aroc8YvIKMt98YZvkJZ1Tmxazi27U_KwoC4uvAjKKI",
+        "status": 200,
+        "response": {
+            "access_token": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IjZmNzgxNDUwLTI3MGUtNDg3OC1iZTdmLWQxNjcyNGM0NTQ3YiJ9.eyJzdWIiOiJpbm9pZDEwMDM4NzU3MTYiLCJhdWQiOlsib25leS1hcGkiXSwidXNlcl9uYW1lIjoiaW5vaWQxMDAzODc1NzE2IiwiaWRlbnRpZmllcnMiOlt7ImlkIjoiTkdGT0hGeDhVc3JybldtbllDZWJRYjdxcXNFQjNaVWdfNkNMUzNFTVZIUGFNUDFhIiwidHlwZSI6IkZQIn1dLCJzY29wZSI6WyJjdXN0b21lci53cml0ZSIsImRlcHJlY2lhYmxlX2FjY291bnQud3JpdGUiLCJjdXN0b21lci5yZWFkIiwicmV2b2x2aW5nX2FjY291bnQucmVhZCIsImNhcmQucmVhZCIsImNvbnRyYWN0X3JlZmVyZW5jZS5WMi5jcmVhdGUiLCJjYXJkLndyaXRlIiwiZGVwcmVjaWFibGVfYWNjb3VudC5yZWFkIiwiY3VzdG9tZXIuVjIud3JpdGUiLCJzdWJzY3JpcHRpb24ud3JpdGUiLCJjYXNoX2FjY291bnQud3JpdGUiLCJjdXN0b21lci5WMi5jcmVhdGUiLCJjdXN0b21lci5WMi5yZWFkIiwiY29udHJhY3QucmVhZCIsImNvbnRyYWN0X3JlZmVyZW5jZS5WMi53cml0ZSIsInN1YnNjcmlwdGlvbi5yZWFkIiwib25saW5lX2F1dGhlbnRpY2F0aW9uIiwiY29udHJhY3Qud3JpdGUiLCJyZXZvbHZpbmdfYWNjb3VudC53cml0ZSIsImNhc2hfYWNjb3VudC5yZWFkIiwiQlFfRElHSVQiLCJjdXN0b21lci51cGRhdGVfcGFzc3dvcmQiLCJjb250cmFjdF9yZWZlcmVuY2UuVjIucmVhZCJdLCJpc3MiOiJJc2FhYyIsImZsb3dzdGVwcyI6WyJTQ0FfSU5BUFAiXSwiZXhwIjoxNjExMjUzNzE2LCJpYXQiOjE2MTEyNTI4MTYsImp0aSI6IjlkNzFjMWFkLTIwYTMtNDBiNS04MmY3LTIwOTdkODk4OTA0NCIsImF1dGhlbnRfaWF0IjoxNjExMjUyODE2LCJjbGllbnRfaWQiOiJQVEFJTF9CUV9ESUdJVCJ9.Pm0C-70XzAfVlMJyr6vZ_0D-ycJU-awF7Pkxw4oAyyKc98UvwLvTMq9_KDeG55ZD1VyXcjDcjwcBj39hmWdXk1Hx1xHlO36WpPrsEdWkY2ibARCDNjpIMLZoWV0_DZ3x9jHqMA2zWvtqGzYb6FdJefnL8MT866yxnsE1JSMIpZyWUXJ2RsW-xrQYk-VI3z-vwGhwlNW81I5X_PBmtcGio4vtM6Uq1u6ksU3nuXcJ-dOie0qEjjzfC2jm3wEmzM1-yipyC7ibvQFLUKiXb-l7aan__Kjp0c83ik7WzyUzeXTkOc8RXBFHv1YDaLUlF6drGDWpL3s0WRljLNoXT_SttA",
+            "token_type": "bearer",
+            "refresh_token": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IjZmNzgxNDUwLTI3MGUtNDg3OC1iZTdmLWQxNjcyNGM0NTQ3YiJ9.eyJzdWIiOiJpbm9pZDEwMDM4NzU3MTYiLCJ1c2VyX25hbWUiOiJpbm9pZDEwMDM4NzU3MTYiLCJpZGVudGlmaWVycyI6W3siaWQiOiJOR0ZPSEZ4OFVzcnJuV21uWUNlYlFiN3Fxc0VCM1pVZ182Q0xTM0VNVkhQYU1QMWEiLCJ0eXBlIjoiRlAifV0sImlzcyI6IklzYWFjIiwiZmxvd3N0ZXBzIjpbIlNDQV9JTkFQUCJdLCJhdXRoZW50X2lhdCI6MTYxMTI1MjgxNiwiY2xpZW50X2lkIjoiUFRBSUxfQlFfRElHSVQiLCJhdWQiOlsib25leS1hcGkiXSwic2NvcGUiOlsiY3VzdG9tZXIud3JpdGUiLCJkZXByZWNpYWJsZV9hY2NvdW50LndyaXRlIiwiY3VzdG9tZXIucmVhZCIsInJldm9sdmluZ19hY2NvdW50LnJlYWQiLCJjYXJkLnJlYWQiLCJjb250cmFjdF9yZWZlcmVuY2UuVjIuY3JlYXRlIiwiY2FyZC53cml0ZSIsImRlcHJlY2lhYmxlX2FjY291bnQucmVhZCIsImN1c3RvbWVyLlYyLndyaXRlIiwic3Vic2NyaXB0aW9uLndyaXRlIiwiY2FzaF9hY2NvdW50LndyaXRlIiwiY3VzdG9tZXIuVjIuY3JlYXRlIiwiY3VzdG9tZXIuVjIucmVhZCIsImNvbnRyYWN0LnJlYWQiLCJjb250cmFjdF9yZWZlcmVuY2UuVjIud3JpdGUiLCJzdWJzY3JpcHRpb24ucmVhZCIsIm9ubGluZV9hdXRoZW50aWNhdGlvbiIsImNvbnRyYWN0LndyaXRlIiwicmV2b2x2aW5nX2FjY291bnQud3JpdGUiLCJjYXNoX2FjY291bnQucmVhZCIsIkJRX0RJR0lUIiwiY3VzdG9tZXIudXBkYXRlX3Bhc3N3b3JkIiwiY29udHJhY3RfcmVmZXJlbmNlLlYyLnJlYWQiXSwiYXRpIjoiOWQ3MWMxYWQtMjBhMy00MGI1LTgyZjctMjA5N2Q4OTg5MDQ0IiwiZXhwIjoxNjExMjU0NjE2LCJpYXQiOjE2MTEyNTI4MTYsImp0aSI6IjYyMmFhZWU0LTJmN2EtNGJkZS05NjU3LTNlNTk1N2IzODA1YiJ9.M0n4ttsUWyun77ZtYkA6qTkdehatxlUXz2FtWrGSKwqVNMCv1lkoohKSJYqt48EMEZKC12VZkZl4JUkfs7IAunNLNVMkKYK5YnHZv1Zw2O7sftNvbovR9_O1WZK9EMXbXaAdGVtXPIIuEaJvID_qqO6Ptte6-W_cz0nII33OSApxa3H10snI1pRur_GKIT19YaTeA3ZAOcreeME9NGzJlXsb4g3JBYnM5n9eRpV_m1GUHf8SzCs165CaxEpeTr53RGv6GUqjR7QSLUd89qLKgbIUu-q0J2zdruYcJ_OK0V5j-gAZbmyvgpdZdWwWNv2h56lMu4ZggFz1aarikJTzzw",
+            "expires_in": 899,
+            "scope": "customer.write depreciable_account.write customer.read revolving_account.read card.read contract_reference.V2.create card.write depreciable_account.read customer.V2.write subscription.write cash_account.write customer.V2.create customer.V2.read contract.read contract_reference.V2.write subscription.read online_authentication contract.write revolving_account.write cash_account.read BQ_DIGIT customer.update_password contract_reference.V2.read"
+        },
+        "rawHeaders": [
+            "Cache-Control",
+            "private, max-age=0, must-revalidate,no-store",
+            "Pragma",
+            "no-cache,no-cache",
+            "Transfer-Encoding",
+            "chunked",
+            "Content-Type",
+            "application/json;charset=UTF-8",
+            "X-Content-Type-Options",
+            "nosniff",
+            "X-XSS-Protection",
+            "1; mode=block",
+            "Strict-Transport-Security",
+            "max-age=31536000 ; includeSubDomains",
+            "X-Frame-Options",
+            "DENY",
+            "X-Oney-SSL",
+            "on",
+            "X-Oney-Message-Id",
+            "c1a8e596-fe5d-4e61-b5ce-b1a4799d70dd",
+            "Date",
+            "Thu, 21 Jan 2021 18:13:36 GMT",
+            "Connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "https://api-staging.oney.io:443",
+        "method": "PUT",
+        "path": "/b2c/customers/v2/customers",
+        "body": {
+            "customer": {
+                "adresses": [
+                    {
+                        "country_code": "MI",
+                        "line1": "Rue saint domingue",
+                        "line2": "appartement 00",
+                        "municipality": "Muerta Island",
+                        "postal_code": "00000",
+                        "type_code": "HOME"
+                    }
+                ],
+                "phones": [
+                    {
+                        "number": "0643455455",
+                        "type_code": "MPRS",
+                        "country_dialing_code": "+33"
+                    }
+                ],
+                "emails": [
+                    {
+                        "address": "ozzj@yopmail.com",
+                        "type_code": "PRS"
+                    }
+                ]
+            }
+        },
+        "status": 200,
+        "response": {
+            "person_ids.application_code": "IDTT_NUMR",
+            "person_ids.application_person_id_field": "SECURE_ID",
+            "person_ids.application_person_id": "NGFOHFx8UsrrnWmnYCebQb7qqsEB3ZUg_6CLS3EMVHPaMP1a"
+        },
+        "rawHeaders": [
+            "Content-Length",
+            "182",
+            "Content-Type",
+            "application/json; charset=UTF-8",
+            "X-Oney-SSL",
+            "off",
+            "X-Oney-Message-Id",
+            "e1dcc7f2-d084-4ced-aa7d-8858067d8b4e",
+            "Date",
+            "Thu, 21 Jan 2021 18:13:37 GMT",
+            "Connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "http://localhost:3022",
+        "method": "POST",
+        "path": "/payment/user/AWzclPFyN",
+        "body": {
+            "uid": "AWzclPFyN",
+            "city": "Muerta Island",
+            "country": "MI",
+            "street": "Rue saint domingue",
+            "zipCode": "00000"
+        },
+        "status": 201,
+        "response": {
+          "events": [],
+          "id": "zARoItBES",
+          "props": {
+            "bankAccountId": "3915",
+            "beneficiaries": [],
+            "bic": "BACCFR23XXX",
+            "cards": [],
+            "debts": [],
+            "iban": "FR0512869000020PC0000030Q63",
+            "uid": "zARoItBES"
+          }
+        },
+        "rawHeaders": [
+            "Content-Length",
+            "182",
+            "Content-Type",
+            "application/json; charset=UTF-8",
+            "X-Oney-SSL",
+            "off",
+            "X-Oney-Message-Id",
+            "e1dcc7f2-d084-4ced-aa7d-8858067d8b4e",
+            "Date",
+            "Thu, 21 Jan 2021 18:13:37 GMT",
+            "Connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    }
+]

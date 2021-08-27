@@ -1,0 +1,390 @@
+[
+    {
+        "scope": "https://oney-dev-sandbox.biapi.pro:443",
+        "method": "GET",
+        "path": "/2.0/connectors/338178e6-3d01-564f-9a7b-52ca442459bf?capabilities=bank&expand=fields,logos",
+        "body": "",
+        "status": 200,
+        "response": {
+            "id": 59,
+            "name": "Connecteur de test",
+            "hidden": false,
+            "charged": false,
+            "code": null,
+            "beta": false,
+            "color": "5c2963",
+            "slug": "EXA",
+            "sync_frequency": null,
+            "months_to_fetch": null,
+            "auth_mechanism": "credentials",
+            "siret": null,
+            "uuid": "338178e6-3d01-564f-9a7b-52ca442459bf",
+            "restricted": false,
+            "fields": [
+                {
+                    "name": "login",
+                    "label": "Identifiant",
+                    "regex": null,
+                    "type": "text",
+                    "required": true,
+                    "auth_mechanisms": [
+                        "credentials"
+                    ],
+                    "connector_sources": [
+                        "openapi",
+                        "directaccess"
+                    ]
+                },
+                {
+                    "name": "password",
+                    "label": "Code (1234)",
+                    "regex": null,
+                    "type": "password",
+                    "required": true,
+                    "auth_mechanisms": [
+                        "credentials"
+                    ],
+                    "connector_sources": [
+                        "openapi",
+                        "directaccess"
+                    ]
+                },
+                {
+                    "name": "openapiwebsite",
+                    "label": "Cas d'usage (openapi)",
+                    "regex": null,
+                    "type": "list",
+                    "required": false,
+                    "auth_mechanisms": [
+                        "webauth",
+                        "credentials"
+                    ],
+                    "connector_sources": [
+                        "openapi"
+                    ],
+                    "values": [
+                        {
+                            "label": "Particuliers",
+                            "value": "par"
+                        },
+                        {
+                            "label": "Professionnels",
+                            "value": "pro"
+                        },
+                        {
+                            "label": "WrongPass",
+                            "value": "wrongpass"
+                        },
+                        {
+                            "label": "AdditionalInformationNeeded",
+                            "value": "additionalInformationNeeded"
+                        },
+                        {
+                            "label": "WebsiteUnavailable",
+                            "value": "websiteUnavailable"
+                        },
+                        {
+                            "label": "ActionNeeded",
+                            "value": "actionNeeded"
+                        },
+                        {
+                            "label": "Bug",
+                            "value": "bug"
+                        },
+                        {
+                            "label": "ShortDecoupled",
+                            "value": "shortDecoupled"
+                        },
+                        {
+                            "label": "Double OTP",
+                            "value": "doubleotp"
+                        },
+                        {
+                            "label": "SCARequired",
+                            "value": "SCARequired"
+                        },
+                        {
+                            "label": "webauthRequired",
+                            "value": "webauthRequired"
+                        },
+                        {
+                            "label": "passwordExpired",
+                            "value": "passwordExpired"
+                        },
+                        {
+                            "label": "LongDecoupled",
+                            "value": "longDecoupled"
+                        },
+                        {
+                            "label": "SCARequiredAndDecoupled",
+                            "value": "SCARequiredAndDecoupled"
+                        },
+                        {
+                            "label": "SCARequiredAndOTP",
+                            "value": "SCARequiredAndOTP"
+                        },
+                        {
+                            "label": "Website not supported",
+                            "value": "notSupported"
+                        },
+                        {
+                            "label": "otp_transfer",
+                            "value": "otp_transfer"
+                        },
+                        {
+                            "label": "AppValidationCancelled",
+                            "value": "AppValidationCancelled"
+                        },
+                        {
+                            "label": "AppValidationExpired",
+                            "value": "AppValidationExpired"
+                        }
+                    ]
+                },
+                {
+                    "name": "directaccesswebsite",
+                    "label": "Cas d'usage (directaccess)",
+                    "regex": null,
+                    "type": "list",
+                    "required": false,
+                    "auth_mechanisms": [
+                        "webauth",
+                        "credentials"
+                    ],
+                    "connector_sources": [
+                        "directaccess"
+                    ],
+                    "values": [
+                        {
+                            "label": "Particuliers",
+                            "value": "par"
+                        },
+                        {
+                            "label": "Professionnels",
+                            "value": "pro"
+                        },
+                        {
+                            "label": "WrongPass",
+                            "value": "wrongpass"
+                        },
+                        {
+                            "label": "AdditionalInformationNeeded",
+                            "value": "additionalInformationNeeded"
+                        },
+                        {
+                            "label": "WebsiteUnavailable",
+                            "value": "websiteUnavailable"
+                        },
+                        {
+                            "label": "ActionNeeded",
+                            "value": "actionNeeded"
+                        },
+                        {
+                            "label": "Bug",
+                            "value": "bug"
+                        },
+                        {
+                            "label": "ShortDecoupled",
+                            "value": "shortDecoupled"
+                        },
+                        {
+                            "label": "Double OTP",
+                            "value": "doubleotp"
+                        },
+                        {
+                            "label": "SCARequired",
+                            "value": "SCARequired"
+                        },
+                        {
+                            "label": "passwordExpired",
+                            "value": "passwordExpired"
+                        },
+                        {
+                            "label": "LongDecoupled",
+                            "value": "longDecoupled"
+                        },
+                        {
+                            "label": "SCARequiredAndDecoupled",
+                            "value": "SCARequiredAndDecoupled"
+                        },
+                        {
+                            "label": "SCARequiredAndOTP",
+                            "value": "SCARequiredAndOTP"
+                        },
+                        {
+                            "label": "Website not supported",
+                            "value": "notSupported"
+                        },
+                        {
+                            "label": "otp_transfer",
+                            "value": "otp_transfer"
+                        },
+                        {
+                            "label": "AppValidationCancelled",
+                            "value": "AppValidationCancelled"
+                        },
+                        {
+                            "label": "AppValidationExpired",
+                            "value": "AppValidationExpired"
+                        }
+                    ]
+                }
+            ],
+            "logos": [],
+            "categories": [],
+            "capabilities": [
+                "contact",
+                "banktransferaddrecipient",
+                "banktransfer",
+                "bankwealth",
+                "transfer",
+                "bank",
+                "document",
+                "profile"
+            ],
+            "urls": [],
+            "available_auth_mechanisms": [
+                "webauth",
+                "credentials"
+            ],
+            "account_types": [
+                "pee",
+                "loan",
+                "checking",
+                "savings",
+                "card",
+                "market",
+                "lifeinsurance",
+                "perco"
+            ],
+            "available_transfer_mechanisms": [
+                "webauth",
+                "credentials"
+            ],
+            "transfer_beneficiary_types": [
+                "iban",
+                "recipient"
+            ],
+            "transfer_execution_date_types": [
+                "first_open_day",
+                "deferred"
+            ],
+            "documents_type": []
+        },
+        "rawHeaders": [
+            "Date",
+            "Wed, 07 Apr 2021 17:28:57 GMT",
+            "Content-Type",
+            "application/json; charset=utf-8",
+            "Content-Length",
+            "3734",
+            "Connection",
+            "close",
+            "Vary",
+            "Authorization,Origin",
+            "Server",
+            "Budgea/2.21.18 Weboob/1.6+budgea.878",
+            "X-Recruiting",
+            "Budget Insight is hiring! Do not hesitate to contact us at jobs@budget-insight.com or on #budget-insight @ Freenode",
+            "X-Request-ID",
+            "0bbe982b-16ff-400a-a77f-9d55d53d0eca",
+            "Strict-Transport-Security",
+            "max-age=31536000; includeSubDomains; preload",
+            "X-Frame-Options",
+            "DENY"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "https://oney-dev-sandbox.biapi.pro:443",
+        "method": "POST",
+        "path": "/2.0/auth/init",
+        "body": {
+            "client_id": "11571068",
+            "client_secret": "NND6d9s2uAmLixdSVUaw6ilXNKXp0i4t"
+        },
+        "status": 200,
+        "response": {
+            "auth_token": "97WWrQ0StTWu9QEafRAstdssNp5ddXgFDYrr67_611JMWvH81K/3BWMK9X9XtdkqwYv9xM0SVX3uug4kbjM3bq9Yv4qnIum5QdabG/PpxVdtG7raQgXNgbnKfH0KZNMC",
+            "type": "permanent",
+            "id_user": 3120
+        },
+        "rawHeaders": [
+            "Date",
+            "Wed, 07 Apr 2021 17:28:58 GMT",
+            "Content-Type",
+            "application/json; charset=utf-8",
+            "Content-Length",
+            "184",
+            "Connection",
+            "close",
+            "Vary",
+            "Authorization,Origin",
+            "Server",
+            "Budgea/2.21.18 Weboob/1.6+budgea.878",
+            "X-Recruiting",
+            "Budget Insight is hiring! Do not hesitate to contact us at jobs@budget-insight.com or on #budget-insight @ Freenode",
+            "X-Request-ID",
+            "ed715aa0-bc27-4ee2-bc79-1ef6f13d666a",
+            "Strict-Transport-Security",
+            "max-age=31536000; includeSubDomains; preload",
+            "X-Frame-Options",
+            "DENY"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "https://oney-dev-sandbox.biapi.pro:443",
+        "method": "POST",
+        "path": "/2.0/users/me/connections",
+        "body": {
+            "connector_uuid": "338178e6-3d01-564f-9a7b-52ca442459bf",
+            "openapiwebsite": "shortDecoupled",
+            "login": "Identifiant",
+            "password": "1234"
+        },
+        "status": 202,
+        "response": {
+            "id": 2783,
+            "id_user": 3120,
+            "id_connector": 59,
+            "last_update": null,
+            "created": "2021-04-07 19:28:58",
+            "active": true,
+            "last_push": null,
+            "next_try": "2021-04-08 03:59:00",
+            "state": "decoupled",
+            "error": "decoupled",
+            "error_message": "You need to confirm the connection on your bank website",
+            "expire": "2021-04-07 21:28:58",
+            "id_provider": 59,
+            "id_bank": 59,
+            "connector_uuid": "338178e6-3d01-564f-9a7b-52ca442459bf",
+            "description": "You need to confirm the connection on your bank website",
+            "id_connection": 2783
+        },
+        "rawHeaders": [
+            "Date",
+            "Wed, 07 Apr 2021 17:29:00 GMT",
+            "Content-Type",
+            "application/json; charset=utf-8",
+            "Content-Length",
+            "516",
+            "Connection",
+            "close",
+            "Vary",
+            "Authorization,Origin",
+            "Server",
+            "Budgea/2.21.18 Weboob/1.6+budgea.878",
+            "X-Recruiting",
+            "Budget Insight is hiring! Do not hesitate to contact us at jobs@budget-insight.com or on #budget-insight @ Freenode",
+            "X-Request-ID",
+            "04dbbc77-4224-4c8d-a7b4-e9f995bd8e60",
+            "Strict-Transport-Security",
+            "max-age=31536000; includeSubDomains; preload",
+            "X-Frame-Options",
+            "DENY"
+        ],
+        "responseIsBinary": false
+    }
+]

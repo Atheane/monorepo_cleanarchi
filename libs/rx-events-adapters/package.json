@@ -1,0 +1,8 @@
+{
+  "name": "@oney/rx-events-adapters",
+  "version": "0.10.0",
+  "publishConfig": {
+    "access": "public",
+    "directory": "../../dist/libs/rx-events-adapters"
+  }
+}

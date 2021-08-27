@@ -1,0 +1,9 @@
+{
+  "name": "@oney/profile-core",
+  "version": "0.41.0",
+  "publishConfig": {
+    "access": "public",
+    "directory": "../../../dist/libs/profile-core"
+  },
+  "license": "MIT"
+}

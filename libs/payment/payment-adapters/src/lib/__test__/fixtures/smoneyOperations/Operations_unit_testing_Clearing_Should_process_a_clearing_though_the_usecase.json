@@ -1,0 +1,54 @@
+[
+    {
+        "scope": "https://sb-api.xpollens.com:443",
+        "method": "GET",
+        "path": "/api/V1.1/cardoperations/Js0ThVo6F0euKlv1QK5Ebg",
+        "body": "",
+        "status": 200,
+        "response": {
+            "Id": 9131,
+            "AccountId": {
+                "Id": 3670,
+                "AppAccountId": "a96035cbJ",
+                "DisplayName": "Samara Leffler",
+                "Iban": "FR4112869000020PC000002TY79",
+                "Alias": "SamaraLeffler",
+                "PhoneNumber": "07 28 74 16 30",
+                "Email": "samara_leffler@s-money.fr",
+                "Href": "https://rest-pp.s-money.fr/api/bib/sandbox/api/users/a96035cbJ"
+            },
+            "Card": {
+                "Id": 2656,
+                "AppCardId": "a96035cbJ_CP1",
+                "Href": "https://rest-pp.s-money.fr/api/bib/sandbox/api/users/a96035cbJ/cards/a96035cbJ_CP1"
+            },
+            "Amount": 500,
+            "Fee": null,
+            "OperationDate": "2021-01-12T19:06:27",
+            "ExecutionDate": null,
+            "ExecutedDate": "2021-01-12T18:06:29",
+            "Direction": 2,
+            "OrderId": "Js0ThVo6F0euKlv1QK5Ebg",
+            "Motif": " (insufficient balance.)",
+            "Status": 3,
+            "Type": 505,
+            "RefundReference": null,
+            "InitialOperation": null
+        },
+        "rawHeaders": [
+            "Date",
+            "Mon, 19 Apr 2021 12:48:56 GMT",
+            "Content-Type",
+            "application/json; charset=utf-8",
+            "Content-Length",
+            "705",
+            "Cache-Control",
+            "private",
+            "Request-Context",
+            "appId=cid-v1:40d43092-8aee-4b2b-8b7f-34d2d69e09b7",
+            "Connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    }
+]

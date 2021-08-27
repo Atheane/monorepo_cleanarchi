@@ -1,0 +1,120 @@
+[
+    {
+        "scope": "https://rest-pp.s-money.fr:443",
+        "method": "GET",
+        "path": "/api/bib/sandbox/api/users/gMsKPDZlK",
+        "body": "",
+        "status": 200,
+        "response": {
+            "Id": 2327,
+            "AppUserId": "gMsKPDZlK",
+            "Type": 1,
+            "Role": 2,
+            "Profile": {
+                "Civility": 0,
+                "FirstName": "Jeanne",
+                "LastName": "Durut",
+                "Birthdate": "1984-01-02T00:00:00",
+                "Birthcity": "Neufchâteau",
+                "BirthCountry": "FR",
+                "Address": {
+                    "Street": "116 RUE DE TOCQUEVILLE",
+                    "ZipCode": "75017",
+                    "City": "PARIS",
+                    "Country": "FR"
+                },
+                "PhoneNumber": "33644638272",
+                "Email": "athean@mailinator.com",
+                "Alias": "J.D#gMsKPDZlK",
+                "Picture": {
+                    "Href": null
+                },
+                "EconomicActivity": 11
+            },
+            "Credentials": null,
+            "Amount": 0,
+            "AccountingBalanceAmount": 0,
+            "SubAccounts": [
+                {
+                    "Id": 2327,
+                    "AppAccountId": "gMsKPDZlK",
+                    "Amount": 0,
+                    "AccountingBalanceAmount": 0,
+                    "DisplayName": "Jeanne Durut",
+                    "CreationDate": "2020-09-23T17:45:49",
+                    "IsDefault": true,
+                    "Iban": "FR2612869000020PC000001SN30",
+                    "IbanHint": "FR26XXXXXXXXXXXXXXXXSN30"
+                }
+            ],
+            "BankAccounts": null,
+            "CBCards": [
+                {
+                    "Id": 1342,
+                    "AppCardId": "card-pUNRRYaJE",
+                    "Href": "https://rest-pp.s-money.fr/api/bib/sandbox/api/users/gMsKPDZlK/cards/card-pUNRRYaJE"
+                }
+            ],
+            "Status": 1,
+            "Company": null,
+            "CountryCode": null,
+            "KycStatus": 3,
+            "OnBoardingDate": "2020-09-23T17:45:49"
+        },
+        "rawHeaders": [
+            "Date",
+            "Tue, 17 Nov 2020 19:00:06 GMT",
+            "Server",
+            "IWS",
+            "Cache-Control",
+            "private",
+            "Content-Type",
+            "application/json; charset=utf-8",
+            "X-AspNet-Version",
+            "4.0.30319",
+            "Request-Context",
+            "appId=cid-v1:40d43092-8aee-4b2b-8b7f-34d2d69e09b7",
+            "Content-Length",
+            "997",
+            "Connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "https://dev-api.onbadi.com:443",
+        "method": "GET",
+        "path": "/aggregation/users/gMsKPDZlK/accounts",
+        "body": "",
+        "status": 500,
+        "response": {
+            "statusCode": 500,
+            "message": "Internal server error"
+        },
+        "rawHeaders": [
+            "Content-Length",
+            "52",
+            "Content-Type",
+            "application/json; charset=utf-8",
+            "ETag",
+            "W/\"34-rlKccw1E+/fV8niQk4oFitDfPro\"",
+            "Set-Cookie",
+            "TiPMix=89.1409523268887; path=/; HttpOnly; Domain=odb-aggregation-dev.azurewebsites.net:443; Max-Age=3600; Secure",
+            "Set-Cookie",
+            "x-ms-routing-name=self; path=/; HttpOnly; Domain=odb-aggregation-dev.azurewebsites.net:443; Max-Age=3600; Secure",
+            "X-Powered-By",
+            "Express",
+            "Access-Control-Allow-Origin",
+            "*",
+            "request-context",
+            "appId=cid-v1:8d302c50-ae95-4575-a384-8792e95297ab",
+            "X-Azure-Ref",
+            "0th20XwAAAABnSYxfoXGBS4wGChDKvsSAUEFSMDJFREdFMDYwOQA0MjJlZjNjMy04NDZhLTQ1ZDMtYWJjMS1hZDUyNzJiMTk4ZDk=",
+            "Date",
+            "Tue, 17 Nov 2020 19:00:06 GMT",
+            "Connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    }
+]

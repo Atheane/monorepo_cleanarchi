@@ -1,0 +1,6 @@
+{ "extends": "../../../.eslintrc.json", "ignorePatterns": ["!**/*"], "rules": {
+    "@typescript-eslint/no-explicit-any": "error",
+    "no-duplicate-imports": "error",
+    "@typescript-eslint/no-var-requires": "error",
+    "import/no-cycle": "error"
+} }

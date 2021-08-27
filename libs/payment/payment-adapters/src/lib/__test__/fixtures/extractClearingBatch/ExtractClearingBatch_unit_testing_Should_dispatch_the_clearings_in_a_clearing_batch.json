@@ -1,0 +1,109 @@
+[
+    {
+        "scope": "https://sb-api.xpollens.com:443",
+        "method": "GET",
+        "path": "/api/V1.1/cardoperations/clearingreport/1000",
+        "body": "",
+        "status": 200,
+        "response": {
+            "callback_type": 24,
+            "batch_reference": 1000,
+            "clearings": [
+                {
+                    "card_operation_reference": "sb0_scto_1",
+                    "card_operation": {
+                        "authorization_reference": "56361220201021",
+                        "card_identifier": "DEBTTEST1-CP1",
+                        "amount": 2000,
+                        "date": "2020-10-21T13:01:58.257",
+                        "merchant_name": "Chez Francette\\Paris 11",
+                        "merchant_category_code": 5812,
+                        "financial_network_code": "VISA",
+                        "original_amount": 2000,
+                        "currency": "978",
+                        "exchange_rate": 1,
+                        "merchant": {
+                            "name": "Chez Francette",
+                            "street": "",
+                            "city": "Paris 11"
+                        },
+                        "type_code": "00",
+                        "pos_entry_mode": "0",
+                        "operation_type": 507,
+                        "operation_status": 1,
+                        "service_fee": 0,
+                        "direction": 2,
+                        "clearing_date": "2018-05-08T16:05:21.857"
+                    }
+                },
+                {
+                    "card_operation_reference": "sb0_scto_2",
+                    "card_operation": {
+                        "authorization_reference": "56361220201022",
+                        "card_identifier": "DEBTTEST1-CP1",
+                        "amount": 0,
+                        "date": "2020-10-21T13:01:58.257",
+                        "merchant_name": "Chez Francette\\Paris 11",
+                        "merchant_category_code": 5812,
+                        "financial_network_code": "VISA",
+                        "original_amount": 0,
+                        "currency": "978",
+                        "exchange_rate": 1,
+                        "merchant": {
+                            "name": "Chez Francette",
+                            "street": "",
+                            "city": "Paris 11"
+                        },
+                        "type_code": "00",
+                        "pos_entry_mode": "0",
+                        "operation_type": 507,
+                        "operation_status": 1,
+                        "service_fee": 0,
+                        "direction": 2,
+                        "clearing_date": "2018-05-08T16:05:21.857"
+                    }
+                },
+                {
+                    "card_operation_reference": "sb0_scto_3",
+                    "card_operation": {
+                        "authorization_reference": "56361220201023",
+                        "card_identifier": "DEBTTEST1-CP1",
+                        "date": "2020-10-21T13:01:58.257",
+                        "merchant_name": "Chez Francette\\Paris 11",
+                        "merchant_category_code": 5812,
+                        "financial_network_code": "VISA",
+                        "currency": "978",
+                        "exchange_rate": 1,
+                        "merchant": {
+                            "name": "Chez Francette",
+                            "street": "",
+                            "city": "Paris 11"
+                        },
+                        "type_code": "00",
+                        "pos_entry_mode": "0",
+                        "operation_type": 507,
+                        "operation_status": 1,
+                        "service_fee": 0,
+                        "direction": 2,
+                        "clearing_date": "2018-05-08T16:05:21.857"
+                    }
+                }
+            ]
+        },
+        "rawHeaders": [
+            "Date",
+            "Fri, 16 Apr 2021 12:11:11 GMT",
+            "Content-Type",
+            "application/json; charset=utf-8",
+            "Content-Length",
+            "932",
+            "Cache-Control",
+            "private",
+            "Request-Context",
+            "appId=cid-v1:40d43092-8aee-4b2b-8b7f-34d2d69e09b7",
+            "Connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    }
+]

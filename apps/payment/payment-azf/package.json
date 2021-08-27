@@ -1,0 +1,40 @@
+{
+    "name": "payment-azf",
+    "version": "0.0.1",
+    "scripts": {
+        "build": "tsc --project tsconfig.build.json",
+        "build:production": "npm run prestart && npm prune --production",
+        "watch": "tsc --w",
+        "prestart": "npm run build && func extensions install",
+        "start:host": "func start",
+        "start": "npm-run-all --parallel start:host watch"
+    },
+    "description": "",
+    "dependencies": {
+        "@azure/functions": "^1.2.2",
+        "@oney/env": "^0.3.2",
+        "@oney/payment-core": "./libs/payment-core",
+        "http-status": "^1.5.0",
+        "@oney/messages-core": "./libs/messages-core",
+        "inversify": "^5.0.1",
+        "nock": "^13.0.5",
+        "@oney/payment-messages": "./libs/payment-messages",
+        "@oney/az-servicebus-adapters": "./libs/az-servicebus-adapters",
+        "@oney/common-adapters": "./libs/common-adapters",
+        "@oney/ddd": "./libs/ddd",
+        "@oney/logger-core": "./libs/logger-core",
+        "@oney/payment-adapters": "./libs/payment-adapters",
+        "@oney/rx-events-adapters": "./libs/rx-events-adapters",
+        "@oney/common-core": "./libs/common-core",
+        "@oney/logger-adapters": "./libs/logger-adapters",
+        "reflect-metadata": "^0.1.13",
+        "mongoose": "5.10.19",
+        "@oney/identity-core": "./libs/identity-core",
+        "node-cache": "^5.1.2",
+        "@oney/identity-adapters": "./libs/identity-adapters",
+        "@oney/http": "./libs/http",
+        "joi": "^17.3.0",
+        "tslib": "1.10.0"
+    },
+    "devDependencies": {}
+}

@@ -1,0 +1,14 @@
+{
+  "disabled": false,
+  "bindings": [
+    {
+      "name": "message",
+      "type": "serviceBusTrigger",
+      "direction": "in",
+      "topicName": "topic_odb-pfm-generate_rdc",
+      "subscriptionName": "sub_odb-function_pfm",
+      "connection": "RDC_SUBSCRIPTION_POLICY",
+      "accessRights": "listen"
+    }
+  ]
+}

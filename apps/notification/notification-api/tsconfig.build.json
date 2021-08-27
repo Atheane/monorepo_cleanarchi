@@ -1,0 +1,15 @@
+{
+  "extends": "./tsconfig.json",
+  "exclude": ["**/*.test.ts", "**/fixtures"],
+  "compilerOptions": {
+    "outDir": "../../../dist/out-tsc",
+    "types": ["node", "express", "jest"],
+    "module": "CommonJS",
+    "allowSyntheticDefaultImports": true
+  },
+  "include": [
+    "**/*.ts",
+    "../../../node_modules/@types/jest/index.d.ts",
+    "**/*.json", "tools/*.js"
+  ]
+}

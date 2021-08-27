@@ -1,0 +1,47 @@
+[
+    {
+        "scope": "http://127.0.0.1:60669",
+        "method": "POST",
+        "path": "/payment/accounts/UpmekTXcJ/card/card-BGBpCxjZO/displaydetails",
+        "body": {
+            "rsaPublicKey": "LS0tLS1CRUdJTiBQVUJMSUMgS0VZLS0tLS0KTUlJQ0lqQU5CZ2txaGtpRzl3MEJBUUVGQUFPQ0FnOEFNSUlDQ2dLQ0FnRUE1YnQ3UzZvSy9kNldNdUZvQk9SNktKcnJyc1oxRWhtR3VIMnRMMkc4T1d6UmY4L1ltaHRxY3NXQWxIU3pQRHJUeDdxbktVUWRObFVHN1hGVEswanZoWnduazVpcVh6WEJsSElaakFHTklLcXFOcG5KSkt6SHYreUhPNGdFY3dEQVFtZUdSbVNkMVRkcGlhKzlSNUtKOEJsMFZPUSttb3FBTjhQL1ZnQUFla2d0U3ZqbHl1UURjTm9qVEFZVEp0RjRkYnR4YldJcHM3U3FPckFNUFJySmNGeUs5dzFSVUxKeElIQnFFdzJQYTRVVldFeUE0djRmYm44VGlNcjNpOU9MZURFdERnZElOLys5aHduRng2Wm5nZnBEK3IrQ210WS9yY0ljYUZBYWN3emJFaDBDdERCL1loVUh2c3lUeXU3SjZYN0xzaFU5dVdkMUJEWWwvNUwxK3o2QnRaQjgvaUtQT1lpMHNNM2tRZDNWUWh1QXFHaXJpOUZVZGNmeVNMM2NSRlc4di9Ma0tYL1JWL29NOW5RNmpNajZmd0pIcmdGYnNybU9JQVhyNXV4ZWxkUExJTlB2RVplRFBpVEx4TnlodUkyN1lMYnZZNFllbmtoek93ZkRSOS82dEFkWFJDSitraVBTUXUwa1hvbjByY1o5WlkxY1FZWDlUSUg2MUxJUnJMWEpHdGFuL1BYVnpnY1IvVXlGUXFXamJJVlIvZFVVdi9mUzRwWFUrUEp3TUNzdWZsQXlwbTFpOEJwVk5zejA1amw4RlV6T1ZQNUFUeTdQNkZNNlA0d1NjRHphWnpCaVkvSFU2Nm9mbVZJQ2p2M0d3dHkxTnYrVnhUdTQwSUsyZmo4NzZvNHduNU5Ma0swMCtFUEVZYjFrYUFvRExkV290dnNhOU9QdHdpRUNBd0VBQVE9PQotLS0tLUVORCBQVUJMSUMgS0VZLS0tLS0="
+        },
+        "status": 401,
+        "response": "Unauthorized",
+        "rawHeaders": [
+            "Access-Control-Allow-Origin",
+            "*",
+            "Content-Security-Policy",
+            "default-src 'self';base-uri 'self';block-all-mixed-content;font-src 'self' https: data:;frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests",
+            "X-DNS-Prefetch-Control",
+            "off",
+            "Expect-CT",
+            "max-age=0",
+            "X-Frame-Options",
+            "SAMEORIGIN",
+            "Strict-Transport-Security",
+            "max-age=15552000; includeSubDomains",
+            "X-Download-Options",
+            "noopen",
+            "X-Content-Type-Options",
+            "nosniff",
+            "X-Permitted-Cross-Domain-Policies",
+            "none",
+            "Referrer-Policy",
+            "no-referrer",
+            "X-XSS-Protection",
+            "0",
+            "Content-Type",
+            "text/plain; charset=utf-8",
+            "Content-Length",
+            "12",
+            "ETag",
+            "W/\"c-dAuDFQrdjS3hezqxDTNgW7AOlYk\"",
+            "Date",
+            "Tue, 27 Apr 2021 08:50:59 GMT",
+            "Connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    }
+]

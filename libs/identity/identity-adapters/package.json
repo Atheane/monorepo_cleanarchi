@@ -1,0 +1,8 @@
+{
+  "name": "@oney/identity-adapters",
+  "version": "0.12.1",
+  "publishConfig": {
+    "access": "public",
+    "directory": "../../../dist/libs/identity-adapters"
+  }
+}

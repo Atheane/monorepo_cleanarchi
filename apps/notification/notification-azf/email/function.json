@@ -1,0 +1,20 @@
+{
+  "bindings": [
+    {
+      "name": "message",
+      "type": "serviceBusTrigger",
+      "direction": "in",
+      "topicName": "topic_odb-notification-send_email",
+      "subscriptionName": "sub_odb-function_email",
+      "connection": "EMAIL_SUBSCRIPTION_POLICY",
+      "accessRights": "listen"
+    },
+    {
+      "name": "$return",
+      "type": "sendGrid",
+      "direction": "out",
+      "apiKey": "EMAIL_SENDGRID_KEY"
+    }
+  ],
+  "disabled": false
+}

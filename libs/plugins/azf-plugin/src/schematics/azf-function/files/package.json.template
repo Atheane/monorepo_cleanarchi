@@ -1,0 +1,13 @@
+{
+  "name": "<%= prefix %>-<%= name %>",
+  "version": "0.0.1",
+  "scripts" : {
+    "build": "tsc --project tsconfig.build.json",
+    "build:production": "npm run prestart && npm prune --production",
+    "watch": "tsc --w",
+    "prestart": "npm run build && func extensions install",
+    "start:host": "func start",
+    "start": "npm-run-all --parallel start:host watch"
+  },
+  "description": ""
+}

@@ -1,0 +1,226 @@
+[
+    {
+        "scope": "https://oney-dev-sandbox.biapi.pro:443",
+        "method": "GET",
+        "path": "/2.0/connectors/f711dd7a-6289-5bda-b3a4-f2febda8c046?capabilities=bank&expand=fields,logos",
+        "body": "",
+        "status": 200,
+        "response": {
+            "id": 3,
+            "name": "BNP Paribas",
+            "hidden": false,
+            "charged": true,
+            "code": "30004",
+            "beta": false,
+            "color": "28bb69",
+            "slug": "BNP",
+            "sync_frequency": null,
+            "months_to_fetch": null,
+            "auth_mechanism": "credentials",
+            "siret": null,
+            "uuid": "f711dd7a-6289-5bda-b3a4-f2febda8c046",
+            "restricted": false,
+            "fields": [
+                {
+                    "name": "website",
+                    "label": "Type de compte",
+                    "regex": null,
+                    "type": "list",
+                    "required": false,
+                    "auth_mechanisms": [
+                        "webauth",
+                        "credentials"
+                    ],
+                    "connector_sources": [
+                        "openapi",
+                        "fallback",
+                        "directaccess"
+                    ],
+                    "values": [
+                        {
+                            "label": "Particuliers/Professionnels",
+                            "value": "pp"
+                        }
+                    ]
+                },
+                {
+                    "name": "login",
+                    "label": "Numéro client",
+                    "regex": "^[0-9]{5,10}$",
+                    "type": "text",
+                    "required": true,
+                    "auth_mechanisms": [
+                        "credentials"
+                    ],
+                    "connector_sources": [
+                        "openapi",
+                        "fallback",
+                        "directaccess"
+                    ]
+                },
+                {
+                    "name": "password",
+                    "label": "Code secret",
+                    "regex": "^(\\d{6})$",
+                    "type": "password",
+                    "required": true,
+                    "auth_mechanisms": [
+                        "credentials"
+                    ],
+                    "connector_sources": [
+                        "openapi",
+                        "fallback",
+                        "directaccess"
+                    ]
+                }
+            ],
+            "logos": [],
+            "categories": [],
+            "capabilities": [
+                "contact",
+                "banktransferaddrecipient",
+                "banktransfer",
+                "bankwealth",
+                "transfer",
+                "bank",
+                "document",
+                "profile"
+            ],
+            "urls": [
+                "https://www.hellobank.fr",
+                "https://www.clients.assurance-vie.fr",
+                "https://mabanqueprivee.bnpparibas.net",
+                "https://api-psd2.bddf.bnpparibas",
+                "https://psd2-retail.bddf.bnpparibas",
+                "https://mabanque.bnpparibas",
+                "https://%s.bnpparibas"
+            ],
+            "available_auth_mechanisms": [
+                "webauth",
+                "credentials"
+            ],
+            "account_types": [
+                "loan",
+                "revolvingcredit",
+                "consumercredit",
+                "mortgage",
+                "pea",
+                "checking",
+                "savings",
+                "market",
+                "lifeinsurance",
+                "capitalisation",
+                "perp",
+                "deposit"
+            ],
+            "available_transfer_mechanisms": [
+                "webauth",
+                "credentials"
+            ],
+            "transfer_beneficiary_types": [
+                "iban",
+                "recipient"
+            ],
+            "transfer_execution_date_types": [
+                "first_open_day",
+                "instant",
+                "deferred"
+            ],
+            "documents_type": [
+                "statement",
+                "other",
+                "bill",
+                "RIB",
+                "report"
+            ]
+        },
+        "rawHeaders": [
+            "Date",
+            "Fri, 02 Apr 2021 09:16:29 GMT",
+            "Content-Type",
+            "application/json; charset=utf-8",
+            "Content-Length",
+            "1890",
+            "Connection",
+            "close",
+            "Vary",
+            "Authorization,Origin",
+            "Server",
+            "Budgea/2.21.17 Weboob/1.6+budgea.875",
+            "X-Recruiting",
+            "Budget Insight is hiring! Do not hesitate to contact us at jobs@budget-insight.com or on #budget-insight @ Freenode",
+            "X-Request-ID",
+            "c9b47780-5026-4e8e-a1a4-0beba2457ddc",
+            "Strict-Transport-Security",
+            "max-age=31536000; includeSubDomains; preload",
+            "X-Frame-Options",
+            "DENY"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "http://127.0.0.1:50915",
+        "method": "GET",
+        "path": "/aggregation/banks/f711dd7a-6289-5bda-b3a4-f2febda8c046",
+        "body": "",
+        "status": 200,
+        "response": {
+            "uid": "f711dd7a-6289-5bda-b3a4-f2febda8c046",
+            "form": [
+                {
+                    "label": "Numéro client",
+                    "name": "login",
+                    "type": "text",
+                    "validation": "^[0-9]{5,10}$",
+                    "options": null
+                },
+                {
+                    "label": "Code secret",
+                    "name": "password",
+                    "type": "password",
+                    "validation": "^(\\d{6})$",
+                    "options": null
+                }
+            ],
+            "logo": "https://fake-test-storage.onbadi.com/logo-bank/f711dd7a-6289-5bda-b3a4-f2febda8c046.png",
+            "name": "BNP Paribas",
+            "code": "30004",
+            "featured": true
+        },
+        "rawHeaders": [
+            "Access-Control-Allow-Origin",
+            "*",
+            "Content-Security-Policy",
+            "default-src 'self';base-uri 'self';block-all-mixed-content;font-src 'self' https: data:;frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests",
+            "X-DNS-Prefetch-Control",
+            "off",
+            "Expect-CT",
+            "max-age=0",
+            "X-Frame-Options",
+            "SAMEORIGIN",
+            "Strict-Transport-Security",
+            "max-age=15552000; includeSubDomains",
+            "X-Download-Options",
+            "noopen",
+            "X-Content-Type-Options",
+            "nosniff",
+            "X-Permitted-Cross-Domain-Policies",
+            "none",
+            "Referrer-Policy",
+            "no-referrer",
+            "X-XSS-Protection",
+            "0",
+            "Content-Type",
+            "application/json; charset=utf-8",
+            "Content-Length",
+            "405",
+            "ETag",
+            "W/\"195-ALZrH+6uK31qus/R5w5DkyHEL7w\"",
+            "Date",
+            "Fri, 02 Apr 2021 09:16:29 GMT",
+            "Connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    }
+]

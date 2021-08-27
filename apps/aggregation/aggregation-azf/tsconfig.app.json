@@ -1,0 +1,22 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "outDir": "../../../dist/out-tsc",
+    "types": ["node", "jest"],
+    "composite": false,
+    "declaration": true
+  },
+  "include": [
+    "**/*.ts",
+    "../../../node_modules/@types/jest/index.d.ts"
+  ],
+  "exclude": ["tsconfig.build.json"],
+  "references": [
+    {
+      "path": "./tsconfig.app.json"
+    },
+    {
+      "path": "./tsconfig.spec.json"
+    }
+  ]
+}

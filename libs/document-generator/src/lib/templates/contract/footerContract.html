@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <script>
+        function subst() {
+            var vars = {};
+            var query_strings_from_url = document.location.search.substring(1).split('&');
+            for (var query_string in query_strings_from_url) {
+                if (query_strings_from_url.hasOwnProperty(query_string)) {
+                    var temp_var = query_strings_from_url[query_string].split('=', 2);
+                    vars[temp_var[0]] = decodeURI(temp_var[1]);
+                }
+            }
+            var css_selector_classes = ['page', 'frompage', 'topage', 'webpage', 'section', 'subsection', 'date', 'isodate', 'time', 'title', 'doctitle', 'sitepage', 'sitepages'];
+            for (var css_class in css_selector_classes) {
+                if (css_selector_classes.hasOwnProperty(css_class)) {
+                    var element = document.getElementsByClassName(css_selector_classes[css_class]);
+                    for (var j = 0; j < element.length; ++j) {
+                        element[j].textContent = vars[css_selector_classes[css_class]];
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style type="text/css">
+        body {
+            width: 100%;
+            padding: 0 21mm;
+            font-family: Avenir, arial, san-serif;
+            box-sizing: border-box;
+        }
+
+        table {
+            width: 100%;
+            vertical-align: top;
+        }
+
+        td {
+            font-size: 3.5mm;
+            color: #898A8D;
+            vertical-align: bottom;
+        }
+
+        .page-cell {
+            white-space: nowrap;
+        }
+
+        .footnote {
+            color: #898A8D;
+            font-size: 2.5mm;
+            line-height: 2.7mm;
+            margin: 0;
+            padding: 0 10mm 0 0;
+            font-family: Avenir Next;
+            font-style: normal;
+            font-weight: normal;
+        }
+    </style>
+
+
+</head>
+
+<body style="border:0; margin: 0 0 0 0;" onload="subst()">
+
+    <table>
+        <tr>
+            <td>
+                <p class="footnote">
+                    Oney et Oney+ sont des marques de Oney Bank - SA au capital de 51 286 585 € - Siège social : 34,
+                    avenue de Flandre 59170 Croix - RCS Lille Métropole 546 380 197 - Courtier en assurances - ORIAS
+                    n°07023261 Service Réclamations : XX XX XX XX XX (coût d’un appel local).
+                </p>
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>

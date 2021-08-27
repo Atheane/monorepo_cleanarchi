@@ -1,0 +1,81 @@
+[
+    {
+        "scope": "https://sb-api.xpollens.com:443",
+        "method": "GET",
+        "path": "/api/V1.1/users/ow_KFDTZq",
+        "body": "",
+        "status": 200,
+        "response": {
+            "Id": 3657,
+            "AppUserId": "ow_KFDTZq",
+            "Type": 1,
+            "Role": 1,
+            "Profile": {
+                "Civility": 0,
+                "FirstName": "Jake",
+                "LastName": "Bauer",
+                "Birthdate": "1981-01-04T00:00:00",
+                "Birthcity": "Nantes",
+                "BirthCountry": "FR",
+                "BirthZipCode": null,
+                "Address": {
+                    "Street": "4 RUE DE NANTES",
+                    "ZipCode": "75019",
+                    "City": "PARIS",
+                    "Country": "FR"
+                },
+                "PhoneNumber": "0033615248370",
+                "Email": "jackbauer0401@yopmail.com",
+                "Alias": "J.B#ow_KFDTZq",
+                "Picture": {
+                    "Href": null
+                },
+                "EconomicActivity": 35,
+                "Asset": null,
+                "Income": null
+            },
+            "Credentials": null,
+            "Amount": 0,
+            "AccountingBalanceAmount": 0,
+            "SubAccounts": [
+                {
+                    "Id": 3657,
+                    "AppAccountId": "ow_KFDTZq",
+                    "Amount": 0,
+                    "AccountingBalanceAmount": 0,
+                    "DisplayName": "Jake Bauer",
+                    "CreationDate": "2021-01-04T13:18:05",
+                    "IsDefault": true,
+                    "Iban": "FR1012869000020PC000002TL94",
+                    "IbanHint": "FR10XXXXXXXXXXXXXXXXTL94"
+                }
+            ],
+            "BankAccounts": null,
+            "CBCards": null,
+            "Status": 1,
+            "Company": null,
+            "CountryCode": null,
+            "KycStatus": 5,
+            "OnBoardingDate": "2021-01-04T13:18:05"
+        },
+        "rawHeaders": [
+            "Date",
+            "Wed, 06 Jan 2021 10:20:15 GMT",
+            "Content-Type",
+            "application/json; charset=utf-8",
+            "Content-Length",
+            "902",
+            "Connection",
+            "close",
+            "Cache-Control",
+            "private",
+            "Server",
+            "IWS",
+            "Request-Context",
+            "appId=cid-v1:40d43092-8aee-4b2b-8b7f-34d2d69e09b7",
+            "X-AspNet-Version",
+            "4.0.30319"
+        ],
+        "responseIsBinary": false
+    }
+]

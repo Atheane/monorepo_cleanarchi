@@ -1,0 +1,57 @@
+[
+    {
+        "scope": "http://127.0.0.1:52549",
+        "method": "POST",
+        "path": "/profile/user/QsDfgHjKln/verify-bankaccount-owner",
+        "body": {},
+        "status": 400,
+        "response": {
+            "message": "You have an error in your request's body. Check 'errors' field for more details!",
+            "errors": [
+                {
+                    "target": {},
+                    "property": "bankName",
+                    "children": [],
+                    "constraints": {
+                        "isString": "bankName must be a string"
+                    }
+                }
+            ]
+        },
+        "rawHeaders": [
+            "Access-Control-Allow-Origin",
+            "*",
+            "Content-Security-Policy",
+            "default-src 'self';base-uri 'self';block-all-mixed-content;font-src 'self' https: data:;frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests",
+            "X-DNS-Prefetch-Control",
+            "off",
+            "Expect-CT",
+            "max-age=0",
+            "X-Frame-Options",
+            "SAMEORIGIN",
+            "Strict-Transport-Security",
+            "max-age=15552000; includeSubDomains",
+            "X-Download-Options",
+            "noopen",
+            "X-Content-Type-Options",
+            "nosniff",
+            "X-Permitted-Cross-Domain-Policies",
+            "none",
+            "Referrer-Policy",
+            "no-referrer",
+            "X-XSS-Protection",
+            "0",
+            "Content-Type",
+            "application/json; charset=utf-8",
+            "Content-Length",
+            "210",
+            "ETag",
+            "W/\"d2-4AGILGP2liwMEVk6qoegqlcFfQ0\"",
+            "Date",
+            "Wed, 10 Mar 2021 13:54:21 GMT",
+            "Connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    }
+]

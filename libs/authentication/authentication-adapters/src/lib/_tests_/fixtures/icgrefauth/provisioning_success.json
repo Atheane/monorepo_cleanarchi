@@ -1,0 +1,23 @@
+[
+    {
+        "scope": "https://10.53.24.82:443",
+        "method": "POST",
+        "path": "/mod_ICG_refAuthWeb/V9.0/ICG?ETAB=12869",
+        "body": "<soapenv:Envelope xmlns:peg=\"http://www.bpce.fr/xsd/peg/PEG_v0\" xmlns:soapenv=\"http://schemas.xmlsoap.org/soap/envelope/\" xmlns:mod=\"http://mod_ICG_refAuth_Lib_Export/mod_ICG_refAuth\"><soapenv:Header><peg:groupContext><peg:requestContext><peg:requestId>48f01c19-d5ce-4994-bca8-16242b5165b8</peg:requestId></peg:requestContext><peg:consumerContext><peg:application><peg:name>BD-FRA</peg:name><peg:version>1.0</peg:version><peg:organisation>ONEY</peg:organisation></peg:application><peg:run><peg:companyCode>12869</peg:companyCode></peg:run></peg:consumerContext><peg:goalContext/></peg:groupContext></soapenv:Header><soapenv:Body><mod:provisionnerClient><QstnEnrlClnt><BlcProvClnt><IdDistr>bpce</IdDistr><CdEtabFinn>12869</CdEtabFinn><RefrClntProv>12869@123_test_456_3</RefrClntProv><CivlClnt>X</CivlClnt><NmPatrClnt>FIRSTNAMEX</NmPatrClnt><PrnmClnt>LASTNAMEX</PrnmClnt><IdGrpeClsnDacs>GRP_BPCE_12869</IdGrpeClsnDacs><IdGrpeClsnDvs>GRP_BPCE_12869</IdGrpeClsnDvs></BlcProvClnt><ListAppli><CdAppliProv>ACS</CdAppliProv><IdClntAppli>12869@123_test_456_3</IdClntAppli><ListAliasClntAppli><IdAliasClntAppli>888124b0c5579630e3865388e50f8edea12734c6ef6c44cc8420e2de8cbcdd111g</IdAliasClntAppli></ListAliasClntAppli></ListAppli><ListAppli><CdAppliProv>BANKING_FR</CdAppliProv><IdClntAppli>12869@123_test_456_3</IdClntAppli></ListAppli><ListMoyeAuth><CdTypeMoyeAuth>1</CdTypeMoyeAuth><MoyeAuth>0678299081</MoyeAuth><CdEtatMoyeAuth>C</CdEtatMoyeAuth><IdClntMoyeAuth>12869@123_test_456_3</IdClntMoyeAuth></ListMoyeAuth></QstnEnrlClnt></mod:provisionnerClient></soapenv:Body></soapenv:Envelope>",
+        "status": 200,
+        "response": "<soap:Envelope xmlns:soap=\"http://schemas.xmlsoap.org/soap/envelope/\"><soap:Header><peg:groupContext xmlns:peg=\"http://www.bpce.fr/xsd/peg/PEG_v0\"><peg:requestContext><peg:requestId>48f01c19-d5ce-4994-bca8-16242b5165b8</peg:requestId></peg:requestContext><peg:consumerContext><peg:application><peg:name>BD-FRA</peg:name><peg:version>1.0</peg:version><peg:organisation>ONEY</peg:organisation></peg:application><peg:run><peg:companyCode>12869</peg:companyCode></peg:run></peg:consumerContext><peg:goalContext/></peg:groupContext></soap:Header><soap:Body><ns2:provisionnerClientResponse xmlns:ns2=\"http://mod_ICG_refAuth_Lib_Export/mod_ICG_refAuth\" xmlns:ns3=\"http://www.bpce.fr/xsd/peg/PEG_v0\"><RepnEnrlClnt><BlocRetr><CdTypeRetr>0</CdTypeRetr></BlocRetr></RepnEnrlClnt></ns2:provisionnerClientResponse></soap:Body></soap:Envelope>",
+        "rawHeaders": [
+            "Date",
+            "Thu, 27 Aug 2020 16:53:25 GMT",
+            "Server",
+            "Apache",
+            "Content-Length",
+            "829",
+            "Content-Type",
+            "text/xml;charset=ISO-8859-1",
+            "Connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    }
+]

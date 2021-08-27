@@ -1,0 +1,54 @@
+[
+    {
+        "scope": "https://sb-api.xpollens.com:443",
+        "method": "POST",
+        "path": "/api/V1.0/users/mala_2/payments",
+        "body": {
+            "orderid": "SMoney077686",
+            "beneficiary": {
+                "appaccountid": "mala_1"
+            },
+            "sender": {
+                "appaccountid": "mala_2"
+            },
+            "amount": 50,
+            "message": "aze",
+            "checkLimits": false,
+            "tag": " -VIRT ENTRE CPT CLT-P2PCL-FRA-000-XMp6548787",
+            "processUnpaid": false,
+            "Recurrent": {
+                "RecurrentEndDate": "2020-09-25",
+                "FrequencyType": 0,
+                "RecurrentDays": 15
+            }
+        },
+        "status": 400,
+        "response": {
+            "Code": 11,
+            "ErrorMessage": "Erreur Inconnue",
+            "Title": null,
+            "Priority": 2
+        },
+        "rawHeaders": [
+            "Date",
+            "Wed, 30 Sep 2020 10:53:14 GMT",
+            "Server",
+            "IWS",
+            "Cache-Control",
+            "no-cache",
+            "Pragma",
+            "no-cache",
+            "Content-Length",
+            "70",
+            "Content-Type",
+            "application/json; charset=utf-8",
+            "Expires",
+            "-1",
+            "X-AspNet-Version",
+            "4.0.30319",
+            "Connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    }
+]

@@ -1,0 +1,36 @@
+[
+    {
+        "scope": "https://sb-connect.xpollens.com:443",
+        "method": "POST",
+        "path": "/connect/token",
+        "body": "client_id=Oney.Test&client_secret=Oney.Test&grant_type=client_credentials&scope=partner",
+        "status": 200,
+        "response": {
+            "access_token": "eyJhbGciOiJSUzI1NiIsImtpZCI6Ijc4Q0QwNDc2MDM2RUQxMDAwMEQzNjRFNEJCQzQ2RjE2NzFFNkIzNDJSUzI1NiIsInR5cCI6ImF0K2p3dCIsIng1dCI6ImVNMEVkZ051MFFBQTAyVGt1OFJ2Rm5IbXMwSSJ9.eyJuYmYiOjE2MTkxMDE5MjksImV4cCI6MTYxOTEwNTUyOSwiaXNzIjoiaHR0cHM6Ly9zYi1jb25uZWN0Lnhwb2xsZW5zLmNvbSIsImF1ZCI6IkFQSS5HYXRld2F5IiwiY2xpZW50X2lkIjoiT25leS5UZXN0IiwicGFydG5lcl9jb2RlIjoib25leSIsImp0aSI6IjVGNTNDODEzQUZCRUJBNTg2MjNEMDg4MzQ2RTNGOTJEIiwiaWF0IjoxNjE5MTAxOTI5LCJzY29wZSI6WyJwYXJ0bmVyIl19.gegOBP__KpEUZIDT_uiyeYafIkXAbrOATc7diyLaUk6M_34ZSQRw860Zp7bY1ZiCuxMdwewNnvgKH7AwjbjZELbJHOE90QX31dMbiKdunpDXVKvXOjE2Y22z8NOOVCKtdS-FKXg9TCSnKEzyHIxlM9ocpBOvaDffIK5UXzBnu0IyVDx0V9VjFbgqnKfdPhOxA3K88xiL4JpQ6KU0fc4a02_P8-wTeT-dl8oJjT9_vvaCWoTs4HC_azLdEyNV_iO7JKkoS7SWwC8TYZNA1IzsVZKaiw0yaBZgfEvG8aYOyKFnEOg2-y8zbEt2jHnlJqLQRioKsrm0hE3wt0C17v1erQ",
+            "expires_in": 3600,
+            "token_type": "Bearer",
+            "scope": "partner"
+        },
+        "rawHeaders": [
+            "Date",
+            "Thu, 22 Apr 2021 14:32:09 GMT",
+            "Content-Type",
+            "application/json; charset=UTF-8",
+            "Cache-Control",
+            "no-store, no-cache, max-age=0",
+            "Pragma",
+            "no-cache",
+            "Request-Context",
+            "appId=cid-v1:40d43092-8aee-4b2b-8b7f-34d2d69e09b7",
+            "Strict-Transport-Security",
+            "max-age=2592000",
+            "CorrId",
+            "f818bd13-ffc4-4ff6-95b6-27a9af8a86af",
+            "Connection",
+            "close",
+            "Transfer-Encoding",
+            "chunked"
+        ],
+        "responseIsBinary": false
+    }
+]

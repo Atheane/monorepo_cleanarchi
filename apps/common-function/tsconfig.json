@@ -1,0 +1,13 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "types": ["node"],
+    "allowJs": true,
+    "outDir": "../../dist",
+    "module": "commonjs",
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "skipLibCheck": true
+  },
+  "include": ["**/*.ts", "**/*.json", "tools/*.js"]
+}

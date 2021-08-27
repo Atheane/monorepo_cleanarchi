@@ -1,0 +1,77 @@
+[
+    {
+        "scope": "https://sb-api.xpollens.com:443",
+        "method": "POST",
+        "path": "/api/V1.1/users/ow_KFDTZq/declarative",
+        "body": {
+            "income": "1",
+            "economicActivity": "11"
+        },
+        "status": 200,
+        "response": {
+            "economicActivity": 11,
+            "income": 1
+        },
+        "rawHeaders": [
+            "Date",
+            "Mon, 01 Feb 2021 17:36:24 GMT",
+            "Content-Type",
+            "application/json; charset=utf-8",
+            "Content-Length",
+            "34",
+            "Request-Context",
+            "appId=cid-v1:40d43092-8aee-4b2b-8b7f-34d2d69e09b7",
+            "Connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "http://127.0.0.1:51242",
+        "method": "PATCH",
+        "path": "/payment/user/ow_KFDTZq",
+        "body": {
+            "declarativeFiscalSituation": {
+                "income": "1",
+                "economicActivity": "11"
+            }
+        },
+        "status": 200,
+        "response": "OK",
+        "rawHeaders": [
+            "Access-Control-Allow-Origin",
+            "*",
+            "Content-Security-Policy",
+            "default-src 'self';base-uri 'self';block-all-mixed-content;font-src 'self' https: data:;frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests",
+            "X-DNS-Prefetch-Control",
+            "off",
+            "Expect-CT",
+            "max-age=0",
+            "X-Frame-Options",
+            "SAMEORIGIN",
+            "Strict-Transport-Security",
+            "max-age=15552000; includeSubDomains",
+            "X-Download-Options",
+            "noopen",
+            "X-Content-Type-Options",
+            "nosniff",
+            "X-Permitted-Cross-Domain-Policies",
+            "none",
+            "Referrer-Policy",
+            "no-referrer",
+            "X-XSS-Protection",
+            "0",
+            "Content-Type",
+            "text/plain; charset=utf-8",
+            "Content-Length",
+            "2",
+            "ETag",
+            "W/\"2-nOO9QiTIwXgNtWtBJezz8kv3SLc\"",
+            "Date",
+            "Mon, 01 Feb 2021 17:36:24 GMT",
+            "Connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    }
+]

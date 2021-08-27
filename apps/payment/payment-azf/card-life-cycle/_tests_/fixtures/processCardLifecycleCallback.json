@@ -1,0 +1,41 @@
+[
+    {
+        "scope": "https://sb-api.xpollens.com:443",
+        "method": "POST",
+        "path": "/api/v1.0/cards/card-mX0N2fSSw/display",
+        "body": {
+            "RSAPublicKey": "LS0tLS1CRUdJTiBQVUJMSUMgS0VZLS0tLS0KTUlJQ0lqQU5CZ2txaGtpRzl3MEJBUUVGQUFPQ0FnOEFNSUlDQ2dLQ0FnRUF2WE9EZ1d3TnVhU0IxSWdFck5hUQptc3Y5VzFIakQ2NUtOakhRYVVXYWxBNWZMZ3ZKalV5bS9SNEsxc1Fob20wTk9jV0ZTOHBxSjhZMnM2eDZNU1Z1CmtwSDJ6K3k4cXhSV1czZ01LQjFJczhwS2loRGRNRWdWd3F0eldRckh4bjI5TjR4dlpRQ29yV2lIaE1OcGJHZ1kKVkdtbGZ5Zitkb0lVczh3cmpMdEtNUG9kWE1GL1hzaUszMkRNdFpOTkIzTStYa0RndlhrTHBibk1hdjUxd1F2VgozS0lUdFVxVndjTFdWSUxLSkNhdGcweVdBNHFiUUhOVTREK2VPN09pTGd0MGpoY3JlS2Q2UG9vOThENkY4RUdHCkR3RW0wcXRyd2NLa0YzWUtldkhtbTFoWUljdmJsUnNscDQyUVFzRGowRGpMTmhRQXAxN3g0aVF1ejNwakswR3EKV2lXbFJKc0g1V0xvbkd1MUpOeHlILzZuTlg2MHprcDZXY0FNdWttbFBldHFtV09zRjZKclNVbTExd01Mb2Q5YgpjQXlwTVdvRGR6UVBKZERCNCs1TDZtTDhJUG5tY3JkVkZVU0piQUdQZ3R6by9JL1NMOXEya1BuUUFmR0FyY281CkdOdmU3ZHJ1SC9ETVBYQ05ranhQNW85VjJOK2s1QW9IQ3ZCSm1NckU3S0lIZXdqY0MrdUdjVXRYd1diZGZ6azgKK0hyZ0RJTjVrZTVMK3FzbUk3bTJudHpoRjQrK2k1RFpWd3JTcldIWEVZR3FQU0NmZVc5WjI0eWdvYWhPRWoxUQpWazlwRUMxT1JHNHdMRWhTQTdadTk1SnNZMnA3L2JqT2VrRnB0RkEyRi9sRUVNV2xWdTZrMWQzZHFydlU4STRrCnNPT1BPQnNFV0I2Z1hYeXJVU3l3UWlNQ0F3RUFBUT09Ci0tLS0tRU5EIFBVQkxJQyBLRVktLS0tLQo="
+        },
+        "status": 200,
+        "response": {
+            "TransactionIdentifier": "213514",
+            "cardIDToken": "             card-mX0N2fSSw",
+            "signKeyIndex": null,
+            "encryptKeyIndex": null,
+            "signature": null,
+            "buffer": {
+                "encryptedData": "NZ4V0PBiY2UVu3VSeIfjtQPcL0VFhl5CwQIxKz50xUJC9HCNCYgE4eBp6aaGvof859hBPQqnvPd7x/4s6tXaCd3RwsyVF5YONymUyUgvR+/1td6yv6mfeHnXCXuR4WDeujDPXIf0IvqUZpFZ5Hu/tL/yngyJaOJjt/8QJG7Ei9qPmvjZi245yPmk8WiS7SeI8PM5Xt8Dt3mu//zRNwfs9Ze5EvBx0JAKv7L3NR5nckav+sY6RzkIv+o+nZvZKKypiH/YDPrPjEF0c2xEZD5w1fLTqQ99YD/nRYHjBkeIy4QMnVcUWXVhb9b4kNFG5TcehRPd8mGTsJJekDIYxXxwqavhKhy64EiKEAJ/l6rZr4XP7zHUoddt6qa10oi/xXTaUj4RgT5EMUXzH1S17nzhSHUbYLDkcovMFrPNzIEiO4K+atB/bkqAxX8vKFbDi0Dl1OMH8RyMUbv5uyRZU3lqNf80UIf66i/jKXERmStheUy7CMWdZqcPqL/wzAFvuxO1VgjH9SrSvzI9I1coliluKJWCC8zD90rKWg2VNbzN+rvBEysEqSn0eaWV+BOWxLSuaWUcrac2ypSGx9NXOEwyQ77CrYwIwfUpOh8bnkyNKUBkTJSFzD19Gn/kwJqGMEi7Q7LzIpvcZkpxYTAbecwLzkKBUhq78meGK2kjMhwSunw="
+            },
+            "IsSuccess": true
+        },
+        "rawHeaders": [
+            "Date",
+            "Tue, 08 Dec 2020 21:58:33 GMT",
+            "Content-Type",
+            "application/json; charset=utf-8",
+            "Content-Length",
+            "869",
+            "Connection",
+            "close",
+            "Cache-Control",
+            "private",
+            "Server",
+            "IWS",
+            "Request-Context",
+            "appId=cid-v1:40d43092-8aee-4b2b-8b7f-34d2d69e09b7",
+            "X-AspNet-Version",
+            "4.0.30319"
+        ],
+        "responseIsBinary": false
+    }
+]

@@ -1,0 +1,243 @@
+[
+    {
+        "scope": "https://sb-api.xpollens.com:443",
+        "method": "GET",
+        "path": "/api/V1.1/users/Jr_eBSwkR",
+        "body": "",
+        "status": 200,
+        "response": {
+            "Id": 2324,
+            "AppUserId": "Jr_eBSwkR",
+            "Type": 1,
+            "Role": 2,
+            "Profile": {
+                "Civility": 0,
+                "FirstName": "Impayer",
+                "LastName": "Impaye",
+                "BirthName": null,
+                "Birthdate": "1980-12-06T00:00:00",
+                "Birthcity": "Paris",
+                "BirthCountry": "FR",
+                "BirthZipCode": null,
+                "Address": {
+                    "Street": "5 LA VICTOIRE",
+                    "ZipCode": "50700",
+                    "City": "VALOGNES",
+                    "Country": "FR"
+                },
+                "PhoneNumber": "33636541258",
+                "Email": "oney_impaye@yopmail.com",
+                "Alias": "I.I#Jr_eBSwkR",
+                "Picture": {
+                    "Href": null
+                },
+                "EconomicActivity": 11,
+                "Asset": null,
+                "Income": null
+            },
+            "Credentials": null,
+            "Amount": 6062140,
+            "DebtBalance": 0,
+            "AccountingBalanceAmount": 6118330,
+            "SubAccounts": [
+                {
+                    "Id": 2324,
+                    "AppAccountId": "Jr_eBSwkR",
+                    "Amount": 6062140,
+                    "AccountingBalanceAmount": 6118330,
+                    "DisplayName": "Impayer Impaye",
+                    "CreationDate": "2020-09-23T16:42:08",
+                    "IsDefault": true,
+                    "Iban": "FR2612869000020PC000001SK39",
+                    "IbanHint": "FR26XXXXXXXXXXXXXXXXSK39"
+                }
+            ],
+            "BankAccounts": [
+                {
+                    "Id": 1500,
+                    "Href": "https://rest-pp.s-money.fr/api/bib/sandbox/api/users/Jr_eBSwkR/bankaccounts/1500"
+                }
+            ],
+            "CBCards": [
+                {
+                    "Id": 1341,
+                    "AppCardId": "card-Rr551D60U",
+                    "Href": "https://rest-pp.s-money.fr/api/bib/sandbox/api/users/Jr_eBSwkR/cards/card-Rr551D60U"
+                }
+            ],
+            "Status": 1,
+            "Company": null,
+            "CountryCode": null,
+            "KycStatus": 6,
+            "OnBoardingDate": "2020-09-23T16:42:08"
+        },
+        "rawHeaders": [
+            "Date",
+            "Wed, 31 Mar 2021 08:47:11 GMT",
+            "Content-Type",
+            "application/json; charset=utf-8",
+            "Content-Length",
+            "1193",
+            "Cache-Control",
+            "private",
+            "Request-Context",
+            "appId=cid-v1:40d43092-8aee-4b2b-8b7f-34d2d69e09b7",
+            "Connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "https://sb-api.xpollens.com:443",
+        "method": "GET",
+        "path": "/api/V1.1/users/999OB-prt",
+        "body": "",
+        "status": 200,
+        "response": {
+            "Id": 4801,
+            "AppUserId": "999OB-prt",
+            "Type": 2,
+            "Role": 2,
+            "Profile": {
+                "Civility": null,
+                "FirstName": null,
+                "LastName": "999OB-prt",
+                "BirthName": null,
+                "Birthdate": null,
+                "Birthcity": null,
+                "BirthCountry": null,
+                "BirthZipCode": null,
+                "Address": {
+                    "Street": null,
+                    "ZipCode": null,
+                    "City": null,
+                    "Country": "None"
+                },
+                "PhoneNumber": null,
+                "Email": null,
+                "Alias": null,
+                "Picture": {
+                    "Href": null
+                },
+                "EconomicActivity": null,
+                "Asset": null,
+                "Income": null
+            },
+            "Credentials": null,
+            "Amount": 20000,
+            "DebtBalance": 0,
+            "AccountingBalanceAmount": 20000,
+            "SubAccounts": [
+                {
+                    "Id": 4801,
+                    "AppAccountId": "999OB-prt",
+                    "Amount": 20000,
+                    "AccountingBalanceAmount": 20000,
+                    "DisplayName": "999OB-prt",
+                    "CreationDate": "2021-02-17T15:12:14",
+                    "IsDefault": true,
+                    "Iban": "FR0312869000020PC000003PD59",
+                    "IbanHint": "FR03XXXXXXXXXXXXXXXXPD59"
+                }
+            ],
+            "BankAccounts": [
+                {
+                    "Id": 3576,
+                    "Href": "https://rest-pp.s-money.fr/api/bib/sandbox/api/users/999OB-prt/bankaccounts/3576"
+                }
+            ],
+            "CBCards": null,
+            "Status": 1,
+            "Company": null,
+            "CountryCode": null,
+            "OnBoardingDate": "2021-02-17T15:12:14"
+        },
+        "rawHeaders": [
+            "Date",
+            "Wed, 31 Mar 2021 08:47:12 GMT",
+            "Content-Type",
+            "application/json; charset=utf-8",
+            "Content-Length",
+            "959",
+            "Cache-Control",
+            "private",
+            "Request-Context",
+            "appId=cid-v1:40d43092-8aee-4b2b-8b7f-34d2d69e09b7",
+            "Connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "https://sb-api.xpollens.com:443",
+        "method": "POST",
+        "path": "/api/V1.1/users/999OB-prt/payments",
+        "body": {
+            "orderid": "BEBABB33201",
+            "beneficiary": {
+                "appaccountid": "Jr_eBSwkR"
+            },
+            "sender": {
+                "appaccountid": "999OB-prt"
+            },
+            "amount": 1000,
+            "message": "aze",
+            "checkLimits": false,
+            "tag": " -PASS PERTE IMPAYE -IMPAY-FRA-000-XMp6548787",
+            "processUnpaid": false,
+            "Recurrent": null
+        },
+        "status": 201,
+        "response": {
+            "Id": 9124,
+            "PaymentDate": "2021-03-31T10:47:12.770105+02:00",
+            "Amount": 1000,
+            "Sender": {
+                "Id": 4801,
+                "AppAccountId": "999OB-prt",
+                "DisplayName": "999OB-prt",
+                "Email": null,
+                "PhoneNumber": null,
+                "Alias": null,
+                "Iban": "FR0312869000020PC000003PD59",
+                "Href": "https://rest-pp.s-money.fr/api/bib/sandbox/api/users/999OB-prt"
+            },
+            "Beneficiary": {
+                "Id": 2324,
+                "AppAccountId": "Jr_eBSwkR",
+                "DisplayName": "Impayer Impaye",
+                "Email": "oney_impaye@yopmail.com",
+                "PhoneNumber": "33 63 65 41 25 8",
+                "Alias": "I.I#Jr_eBSwkR",
+                "Iban": "FR2612869000020PC000001SK39",
+                "Href": "https://rest-pp.s-money.fr/api/bib/sandbox/api/users/Jr_eBSwkR"
+            },
+            "Message": "aze",
+            "OrderId": "BEBABB33201",
+            "Status": 1,
+            "CheckLimits": false,
+            "Tag": " -PASS PERTE IMPAYE -IMPAY-FRA-000-XMp6548787"
+        },
+        "rawHeaders": [
+            "Date",
+            "Wed, 31 Mar 2021 08:47:13 GMT",
+            "Content-Type",
+            "application/json; charset=utf-8",
+            "Content-Length",
+            "711",
+            "Cache-Control",
+            "no-cache",
+            "Pragma",
+            "no-cache",
+            "Expires",
+            "-1",
+            "Location",
+            "https://az-pp-rest.s-money.net/api/bib/sandbox/api/users/999OB-prt/payments/9124",
+            "Request-Context",
+            "appId=cid-v1:40d43092-8aee-4b2b-8b7f-34d2d69e09b7",
+            "Connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    }
+]

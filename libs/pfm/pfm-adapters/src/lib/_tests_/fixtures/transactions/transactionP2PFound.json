@@ -1,0 +1,95 @@
+[
+    {
+        "scope": "https://rest-pp.s-money.fr:443",
+        "method": "GET",
+        "path": "/api/bib/sandbox/api/users/OsYFhvKAT",
+        "body": "",
+        "status": 200,
+        "response": {
+            "Id": 1388,
+            "AppUserId": "OsYFhvKAT",
+            "Type": 1,
+            "Role": 2,
+            "Profile": {
+                "Civility": 0,
+                "FirstName": "Corinne",
+                "LastName": "Berthier",
+                "Birthdate": "1965-12-06T00:00:00",
+                "Birthcity": "Bobigny",
+                "BirthCountry": "FR",
+                "Address": {
+                    "Street": "temporary street",
+                    "ZipCode": "75001",
+                    "City": "Paris",
+                    "Country": "FR"
+                },
+                "PhoneNumber": "33646776779",
+                "Email": "jardin08@yopmail.com",
+                "Alias": "Corinne_Berthier#OsYFhvKAT",
+                "Picture": {
+                    "Href": null
+                },
+                "EconomicActivity": 11
+            },
+            "Credentials": null,
+            "Amount": 218697,
+            "AccountingBalanceAmount": 420782,
+            "SubAccounts": [
+                {
+                    "Id": 1388,
+                    "AppAccountId": "OsYFhvKAT",
+                    "Amount": 218697,
+                    "AccountingBalanceAmount": 420782,
+                    "DisplayName": "Corinne Berthier",
+                    "CreationDate": "2020-08-13T16:54:15",
+                    "IsDefault": true,
+                    "Iban": "FR8112869000020PC0000012K39",
+                    "IbanHint": "FR81XXXXXXXXXXXXXXXX2K39"
+                }
+            ],
+            "BankAccounts": [
+                {
+                    "Id": 992,
+                    "Href": "https://rest-pp.s-money.fr/api/bib/sandbox/api/users/OsYFhvKAT/bankaccounts/992"
+                },
+                {
+                    "Id": 996,
+                    "Href": "https://rest-pp.s-money.fr/api/bib/sandbox/api/users/OsYFhvKAT/bankaccounts/996"
+                },
+                {
+                    "Id": 1011,
+                    "Href": "https://rest-pp.s-money.fr/api/bib/sandbox/api/users/OsYFhvKAT/bankaccounts/1011"
+                }
+            ],
+            "CBCards": [
+                {
+                    "Id": 1180,
+                    "AppCardId": "card-HClWrKwT2",
+                    "Href": "https://rest-pp.s-money.fr/api/bib/sandbox/api/users/OsYFhvKAT/cards/card-HClWrKwT2"
+                }
+            ],
+            "Status": 1,
+            "Company": null,
+            "CountryCode": null,
+            "KycStatus": 3,
+            "OnBoardingDate": "2020-08-13T16:54:15"
+        },
+        "rawHeaders": [
+            "Date",
+            "Thu, 15 Oct 2020 14:30:58 GMT",
+            "Server",
+            "IWS",
+            "Cache-Control",
+            "private",
+            "Content-Type",
+            "application/json; charset=utf-8",
+            "X-AspNet-Version",
+            "4.0.30319",
+            "Content-Length",
+            "1325",
+            "Connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    }
+]

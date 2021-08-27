@@ -1,0 +1,22 @@
+{
+  "bindings": [
+    {
+      "name": "message",
+      "type": "serviceBusTrigger",
+      "direction": "in",
+      "topicName": "topic_odb-notification-send_sms",
+      "subscriptionName": "sub_odb-function_sms",
+      "connection": "SMS_SUBSCRIPTION_POLICY",
+      "accessRights": "listen"
+    },
+    {
+      "name": "$return",
+      "type": "twilioSms",
+      "direction": "out",
+      "from": "+14752566022",
+      "accountSidSetting": "TWILIO_SID",
+      "authTokenSetting": "TWILIO_TOKEN"
+    }
+  ],
+  "disabled": false
+}

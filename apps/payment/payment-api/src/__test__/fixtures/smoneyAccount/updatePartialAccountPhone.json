@@ -1,0 +1,126 @@
+[
+    {
+        "scope": "https://sb-api.xpollens.com:443",
+        "method": "PUT",
+        "path": "/api/V1.1/users/ow_KFDTZq",
+        "body": {
+            "Profile": {
+                "Phonenumber": "33798563258"
+            }
+        },
+        "status": 200,
+        "response": {
+            "Id": 3657,
+            "AppUserId": "ow_KFDTZq",
+            "Type": 1,
+            "Role": 1,
+            "Profile": {
+                "Civility": 0,
+                "FirstName": "Jake",
+                "LastName": "Bauer",
+                "Birthdate": "1981-01-04T00:00:00",
+                "Birthcity": "Nantes",
+                "BirthCountry": "FR",
+                "BirthZipCode": null,
+                "Address": {
+                    "Street": "4 RUE DE NANTES",
+                    "ZipCode": "75019",
+                    "City": "PARIS",
+                    "Country": "FR"
+                },
+                "PhoneNumber": "0033798563258",
+                "Email": "jackbauer0401@yopmail.com",
+                "Alias": "J.B#ow_KFDTZq",
+                "Picture": {
+                    "Href": null
+                },
+                "EconomicActivity": 11,
+                "Asset": null,
+                "Income": null
+            },
+            "Credentials": null,
+            "Amount": 0,
+            "AccountingBalanceAmount": 0,
+            "SubAccounts": [
+                {
+                    "Id": 3657,
+                    "AppAccountId": "ow_KFDTZq",
+                    "Amount": 0,
+                    "AccountingBalanceAmount": 0,
+                    "DisplayName": "Jake Bauer",
+                    "CreationDate": "2021-01-04T13:18:05",
+                    "IsDefault": true,
+                    "Iban": "FR1012869000020PC000002TL94",
+                    "IbanHint": "FR10XXXXXXXXXXXXXXXXTL94"
+                }
+            ],
+            "BankAccounts": null,
+            "CBCards": null,
+            "Status": 1,
+            "Company": null,
+            "CountryCode": null,
+            "KycStatus": 5,
+            "OnBoardingDate": "2021-01-04T13:18:05"
+        },
+        "rawHeaders": [
+            "Date",
+            "Fri, 22 Jan 2021 08:44:16 GMT",
+            "Content-Type",
+            "application/json; charset=utf-8",
+            "Content-Length",
+            "902",
+            "Cache-Control",
+            "no-cache",
+            "Pragma",
+            "no-cache",
+            "Expires",
+            "-1",
+            "Request-Context",
+            "appId=cid-v1:40d43092-8aee-4b2b-8b7f-34d2d69e09b7",
+            "Connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "http://127.0.0.1:60809",
+        "method": "PATCH",
+        "path": "/payment/user/ow_KFDTZq",
+        "body": {
+            "phone": "33798563258"
+        },
+        "status": 200,
+        "response": "",
+        "rawHeaders": [
+            "Access-Control-Allow-Origin",
+            "*",
+            "Content-Security-Policy",
+            "default-src 'self';base-uri 'self';block-all-mixed-content;font-src 'self' https: data:;frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests",
+            "X-DNS-Prefetch-Control",
+            "off",
+            "Expect-CT",
+            "max-age=0",
+            "X-Frame-Options",
+            "SAMEORIGIN",
+            "Strict-Transport-Security",
+            "max-age=15552000; includeSubDomains",
+            "X-Download-Options",
+            "noopen",
+            "X-Content-Type-Options",
+            "nosniff",
+            "X-Permitted-Cross-Domain-Policies",
+            "none",
+            "Referrer-Policy",
+            "no-referrer",
+            "X-XSS-Protection",
+            "0",
+            "Date",
+            "Fri, 22 Jan 2021 08:44:16 GMT",
+            "Connection",
+            "close",
+            "Content-Length",
+            "0"
+        ],
+        "responseIsBinary": false
+    }
+]

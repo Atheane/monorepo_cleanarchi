@@ -1,0 +1,72 @@
+[
+    {
+        "scope": "https://odb0storage0dev.blob.core.windows.net:443",
+        "method": "PUT",
+        "path": "/documents/customer_service_topics_20210326.json?comp=properties",
+        "body": "",
+        "status": 200,
+        "response": "",
+        "rawHeaders": [
+            "Content-Length",
+            "0",
+            "Last-Modified",
+            "Fri, 26 Mar 2021 17:15:52 GMT",
+            "ETag",
+            "\"0x8D8F07ACEE790AB\"",
+            "Server",
+            "Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0",
+            "x-ms-request-id",
+            "d930cf9e-001e-0033-7763-22bb61000000",
+            "x-ms-client-request-id",
+            "uuid_v4_example",
+            "x-ms-version",
+            "2020-04-08",
+            "Date",
+            "Fri, 26 Mar 2021 17:15:52 GMT"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "https://odb0storage0dev.blob.core.windows.net:443",
+        "method": "GET",
+        "path": "/documents/customer_service_topics_20210326.json",
+        "body": "",
+        "status": 200,
+        "response": [
+            "7b0a20202020224143434f554e545f4352454154494f4e223a20224d612064656d616e6465206465206372c3a96174696f6e20646520636f6d707465222c0a20202020224143434f554e54223a20224d6f6e20636f6d707465222c0a20202020225452414e53414354494f4e53223a20224d6573207472616e73616374696f6e73222c0a202020202243415244223a20224d61206361727465222c0a202020202250524f46494c45223a20224d6f6e2070726f66696c222c0a2020202022415050223a20224d6f6e206170706c69636174696f6e222c0a2020202022434c41494d223a20224a27616920756e652072c3a9636c616d6174696f6e222c0a202020202249444541223a20224a27616920756e65206964c3a96520706f757220766f7573222c0a20202020224241434b5f4f4646223a20224a6520736f756861697465206d652072c3a974726163746572222c0a2020202022434c4f53455f4143434f554e54223a20224a6520736f756861697465206665726d6572206d6f6e20636f6d707465204f6e65792b220a20207d"
+        ],
+        "rawHeaders": [
+            "Content-Length",
+            "400",
+            "Content-Encoding",
+            "utf-8",
+            "Last-Modified",
+            "Fri, 26 Mar 2021 17:15:52 GMT",
+            "Accept-Ranges",
+            "bytes",
+            "ETag",
+            "\"0x8D8F07ACEE790AB\"",
+            "Server",
+            "Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0",
+            "x-ms-request-id",
+            "d930cfcd-001e-0033-2263-22bb61000000",
+            "x-ms-client-request-id",
+            "uuid_v4_example",
+            "x-ms-version",
+            "2020-04-08",
+            "x-ms-creation-time",
+            "Fri, 26 Mar 2021 15:53:58 GMT",
+            "x-ms-lease-status",
+            "unlocked",
+            "x-ms-lease-state",
+            "available",
+            "x-ms-blob-type",
+            "BlockBlob",
+            "x-ms-server-encrypted",
+            "true",
+            "Date",
+            "Fri, 26 Mar 2021 17:15:52 GMT"
+        ],
+        "responseIsBinary": false
+    }
+]

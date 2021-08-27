@@ -1,0 +1,25 @@
+{
+    "name": "@oney/notification-azf",
+    "version": "0.0.1",
+    "scripts": {
+        "build": "tsc --project tsconfig.build.json",
+        "build:production": "npm run prestart && npm prune --production",
+        "watch": "tsc --w",
+        "prestart": "npm run build && func extensions install",
+        "start:host": "func start",
+        "start": "npm-run-all --parallel start:host watch",
+        "test": "echo \"No tests yet...\""
+    },
+    "description": "",
+    "dependencies": {
+        "@azure/functions": "^1.2.2",
+        "http-status": "^1.5.0",
+        "@oney/env": "^0.3.2",
+        "superagent": "^6.1.0",
+        "nock": "^13.0.5",
+        "wkhtmltopdf": "^0.3.4",
+        "@azure/storage-blob": "^12.3.0",
+        "tslib": "1.10.0"
+    },
+    "devDependencies": {}
+}

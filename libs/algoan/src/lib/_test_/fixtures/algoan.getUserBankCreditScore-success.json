@@ -1,0 +1,309 @@
+[
+    {
+        "scope": "https://api.preprod.algoan.com:443",
+        "method": "POST",
+        "path": "/v1/oauth/token",
+        "body": "client_id=oney-score-1&client_secret=42cbb0bd-dbf1-49a7-88e9-6524c195be6c&grant_type=client_credentials",
+        "status": 200,
+        "response": {
+            "access_token": "eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJXTDVieGNMS09VYTJ0NTJNaWh3djhfZVZkbmgyT20zRTR6clB1UlJZTlYwIn0.eyJqdGkiOiJjMzg4YjM5NC1kMGVjLTRhODAtYjhiNy02ZGY4YWU5YjYwNDYiLCJleHAiOjE2MTczNjI5MzUsIm5iZiI6MCwiaWF0IjoxNjE3MzYyNjM1LCJpc3MiOiJodHRwczovL2tleWNsb2FrLnByZXByb2QuYWxnb2FuLmNvbS9hdXRoL3JlYWxtcy9hbGdvYW4iLCJhdWQiOlsicmVzdGhvb2ttYW5hZ2VyIiwiYWdncmVnYXRpb25tYW5hZ2VyIl0sInN1YiI6IjIwOWEyNWQyLTE4OWYtNDRiNS1iNjhlLTNmOWZhMDk3OGIzZSIsInR5cCI6IkJlYXJlciIsImF6cCI6Im9uZXktc2NvcmUtMSIsImF1dGhfdGltZSI6MCwic2Vzc2lvbl9zdGF0ZSI6ImJiNjdlNTY2LWE1ODQtNDhmOS1iMjk0LWVkNzc1NWNhYWM0YiIsImFjciI6IjEiLCJyZXNvdXJjZV9hY2Nlc3MiOnsicmVzdGhvb2ttYW5hZ2VyIjp7InJvbGVzIjpbImVkaXRvciIsInJlYWRlciJdfSwiYWdncmVnYXRpb25tYW5hZ2VyIjp7InJvbGVzIjpbIkFERU5fcmVhZGVyIiwiQUNfZWRpdG9yIiwiQlVfcmVhZGVyIiwiQUNfcmVhZGVyIiwiQlVfZWRpdG9yIiwiVFJfZWRpdG9yIiwiVFJfcmVhZGVyIl19LCJvbmV5LXNjb3JlLTEiOnsicm9sZXMiOlsidW1hX3Byb3RlY3Rpb24iXX19LCJzY29wZSI6InByb2ZpbGUgZW1haWwiLCJjbGllbnRJZCI6Im9uZXktc2NvcmUtMSIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwiY2xpZW50SG9zdCI6Ijg3LjIzMS4xMDguOTIiLCJjaGF0Zmxvd0lkcyI6Im5vbmUiLCJvcmdhbml6YXRpb25JZHMiOiI1ZmEyYjRkMGFmMDhmMjAwMmEwMDhkOTYiLCJwcmVmZXJyZWRfdXNlcm5hbWUiOiJzZXJ2aWNlLWFjY291bnQtb25leS1zY29yZS0xIiwiY2xpZW50QWRkcmVzcyI6Ijg3LjIzMS4xMDguOTIifQ.GaWOdoOSUk1jfL3bnT5LmA6K06ez6o_h1bXudrPXkXeWu08CNY3vFgd5jMA46ZXQxn8yrlP0GK7O1cSRZIS5UZnNe8gMrJaTWM5O61uW4jllCGGLRf9WdmqrA_VeU78eGL4cuJ0qCTUrMWdxhg9CTD4agmnYBDLeym5gBwfn0w9ACRyq0HYgw6c_FQCsVmuj2vCQWYyxM4e_s10zWR-g44ecmc_lkDpuNMqnhgZyvPhSxuaTI0Utja3v1d8pqnkuQwJ3F6y4y_kVQSDvXpXrz7HMPZZ6ikvkeoKU05iTpYKwK4dvWbZTWOtq0RY74TXwtZSXId-se1xTlVgtOBvmKA",
+            "expires_in": 300,
+            "refresh_expires_in": 2592000,
+            "refresh_token": "eyJhbGciOiJIUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJlOTdmYjQ2Ni1lNGIxLTQyNmMtYTRmYS05NDVhZGRmNzA2NGQifQ.eyJqdGkiOiJiZTQ2MjQ2MC1iMmEwLTQwOTUtOWM0OS1jNTYyODQzMGZhYjAiLCJleHAiOjE2MTk5NTQ2MzUsIm5iZiI6MCwiaWF0IjoxNjE3MzYyNjM1LCJpc3MiOiJodHRwczovL2tleWNsb2FrLnByZXByb2QuYWxnb2FuLmNvbS9hdXRoL3JlYWxtcy9hbGdvYW4iLCJhdWQiOiJodHRwczovL2tleWNsb2FrLnByZXByb2QuYWxnb2FuLmNvbS9hdXRoL3JlYWxtcy9hbGdvYW4iLCJzdWIiOiIyMDlhMjVkMi0xODlmLTQ0YjUtYjY4ZS0zZjlmYTA5NzhiM2UiLCJ0eXAiOiJSZWZyZXNoIiwiYXpwIjoib25leS1zY29yZS0xIiwiYXV0aF90aW1lIjowLCJzZXNzaW9uX3N0YXRlIjoiYmI2N2U1NjYtYTU4NC00OGY5LWIyOTQtZWQ3NzU1Y2FhYzRiIiwicmVzb3VyY2VfYWNjZXNzIjp7InJlc3Rob29rbWFuYWdlciI6eyJyb2xlcyI6WyJlZGl0b3IiLCJyZWFkZXIiXX0sImFnZ3JlZ2F0aW9ubWFuYWdlciI6eyJyb2xlcyI6WyJBREVOX3JlYWRlciIsIkFDX2VkaXRvciIsIkJVX3JlYWRlciIsIkFDX3JlYWRlciIsIkJVX2VkaXRvciIsIlRSX2VkaXRvciIsIlRSX3JlYWRlciJdfSwib25leS1zY29yZS0xIjp7InJvbGVzIjpbInVtYV9wcm90ZWN0aW9uIl19fSwic2NvcGUiOiJwcm9maWxlIGVtYWlsIn0.hL3TffQCISIAQIMAMLGRNFnam0NAFpKaW4SH4RwzGnc",
+            "token_type": "bearer",
+            "not-before-policy": 1565701970,
+            "session_state": "bb67e566-a584-48f9-b294-ed7755caac4b",
+            "scope": "profile email"
+        },
+        "rawHeaders": [
+            "Date",
+            "Fri, 02 Apr 2021 11:23:55 GMT",
+            "Content-Type",
+            "application/json",
+            "Content-Length",
+            "2767",
+            "Cache-Control",
+            "no-store",
+            "Set-Cookie",
+            "KC_RESTART=; Version=1; Expires=Thu, 01-Jan-1970 00:00:10 GMT; Max-Age=0; Path=/auth/realms/algoan/; Secure; HttpOnly",
+            "Pragma",
+            "no-cache",
+            "Access-Control-Allow-Methods",
+            "GET, POST, PATCH, PUT, DELETE, OPTIONS",
+            "Access-Control-Allow-Headers",
+            "DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type",
+            "Strict-Transport-Security",
+            "max-age=31536000; includeSubDomains",
+            "X-Frame-Options",
+            "SAMEORIGIN",
+            "X-Content-Type-Options",
+            "nosniff",
+            "X-XSS-Protection",
+            "1; mode=block",
+            "Referrer-Policy",
+            "no-referrer",
+            "Via",
+            "1.1 google",
+            "Alt-Svc",
+            "clear",
+            "Connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "https://api.preprod.algoan.com:443",
+        "method": "GET",
+        "path": "/v1/banks-users/5fd4e7df96c9b48e6268c5b7",
+        "body": "",
+        "status": 200,
+        "response": {
+            "status": "FINISHED",
+            "adenTriggers": {
+                "onSynchronizationFinished": true
+            },
+            "scores": [],
+            "scoreTriggers": {},
+            "aden": [
+                {
+                    "createdAt": "2020-12-12T15:56:43.946Z",
+                    "dataQuality": {
+                        "calendar": [
+                            {
+                                "month": "2019-06",
+                                "nbDays": 1
+                            }
+                        ],
+                        "lastTransactionGap": 531,
+                        "historicalDepth": 1,
+                        "transactionsFrequency": 366,
+                        "numberOfCheckings": 1,
+                        "numberOfSavings": 0,
+                        "numberOfLoans": 0,
+                        "numberOfCreditCards": 0
+                    },
+                    "score": {
+                        "score": 968,
+                        "indicators": {
+                            "savings": 1,
+                            "lifestyle": 2,
+                            "cash": 1
+                        }
+                    },
+                    "budget": {
+                        "cashflows": [
+                            {
+                                "references": [
+                                    "5fd4e81396c9b441aa68c5bb",
+                                    "5fd4e81396c9b44bcd68c5bc",
+                                    "5fd4e81396c9b4023d68c5ce",
+                                    "5fd4e81396c9b45c1768c5d2"
+                                ],
+                                "calendar": [
+                                    {
+                                        "month": "2019-06",
+                                        "amount": -25400
+                                    }
+                                ],
+                                "type": "OTHER_EXPENSE",
+                                "labelRoot": "EXPENSES",
+                                "label": "EXPENSES",
+                                "dueDay": 30,
+                                "nbTransactions": 4,
+                                "totalAmount": -25400,
+                                "monthlyAmount": -25400,
+                                "meanAmount": -25400
+                            },
+                            {
+                                "references": [
+                                    "5fd4e81396c9b4829b68c5b9",
+                                    "5fd4e81396c9b46ed968c5ba",
+                                    "5fd4e81396c9b4b1d668c5bd",
+                                    "5fd4e81396c9b4211f68c5c1",
+                                    "5fd4e81396c9b47c5368c5cb",
+                                    "5fd4e81396c9b4038268c5cc",
+                                    "5fd4e81396c9b4c37868c5d0",
+                                    "5fd4e81396c9b40f8268c5d1"
+                                ],
+                                "calendar": [
+                                    {
+                                        "month": "2019-06",
+                                        "amount": 21450
+                                    }
+                                ],
+                                "type": "OTHER_INCOME",
+                                "labelRoot": "EXPENSES",
+                                "label": "EXPENSES",
+                                "dueDay": 30,
+                                "nbTransactions": 8,
+                                "totalAmount": 21450,
+                                "monthlyAmount": 21450,
+                                "meanAmount": 21450
+                            }
+                        ],
+                        "indicators": {
+                            "debtToIncome": 1,
+                            "residualIncome": 0,
+                            "allowancesRatio": 0
+                        }
+                    },
+                    "bureau": {
+                        "frequentTransactions": [
+                            {
+                                "references": [
+                                    "5fd4e81396c9b4829b68c5b9",
+                                    "5fd4e81396c9b46ed968c5ba",
+                                    "5fd4e81396c9b4b1d668c5bd",
+                                    "5fd4e81396c9b4211f68c5c1",
+                                    "5fd4e81396c9b47c5368c5cb",
+                                    "5fd4e81396c9b4038268c5cc",
+                                    "5fd4e81396c9b4c37868c5d0",
+                                    "5fd4e81396c9b40f8268c5d1"
+                                ],
+                                "label": "EXPENSES",
+                                "nbTransactions": 8,
+                                "totalAmount": 21450
+                            },
+                            {
+                                "references": [
+                                    "5fd4e81396c9b441aa68c5bb",
+                                    "5fd4e81396c9b44bcd68c5bc",
+                                    "5fd4e81396c9b4023d68c5ce",
+                                    "5fd4e81396c9b45c1768c5d2"
+                                ],
+                                "label": "EXPENSES",
+                                "nbTransactions": 4,
+                                "totalAmount": -25400
+                            }
+                        ],
+                        "events": {
+                            "thirdPartyHolderNotice": {
+                                "nbTransactions": 0,
+                                "totalAmount": 0,
+                                "references": []
+                            },
+                            "wageAdvances": {
+                                "nbTransactions": 0,
+                                "totalAmount": 0,
+                                "references": []
+                            },
+                            "bankAccountSeizure": {
+                                "nbTransactions": 0,
+                                "totalAmount": 0,
+                                "references": []
+                            }
+                        },
+                        "incidents": {
+                            "paymentRejections": {
+                                "nbTransactions": 0,
+                                "totalAmount": 0,
+                                "references": []
+                            },
+                            "checkRejections": {
+                                "nbTransactions": 0,
+                                "totalAmount": 0,
+                                "references": []
+                            },
+                            "fees": {
+                                "nbTransactions": 0,
+                                "totalAmount": 0,
+                                "references": []
+                            }
+                        },
+                        "overdraft": {
+                            "max": 0,
+                            "hard": 0,
+                            "total": 0,
+                            "fees": {
+                                "nbTransactions": 0,
+                                "totalAmount": 0,
+                                "references": []
+                            }
+                        },
+                        "credit": {
+                            "locDrawDowns": {
+                                "count": 0,
+                                "nbLenders": 0,
+                                "amount": 0
+                            },
+                            "loans": {
+                                "count": 0,
+                                "nbLenders": 0,
+                                "amount": 0
+                            }
+                        },
+                        "gambling": {
+                            "nbTransactions": 0,
+                            "totalAmount": 0,
+                            "references": []
+                        },
+                        "payments": [
+                            {
+                                "algoanType": "CHECK_DEPOSIT",
+                                "totalAmount": 21450,
+                                "nbTransactions": 8,
+                                "references": [
+                                    "5fd4e81396c9b4829b68c5b9",
+                                    "5fd4e81396c9b46ed968c5ba",
+                                    "5fd4e81396c9b4b1d668c5bd",
+                                    "5fd4e81396c9b4211f68c5c1",
+                                    "5fd4e81396c9b47c5368c5cb",
+                                    "5fd4e81396c9b4038268c5cc",
+                                    "5fd4e81396c9b4c37868c5d0",
+                                    "5fd4e81396c9b40f8268c5d1"
+                                ]
+                            },
+                            {
+                                "algoanType": "CHECK",
+                                "totalAmount": -25400,
+                                "nbTransactions": 4,
+                                "references": [
+                                    "5fd4e81396c9b441aa68c5bb",
+                                    "5fd4e81396c9b44bcd68c5bc",
+                                    "5fd4e81396c9b4023d68c5ce",
+                                    "5fd4e81396c9b45c1768c5d2"
+                                ]
+                            }
+                        ]
+                    }
+                }
+            ],
+            "id": "5fd4e7df96c9b48e6268c5b7"
+        },
+        "rawHeaders": [
+            "Date",
+            "Fri, 02 Apr 2021 11:23:55 GMT",
+            "Content-Type",
+            "application/json; charset=utf-8",
+            "Content-Length",
+            "3073",
+            "X-Powered-By",
+            "Express",
+            "Access-Control-Allow-Origin",
+            "*",
+            "ETag",
+            "W/\"c01-bcFOEVZYDO2xQ+WhDLYfEidwUPk\"",
+            "Access-Control-Allow-Methods",
+            "GET, POST, PATCH, PUT, DELETE, OPTIONS",
+            "Access-Control-Allow-Headers",
+            "DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type",
+            "Strict-Transport-Security",
+            "max-age=31536000; includeSubDomains",
+            "X-Frame-Options",
+            "SAMEORIGIN",
+            "X-Content-Type-Options",
+            "nosniff",
+            "X-XSS-Protection",
+            "1; mode=block",
+            "Referrer-Policy",
+            "no-referrer",
+            "Via",
+            "1.1 google",
+            "Alt-Svc",
+            "clear",
+            "Connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    }
+]

@@ -1,0 +1,13 @@
+{
+  "extends": "../../../tsconfig.base.json",
+  "compilerOptions": {
+    "types": ["jest", "node"],
+    "allowJs": true,
+    "outDir": "../../../dist",
+    "resolveJsonModule": true,
+    "module": "commonjs"
+  },
+  
+  "exclude": ["**/*.test.ts", "./**/__tests__/*"],
+  "include": ["**/*.ts", "**/*.json", "tools/*.js"]
+}

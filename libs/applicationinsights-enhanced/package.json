@@ -1,0 +1,8 @@
+{
+  "name": "@oney/applicationinsights-enhanced",
+  "version": "0.6.0",
+  "publishConfig": {
+    "access": "public",
+    "directory": "../../dist/libs/applicationinsights-enhanced"
+  }
+}

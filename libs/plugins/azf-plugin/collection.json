@@ -1,0 +1,12 @@
+{
+  "$schema": "../../../node_modules/@angular-devkit/schematics/collection-schema.json",
+  "name": "azf-plugin",
+  "version": "0.0.1",
+  "schematics": {
+    "func": {
+      "schema": "./src/schematics/azf-function/schema.json",
+      "factory": "./src/schematics/azf-function/schematic",
+      "description": "Template for the creation of Azf Function"
+    }
+  }
+}

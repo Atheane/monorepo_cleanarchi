@@ -1,0 +1,11 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "outDir": "../../../dist/out-tsc",
+    "types": ["node", "express", "jest"],
+    "module": "CommonJS",
+    "allowSyntheticDefaultImports": true
+  },
+  "exclude": ["**/*.spec.ts", "**/*.mock.ts", "tsconfig.build.json"],
+  "include": ["**/*.ts", "tools/*.js"]
+}

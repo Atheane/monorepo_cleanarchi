@@ -1,0 +1,279 @@
+[
+    {
+        "scope": "https://oney-dev-sandbox.biapi.pro:443",
+        "method": "GET",
+        "path": "/2.0/account_types",
+        "body": "",
+        "status": 200,
+        "response": {
+            "accounttypes": [
+                {
+                    "id": 1,
+                    "name": "unknown",
+                    "is_invest": false,
+                    "weboob_type_id": 0,
+                    "display_name_p": "Inconnu",
+                    "display_name": "Inconnu",
+                    "color": null,
+                    "product": "all",
+                    "id_parent": null
+                },
+                {
+                    "id": 2,
+                    "name": "checking",
+                    "is_invest": false,
+                    "weboob_type_id": 1,
+                    "display_name_p": "Comptes courants",
+                    "display_name": "Compte courant",
+                    "color": null,
+                    "product": "bank",
+                    "id_parent": null
+                },
+                {
+                    "id": 3,
+                    "name": "savings",
+                    "is_invest": false,
+                    "weboob_type_id": 2,
+                    "display_name_p": "Comptes épargne",
+                    "display_name": "Compte épargne",
+                    "color": null,
+                    "product": "wealth",
+                    "id_parent": null
+                },
+                {
+                    "id": 4,
+                    "name": "deposit",
+                    "is_invest": false,
+                    "weboob_type_id": 3,
+                    "display_name_p": "Comptes de dépots",
+                    "display_name": "Compte de dépots",
+                    "color": null,
+                    "product": "wealth",
+                    "id_parent": null
+                },
+                {
+                    "id": 5,
+                    "name": "loan",
+                    "is_invest": false,
+                    "weboob_type_id": 4,
+                    "display_name_p": "Comptes de prets",
+                    "display_name": "Compte de prets",
+                    "color": null,
+                    "product": "wealth",
+                    "id_parent": null
+                },
+                {
+                    "id": 6,
+                    "name": "market",
+                    "is_invest": true,
+                    "weboob_type_id": 5,
+                    "display_name_p": "Comptes titres",
+                    "display_name": "Compte titres",
+                    "color": null,
+                    "product": "wealth",
+                    "id_parent": null
+                },
+                {
+                    "id": 7,
+                    "name": "joint",
+                    "is_invest": false,
+                    "weboob_type_id": 6,
+                    "display_name_p": "Comptes joints",
+                    "display_name": "Comptes joint",
+                    "color": null,
+                    "product": "wealth",
+                    "id_parent": null
+                },
+                {
+                    "id": 8,
+                    "name": "card",
+                    "is_invest": false,
+                    "weboob_type_id": 7,
+                    "display_name_p": "Comptes carte",
+                    "display_name": "Compte carte",
+                    "color": null,
+                    "product": "bank",
+                    "id_parent": null
+                },
+                {
+                    "id": 9,
+                    "name": "lifeinsurance",
+                    "is_invest": true,
+                    "weboob_type_id": 8,
+                    "display_name_p": "Assurances vie",
+                    "display_name": "Assurance vie",
+                    "color": null,
+                    "product": "wealth",
+                    "id_parent": 6
+                },
+                {
+                    "id": 10,
+                    "name": "pee",
+                    "is_invest": true,
+                    "weboob_type_id": 9,
+                    "display_name_p": "Plans épargne entreprise",
+                    "display_name": "Plan épargne entreprise",
+                    "color": null,
+                    "product": "wealth",
+                    "id_parent": 6
+                },
+                {
+                    "id": 11,
+                    "name": "perco",
+                    "is_invest": true,
+                    "weboob_type_id": 10,
+                    "display_name_p": "Plans épargne retraite",
+                    "display_name": "Plan épargne retraite",
+                    "color": null,
+                    "product": "wealth",
+                    "id_parent": 6
+                },
+                {
+                    "id": 12,
+                    "name": "article83",
+                    "is_invest": true,
+                    "weboob_type_id": 11,
+                    "display_name_p": "Articles 83",
+                    "display_name": "Article 83",
+                    "color": null,
+                    "product": "wealth",
+                    "id_parent": 6
+                },
+                {
+                    "id": 13,
+                    "name": "rsp",
+                    "is_invest": true,
+                    "weboob_type_id": 12,
+                    "display_name_p": "Réserve spéciale de participation",
+                    "display_name": "Réserve spéciale de participation",
+                    "color": null,
+                    "product": "wealth",
+                    "id_parent": 6
+                },
+                {
+                    "id": 14,
+                    "name": "pea",
+                    "is_invest": true,
+                    "weboob_type_id": 13,
+                    "display_name_p": "Plan d'épargne en actions",
+                    "display_name": "Plan d'épargne en actions",
+                    "color": null,
+                    "product": "wealth",
+                    "id_parent": 6
+                },
+                {
+                    "id": 15,
+                    "name": "capitalisation",
+                    "is_invest": true,
+                    "weboob_type_id": 14,
+                    "display_name_p": "Contrat de capitalisation",
+                    "display_name": "Contrat de capitalisation",
+                    "color": null,
+                    "product": "wealth",
+                    "id_parent": 6
+                },
+                {
+                    "id": 16,
+                    "name": "perp",
+                    "is_invest": true,
+                    "weboob_type_id": 15,
+                    "display_name_p": "Plan d'épargne retraite populaire",
+                    "display_name": "Plan d'épargne retraite populaire",
+                    "color": null,
+                    "product": "wealth",
+                    "id_parent": 6
+                },
+                {
+                    "id": 17,
+                    "name": "madelin",
+                    "is_invest": true,
+                    "weboob_type_id": 16,
+                    "display_name_p": "Contrat retraite Madelin",
+                    "display_name": "Contrat retraite Madelin",
+                    "color": null,
+                    "product": "wealth",
+                    "id_parent": 6
+                },
+                {
+                    "id": 18,
+                    "name": "mortgage",
+                    "is_invest": false,
+                    "weboob_type_id": 17,
+                    "display_name_p": "Crédits immobiliers",
+                    "display_name": "Crédit immobilier",
+                    "color": null,
+                    "product": "wealth",
+                    "id_parent": 5
+                },
+                {
+                    "id": 19,
+                    "name": "consumercredit",
+                    "is_invest": false,
+                    "weboob_type_id": 18,
+                    "display_name_p": "Crédits à la consommation",
+                    "display_name": "Crédit à la consommation",
+                    "color": null,
+                    "product": "wealth",
+                    "id_parent": 5
+                },
+                {
+                    "id": 20,
+                    "name": "revolvingcredit",
+                    "is_invest": false,
+                    "weboob_type_id": 19,
+                    "display_name_p": "Crédits renouvelables",
+                    "display_name": "Crédit renouvelable",
+                    "color": null,
+                    "product": "wealth",
+                    "id_parent": 5
+                },
+                {
+                    "id": 21,
+                    "name": "per",
+                    "is_invest": true,
+                    "weboob_type_id": 20,
+                    "display_name_p": "Plans épargne retraite",
+                    "display_name": "Plan épargne retraite",
+                    "color": null,
+                    "product": "wealth",
+                    "id_parent": 6
+                },
+                {
+                    "id": 22,
+                    "name": "real_estate",
+                    "is_invest": true,
+                    "weboob_type_id": 21,
+                    "display_name_p": "Placements immobiliers",
+                    "display_name": "Placement immobilier",
+                    "color": null,
+                    "product": "wealth",
+                    "id_parent": 6
+                }
+            ],
+            "total": 22
+        },
+        "rawHeaders": [
+            "Date",
+            "Wed, 14 Apr 2021 14:15:57 GMT",
+            "Content-Type",
+            "application/json; charset=utf-8",
+            "Content-Length",
+            "4567",
+            "Connection",
+            "close",
+            "Vary",
+            "Authorization,Origin",
+            "Server",
+            "Budgea/2.21.20 Weboob/1.6+budgea.883",
+            "X-Recruiting",
+            "Budget Insight is hiring! Do not hesitate to contact us at jobs@budget-insight.com or on #budget-insight @ Freenode",
+            "X-Request-ID",
+            "879a0a64-f224-4bbc-b647-9d5fedbd30ba",
+            "Strict-Transport-Security",
+            "max-age=31536000; includeSubDomains; preload",
+            "X-Frame-Options",
+            "DENY"
+        ],
+        "responseIsBinary": false
+    }
+]

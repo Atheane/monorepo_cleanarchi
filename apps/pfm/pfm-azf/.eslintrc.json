@@ -1,0 +1,8 @@
+{
+  "extends": "../../../.eslintrc.json",
+  "rules": {},
+  "env": {
+    "node": true
+  },
+  "ignorePatterns": ["!**/*"]
+}

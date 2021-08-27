@@ -1,0 +1,49 @@
+[
+    
+    {
+        "scope": "https://sb-api.xpollens.com:443",
+        "method": "GET",
+        "path": "/api/V1.1/ClientDebts?appuserid=kTDhDRrHv",
+        "body": "",
+        
+        "status": 200,
+        "response": {
+            "value": [
+                {
+                    "OrderId": "FDEAED10122",
+                    "AppUserId": "kTDhDRrHv",
+                    "Date": "2021-01-18T15:09:31.57Z",
+                    "DebtAmount": 1000,
+                    "RemainingDebtAmount": 1000,
+                    "Status": 1,
+                    "Reason": "P2P"
+                }
+            ],
+            "links": [
+                {
+                    "url": "?appuserid=kTDhDRrHv&page=2&perpage=50&pageindex=26185&direction=next",
+                    "relation": "next"
+                }
+            ]
+        },
+        "rawHeaders": [
+            "Date",
+            "Wed, 28 Apr 2021 09:55:55 GMT",
+            "Content-Type",
+            "application/json; charset=utf-8",
+            "Content-Length",
+            "7571",
+            "Cache-Control",
+            "no-cache",
+            "Pragma",
+            "no-cache",
+            "Expires",
+            "-1",
+            "Request-Context",
+            "appId=cid-v1:40d43092-8aee-4b2b-8b7f-34d2d69e09b7",
+            "Connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    }
+]

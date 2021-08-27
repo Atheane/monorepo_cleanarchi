@@ -1,0 +1,132 @@
+[
+    {
+        "scope": "https://recex-sso.spb.eu:443",
+        "method": "POST",
+        "path": "/auth/realms/spb-api-external/protocol/openid-connect/token",
+        "body": "grant_type=password&client_id=external-account&client_secret=019b7c58-f30d-45e6-bd26-c5ce794a6cfb&client_credentials=password&username=oney-bank&password=Cnvmo%26R3W4yDK%23qbw%3FA%3B",
+        "status": 200,
+        "response": {
+            "access_token": "eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICIteFo1bDg0c01xY0dIM3JuWGxSN3ZQR0lxNFBfWVhyMTVPV0F1eXQ3YzlvIn0.eyJleHAiOjE2MTk0NTM2MTgsImlhdCI6MTYxOTQ1MzMxOCwianRpIjoiM2EzNjY0ZmEtNjZjMy00ZDY4LTgyZDQtOGY0NDRjMjQ4NDkzIiwiaXNzIjoiaHR0cHM6Ly9zc28uYXBwcy5kZXYuc3BiLmV1L2F1dGgvcmVhbG1zL3NwYi1hcGktZXh0ZXJuYWwiLCJhdWQiOiJhY2NvdW50Iiwic3ViIjoiYTQ3MTJiNmItZWYzOC00ZTJmLWFmMmItYzIyZGQ2NDlmMDIzIiwidHlwIjoiQmVhcmVyIiwiYXpwIjoiZXh0ZXJuYWwtYWNjb3VudCIsInNlc3Npb25fc3RhdGUiOiIxYzUxZmY2OC1jMjMyLTRhNjEtODc2Mi00ZWM3MDA2NDI1ZGEiLCJhY3IiOiIxIiwiYWxsb3dlZC1vcmlnaW5zIjpbIioiXSwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIkRPTV9QUk9EVUNUIiwiRE9NX1NVQlNDUklQVElPTiIsIlJPTEVfVVNFUiIsIm9mZmxpbmVfYWNjZXNzIiwidW1hX2F1dGhvcml6YXRpb24iLCJET01fUkVGRVJFTlRJQUwiXX0sInJlc291cmNlX2FjY2VzcyI6eyJhY2NvdW50Ijp7InJvbGVzIjpbIm1hbmFnZS1hY2NvdW50IiwibWFuYWdlLWFjY291bnQtbGlua3MiLCJ2aWV3LXByb2ZpbGUiXX19LCJzY29wZSI6ImVtYWlsIGpoaXBzdGVyIHByb2ZpbGUiLCJlbWFpbF92ZXJpZmllZCI6ZmFsc2UsInJvbGVzIjpbIkRPTV9QUk9EVUNUIiwiRE9NX1NVQlNDUklQVElPTiIsIlJPTEVfVVNFUiIsIm9mZmxpbmVfYWNjZXNzIiwidW1hX2F1dGhvcml6YXRpb24iLCJET01fUkVGRVJFTlRJQUwiXSwibmFtZSI6Ik9uZXkgQmFuayIsInByZWZlcnJlZF91c2VybmFtZSI6Im9uZXktYmFuayIsInByb2R1Y3RfZ3JvdXAiOiIyNzMiLCJnaXZlbl9uYW1lIjoiIiwiZmFtaWx5X25hbWUiOiJPbmV5IEJhbmsiLCJlbWFpbCI6ImJrYUBwYXJ0bmVyLm9uZXkuZnIifQ.YJR59oOd1pbQ_7rztVUeQhJFXRFoU09hx4SrzD5NHa3fZsHlYK28_Eub_5IfARQfQRMtzbAJ9kGXF0TAngjmWDyPccYqSY-IXmzod5D3szNs_O71fD1G4w9Q82RzJVFa66is0N0QbDRHaugMp7w0jJrnFP2k8SyF413tIc8x3WCyM7YI79oABE_9BQWEM-xZ3B_Orsd0nNWvXEAe21-hIrKUlVLrVbfznlX8giHwXV6YVKmyalvDP0YPHvL_b8NU38tZzJcEBDAJXPwMZRcm2SK7aCynoZoTkhO0q5XefZdIjy77s57z-K4ec6ezT1gLHDwp3wXyvX35tu1BKysE4Q",
+            "expires_in": 300,
+            "refresh_expires_in": 1800,
+            "refresh_token": "eyJhbGciOiJIUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICI0ZDA3Mjc1Yy0yNWEyLTQ1OWMtYTJjMS00ZjdiZjdjYjgzMTcifQ.eyJleHAiOjE2MTk0NTUxMTgsImlhdCI6MTYxOTQ1MzMxOCwianRpIjoiMGJlMTgzZjctYTA2Ny00ZDhlLTllOGUtZTRhM2I0NGQ0ODc1IiwiaXNzIjoiaHR0cHM6Ly9zc28uYXBwcy5kZXYuc3BiLmV1L2F1dGgvcmVhbG1zL3NwYi1hcGktZXh0ZXJuYWwiLCJhdWQiOiJodHRwczovL3Nzby5hcHBzLmRldi5zcGIuZXUvYXV0aC9yZWFsbXMvc3BiLWFwaS1leHRlcm5hbCIsInN1YiI6ImE0NzEyYjZiLWVmMzgtNGUyZi1hZjJiLWMyMmRkNjQ5ZjAyMyIsInR5cCI6IlJlZnJlc2giLCJhenAiOiJleHRlcm5hbC1hY2NvdW50Iiwic2Vzc2lvbl9zdGF0ZSI6IjFjNTFmZjY4LWMyMzItNGE2MS04NzYyLTRlYzcwMDY0MjVkYSIsInNjb3BlIjoiZW1haWwgamhpcHN0ZXIgcHJvZmlsZSJ9.ubqlqptynQQ54GMzJIvPbx8v_GDFaBiSkXIQgvX0aFo",
+            "token_type": "bearer",
+            "not-before-policy": 0,
+            "session_state": "1c51ff68-c232-4a61-8762-4ec7006425da",
+            "scope": "email jhipster profile"
+        },
+        "rawHeaders": [
+            "Date",
+            "Mon, 26 Apr 2021 16:08:38 GMT",
+            "Server",
+            "Apache",
+            "Cache-Control",
+            "no-store",
+            "X-XSS-Protection",
+            "1; mode=block",
+            "Pragma",
+            "no-cache",
+            "X-Frame-Options",
+            "SAMEORIGIN",
+            "Referrer-Policy",
+            "no-referrer",
+            "Strict-Transport-Security",
+            "max-age=31536000; includeSubDomains",
+            "X-Content-Type-Options",
+            "nosniff",
+            "Content-Type",
+            "application/json",
+            "Content-Length",
+            "2489",
+            "Set-Cookie",
+            "KEYCLOAK_LOCALE=; Version=1; Comment=Expiring cookie; Expires=Thu, 01-Jan-1970 00:00:10 GMT; Max-Age=0; Path=/auth/realms/spb-api-external/; Secure; HttpOnly",
+            "Set-Cookie",
+            "KC_RESTART=; Version=1; Expires=Thu, 01-Jan-1970 00:00:10 GMT; Max-Age=0; Path=/auth/realms/spb-api-external/; Secure; HttpOnly",
+            "Set-Cookie",
+            "0633329c405e50c0208c7e32b559ea9e=94622fa71f2706f0e20e60aa3fc5fba6; path=/; HttpOnly; Secure",
+            "Vary",
+            "Accept-Encoding",
+            "Connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "https://recex-spb-gw-api.spb.eu:443",
+        "method": "POST",
+        "path": "/api/prospections",
+        "body": {
+            "offerUIDs": [
+                "429_ONEYBDPREMIER_001"
+            ],
+            "customer": {
+                "title": "MR",
+                "firstName": "John",
+                "lastName": "Doe",
+                "birthdate": "1990-01-01",
+                "email": "john.doe@email.fr",
+                "mobileNumber": "+3361010101",
+                "address": {
+                    "addressType": "STREET",
+                    "addressNature": "MAIN",
+                    "iso2country": "FR",
+                    "correspondence": false,
+                    "city": "Paris",
+                    "zipCode": "75010",
+                    "address": "1 rue de test",
+                    "additionalAddress": "appartement 2"
+                },
+                "bankingInfo": {
+                    "bankAccountHolder": "MR Doe John",
+                    "iban": "FR2212869000020P0000007PN70",
+                    "bic": "BACCFR23XXX",
+                    "bankCard": {
+                        "pan": "43961100xxxx6499"
+                    },
+                    "role": "SUBSCRIBER"
+                }
+            }
+        },
+        "status": 400,
+        "response": "",
+        "rawHeaders": [
+            "Date",
+            "Mon, 26 Apr 2021 16:08:39 GMT",
+            "Server",
+            "Apache",
+            "Expires",
+            "0",
+            "Cache-Control",
+            "no-cache, no-store, max-age=0, must-revalidate",
+            "X-XSS-Protection",
+            "1; mode=block",
+            "Pragma",
+            "no-cache",
+            "X-Frame-Options",
+            "DENY",
+            "Referrer-Policy",
+            "strict-origin-when-cross-origin",
+            "Content-Security-Policy",
+            "default-src 'self'; frame-src 'self' data:; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://storage.googleapis.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data:; font-src 'self' https://fonts.gstatic.com data:",
+            "Vary",
+            "Origin,Accept-Encoding,Access-Control-Request-Method,Access-Control-Request-Headers",
+            "X-Content-Type-Options",
+            "nosniff",
+            "Strict-Transport-Security",
+            "max-age=31536000 ; includeSubDomains",
+            "Feature-Policy",
+            "geolocation 'none'; midi 'none'; sync-xhr 'none'; microphone 'none'; camera 'none'; magnetometer 'none'; gyroscope 'none'; speaker 'none'; fullscreen 'self'; payment 'none'",
+            "Content-Type",
+            "application/json",
+            "Set-Cookie",
+            "XSRF-TOKEN=34b56932-dbc6-482d-8d2d-c8f2c26bd9cf; path=/; secure",
+            "Set-Cookie",
+            "8baace9002d0a1f83268ba13fe9e7944=c3d66167236005bf3393a3b9bb1cacc1; path=/; HttpOnly; Secure",
+            "Connection",
+            "close",
+            "Transfer-Encoding",
+            "chunked"
+        ],
+        "responseIsBinary": false
+    }
+]

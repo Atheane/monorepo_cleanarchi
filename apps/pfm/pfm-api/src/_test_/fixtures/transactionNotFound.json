@@ -1,0 +1,54 @@
+[
+    {
+        "scope": "https://odb-api-management-dev.azure-api.net:443",
+        "method": "GET",
+        "path": "/transactions/user/OsYFhvKAT/transaction/FAKE_TRANSACTION_ID",
+        "body": "",
+        "status": 404,
+        "response": {},
+        "rawHeaders": [
+            "Content-Length",
+            "2",
+            "Content-Type",
+            "application/json; charset=utf-8",
+            "ETag",
+            "W/\"2-vyGp6PvFo4RvsFtPoIWeCReyIC8\"",
+            "request-context",
+            "appId=cid-v1:f1aa2e94-7b39-4f6b-b9c8-38e62fe89527",
+            "X-Powered-By",
+            "Express",
+            "Date",
+            "Tue, 06 Oct 2020 09:59:30 GMT",
+            "Connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "http://127.0.0.1:4000",
+        "method": "GET",
+        "path": "/users/OsYFhvKAT/transactions/FAKE_TRANSACTION_ID",
+        "body": "",
+        "status": 400,
+        "response": {
+            "name": "TransactionNotFound",
+            "code": "TRANSACTION_NOT_FOUND",
+            "cause": "TRANSACTION_NOT_FOUND"
+        },
+        "rawHeaders": [
+            "X-Powered-By",
+            "Express",
+            "Content-Type",
+            "application/json; charset=utf-8",
+            "Content-Length",
+            "93",
+            "ETag",
+            "W/\"5d-ILcqqRbaC+uDcSEphwqTW90SR8k\"",
+            "Date",
+            "Tue, 06 Oct 2020 09:59:31 GMT",
+            "Connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    }
+]

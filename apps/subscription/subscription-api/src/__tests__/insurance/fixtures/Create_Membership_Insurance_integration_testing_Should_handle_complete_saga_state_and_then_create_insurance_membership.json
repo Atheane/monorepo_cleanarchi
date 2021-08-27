@@ -1,0 +1,222 @@
+[
+    {
+        "scope": "https://recex-spb-gw-api.spb.eu:443",
+        "method": "POST",
+        "path": "/api/prospections",
+        "body": {
+            "offerUIDs": [
+                "429_ONEYBDPREMIER_001"
+            ],
+            "customer": {
+                "title": "MR",
+                "firstName": "John",
+                "lastName": "Doe",
+                "birthdate": "1990-01-01",
+                "email": "john.doe@email.fr",
+                "mobileNumber": "+33606060606",
+                "address": {
+                    "addressType": "STREET",
+                    "addressNature": "MAIN",
+                    "iso2country": "FR",
+                    "correspondence": false,
+                    "city": "Paris",
+                    "zipCode": "75010",
+                    "address": "1 rue de test",
+                    "additionalAddress": "Appartement 2"
+                },
+                "bankingInfo": {
+                    "bankAccountHolder": "MR Doe John",
+                    "iban": "FR2212869000020P0000007PN70",
+                    "bic": "BACCFR23XXX",
+                    "bankCard": {
+                        "pan": "43961100xxxx6499"
+                    },
+                    "role": "SUBSCRIBER"
+                }
+            }
+        },
+        "status": 200,
+        "response": {
+            "number": "000004680610",
+            "productCode": 429,
+            "productGroupCode": "273",
+            "offerCodes": [
+                "429_ONEYBDPREMIER_001"
+            ],
+            "subscriptionDate": "2021-04-21T18:54:55",
+            "coversEffectiveDate": "2021-04-21",
+            "subscriber": {
+                "number": "337088036",
+                "title": "MR",
+                "birthdate": "1990-01-01",
+                "firstName": "JOHN",
+                "lastName": "DOE",
+                "address": {
+                    "addressType": "STREET",
+                    "addressNature": "MAIN",
+                    "iso2country": "FR",
+                    "city": "Paris",
+                    "zipCode": "75010",
+                    "streetNumber": null,
+                    "address": "1 rue de test",
+                    "additionalAddress": "Appartement 2"
+                },
+                "email": "john.doe@email.fr",
+                "phoneNumber": null,
+                "mobileNumber": "+33606060606",
+                "bankingInfo": {
+                    "bankAccountHolder": "MR Doe John",
+                    "bic": "BACCFR23XXX",
+                    "iban": "FR2212869000020P0000007PN70",
+                    "bankCard": {
+                        "pan": "43961100xxxx6499",
+                        "expiration": null
+                    }
+                },
+                "role": "SUBSCRIBER",
+                "externalNumber": null
+            },
+            "signTxnId": null,
+            "signTxnUrl": null,
+            "signTxnCompletedAt": null,
+            "status": "PENDING",
+            "insuredGoods": []
+        },
+        "rawHeaders": [
+            "Date",
+            "Wed, 21 Apr 2021 16:54:56 GMT",
+            "Server",
+            "Apache",
+            "Expires",
+            "0",
+            "Cache-Control",
+            "no-cache, no-store, max-age=0, must-revalidate",
+            "X-XSS-Protection",
+            "1; mode=block",
+            "Pragma",
+            "no-cache",
+            "X-Frame-Options",
+            "DENY",
+            "Referrer-Policy",
+            "strict-origin-when-cross-origin",
+            "Content-Security-Policy",
+            "default-src 'self'; frame-src 'self' data:; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://storage.googleapis.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data:; font-src 'self' https://fonts.gstatic.com data:",
+            "Vary",
+            "Origin,Accept-Encoding,Access-Control-Request-Method,Access-Control-Request-Headers",
+            "X-Content-Type-Options",
+            "nosniff",
+            "Strict-Transport-Security",
+            "max-age=31536000 ; includeSubDomains",
+            "Feature-Policy",
+            "geolocation 'none'; midi 'none'; sync-xhr 'none'; microphone 'none'; camera 'none'; magnetometer 'none'; gyroscope 'none'; speaker 'none'; fullscreen 'self'; payment 'none'",
+            "Content-Type",
+            "application/json",
+            "Set-Cookie",
+            "XSRF-TOKEN=b19b95ec-58c1-49f0-a79e-54cd7b5f8305; path=/; secure",
+            "Set-Cookie",
+            "8baace9002d0a1f83268ba13fe9e7944=c3d66167236005bf3393a3b9bb1cacc1; path=/; HttpOnly; Secure",
+            "Connection",
+            "close",
+            "Transfer-Encoding",
+            "chunked"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "https://recex-spb-gw-api.spb.eu:443",
+        "method": "GET",
+        "path": "/api/subscriptions/000004680610/activate",
+        "body": "",
+        "status": 200,
+        "response": true,
+        "rawHeaders": [
+            "Date",
+            "Wed, 21 Apr 2021 16:54:56 GMT",
+            "Server",
+            "Apache",
+            "Expires",
+            "0",
+            "Cache-Control",
+            "no-cache, no-store, max-age=0, must-revalidate",
+            "X-XSS-Protection",
+            "1; mode=block",
+            "Pragma",
+            "no-cache",
+            "X-Frame-Options",
+            "DENY",
+            "Referrer-Policy",
+            "strict-origin-when-cross-origin",
+            "Content-Security-Policy",
+            "default-src 'self'; frame-src 'self' data:; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://storage.googleapis.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data:; font-src 'self' https://fonts.gstatic.com data:",
+            "Vary",
+            "Origin,Accept-Encoding,Access-Control-Request-Method,Access-Control-Request-Headers",
+            "X-Content-Type-Options",
+            "nosniff",
+            "Strict-Transport-Security",
+            "max-age=31536000 ; includeSubDomains",
+            "Feature-Policy",
+            "geolocation 'none'; midi 'none'; sync-xhr 'none'; microphone 'none'; camera 'none'; magnetometer 'none'; gyroscope 'none'; speaker 'none'; fullscreen 'self'; payment 'none'",
+            "Content-Type",
+            "application/json",
+            "Set-Cookie",
+            "XSRF-TOKEN=8f473347-bb36-40a4-9aa9-558ca796a311; path=/; secure",
+            "Set-Cookie",
+            "8baace9002d0a1f83268ba13fe9e7944=c3d66167236005bf3393a3b9bb1cacc1; path=/; HttpOnly; Secure",
+            "Connection",
+            "close",
+            "Transfer-Encoding",
+            "chunked"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "http://127.0.0.1:57617",
+        "method": "GET",
+        "path": "/subscription/theUID",
+        "body": "",
+        "status": 200,
+        "response": [
+            {
+                "insuranceMembershipId": "000004680610",
+                "id": "theSubscriptionID",
+                "offerId": "0d84b88b-e93a-4de7-b52e-44eacd9e7b18",
+                "subscriberId": "theUID"
+            }
+        ],
+        "rawHeaders": [
+            "Access-Control-Allow-Origin",
+            "*",
+            "Content-Security-Policy",
+            "default-src 'self';base-uri 'self';block-all-mixed-content;font-src 'self' https: data:;frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests",
+            "X-DNS-Prefetch-Control",
+            "off",
+            "Expect-CT",
+            "max-age=0",
+            "X-Frame-Options",
+            "SAMEORIGIN",
+            "Strict-Transport-Security",
+            "max-age=15552000; includeSubDomains",
+            "X-Download-Options",
+            "noopen",
+            "X-Content-Type-Options",
+            "nosniff",
+            "X-Permitted-Cross-Domain-Policies",
+            "none",
+            "Referrer-Policy",
+            "no-referrer",
+            "X-XSS-Protection",
+            "0",
+            "Content-Type",
+            "application/json; charset=utf-8",
+            "Content-Length",
+            "140",
+            "ETag",
+            "W/\"8c-muIhLyo1WZa0jWBnfUOgLnNJdsk\"",
+            "Date",
+            "Wed, 21 Apr 2021 16:54:57 GMT",
+            "Connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    }
+]

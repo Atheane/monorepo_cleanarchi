@@ -1,0 +1,261 @@
+[
+    {
+        "scope": "https://sb-api.xpollens.com:443",
+        "method": "GET",
+        "path": "/api/V1.1/users/mala_1",
+        "body": "",
+        "status": 200,
+        "response": {
+            "Id": 1490,
+            "AppUserId": "mala_1",
+            "Type": 1,
+            "Role": 2,
+            "Profile": {
+                "Civility": 0,
+                "FirstName": "Prenomuserelo",
+                "LastName": "Nomuserelo",
+                "MaidenName": null,
+                "Birthdate": "2000-04-07T00:00:00",
+                "Birthcity": "Paris",
+                "BirthCountry": "FR",
+                "BirthZipCode": null,
+                "Address": {
+                    "Street": "9 rue Gaston Rebuffat",
+                    "ZipCode": "75019",
+                    "City": "Paris",
+                    "Country": "FR"
+                },
+                "PhoneNumber": "0662611246",
+                "Email": "lux-qa-user-2@oney.com",
+                "Alias": "mala",
+                "Picture": {
+                    "Href": null
+                },
+                "EconomicActivity": 12,
+                "Asset": null,
+                "Income": null
+            },
+            "Credentials": null,
+            "Amount": 67210,
+            "AccountingBalanceAmount": 65210,
+            "SubAccounts": [
+                {
+                    "Id": 1490,
+                    "AppAccountId": "mala_1",
+                    "Amount": 67210,
+                    "AccountingBalanceAmount": 65210,
+                    "DisplayName": "Prenomuserelo Nomuserelo",
+                    "CreationDate": "2020-09-01T16:24:46",
+                    "IsDefault": true,
+                    "Iban": "FR8612869000020PC0000015E37",
+                    "IbanHint": "FR86XXXXXXXXXXXXXXXX5E37"
+                }
+            ],
+            "BankAccounts": [
+                {
+                    "Id": 1560,
+                    "Href": "https://rest-pp.s-money.fr/api/bib/sandbox/api/users/mala_1/bankaccounts/1560"
+                },
+                {
+                    "Id": 1561,
+                    "Href": "https://rest-pp.s-money.fr/api/bib/sandbox/api/users/mala_1/bankaccounts/1561"
+                }
+            ],
+            "CBCards": [
+                {
+                    "Id": 2372,
+                    "AppCardId": "AC-02-dfgpodj",
+                    "Href": "https://rest-pp.s-money.fr/api/bib/sandbox/api/users/mala_1/cards/AC-02-dfgpodj"
+                },
+                {
+                    "Id": 2466,
+                    "AppCardId": "hrtykyrtu",
+                    "Href": "https://rest-pp.s-money.fr/api/bib/sandbox/api/users/mala_1/cards/hrtykyrtu"
+                }
+            ],
+            "Status": 1,
+            "Company": null,
+            "CountryCode": null,
+            "KycStatus": 1,
+            "OnBoardingDate": "2020-09-01T16:24:46"
+        },
+        "rawHeaders": [
+            "Date",
+            "Tue, 09 Mar 2021 11:13:24 GMT",
+            "Content-Type",
+            "application/json; charset=utf-8",
+            "Content-Length",
+            "1390",
+            "Cache-Control",
+            "private",
+            "Request-Context",
+            "appId=cid-v1:40d43092-8aee-4b2b-8b7f-34d2d69e09b7",
+            "Connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "https://sb-api.xpollens.com:443",
+        "method": "GET",
+        "path": "/api/V1.1/users/OxREbmNhO",
+        "body": "",
+        "status": 200,
+        "response": {
+            "Id": 2323,
+            "AppUserId": "OxREbmNhO",
+            "Type": 1,
+            "Role": 2,
+            "Profile": {
+                "Civility": 0,
+                "FirstName": "Financements",
+                "LastName": "Finance",
+                "MaidenName": null,
+                "Birthdate": "1980-12-06T00:00:00",
+                "Birthcity": "Paris",
+                "BirthCountry": "FR",
+                "BirthZipCode": null,
+                "Address": {
+                    "Street": "5 RUE SAINT VICTEUR",
+                    "ZipCode": "72000",
+                    "City": "LE MANS",
+                    "Country": "FR"
+                },
+                "PhoneNumber": "33625478523",
+                "Email": "oney_finance@yopmail.com",
+                "Alias": "F.F#OxREbmNhO",
+                "Picture": {
+                    "Href": null
+                },
+                "EconomicActivity": 11,
+                "Asset": null,
+                "Income": null
+            },
+            "Credentials": null,
+            "Amount": 329636,
+            "AccountingBalanceAmount": 329636,
+            "SubAccounts": [
+                {
+                    "Id": 2323,
+                    "AppAccountId": "OxREbmNhO",
+                    "Amount": 329636,
+                    "AccountingBalanceAmount": 329636,
+                    "DisplayName": "Financements Finance",
+                    "CreationDate": "2020-09-23T16:34:46",
+                    "IsDefault": true,
+                    "Iban": "FR2612869000020PC000001SJ42",
+                    "IbanHint": "FR26XXXXXXXXXXXXXXXXSJ42"
+                }
+            ],
+            "BankAccounts": [
+                {
+                    "Id": 2919,
+                    "Href": "https://rest-pp.s-money.fr/api/bib/sandbox/api/users/OxREbmNhO/bankaccounts/2919"
+                }
+            ],
+            "CBCards": [
+                {
+                    "Id": 1340,
+                    "AppCardId": "card-JcPOv48HL",
+                    "Href": "https://rest-pp.s-money.fr/api/bib/sandbox/api/users/OxREbmNhO/cards/card-JcPOv48HL"
+                }
+            ],
+            "Status": 1,
+            "Company": null,
+            "CountryCode": null,
+            "KycStatus": 6,
+            "OnBoardingDate": "2020-09-23T16:34:46"
+        },
+        "rawHeaders": [
+            "Date",
+            "Tue, 09 Mar 2021 11:13:25 GMT",
+            "Content-Type",
+            "application/json; charset=utf-8",
+            "Content-Length",
+            "1192",
+            "Cache-Control",
+            "private",
+            "Request-Context",
+            "appId=cid-v1:40d43092-8aee-4b2b-8b7f-34d2d69e09b7",
+            "Connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "https://sb-api.xpollens.com:443",
+        "method": "POST",
+        "path": "/api/V1.1/users/OxREbmNhO/payments",
+        "body": {
+            "orderid": "EAFFCE13130",
+            "beneficiary": {
+                "appaccountid": "mala_1"
+            },
+            "sender": {
+                "appaccountid": "OxREbmNhO"
+            },
+            "amount": 7700,
+            "message": "aze",
+            "checkLimits": false,
+            "tag": " -FINANCEMENT AUTBA -AUTBA-FRA-000-XMp6548787",
+            "processUnpaid": true,
+            "Recurrent": {
+                "RecurrentEndDate": "2020-09-25",
+                "FrequencyType": 0,
+                "RecurrentDays": 7
+            }
+        },
+        "status": 201,
+        "response": {
+            "Id": 7777,
+            "PaymentDate": "2021-03-09T12:13:25",
+            "Amount": 7700,
+            "Sender": {
+                "Id": 2323,
+                "AppAccountId": "OxREbmNhO",
+                "DisplayName": "Financements Finance",
+                "Email": "oney_finance@yopmail.com",
+                "PhoneNumber": "33 62 54 78 52 3",
+                "Alias": "F.F#OxREbmNhO",
+                "Iban": "FR2612869000020PC000001SJ42",
+                "Href": "https://rest-pp.s-money.fr/api/bib/sandbox/api/users/OxREbmNhO"
+            },
+            "Beneficiary": {
+                "Id": 1490,
+                "AppAccountId": "mala_1",
+                "DisplayName": "Prenomuserelo Nomuserelo",
+                "Email": "lux-qa-user-2@oney.com",
+                "PhoneNumber": "06 62 61 12 46",
+                "Alias": "mala",
+                "Iban": "FR8612869000020PC0000015E37",
+                "Href": "https://rest-pp.s-money.fr/api/bib/sandbox/api/users/mala_1"
+            },
+            "Message": "aze",
+            "OrderId": "EAFFCE13130",
+            "Status": 1,
+            "CheckLimits": false,
+            "Tag": " -FINANCEMENT AUTBA -AUTBA-FRA-000-XMp6548787"
+        },
+        "rawHeaders": [
+            "Date",
+            "Tue, 09 Mar 2021 11:13:25 GMT",
+            "Content-Type",
+            "application/json; charset=utf-8",
+            "Content-Length",
+            "748",
+            "Cache-Control",
+            "no-cache",
+            "Pragma",
+            "no-cache",
+            "Expires",
+            "-1",
+            "Location",
+            "https://az-pp-rest.s-money.net/api/bib/sandbox/api/users/OxREbmNhO/payments/7777",
+            "Request-Context",
+            "appId=cid-v1:40d43092-8aee-4b2b-8b7f-34d2d69e09b7",
+            "Connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    }
+]

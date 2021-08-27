@@ -1,0 +1,8 @@
+{
+  "name": "@oney/identity-core",
+  "version": "0.8.1",
+  "publishConfig": {
+    "access": "public",
+    "directory": "../../../dist/libs/identity-core"
+  }
+}

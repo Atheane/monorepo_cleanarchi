@@ -1,0 +1,59 @@
+[
+    {
+        "scope": "http://127.0.0.1:60244",
+        "method": "POST",
+        "path": "/payment/accounts/UpmekTXcJ/card/card-BGBpCxjZO/displaypin",
+        "body": {},
+        "status": 400,
+        "response": {
+            "httpCode": 400,
+            "name": "BadRequestError",
+            "message": "Invalid body, check 'errors' property for more info.",
+            "errors": [
+                {
+                    "target": {},
+                    "property": "rsaPublicKey",
+                    "children": [],
+                    "constraints": {
+                        "isString": "rsaPublicKey must be a string"
+                    }
+                }
+            ]
+        },
+        "rawHeaders": [
+            "Access-Control-Allow-Origin",
+            "*",
+            "Content-Security-Policy",
+            "default-src 'self';base-uri 'self';block-all-mixed-content;font-src 'self' https: data:;frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests",
+            "X-DNS-Prefetch-Control",
+            "off",
+            "Expect-CT",
+            "max-age=0",
+            "X-Frame-Options",
+            "SAMEORIGIN",
+            "Strict-Transport-Security",
+            "max-age=15552000; includeSubDomains",
+            "X-Download-Options",
+            "noopen",
+            "X-Content-Type-Options",
+            "nosniff",
+            "X-Permitted-Cross-Domain-Policies",
+            "none",
+            "Referrer-Policy",
+            "no-referrer",
+            "X-XSS-Protection",
+            "0",
+            "Content-Type",
+            "application/json; charset=utf-8",
+            "Content-Length",
+            "230",
+            "ETag",
+            "W/\"e6-3L4prSa2KmfYnvzfKkKYlQTEi90\"",
+            "Date",
+            "Tue, 27 Apr 2021 08:47:38 GMT",
+            "Connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    }
+]

@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html>
+	<head>
+
+		<meta charset="UTF-8">
+		<style type="text/css">
+
+			@page {
+			margin: 0;
+			}
+
+			@media print {
+			 html, body {
+			   width: 210mm;
+			   height: 297mm;
+			 }
+			 hr{
+			 	display: block
+			 }
+			}
+
+			body{
+				background: white;
+				font-family: Avenir,arial, san-serif;
+				padding: 0;
+				margin: 0 auto;
+				-webkit-print-color-adjust: exact;
+			}
+
+			.clearfix::after{
+				content: '';
+				display: table;
+				float: none;
+			}
+
+			hr{
+				height: 0mm;
+				background:transparent; /*quand on imprime les backgrounds peuvent ne pas être affichés car géré par les préférence d'impression du coup j'utilise une bordure à la place*/
+				display: block;
+				border:0;
+				border-top: solid 1.4mm #F2F2F7;
+				margin: 0 0 1mm 0;
+			}
+
+			hr.green{
+				border-color:#85CC11 !important;
+			}
+
+			.pagebreaker {
+			  page-break-after: always;
+			  page-break-before: always;
+			}
+
+			.section{
+				margin-bottom: 20mm;
+			}
+
+			.section hr.title-separator{
+				margin-bottom: 5mm;
+			}
+
+			.rib-container{
+				padding: 18mm 21mm 0 21mm;
+				color: #282828;
+			}
+
+			.rib-address-container{
+				margin-bottom: 6mm;
+			}
+
+			.rib-header{
+				margin-bottom: 11mm;
+			}
+
+			.rib-header, .rib-address-container{
+				text-align: left;
+			}
+
+			.rib-header::after, .rib-address-container::after{
+				content: '';
+				display: table;
+				clear: both;
+				float: none;
+			}
+
+			.header-col-left{
+				width: 107mm;
+				display: inline-block;
+				float: left;
+			}
+
+			.header-col-right{
+				width: 61mm;
+				display: inline-block;
+				float: right;
+			}
+
+			h1{
+				font-size: 7mm;
+				line-height: 7.1mm;
+			}
+			h1.titre-rib{
+				margin: 0;
+				padding: 0;
+			}
+			h1.titre-section{
+				margin: 0 0 5mm 0;
+				padding: 0;
+			}
+
+			.periode{
+				margin-top: 3mm !important;
+			}
+
+
+			.label{
+				font-size: 3.53mm;
+				line-height: 4.5mm;
+				color: #282828;
+				text-transform: uppercase;
+				padding: 0;
+				margin:0 0 1mm 0;
+			}
+
+			.value{
+				font-size: 3.8mm;
+				line-height: 6mm;
+				font-weight: 700;
+				padding: 0;
+				margin: 0;
+			}
+
+			.value.iban-value{
+				text-transform: uppercase;
+			}
+
+			.footnote{
+				color: #898A8D;
+				font-size: 3mm;
+				width: 80%;
+			}
+
+			.rib-info{
+				padding: 0 4mm;
+			}
+
+			.rib-info hr, hr.small, .vue-ensemble-list li{
+				border-bottom: solid 0.71mm #F2F2F7;
+				margin: 3mm 0;
+			}
+
+			hr.last-child{
+				margin-bottom: 4mm;
+			}
+
+			.rib-info ul, .vue-ensemble-list{
+				padding: 0;
+				margin: 0 auto;
+				display: block;
+				text-align: center;
+			}
+
+			.rib-info li{
+				padding: 2.47mm 0;
+				display: inline-block;
+			}
+
+			.rib-info ul.liste-2-col li{
+				width: 49%;
+
+			}
+
+			.rib-info ul.liste-4-col li{
+				width: 24%;
+			}
+
+
+			.rib-divider-wraper{
+			    position: relative;
+			    margin: 11mm auto;
+			    height: 0;
+			    width: 100%
+			}
+
+			.dashed-line, .rib-divider-wraper svg{
+				position: absolute;
+				top: 0;
+				right: 0;
+			}
+
+			.rib-divider-wraper svg{
+				margin-top:-3.885mm;
+			}
+
+			.dashed-line{
+				border-bottom: 0.35mm dashed #282828;
+				height: 0;
+				width: 100%;
+			}
+
+
+
+			.votre-compte-secondline-container{
+				margin-top:4mm;
+			}
+
+			.vue-ensemble-list li{
+				padding: 0;
+				display: block;
+				float: none;
+				padding: 3mm;
+				margin: 0 !important;
+			}
+
+			.vue-ensemble-list li::after{
+				content: '';
+				display: table;
+				clear: both;
+				float: none;
+			}
+
+			.vue-ensemble-list li.yesterday{
+				border-bottom-style: dashed;
+			    border-bottom-width: 0.4mm;
+			}
+
+
+			.vue-ensemble-list li.today{
+				background-color:#F2F2F7;
+			}
+
+			.vue-ensemble-list li .value, .vue-ensemble-list li .label{
+				margin-bottom: 0;
+				line-height: 6.5mm;
+			}
+
+			.vue-ensemble-list li .col-left{
+				float: left;
+			}
+			.vue-ensemble-list li .col-right{
+				float: right;
+			}
+
+			.vue-ensemble-table-container{
+				margin-left: -2mm;
+				margin-right: -2mm;
+				margin-top: 10mm;
+			}
+
+			.vue-ensemble-table{
+				text-align: center;
+				border-spacing: 2mm;
+				table-layout: fixed;
+				width: 100%;
+				box-sizing:border-box;
+			}
+
+			.vue-ensemble-table tr{
+				vertical-align: middle;
+			}
+
+			.vue-ensemble-table td{
+				vertical-align: top;
+				padding: 4mm 2mm 1mm 2mm;
+				background-color: #F2F2F7;
+			}
+
+			.vue-ensemble-table .value{
+			}
+
+			.vue-ensemble-table .label{
+				text-transform: none;
+				font-size: 2.5mm;
+				line-height: 1.2em;
+				color: #979797;
+			}
+
+
+			.liste-opérations{
+				width: 100%;
+				border:0;
+				border-spacing: 0;
+				vertical-align: center;
+				border-collapse: collapse;
+			}
+
+			.liste-opérations tbody tr{
+				border-bottom: 1px solid #F0F0F0;
+			}
+
+			.liste-opérations td{
+				padding: 3mm;
+			}
+
+			.liste-opérations thead .table-head{
+				background-color: #F2F2F7;
+
+			}
+
+
+			.liste-opérations .value-operation,.liste-opérations .label-opération{
+				margin: 0;
+			}
+
+			.value-operation{
+				font-size: 3.5mm;
+			}
+			.label-opération, .header-print .info-client, .header-print .label{
+				font-size: 3mm;
+				color: #C1C1C1;
+			}
+
+			.header-print{
+				margin: 15mm -3mm 6mm -3mm ;
+			}
+
+			.header-print .label{
+				text-transform: none;
+				margin-bottom: 10mm;
+			}
+
+			.header-print .info-client{
+				text-align: right;
+			}
+
+			.titre-header{
+				margin: 0 0 2mm 0;
+			}
+
+
+			.clear-float{
+				clear: both;
+				float: none;
+			}
+
+			.icon{
+				width: 6mm;
+				height:6mm;
+				background-size: 6mm 6mm;
+				background-position: center;
+				background-repeat: no-repeat;
+				display: inline-block;
+			}
+
+			.icon--card {
+				background-image: url(
+					"data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNSIgaGVpZ2h0PSI1IiB2aWV3Qm94PSIwIDAgNSA1IiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8cGF0aCBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGNsaXAtcnVsZT0iZXZlbm9kZCIgZD0iTTAuODIzMzMgMC44MjMyNDJDMC41NTA1MDIgMC44MjMyNDIgMC4zMjkzMyAxLjA0NDQxIDAuMzI5MzMgMS4zMTcyNFYzLjYyMjU4QzAuMzI5MzMgMy44OTU0IDAuNTUwNTAyIDQuMTE2NTggMC44MjMzMyA0LjExNjU4SDQuMTE2NjZDNC4zODk0OSA0LjExNjU4IDQuNjEwNjYgMy44OTU0IDQuNjEwNjYgMy42MjI1OFYxLjMxNzI0QzQuNjEwNjYgMS4wNDQ0MSA0LjM4OTQ5IDAuODIzMjQyIDQuMTE2NjYgMC44MjMyNDJIMC44MjMzM1pNNC4yODEzMyAxLjMxNzI0VjEuNDgxOTFIMC42NTg2NjRWMS4zMTcyNEMwLjY1ODY2NCAxLjIyNjMgMC43MzIzODggMS4xNTI1OCAwLjgyMzMzIDEuMTUyNThINC4xMTY2NkM0LjIwNzYxIDEuMTUyNTggNC4yODEzMyAxLjIyNjMgNC4yODEzMyAxLjMxNzI0Wk00LjI4MTMzIDIuMTQwNThIMC42NTg2NjRWMy42MjI1OEMwLjY1ODY2NCAzLjcxMzUyIDAuNzMyMzg4IDMuNzg3MjQgMC44MjMzMyAzLjc4NzI0SDQuMTE2NjZDNC4yMDc2MSAzLjc4NzI0IDQuMjgxMzMgMy43MTM1MiA0LjI4MTMzIDMuNjIyNThWMi4xNDA1OFoiIGZpbGw9IiMyODI4MjgiLz4KPC9zdmc+Cg=="
+					);
+  			}
+
+  			.icon--sdd-out {
+				background-image: url(
+					"data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNSIgaGVpZ2h0PSI1IiB2aWV3Qm94PSIwIDAgNSA1IiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8cGF0aCBkPSJNMS42NDcwNSAxLjgxMTk0QzEuNjQ3MDUgMS42OTAwMSAxLjU4MDgxIDEuNTgzNTYgMS40ODIzNSAxLjUyNjZWMC40OTQyOTZDMS40ODIzNSAwLjQwMzMzMSAxLjQwODYxIDAuMzI5NTkgMS4zMTc2NCAwLjMyOTU5QzEuMjI2NjggMC4zMjk1OSAxLjE1Mjk0IDAuNDAzMzMxIDEuMTUyOTQgMC40OTQyOTZWMS41MjY2QzEuMDU0NDcgMS41ODM1NiAwLjk4ODIzIDEuNjkwMDEgMC45ODgyMyAxLjgxMTk0QzAuOTg4MjMgMS45OTM4NyAxLjEzNTcxIDIuMTQxMzUgMS4zMTc2NCAyLjE0MTM1QzEuNDk5NTcgMi4xNDEzNSAxLjY0NzA1IDEuOTkzODcgMS42NDcwNSAxLjgxMTk0WiIgZmlsbD0iIzI4MjgyOCIvPgo8cGF0aCBkPSJNMy45NTI5NCAxLjgxMTk0QzMuOTUyOTQgMS42OTAwMSAzLjg4NjY5IDEuNTgzNTYgMy43ODgyMyAxLjUyNjZWMC40OTQyOTZDMy43ODgyMyAwLjQwMzMzMSAzLjcxNDQ5IDAuMzI5NTkgMy42MjM1MiAwLjMyOTU5QzMuNTMyNTYgMC4zMjk1OSAzLjQ1ODgyIDAuNDAzMzMxIDMuNDU4ODIgMC40OTQyOTZWMS41MjY2QzMuMzYwMzYgMS41ODM1NiAzLjI5NDExIDEuNjkwMDEgMy4yOTQxMSAxLjgxMTk0QzMuMjk0MTEgMS45OTM4NyAzLjQ0MTYgMi4xNDEzNSAzLjYyMzUyIDIuMTQxMzVDMy44MDU0NSAyLjE0MTM1IDMuOTUyOTQgMS45OTM4NyAzLjk1Mjk0IDEuODExOTRaIiBmaWxsPSIjMjgyODI4Ii8+CjxwYXRoIGQ9Ik0wLjY1ODgxOSAxLjQ4MjUzVjQuMDg0ODhDMC42NTg4MTkgNC4xOTQwNCAwLjczMjU2IDQuMjgyNTMgMC44MjM1MjQgNC4yODI1M0g0LjExNzY0QzQuMjA4NjEgNC4yODI1MyA0LjI4MjM1IDQuMTk0MDQgNC4yODIzNSA0LjA4NDg4VjEuNDgyNTNDNC4yODIzNSAxLjM5MTU3IDQuMjA4NjEgMS4zMTc4MyA0LjExNzY0IDEuMzE3ODNIMy45NTI5NFYwLjk4ODQxM0g0LjExNzY0QzQuMzkwNTQgMC45ODg0MTMgNC42MTE3NiAxLjIwOTY0IDQuNjExNzYgMS40ODI1M1Y0LjExNzgzQzQuNjExNzYgNC4zOTA3MiA0LjM5MDU0IDQuNjExOTQgNC4xMTc2NCA0LjYxMTk0SDAuODIzNTI0QzAuNTUwNjMxIDQuNjExOTQgMC4zMjk0MDcgNC4zOTA3MiAwLjMyOTQwNyA0LjExNzgzVjEuNDgyNTNDMC4zMjk0MDcgMS4yMDk2NCAwLjU1MDYzMSAwLjk4ODQxMyAwLjgyMzUyNCAwLjk4ODQxM0gwLjk4ODIzVjEuMzE3ODNIMC44MjM1MjRDMC43MzI1NiAxLjMxNzgzIDAuNjU4ODE5IDEuMzkxNTcgMC42NTg4MTkgMS40ODI1M1oiIGZpbGw9IiMyODI4MjgiLz4KPHBhdGggZD0iTTMuMjk0MTEgMC45ODg0MTNWMS4zMTc4M0gxLjY0NzA1VjAuOTg4NDEzSDMuMjk0MTFaIiBmaWxsPSIjMjgyODI4Ii8+CjxwYXRoIGQ9Ik0yLjEzMDczIDMuNDI1MDZDMi4xNjk5IDMuNDI1MDYgMi4yMDE2NSAzLjM5MzMxIDIuMjAxNjUgMy4zNTQxNEMyLjIwMTY1IDMuMzE0OTcgMi4xNjk5IDMuMjgzMjIgMi4xMzA3MyAzLjI4MzIySDEuNTE4OEMxLjUxNTE4IDMuMjUxNyAxLjUxMjc2IDMuMjE3NzUgMS41MTI3NiAzLjE4MjU5QzEuNTEyNzYgMy4xNDg2NSAxLjUxNTE4IDMuMTE1OTEgMS41MTc1OSAzLjA4NDM5SDIuMTMwNzNDMi4xNjk5IDMuMDg0MzkgMi4yMDE2NSAzLjA1MjY0IDIuMjAxNjUgMy4wMTM0N0MyLjIwMTY1IDIuOTc0MyAyLjE2OTkgMi45NDI1NSAyLjEzMDczIDIuOTQyNTVIMS41NDkwMkMxLjYyODc4IDIuNzAyNSAxLjgzNDI0IDIuNTc1MiAyLjEwMDEzIDIuNTc1MkMyLjEyMTgzIDIuNTc1MiAyLjE0NDI2IDIuNTc1NzggMi4xNjY1NCAyLjU3Njg2QzIuMjUxNDYgMi41ODEgMi4zMzIxOCAyLjUxNDk2IDIuMzMyMTggMi40Mjk5NEMyLjMzMjE4IDIuMzcyMjEgMi4yOTQwNyAyLjMyMTc5IDIuMjM2NzUgMi4zMTQ4NEMyLjE5MTIyIDIuMzA5MzIgMi4xNDAxOSAyLjMwNjA2IDIuMDk1MyAyLjMwNjA2QzEuNjU5IDIuMzA2MDYgMS4zMjE4IDIuNTI5MTMgMS4yMjk5NSAyLjk0MjU1SDEuMDU5MTVDMS4wMTk5OCAyLjk0MjU1IDAuOTg4MjMgMi45NzQzIDAuOTg4MjMgMy4wMTM0N0MwLjk4ODIzIDMuMDUyNjQgMS4wMTk5OCAzLjA4NDM5IDEuMDU5MTUgMy4wODQzOUgxLjIwODE5QzEuMjA1NzggMy4xMTU5MSAxLjIwNDU3IDMuMTQ4NjUgMS4yMDQ1NyAzLjE4MjU5QzEuMjA0NTcgMy4yMTY1NCAxLjIwNTc4IDMuMjUwNDggMS4yMDgxOSAzLjI4MzIySDEuMDU5MTVDMS4wMTk5OCAzLjI4MzIyIDAuOTg4MjMgMy4zMTQ5NyAwLjk4ODIzIDMuMzU0MTRDMC45ODgyMyAzLjM5MzMxIDEuMDE5OTggMy40MjUwNiAxLjA1OTE1IDMuNDI1MDZIMS4yMjk5NUMxLjMyMzAxIDMuODM2MDUgMS42NjAyMSA0LjA1NzkxIDIuMDk1MyA0LjA1NzkxQzIuMTQzMzUgNC4wNTc5MSAyLjE5MzU1IDQuMDU1NzUgMi4yMzg0OCA0LjA1MTQ0QzIuMjk2MjUgNC4wNDU4OSAyLjMzNTgxIDMuOTk1NSAyLjMzNTgxIDMuOTM3NDZDMi4zMzU4MSAzLjg1MzUxIDIuMjU0MDkgMy43ODU1OSAyLjE3MDIxIDMuNzg4NjVDMi4xNDU3NCAzLjc4OTU1IDIuMTIwNzcgMy43ODk5OCAyLjA5NjUxIDMuNzg5OThDMS44MzQyNCAzLjc4OTk4IDEuNjI4NzggMy42NjM5IDEuNTQ5MDIgMy40MjUwNkgyLjEzMDczWiIgZmlsbD0iIzI4MjgyOCIvPgo8cGF0aCBkPSJNMi42NTkyMyAyLjczNzI5QzIuNTk5NjkgMi43ODE5NCAyLjU4NzYzIDIuODY2NDEgMi42MzIyOCAyLjkyNTk1QzIuNjc2OTQgMi45ODU0OSAyLjc2MTQgMi45OTc1NSAyLjgyMDk0IDIuOTUyOUwzLjE0NDM1IDIuNzEwMzRWMy45MjMxNUMzLjE0NDM1IDMuOTk3NTggMy4yMDQ2OSA0LjA1NzkxIDMuMjc5MTEgNC4wNTc5MUMzLjM1MzU0IDQuMDU3OTEgMy40MTM4NyAzLjk5NzU4IDMuNDEzODcgMy45MjMxNVYyLjcxMDMzTDMuNzM3MjkgMi45NTI5QzMuNzk2ODMgMi45OTc1NSAzLjg4MTMgMi45ODU0OSAzLjkyNTk2IDIuOTI1OTVDMy45NzA2MSAyLjg2NjQxIDMuOTU4NTQgMi43ODE5NCAzLjg5OSAyLjczNzI5TDMuMzYwNjYgMi4zMzM1M0MzLjMzODAyIDIuMzE2MjkgMy4zMDk3NiAyLjMwNjA2IDMuMjc5MTEgMi4zMDYwNkMzLjI0ODE0IDIuMzA2MDYgMy4yMTk2MSAyLjMxNjUxIDMuMTk2ODUgMi4zMzQwN0wyLjY1OTIzIDIuNzM3MjlaIiBmaWxsPSIjMjgyODI4Ii8+Cjwvc3ZnPgo="
+					);
+  			}
+
+  			.icon--withdrawal {
+				background-image: url(
+					"data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNSIgaGVpZ2h0PSI1IiB2aWV3Qm94PSIwIDAgNSA1IiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8cGF0aCBkPSJNMi41OTg4NiAyLjUzMzU4QzIuNjM3MTUgMi41MzM1OCAyLjY2ODE4IDIuNTAzNzQgMi42NjgxOCAyLjQ2NjkyQzIuNjY4MTggMi40MzAxIDIuNjM3MTUgMi40MDAyNiAyLjU5ODg2IDIuNDAwMjZIMi4wMDA2NkMxLjk5NzExIDIuMzcwNjMgMS45OTQ3NiAyLjMzODcyIDEuOTk0NzYgMi4zMDU2N0MxLjk5NDc2IDIuMjczNzYgMS45OTcxMSAyLjI0MyAxLjk5OTQ3IDIuMjEzMzdIMi41OTg4NkMyLjYzNzE1IDIuMjEzMzcgMi42NjgxOCAyLjE4MzUyIDIuNjY4MTggMi4xNDY3QzIuNjY4MTggMi4xMDk4OCAyLjYzNzE1IDIuMDgwMDQgMi41OTg4NiAyLjA4MDA0SDIuMDMwMkMyLjEwODE3IDEuODU0NCAyLjMwOTAyIDEuNzM0NzUgMi41Njg5NCAxLjczNDc1QzIuNTkwMTUgMS43MzQ3NSAyLjYxMjA4IDEuNzM1MjkgMi42MzM4NiAxLjczNjMxQzIuNzE2ODcgMS43NDAyIDIuNzk1NzggMS42NzgxMyAyLjc5NTc4IDEuNTk4MjFDMi43OTU3OCAxLjU0Mzk0IDIuNzU4NTMgMS40OTY1NiAyLjcwMjUgMS40OTAwMkMyLjY1Nzk5IDEuNDg0ODMgMi42MDgxMSAxLjQ4MTc3IDIuNTY0MjIgMS40ODE3N0MyLjEzNzcxIDEuNDgxNzcgMS44MDgwOCAxLjY5MTQ1IDEuNzE4MjkgMi4wODAwNEgxLjU1MTMzQzEuNTEzMDQgMi4wODAwNCAxLjQ4MiAyLjEwOTg4IDEuNDgyIDIuMTQ2N0MxLjQ4MiAyLjE4MzUyIDEuNTEzMDQgMi4yMTMzNyAxLjU1MTMzIDIuMjEzMzdIMS42OTcwMkMxLjY5NDY2IDIuMjQzIDEuNjkzNDggMi4yNzM3NiAxLjY5MzQ4IDIuMzA1NjdDMS42OTM0OCAyLjMzNzU4IDEuNjk0NjYgMi4zNjk0OSAxLjY5NzAyIDIuNDAwMjZIMS41NTEzM0MxLjUxMzA0IDIuNDAwMjYgMS40ODIgMi40MzAxIDEuNDgyIDIuNDY2OTJDMS40ODIgMi41MDM3NCAxLjUxMzA0IDIuNTMzNTggMS41NTEzMyAyLjUzMzU4SDEuNzE4MjlDMS44MDkyNiAyLjkxOTg5IDIuMTM4ODkgMy4xMjg0MyAyLjU2NDIyIDMuMTI4NDNDMi42MTExOSAzLjEyODQzIDIuNjYwMjYgMy4xMjY0MSAyLjcwNDE5IDMuMTIyMzVDMi43NjA2NiAzLjExNzE0IDIuNzk5MzMgMy4wNjk3NyAyLjc5OTMzIDMuMDE1MjFDMi43OTkzMyAyLjkzNjMxIDIuNzE5NDUgMi44NzI0NyAyLjYzNzQ1IDIuODc1MzVDMi42MTM1MiAyLjg3NjE4IDIuNTg5MTMgMi44NzY1OSAyLjU2NTQgMi44NzY1OUMyLjMwOTAzIDIuODc2NTkgMi4xMDgxNyAyLjc1ODA4IDIuMDMwMiAyLjUzMzU4SDIuNTk4ODZaIiBmaWxsPSIjMjgyODI4Ii8+CjxwYXRoIGZpbGwtcnVsZT0iZXZlbm9kZCIgY2xpcC1ydWxlPSJldmVub2RkIiBkPSJNMC44MjMzMyAxLjMxNzFIMS4wNzAzM1Y0LjExNjQzSDEuNTY0MzNWNC42MTA0M0gzLjg2OTY2VjEuMzE3MUg0LjExNjY2QzQuMzg5NDkgMS4zMTcxIDQuNjEwNjYgMS4wOTU5MyA0LjYxMDY2IDAuODIzMTAyQzQuNjEwNjYgMC41NTAyNzMgNC4zODk0OSAwLjMyOTEwMiA0LjExNjY2IDAuMzI5MTAySDAuODIzMzNDMC41NTA1MDIgMC4zMjkxMDIgMC4zMjkzMyAwLjU1MDI3MyAwLjMyOTMzIDAuODIzMTAyQzAuMzI5MzMgMS4wOTU5MyAwLjU1MDUwMiAxLjMxNzEgMC44MjMzMyAxLjMxNzFaTTEuODkzNjYgNC4yODExVjQuMTE2NDNIMy4zNzU2NlYwLjY1ODQzNUgzLjU0MDMzVjQuMjgxMUgxLjg5MzY2Wk0xLjM5OTY2IDAuNjU4NDM1SDMuMDQ2MzNWMy43ODcxSDEuMzk5NjZWMC42NTg0MzVaTTAuODIzMzMgMC42NTg0MzVIMS4wNzAzM1YwLjk4Nzc2OEgwLjgyMzMzQzAuNzMyMzg4IDAuOTg3NzY4IDAuNjU4NjY0IDAuOTE0MDQ0IDAuNjU4NjY0IDAuODIzMTAyQzAuNjU4NjY0IDAuNzMyMTU5IDAuNzMyMzg4IDAuNjU4NDM1IDAuODIzMzMgMC42NTg0MzVaTTMuODY5NjYgMC45ODc3NjhINC4xMTY2NkM0LjIwNzYxIDAuOTg3NzY4IDQuMjgxMzMgMC45MTQwNDQgNC4yODEzMyAwLjgyMzEwMkM0LjI4MTMzIDAuNzMyMTU5IDQuMjA3NjEgMC42NTg0MzUgNC4xMTY2NiAwLjY1ODQzNUgzLjg2OTY2VjAuOTg3NzY4WiIgZmlsbD0iIzI4MjgyOCIvPgo8L3N2Zz4K"
+					);
+  			}
+
+  			.icon--fees {
+				background-image: url(
+					"data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNSIgaGVpZ2h0PSI1IiB2aWV3Qm94PSIwIDAgNSA1IiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8cGF0aCBkPSJNMS40ODIzNiAxLjMxNzgzQzEuNDgyMzYgMS4yMjY4NiAxLjU1NjEgMS4xNTMxMiAxLjY0NzA2IDEuMTUzMTJIMy4yOTQxMkMzLjM4NTA5IDEuMTUzMTIgMy40NTg4MyAxLjIyNjg2IDMuNDU4ODMgMS4zMTc4M0MzLjQ1ODgzIDEuNDA4NzkgMy4zODUwOSAxLjQ4MjUzIDMuMjk0MTIgMS40ODI1M0gxLjY0NzA2QzEuNTU2MSAxLjQ4MjUzIDEuNDgyMzYgMS40MDg3OSAxLjQ4MjM2IDEuMzE3ODNaIiBmaWxsPSJibGFjayIvPgo8cGF0aCBkPSJNMS42NDcwNiAxLjk3NjY1QzEuNTU2MSAxLjk3NjY1IDEuNDgyMzYgMi4wNTAzOSAxLjQ4MjM2IDIuMTQxMzVDMS40ODIzNiAyLjIzMjMyIDEuNTU2MSAyLjMwNjA2IDEuNjQ3MDYgMi4zMDYwNkgzLjI5NDEyQzMuMzg1MDkgMi4zMDYwNiAzLjQ1ODgzIDIuMjMyMzIgMy40NTg4MyAyLjE0MTM1QzMuNDU4ODMgMi4wNTAzOSAzLjM4NTA5IDEuOTc2NjUgMy4yOTQxMiAxLjk3NjY1SDEuNjQ3MDZaIiBmaWxsPSJibGFjayIvPgo8cGF0aCBkPSJNMy4xMjk0MiAyLjk2NDg4QzMuMTI5NDIgMi44NzM5MiAzLjIwMzE2IDIuODAwMTggMy4yOTQxMiAyLjgwMDE4QzMuMzg1MDkgMi44MDAxOCAzLjQ1ODgzIDIuODczOTIgMy40NTg4MyAyLjk2NDg4QzMuNDU4ODMgMy4wNTU4NSAzLjM4NTA5IDMuMTI5NTkgMy4yOTQxMiAzLjEyOTU5QzMuMjAzMTYgMy4xMjk1OSAzLjEyOTQyIDMuMDU1ODUgMy4xMjk0MiAyLjk2NDg4WiIgZmlsbD0iYmxhY2siLz4KPHBhdGggZD0iTTIuMzA1ODkgMi44MDAxOEMyLjIxNDkyIDIuODAwMTggMi4xNDExOCAyLjg3MzkyIDIuMTQxMTggMi45NjQ4OEMyLjE0MTE4IDMuMDU1ODUgMi4yMTQ5MiAzLjEyOTU5IDIuMzA1ODkgMy4xMjk1OUgyLjYzNTNDMi43MjYyNiAzLjEyOTU5IDIuODAwMDEgMy4wNTU4NSAyLjgwMDAxIDIuOTY0ODhDMi44MDAwMSAyLjg3MzkyIDIuNzI2MjYgMi44MDAxOCAyLjYzNTMgMi44MDAxOEgyLjMwNTg5WiIgZmlsbD0iYmxhY2siLz4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0zLjk1Mjk1IDAuMzI5NTlIMC45ODgyNDFDMC44MDYzMTEgMC4zMjk1OSAwLjY1ODgyOSAwLjQ3NzA3MyAwLjY1ODgyOSAwLjY1OTAwMlY0LjYxMTk0TDEuMjYyNzUgNC4yNjM1M0wxLjg2NjY3IDQuNjExOTRMMi40NzA1OSA0LjI2MzUzTDMuMDc0NTIgNC42MTE5NEwzLjY3ODQ0IDQuMjYzNTNMNC4yODIzNiA0LjYxMTk0VjAuNjU5MDAyQzQuMjgyMzYgMC40NzcwNzMgNC4xMzQ4OCAwLjMyOTU5IDMuOTUyOTUgMC4zMjk1OVpNMC45ODgyNDEgMC42NTkwMDJIMy45NTI5NVY0LjA0MTZMMy42Nzg0NCAzLjg4MzIzTDMuMDc0NTIgNC4yMzE2NEwyLjQ3MDU5IDMuODgzMjNMMS44NjY2NyA0LjIzMTY0TDEuMjYyNzUgMy44ODMyM0wwLjk4ODI0MSA0LjA0MTZWMC42NTkwMDJaIiBmaWxsPSJibGFjayIvPgo8L3N2Zz4K"
+					);
+  			}
+
+  			.icon--topup {
+				background-image: url(
+					"data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNSIgaGVpZ2h0PSI1IiB2aWV3Qm94PSIwIDAgNSA1IiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8cGF0aCBkPSJNMy43ODgyMyAwLjQ5NDI5NkMzLjc4ODIzIDAuNDAzMzMxIDMuODYxOTcgMC4zMjk1OSAzLjk1Mjk0IDAuMzI5NTlDNC4wNDM5IDAuMzI5NTkgNC4xMTc2NCAwLjQwMzMzMSA0LjExNzY0IDAuNDk0Mjk2VjAuODIzNzA4SDQuNDQ3MDVDNC41MzgwMiAwLjgyMzcwOCA0LjYxMTc2IDAuODk3NDQ5IDQuNjExNzYgMC45ODg0MTNDNC42MTE3NiAxLjA3OTM4IDQuNTM4MDIgMS4xNTMxMiA0LjQ0NzA1IDEuMTUzMTJINC4xMTc2NFYxLjQ4MjUzQzQuMTE3NjQgMS41NzM1IDQuMDQzOSAxLjY0NzI0IDMuOTUyOTQgMS42NDcyNEMzLjg2MTk3IDEuNjQ3MjQgMy43ODgyMyAxLjU3MzUgMy43ODgyMyAxLjQ4MjUzVjEuMTUzMTJIMy40NTg4MkMzLjM2Nzg1IDEuMTUzMTIgMy4yOTQxMSAxLjA3OTM4IDMuMjk0MTEgMC45ODg0MTNDMy4yOTQxMSAwLjg5NzQ0OSAzLjM2Nzg1IDAuODIzNzA4IDMuNDU4ODIgMC44MjM3MDhIMy43ODgyM1YwLjQ5NDI5NloiIGZpbGw9IiMyODI4MjgiLz4KPHBhdGggZD0iTTIuMzA1ODggMC45ODg0MTNDMS4zOTYyMyAwLjk4ODQxMyAwLjY1ODgxOSAxLjcyNTgzIDAuNjU4ODE5IDIuNjM1NDdDMC42NTg4MTkgMy41NDUxMiAxLjM5NjIzIDQuMjgyNTMgMi4zMDU4OCA0LjI4MjUzQzMuMjE1NTIgNC4yODI1MyAzLjk1Mjk0IDMuNTQ1MTIgMy45NTI5NCAyLjYzNTQ3QzMuOTUyOTQgMi40NTUwNiAzLjkyMzk5IDIuMjgxNzQgMy44NzA2MiAyLjExOTcxQzMuODQyMTYgMi4wMzMzMSAzLjg4OTEyIDEuOTQwMiAzLjk3NTUyIDEuOTExNzRDNC4wNjE5MiAxLjg4MzI4IDQuMTU1MDMgMS45MzAyNSA0LjE4MzQ5IDIuMDE2NjVDNC4yNDc2OCAyLjIxMTUyIDQuMjgyMzUgMi40MTk2MSA0LjI4MjM1IDIuNjM1NDdDNC4yODIzNSAzLjcyNzA1IDMuMzk3NDUgNC42MTE5NCAyLjMwNTg4IDQuNjExOTRDMS4yMTQzIDQuNjExOTQgMC4zMjk0MDcgMy43MjcwNSAwLjMyOTQwNyAyLjYzNTQ3QzAuMzI5NDA3IDEuNTQzOSAxLjIxNDMgMC42NTkwMDIgMi4zMDU4OCAwLjY1OTAwMkMyLjQ3NjI0IDAuNjU5MDAyIDIuNjQxOCAwLjY4MDU5NSAyLjc5OTg3IDAuNzIxMjc5QzIuODg3OTcgMC43NDM5NTIgMi45NDEgMC44MzM3NDcgMi45MTgzMyAwLjkyMTg0QzIuODk1NjUgMS4wMDk5MyAyLjgwNTg2IDEuMDYyOTcgMi43MTc3NiAxLjA0MDI5QzIuNTg2MjkgMS4wMDY0NiAyLjQ0ODMxIDAuOTg4NDEzIDIuMzA1ODggMC45ODg0MTNaIiBmaWxsPSIjMjgyODI4Ii8+CjxwYXRoIGQ9Ik0yLjgwMDczIDIuNzYzNTNDMi44MDA3MyAyLjgxMTQgMi43NjE5MyAyLjg1MDIyIDIuNzE0MDUgMi44NTAyMkgyLjAwMzA2QzIuMTAwNTUgMy4xNDIxMyAyLjM1MTY3IDMuMjk2MjQgMi42NzIyMiAzLjI5NjI0QzIuNzAxODggMy4yOTYyNCAyLjczMjM5IDMuMjk1NyAyLjc2MjMgMy4yOTQ2MUMyLjg2NDgzIDMuMjkwODcgMi45NjQ3IDMuMzczODkgMi45NjQ3IDMuNDc2NDhDMi45NjQ3IDMuNTQ3NDIgMi45MTYzNiAzLjYwOTAxIDIuODQ1NzUgMy42MTU4QzIuNzkwODMgMy42MjEwNyAyLjcyOTQ3IDMuNjIzNzEgMi42NzA3NSAzLjYyMzcxQzIuMTM4OTYgMy42MjM3MSAxLjcyNjgyIDMuMzUyNTQgMS42MTMwOCAyLjg1MDIySDEuNDA0MzNDMS4zNTY0NSAyLjg1MDIyIDEuMzE3NjQgMi44MTE0IDEuMzE3NjQgMi43NjM1M0MxLjMxNzY0IDIuNzE1NjYgMS4zNTY0NSAyLjY3Njg1IDEuNDA0MzMgMi42NzY4NUgxLjU4NjQ5QzEuNTgzNTMgMi42MzY4NCAxLjU4MjA2IDIuNTk1MzUgMS41ODIwNiAyLjU1Mzg2QzEuNTgyMDYgMi41MTIzNyAxLjU4MzUzIDIuNDcyMzYgMS41ODY0OSAyLjQzMzg0SDEuNDA0MzNDMS4zNTY0NSAyLjQzMzg0IDEuMzE3NjQgMi4zOTUwMyAxLjMxNzY0IDIuMzQ3MTVDMS4zMTc2NCAyLjI5OTI4IDEuMzU2NDUgMi4yNjA0NyAxLjQwNDMzIDIuMjYwNDdIMS42MTMwOEMxLjcyNTM0IDEuNzU1MTggMi4xMzc0OCAxLjQ4MjUzIDIuNjcwNzUgMS40ODI1M0MyLjcyNTYyIDEuNDgyNTMgMi43ODc5OCAxLjQ4NjUxIDIuODQzNjMgMS40OTMyNkMyLjkxMzY4IDEuNTAxNzYgMi45NjAyNyAxLjU2MzM4IDIuOTYwMjcgMS42MzM5NEMyLjk2MDI3IDEuNzM3ODYgMi44NjE2MSAxLjgxODU3IDIuNzU3ODEgMS44MTM1MkMyLjczMDU5IDEuODEyMTkgMi43MDMxNyAxLjgxMTQ5IDIuNjc2NjUgMS44MTE0OUMyLjM1MTY3IDEuODExNDkgMi4xMDA1NSAxLjk2NzA3IDIuMDAzMDYgMi4yNjA0N0gyLjcxNDA1QzIuNzYxOTMgMi4yNjA0NyAyLjgwMDczIDIuMjk5MjggMi44MDA3MyAyLjM0NzE1QzIuODAwNzMgMi4zOTUwMyAyLjc2MTkzIDIuNDMzODQgMi43MTQwNSAyLjQzMzg0SDEuOTY0NjRDMS45NjE2OSAyLjQ3MjM2IDEuOTU4NzQgMi41MTIzNyAxLjk1ODc0IDIuNTUzODZDMS45NTg3NCAyLjU5NjgzIDEuOTYxNjkgMi42MzgzMiAxLjk2NjEyIDIuNjc2ODVIMi43MTQwNUMyLjc2MTkzIDIuNjc2ODUgMi44MDA3MyAyLjcxNTY2IDIuODAwNzMgMi43NjM1M1oiIGZpbGw9IiMyODI4MjgiLz4KPC9zdmc+Cg=="
+					);
+  			}
+
+  			.icon--sct-in {
+				background-image: url(
+					"data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNSIgaGVpZ2h0PSI1IiB2aWV3Qm94PSIwIDAgNSA1IiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8cGF0aCBkPSJNMy45Mjg5NyAyLjYzODQ1QzMuOTg4NTEgMi41OTM4IDQuMDAwNTggMi41MDkzMyAzLjk1NTkyIDIuNDQ5NzlDMy45MTEyNyAyLjM5MDI1IDMuODI2OCAyLjM3ODE4IDMuNzY3MjYgMi40MjI4NEwzLjQ0Mzg1IDIuNjY1NFYwLjQ2NDM0OEMzLjQ0Mzg1IDAuMzg5OTIzIDMuMzgzNTIgMC4zMjk1OSAzLjMwOTEgMC4zMjk1OUMzLjIzNDY3IDAuMzI5NTkgMy4xNzQzNCAwLjM4OTkyMyAzLjE3NDM0IDAuNDY0MzQ4TDMuMTc0MzQgMi42NjU0MUwyLjg1MDkxIDIuNDIyODRDMi43OTEzNyAyLjM3ODE4IDIuNzA2OTEgMi4zOTAyNSAyLjY2MjI1IDIuNDQ5NzlDMi42MTc2IDIuNTA5MzMgMi42Mjk2NiAyLjU5MzggMi42ODkyIDIuNjM4NDVMMy4yMjc1MyAzLjA0MjJDMy4yNDg4NSAzLjA1ODQzIDMuMjc1MTYgMy4wNjg0NSAzLjMwMzc1IDMuMDY5NTdDMy4zMDU1MyAzLjA2OTY0IDMuMzA3MzEgMy4wNjk2NyAzLjMwOTA5IDMuMDY5NjdDMy4zNDAwNiAzLjA2OTY3IDMuMzY4NjEgMy4wNTkyMiAzLjM5MTM3IDMuMDQxNjVMMy45Mjg5NyAyLjYzODQ1WiIgZmlsbD0iIzI4MjgyOCIvPgo8cGF0aCBkPSJNMi4xMzA3MyAzLjQyNTA2QzIuMTY5OSAzLjQyNTA2IDIuMjAxNjUgMy4zOTMzMSAyLjIwMTY1IDMuMzU0MTRDMi4yMDE2NSAzLjMxNDk3IDIuMTY5OSAzLjI4MzIyIDIuMTMwNzMgMy4yODMyMkgxLjUxODhDMS41MTUxOCAzLjI1MTcgMS41MTI3NiAzLjIxNzc1IDEuNTEyNzYgMy4xODI1OUMxLjUxMjc2IDMuMTQ4NjUgMS41MTUxOCAzLjExNTkxIDEuNTE3NTkgMy4wODQzOUgyLjEzMDczQzIuMTY5OSAzLjA4NDM5IDIuMjAxNjUgMy4wNTI2NCAyLjIwMTY1IDMuMDEzNDdDMi4yMDE2NSAyLjk3NDMgMi4xNjk5IDIuOTQyNTUgMi4xMzA3MyAyLjk0MjU1SDEuNTQ5MDJDMS42Mjg3OCAyLjcwMjUgMS44MzQyNCAyLjU3NTIgMi4xMDAxMyAyLjU3NTJDMi4xMjE4MyAyLjU3NTIgMi4xNDQyNiAyLjU3NTc4IDIuMTY2NTQgMi41NzY4NkMyLjI1MTQ2IDIuNTgxIDIuMzMyMTggMi41MTQ5NiAyLjMzMjE4IDIuNDI5OTRDMi4zMzIxOCAyLjM3MjIxIDIuMjk0MDcgMi4zMjE3OSAyLjIzNjc1IDIuMzE0ODRDMi4xOTEyMiAyLjMwOTMyIDIuMTQwMTkgMi4zMDYwNiAyLjA5NTMgMi4zMDYwNkMxLjY1OSAyLjMwNjA2IDEuMzIxOCAyLjUyOTEzIDEuMjI5OTUgMi45NDI1NUgxLjA1OTE1QzEuMDE5OTggMi45NDI1NSAwLjk4ODIzIDIuOTc0MyAwLjk4ODIzIDMuMDEzNDdDMC45ODgyMyAzLjA1MjY0IDEuMDE5OTggMy4wODQzOSAxLjA1OTE1IDMuMDg0MzlIMS4yMDgxOUMxLjIwNTc4IDMuMTE1OTEgMS4yMDQ1NyAzLjE0ODY1IDEuMjA0NTcgMy4xODI1OUMxLjIwNDU3IDMuMjE2NTQgMS4yMDU3OCAzLjI1MDQ4IDEuMjA4MTkgMy4yODMyMkgxLjA1OTE1QzEuMDE5OTggMy4yODMyMiAwLjk4ODIzIDMuMzE0OTcgMC45ODgyMyAzLjM1NDE0QzAuOTg4MjMgMy4zOTMzMSAxLjAxOTk4IDMuNDI1MDYgMS4wNTkxNSAzLjQyNTA2SDEuMjI5OTVDMS4zMjMwMSAzLjgzNjA1IDEuNjYwMjEgNC4wNTc5MSAyLjA5NTMgNC4wNTc5MUMyLjE0MzM1IDQuMDU3OTEgMi4xOTM1NSA0LjA1NTc1IDIuMjM4NDggNC4wNTE0NEMyLjI5NjI1IDQuMDQ1ODkgMi4zMzU4MSAzLjk5NTUgMi4zMzU4MSAzLjkzNzQ2QzIuMzM1ODEgMy44NTM1MSAyLjI1NDA5IDMuNzg1NTkgMi4xNzAyMSAzLjc4ODY1QzIuMTQ1NzQgMy43ODk1NSAyLjEyMDc3IDMuNzg5OTggMi4wOTY1MSAzLjc4OTk4QzEuODM0MjQgMy43ODk5OCAxLjYyODc4IDMuNjYzOSAxLjU0OTAyIDMuNDI1MDZIMi4xMzA3M1oiIGZpbGw9IiMyODI4MjgiLz4KPHBhdGggZD0iTTQuMjgyMzUgMS40ODI1M1Y0LjExNzgzQzQuMjgyMzUgNC4yMDg3OSA0LjIwODYxIDQuMjgyNTMgNC4xMTc2NCA0LjI4MjUzSDAuODIzNTI0QzAuNzMyNTYgNC4yODI1MyAwLjY1ODgxOSA0LjIwODc5IDAuNjU4ODE5IDQuMTE3ODNWMS40ODI1M0MwLjY1ODgxOSAxLjM5MTU3IDAuNzMyNTYgMS4zMTc4MyAwLjgyMzUyNCAxLjMxNzgzSDIuOTY0N1YwLjk4ODQxM0gwLjgyMzUyNEMwLjU1MDYzMSAwLjk4ODQxMyAwLjMyOTQwNyAxLjIwOTY0IDAuMzI5NDA3IDEuNDgyNTNWNC4xMTc4M0MwLjMyOTQwNyA0LjM5MDcyIDAuNTUwNjMxIDQuNjExOTQgMC44MjM1MjQgNC42MTE5NEg0LjExNzY0QzQuMzkwNTQgNC42MTE5NCA0LjYxMTc2IDQuMzkwNzIgNC42MTE3NiA0LjExNzgzVjEuNDgyNTNDNC42MTE3NiAxLjIwOTY0IDQuMzkwNTQgMC45ODg0MTMgNC4xMTc2NCAwLjk4ODQxM0gzLjYyMzUyVjEuMzE3ODNINC4xMTc2NEM0LjIwODYxIDEuMzE3ODMgNC4yODIzNSAxLjM5MTU3IDQuMjgyMzUgMS40ODI1M1oiIGZpbGw9IiMyODI4MjgiLz4KPC9zdmc+Cg=="
+					);
+  			}
+
+
+
+
+
+		</style>
+
+	</head>
+	<body>
+		<!--début du bloc RIB à dupliquer-->
+		<div class="rib-container">
+
+
+			<!--Début header-->
+			<div class="rib-header">
+				<div class="header-col-left">
+					<h1 class="titre-rib">
+						Votre échéancier
+					</h1>
+					<!--DATA : date échéancier-->
+					<p class="periode label">Financement Réalisé le 08/11/2020</p>
+				</div>
+				<div class="header-col-right logo-oney-cont">
+					<svg width="31.06mm" height="9.88mm" viewBox="0 0 88 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path fill-rule="evenodd" clip-rule="evenodd" d="M21.9022 10.8889C21.9022 4.6667 17.2089 0 10.9511 0C4.69337 0 0 4.6667 0 10.8889C0 17.1111 4.69337 21.7778 10.9511 21.7778C17.2089 21.7778 21.9022 17.1111 21.9022 10.8889ZM10.8138 18.1431C14.9412 18.1431 18.2431 15.032 18.2431 10.7543C18.2431 6.47648 14.9412 3.36538 10.8138 3.36538C6.6865 3.36538 3.38461 6.86541 3.38461 10.7543C3.38461 15.032 6.6865 18.1431 10.8138 18.1431Z" fill="#89B915"/>
+						<path d="M79.7867 20.2223L88 0H83.6978L77.44 15.1667L71.1823 0H66.8801L75.4845 20.2222L72.3556 28H76.6578L77.8312 25.2778L79.7867 20.2223Z" fill="#89B915"/>
+						<path fill-rule="evenodd" clip-rule="evenodd" d="M67.271 12.4445V10.5001C67.271 4.66674 62.5777 0.000148349 56.7111 0.000148349C50.8445 0.000148349 46.1511 4.66685 46.1511 10.8891C46.1511 13.6112 47.3244 16.3335 49.28 18.6669C51.2355 20.6113 53.9733 21.778 56.7111 21.778C59.8399 21.778 64.5333 20.2224 66.4888 15.9446H62.1866C61.0133 17.5002 58.6666 18.2779 56.7111 18.2779C53.9733 18.2779 50.8443 16.7223 50.0622 12.4445H67.271ZM57.1022 3.88902C60.6222 3.88902 62.9689 6.6112 63.7511 8.94455H50.4533C50.8444 6.22238 53.5822 3.88902 57.1022 3.88902Z" fill="#89B915"/>
+						<path d="M34.0267 3.50017C30.1156 3.50017 28.16 5.44459 28.16 9.72237V21.7779H24.2489V9.33355C24.2489 7.00019 24.6401 5.4447 25.4223 4.27802C26.5956 2.72242 28.9423 0.000247249 34.0267 0.000247249C39.1111 0.000247249 41.4578 2.72242 42.6311 4.27802C43.4133 5.83363 43.8045 7.38912 43.8045 9.33355V21.7779H39.8934V9.72237C39.8934 5.44459 37.9379 3.50017 34.0267 3.50017Z" fill="#89B915"/>
+					</svg>
+				</div>
+			</div>
+			<!--fin Header -->
+
+			<!--Début header-->
+			<div class="rib-header">
+				<div class="header-col-left">
+					<p class="value">
+						Oney Bank<br/>
+						34 Avenue de Flandre<br/>
+						59170 Croix <br>
+						France
+					</p>
+				</div>
+				<div class="header-col-right logo-oney-cont">
+					<p class="label">Service Client</p>
+					<!--DATA : NUMERO CLIENT-->
+					<p class="value">
+						09 69 32 86 86
+					</p>
+				</div>
+			</div>
+			<!--fin Header -->
+
+
+
+
+
+			<!--Grapheique détail financement-->
+
+			<!--Style spécifique-->
+			<!--graphique-->
+
+			<style type="text/css">
+
+				.no-uppercase{
+					text-transform: none;
+				}
+
+				.text-center{
+					text-align: center;
+				}
+
+				.montant-total-container{
+					margin:8mm 0;
+				}
+
+				.montant-total-container .value,.montant-total-container .label{
+					font-size: 1.02em;
+				}
+
+				.financement-graph-container
+					{
+						height:4mm;
+						width:100%;
+						background-color: #00A8E2;
+						position: relative;
+						border-radius: 1mm;
+						overflow: hidden;
+					}
+				.financement-graph-montant-financement{
+					position: absolute;
+					height:100%;
+					border-right: solid 1.2mm white;
+					border-top-left-radius: 1mm;
+					border-bottom-left-radius: 1mm;
+					background-color: #85CC11;
+				}
+
+				.crochet-gauche-part-top{
+					padding-left: 3mm;
+					padding-top: 5mm;
+					border-left:solid 0.6mm #85CC11;
+					text-align: left;
+				}
+				.crochet-gauche-part-top .value{
+					color: #85CC11;
+				}
+				.crochet-gauche-part-bottom{
+					width: 5mm;
+					height: 2mm;
+					border:solid 0.6mm #85CC11;
+				    border-right: 0;
+    				border-top: 0;
+    				border-bottom-left-radius: 2mm;
+				}
+
+				.crochet-droit-part-top{
+
+					padding-right: 3mm;
+					padding-top: 5mm;
+					border-right:solid 0.6mm #00A8E2;
+					text-align: right;
+				}
+				.crochet-droit-part-top .value{
+					color: #00A8E2;
+				}
+				.crochet-droit-part-bottom{
+					width: 5mm;
+					height: 2mm;
+					border:solid 0.6mm #00A8E2;
+				    border-left: 0;
+    				border-top: 0;
+    				border-bottom-right-radius: 2mm;
+    				float: right;
+				}
+
+				.crochet-graph{
+					padding: 0 2mm;
+					margin-top: 0;
+				}
+
+				.crochet-graph .label{
+					text-transform: none;
+				}
+
+				.crochet-graph li{
+					padding: 0;
+					list-style: none;
+				}
+
+				.col-left{
+					float: left;
+				}
+				.col-right{
+					float: right;
+				}
+
+				.crochet-graph ::after{
+					content: '';
+					display: table;
+					float: none;
+					clear: both;
+				}
+
+			</style>
+
+			<div class="section votre-compte-container ">
+				<h1 class="titre-section">
+					Détail de votre financement <span id="type"> 4x  <span>
+				</h1>
+				<hr class="title-separator green"/>
+				<p class="label">RÉFÉRENCE DE L’OPÉRATION :  N°73RHCQLfy</p>
+
+				<div class="montant-total-container clearfix">
+					<p class="label col-left no-uppercase">Montant total dû</p>
+					<!-- VALUE : SOLDE at DATE M-1 -->
+					<p class="value col-right">+1.02</p>
+				</div>
+
+				<div class="financement-graph-container">
+					<div style="width: 98.0392156862745%" class="financement-graph-montant-financement"></div>
+				</div>
+				<ul class="crochet-graph">
+					<li class="crochet-graph">
+					</li>
+					<li class="crochet-graph">
+						<!--  VALUE : LABEL SOLDE at DATE M-1 -->
+						<div class="col-left">
+							<div class="crochet-gauche-part-top">
+								<p class="label">Montant<br/>du financement</p>
+								<p class="value">1€</p>
+							</div>
+							<div class="crochet-gauche-part-bottom"></div>
+						</div>
+						<!-- VALUE : SOLDE at DATE M-1 -->
+						<div class="col-right">
+							<div class="crochet-droit-part-top">
+								<p class="label">Commission<br/>de fractionnement</p>
+								<p class="value">0.02€</p>
+							</div>
+							<div class="crochet-droit-part-bottom"></div>
+						</div>
+					</li>
+				</ul>
+				<p class="label no-uppercase text-center">TAEG fixe de 150.87%</p>
+
+
+			</div>
+
+			<style type="text/css">
+
+				ul.mensualité{
+					margin: 0 auto;
+					padding: 0;
+				}
+				ul.mensualité li{
+					list-style: none;
+					text-align: left;
+					padding: 3mm 0;
+				}
+
+				ul.mensualité li::after{
+					content: '';
+					display: table;
+					clear: both;
+					float: none;
+				}
+
+				ul.mensualité li .col-left{
+					float: left;
+					text-align: left;
+				}
+				ul.mensualité li .col-right{
+					float: right;
+					text-align: right;
+				}
+				ul.mensualité li .col-right .value{
+					text-align: right;
+				}
+				ul.mensualité li .label,ul.mensualité li .value{
+					text-transform: none;
+					font-size: 1.01em;
+				}
+				ul.mensualité li .label.date{
+					text-transform: none;
+					font-size: 0.9em;
+				}
+
+			</style>
+			<div class="section">
+				<h1 class="titre-section">
+					Vos mensualités
+				</h1>
+				<hr class="title-separator green"/>
+				<p class="label">RÉFÉRENCE DE L’OPÉRATION : N°73RHCQLfy</p>
+				<ul class="mensualité">
+					<li class="mensualité">
+						<!--  VALUE : LABEL SOLDE at DATE M-1 -->
+						<div class="col-left">
+							<p class="label ">Première mensualité</p>
+							<p class="label ">Frais de fractionnement</p>
+							<!-- VALUE : date prélèvement -->
+							<p class="label date">Prélevée le <span>08/11/2020</span></p>
+						</div>
+
+						<div class="col-right">
+							<!-- VALUE : Première mensualité -->
+							<p class="value ">0.25€</p>
+							<!-- VALUE : commission financement -->
+							<p class="value ">0.02€</p>
+						</div>
+					</li>
+					<li class="mensualité">
+						<!--  VALUE : LABEL SOLDE at DATE M-1 -->
+						<div class="col-left">
+							<p class="label ">Seconde mensualité</p>
+							<!-- VALUE : date prélèvement -->
+							<p class="label date ">Prélevée le <span>08/12/2020</span></p>
+						</div>
+
+						<div class="col-right">
+							<!-- VALUE : Seconde mensualité -->
+							<p class="value ">0.25€</p>
+						</div>
+					</li>
+					<li class="mensualité">
+						<!--  VALUE : LABEL SOLDE at DATE M-1 -->
+						<div class="col-left">
+							<p class="label ">Troisième mensualité</p>
+							<!-- VALUE : date prélèvement -->
+							<p class="label date">Prélevée le <span>08/01/2021</span></p>
+						</div>
+
+						<div class="col-right">
+							<!-- VALUE : troisiemme mensualité -->
+							<p class="value ">0.25€</p>
+						</div>
+					</li>
+
+						<!-- 4eme mensualité -->
+						<li class="mensualité">
+							<!--  VALUE : LABEL SOLDE at DATE M-1 -->
+							<div class="col-left">
+								<p class="label "> Quatrième mensualité</p>
+								<!-- VALUE : date prélèvement -->
+								<p class="label date">Prélevée le <span>08/02/2021</span></p>
+							</div>
+
+							<div class="col-right">
+								<!-- VALUE : troisiemme mensualité -->
+								<p class="value ">0.25€</p>
+							</div>
+						</li>
+				</ul>
+
+			</div>
+	</body>
+</html>

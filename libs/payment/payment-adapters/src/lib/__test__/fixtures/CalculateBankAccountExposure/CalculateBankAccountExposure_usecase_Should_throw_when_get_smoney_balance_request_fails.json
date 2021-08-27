@@ -1,0 +1,21 @@
+[
+    {
+        "scope": "https://sb-api.xpollens.com:443",
+        "method": "GET",
+        "path": "/api/V1.1/users/kTDhDRrHv",
+        "body": "",
+        "status": 401,
+        "response": "",
+        "rawHeaders": [
+            "Date",
+            "Fri, 02 Apr 2021 14:30:25 GMT",
+            "Content-Length",
+            "0",
+            "Request-Context",
+            "appId=cid-v1:40d43092-8aee-4b2b-8b7f-34d2d69e09b7",
+            "Connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    }
+]

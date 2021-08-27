@@ -1,0 +1,66 @@
+{
+  "root": true,
+  "parser": "@typescript-eslint/parser",
+  "env": {"jest": true, "node": true, "jasmine": true},
+  "parserOptions": {
+    "ecmaVersion": 2018,
+    "sourceType": "module",
+    "project": "./tsconfig.*?.json"
+  },
+  "ignorePatterns": ["**/*"],
+  "plugins": ["@typescript-eslint", "@nrwl/nx", "prettier", "import"],
+  "extends": [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended",
+    "prettier",
+    "plugin:import/typescript",
+    "prettier/@typescript-eslint"
+  ],
+  "rules": {
+    "@typescript-eslint/no-empty-interface": [
+      "error",
+      {
+        "allowSingleExtends": false
+      }
+    ],
+    "@typescript-eslint/no-explicit-any": "warn",
+    "@typescript-eslint/no-unused-vars": ["error", { "args": "after-used" }],
+    "@typescript-eslint/explicit-member-accessibility": "off",
+    "@typescript-eslint/explicit-function-return-type": "off",
+    "@typescript-eslint/no-parameter-properties": "off",
+    "@typescript-eslint/no-namespace": "off",
+    "@typescript-eslint/ban-types": "off",
+    "@typescript-eslint/no-var-requires": "warn",
+    "@nrwl/nx/enforce-module-boundaries": [
+      "error",
+      {
+        "enforceBuildableLibDependency": true,
+        "allow": [],
+        "depConstraints": []
+      }
+    ],
+    "import/no-useless-path-segments": "error",
+    "import/newline-after-import": "error",
+    "import/first": "error",
+    "no-duplicate-imports": "warn",
+    "import/order": [
+      "error",
+      {
+        "newlines-between": "never",
+        "groups": ["external", "builtin", "internal", "index", ["sibling", "parent"], "object"]
+      }
+    ],
+    "import/no-cycle": "warn",
+    "prettier/prettier": "error",
+    "no-case-declarations": "off"
+  },
+  "overrides": [
+    {
+      "files": ["*.tsx"],
+      "rules": {
+        "@typescript-eslint/no-explicit-any": "off",
+        "@typescript-eslint/no-unused-vars": "off"
+      }
+    }
+  ]
+}

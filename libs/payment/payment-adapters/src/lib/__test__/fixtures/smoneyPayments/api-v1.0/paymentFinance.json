@@ -1,0 +1,79 @@
+[
+    {
+        "scope": "https://sb-api.xpollens.com:443",
+        "method": "POST",
+        "path": "/api/V1.0/users/OxREbmNhO/payments",
+        "body": {
+            "orderid": "SMoney078",
+            "beneficiary": {
+                "appaccountid": "mala_1"
+            },
+            "sender": {
+                "appaccountid": "OxREbmNhO"
+            },
+            "amount": 77,
+            "message": "aze",
+            "checkLimits": false,
+            "tag": " -FINANCEMENT AUTBA-AUTBA-FRA-000-XMp6548787",
+            "processUnpaid": false,
+            "Recurrent": {
+                "RecurrentEndDate": "2020-09-25",
+                "FrequencyType": 6
+            }
+        },
+        "status": 201,
+        "response": {
+            "Id": 545,
+            "PaymentDate": "2020-09-25T14:03:31",
+            "Amount": 77,
+            "Sender": {
+                "Id": 2323,
+                "AppAccountId": "OxREbmNhO",
+                "DisplayName": "Financements Finance",
+                "Email": "oney_finance@yopmail.com",
+                "PhoneNumber": "33 62 54 78 52 3",
+                "Alias": "F.F#OxREbmNhO",
+                "Iban": "FR2612869000020PC000001SJ42",
+                "Href": "https://rest-pp.s-money.fr/api/V1.0/users/OxREbmNhO"
+            },
+            "Beneficiary": {
+                "Id": 1490,
+                "AppAccountId": "mala_1",
+                "DisplayName": "Prenomuserelo Nomuserelo",
+                "Email": "lux-qa-user-2@oney.com",
+                "PhoneNumber": "06 62 61 12 46",
+                "Alias": "mala",
+                "Iban": "FR8612869000020PC0000015E37",
+                "Href": "https://rest-pp.s-money.fr/api/V1.0/users/mala_1"
+            },
+            "Message": "aze",
+            "OrderId": "SMoney078",
+            "Status": 1,
+            "CheckLimits": true,
+            "Tag": " -FINANCEMENT AUTBA-AUTBA-FRA-000-XMp6548787"
+        },
+        "rawHeaders": [
+            "Date",
+            "Fri, 25 Sep 2020 12:03:31 GMT",
+            "Server",
+            "IWS",
+            "Cache-Control",
+            "no-cache",
+            "Pragma",
+            "no-cache",
+            "Content-Type",
+            "application/json; charset=utf-8",
+            "Expires",
+            "-1",
+            "Location",
+            "https://rest-pp.s-money.fr/api/V1.0/users/OxREbmNhO/payments/545",
+            "X-AspNet-Version",
+            "4.0.30319",
+            "Content-Length",
+            "741",
+            "Connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    }
+]

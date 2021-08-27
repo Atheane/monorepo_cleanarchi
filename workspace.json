@@ -1,0 +1,2715 @@
+{
+  "version": 1,
+  "projects": {
+    "ddd": {
+      "root": "libs/ddd",
+      "sourceRoot": "libs/ddd/src",
+      "projectType": "library",
+      "schematics": {},
+      "architect": {
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": ["libs/ddd/**/*.ts"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/ddd/jest.config.js",
+            "passWithNoTests": true
+          }
+        },
+        "build": {
+          "builder": "@nrwl/node:package",
+          "options": {
+            "outputPath": "dist/libs/ddd",
+            "tsConfig": "libs/ddd/tsconfig.lib.json",
+            "packageJson": "libs/ddd/package.json",
+            "main": "libs/ddd/src/index.ts",
+            "assets": ["libs/ddd/*.md"]
+          }
+        }
+      }
+    },
+    "azf-plugin": {
+      "root": "libs/plugins/azf-plugin",
+      "sourceRoot": "libs/plugins/azf-plugin/src",
+      "projectType": "library",
+      "schematics": {},
+      "architect": {
+        "lint": {
+          "builder": "@nrwl/linter:lint",
+          "options": {
+            "linter": "eslint",
+            "config": "libs/plugins/azf-plugin/.eslintrc.json",
+            "tsConfig": [
+              "libs/plugins/azf-plugin/tsconfig.lib.json",
+              "libs/plugins/azf-plugin/tsconfig.spec.json"
+            ],
+            "exclude": ["**/node_modules/**", "!libs/plugins/azf-plugin/**"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/plugins/azf-plugin/jest.config.js",
+            "passWithNoTests": true
+          }
+        },
+        "build": {
+          "builder": "@nrwl/node:package",
+          "options": {
+            "outputPath": "dist/libs/azf-plugin",
+            "tsConfig": "libs/plugins/azf-plugin/tsconfig.lib.json",
+            "packageJson": "libs/plugins/azf-plugin/package.json",
+            "main": "libs/plugins/azf-plugin/src/index.ts",
+            "assets": [
+              "libs/plugins/azf-plugin/*.md",
+              {
+                "input": "./libs/plugins/azf-plugin/src",
+                "glob": "**/*.!(ts)",
+                "output": "./src"
+              },
+              {
+                "input": "./libs/plugins/azf-plugin",
+                "glob": "collection.json",
+                "output": "."
+              },
+              {
+                "input": "./libs/plugins/azf-plugin",
+                "glob": "builders.json",
+                "output": "."
+              }
+            ]
+          }
+        }
+      }
+    },
+    "az-servicebus-adapters": {
+      "root": "libs/az-servicebus-adapters",
+      "sourceRoot": "libs/az-servicebus-adapters/src",
+      "projectType": "library",
+      "schematics": {},
+      "architect": {
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": ["libs/az-servicebus-adapters/**/*.ts"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/az-servicebus-adapters/jest.config.js",
+            "passWithNoTests": true
+          }
+        },
+        "build": {
+          "builder": "@nrwl/node:package",
+          "options": {
+            "outputPath": "dist/libs/az-servicebus-adapters",
+            "tsConfig": "libs/az-servicebus-adapters/tsconfig.lib.json",
+            "packageJson": "libs/az-servicebus-adapters/package.json",
+            "main": "libs/az-servicebus-adapters/src/index.ts",
+            "assets": ["libs/az-servicebus-adapters/*.md"]
+          }
+        }
+      }
+    },
+    "rx-events-adapters": {
+      "root": "libs/rx-events-adapters",
+      "sourceRoot": "libs/rx-events-adapters/src",
+      "projectType": "library",
+      "schematics": {},
+      "architect": {
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": ["libs/rx-events-adapters/**/*.ts"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/rx-events-adapters/jest.config.js",
+            "passWithNoTests": true
+          }
+        },
+        "build": {
+          "builder": "@nrwl/node:package",
+          "options": {
+            "outputPath": "dist/libs/rx-events-adapters",
+            "tsConfig": "libs/rx-events-adapters/tsconfig.lib.json",
+            "packageJson": "libs/rx-events-adapters/package.json",
+            "main": "libs/rx-events-adapters/src/index.ts",
+            "assets": ["libs/rx-events-adapters/*.md"]
+          }
+        }
+      }
+    },
+    "applicationinsights-enhanced": {
+      "root": "libs/applicationinsights-enhanced",
+      "sourceRoot": "libs/applicationinsights-enhanced/src",
+      "projectType": "library",
+      "schematics": {},
+      "architect": {
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": ["libs/applicationinsights-enhanced/**/*.ts"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/applicationinsights-enhanced/jest.config.js",
+            "passWithNoTests": true
+          }
+        },
+        "build": {
+          "builder": "@nrwl/node:package",
+          "options": {
+            "outputPath": "dist/libs/applicationinsights-enhanced",
+            "tsConfig": "libs/applicationinsights-enhanced/tsconfig.lib.json",
+            "packageJson": "libs/applicationinsights-enhanced/package.json",
+            "main": "libs/applicationinsights-enhanced/src/index.ts",
+            "assets": ["libs/applicationinsights-enhanced/*.md"]
+          }
+        }
+      }
+    },
+    "envs": {
+      "root": "libs/common/envs",
+      "sourceRoot": "libs/common/envs/src",
+      "projectType": "library",
+      "schematics": {},
+      "architect": {
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": ["libs/common/envs/**/*.ts"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/common/envs/jest.config.js",
+            "passWithNoTests": true
+          }
+        },
+        "build": {
+          "builder": "@nrwl/node:package",
+          "options": {
+            "outputPath": "dist/libs/envs",
+            "tsConfig": "libs/common/envs/tsconfig.lib.json",
+            "packageJson": "libs/common/envs/package.json",
+            "main": "libs/common/envs/src/index.ts",
+            "assets": ["libs/common/envs/*.md"]
+          }
+        }
+      }
+    },
+    "common-core": {
+      "root": "libs/common/common-core",
+      "sourceRoot": "libs/common/common-core/src",
+      "projectType": "library",
+      "schematics": {},
+      "architect": {
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": ["libs/common/common-core/**/*.ts"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/common/common-core/jest.config.js",
+            "passWithNoTests": true
+          }
+        },
+        "build": {
+          "builder": "@nrwl/node:package",
+          "options": {
+            "outputPath": "dist/libs/common-core",
+            "tsConfig": "libs/common/common-core/tsconfig.lib.json",
+            "packageJson": "libs/common/common-core/package.json",
+            "main": "libs/common/common-core/src/index.ts",
+            "assets": ["libs/common/common-core/*.md"]
+          }
+        }
+      }
+    },
+    "common-adapters": {
+      "root": "libs/common/common-adapters",
+      "sourceRoot": "libs/common/common-adapters/src",
+      "projectType": "library",
+      "schematics": {},
+      "architect": {
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": ["libs/common/common-adapters/**/*.ts"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/common/common-adapters/jest.config.js",
+            "passWithNoTests": true
+          }
+        },
+        "build": {
+          "builder": "@nrwl/node:package",
+          "options": {
+            "outputPath": "dist/libs/common-adapters",
+            "tsConfig": "libs/common/common-adapters/tsconfig.lib.json",
+            "packageJson": "libs/common/common-adapters/package.json",
+            "main": "libs/common/common-adapters/src/index.ts",
+            "assets": ["libs/common/common-adapters/*.md"]
+          }
+        }
+      }
+    },
+    "common-function": {
+      "root": "apps/common-function",
+      "sourceRoot": "apps/common-function/src",
+      "projectType": "application",
+      "prefix": "common-function",
+      "schematics": {},
+      "architect": {
+        "serve": {
+          "builder": "@nrwl/workspace:run-commands",
+          "options": {
+            "commands": [
+              {
+                "command": "node tools/postbuild.js && npm install && npx func start"
+              }
+            ],
+            "cwd": "dist/apps/common-function"
+          }
+        },
+        "post-build": {
+          "builder": "@nrwl/workspace:run-commands",
+          "options": {
+            "commands": [
+              {
+                "command": "node tools/postbuild.js"
+              }
+            ],
+            "cwd": "dist/apps/common-function"
+          }
+        },
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": ["apps/common-function/**/*.ts"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "apps/common-function/jest.config.js",
+            "tsConfig": "apps/common-function/tsconfig.spec.json",
+            "passWithNoTests": true
+          }
+        },
+        "build": {
+          "builder": "@nrwl/workspace:run-commands",
+          "options": {
+            "commands": [
+              {
+                "command": "node ./tools/dependenciesBuilder.js && yarn build"
+              }
+            ],
+            "cwd": "apps/common-function"
+          }
+        }
+      }
+    },
+    "identity-core": {
+      "root": "libs/identity/identity-core",
+      "sourceRoot": "libs/identity/identity-core/src",
+      "projectType": "library",
+      "schematics": {},
+      "architect": {
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": ["libs/identity/identity-core/**/*.ts"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/identity/identity-core/jest.config.js",
+            "passWithNoTests": true
+          }
+        },
+        "build": {
+          "builder": "@nrwl/node:package",
+          "options": {
+            "outputPath": "dist/libs/identity-core",
+            "tsConfig": "libs/identity/identity-core/tsconfig.lib.json",
+            "packageJson": "libs/identity/identity-core/package.json",
+            "main": "libs/identity/identity-core/src/index.ts",
+            "assets": ["libs/identity/identity-core/*.md"]
+          }
+        }
+      }
+    },
+    "identity-adapters": {
+      "root": "libs/identity/identity-adapters",
+      "sourceRoot": "libs/identity/identity-adapters/src",
+      "projectType": "library",
+      "schematics": {},
+      "architect": {
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": ["libs/identity/identity-adapters/**/*.ts"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/identity/identity-adapters/jest.config.js",
+            "passWithNoTests": true
+          }
+        },
+        "build": {
+          "builder": "@nrwl/node:package",
+          "options": {
+            "outputPath": "dist/libs/identity-adapters",
+            "tsConfig": "libs/identity/identity-adapters/tsconfig.lib.json",
+            "packageJson": "libs/identity/identity-adapters/package.json",
+            "main": "libs/identity/identity-adapters/src/index.ts",
+            "assets": ["libs/identity/identity-adapters/*.md"]
+          }
+        }
+      }
+    },
+    "authentication-core": {
+      "root": "libs/authentication/authentication-core",
+      "sourceRoot": "libs/authentication/authentication-core/src",
+      "projectType": "library",
+      "schematics": {},
+      "architect": {
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": ["libs/authentication/authentication-core/**/*.ts"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/authentication/authentication-core/jest.config.js",
+            "passWithNoTests": true
+          }
+        },
+        "build": {
+          "builder": "@nrwl/node:package",
+          "options": {
+            "outputPath": "dist/libs/authentication-core",
+            "tsConfig": "libs/authentication/authentication-core/tsconfig.lib.json",
+            "packageJson": "libs/authentication/authentication-core/package.json",
+            "main": "libs/authentication/authentication-core/src/index.ts",
+            "assets": ["libs/authentication/authentication-core/*.md"]
+          }
+        }
+      }
+    },
+    "authentication-adapters": {
+      "root": "libs/authentication/authentication-adapters",
+      "sourceRoot": "libs/authentication/authentication-adapters/src",
+      "projectType": "library",
+      "schematics": {},
+      "architect": {
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": ["libs/authentication/authentication-adapters/**/*.ts"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/authentication/authentication-adapters/jest.config.js",
+            "passWithNoTests": true
+          }
+        },
+        "build": {
+          "builder": "@nrwl/node:package",
+          "options": {
+            "outputPath": "dist/libs/authentication-adapters",
+            "tsConfig": "libs/authentication/authentication-adapters/tsconfig.lib.json",
+            "packageJson": "libs/authentication/authentication-adapters/package.json",
+            "main": "libs/authentication/authentication-adapters/src/index.ts"
+          }
+        }
+      }
+    },
+    "authentication-api": {
+      "root": "apps/authentication/api",
+      "sourceRoot": "apps/authentication/api/src",
+      "projectType": "application",
+      "prefix": "authentication-api",
+      "schematics": {},
+      "architect": {
+        "build": {
+          "builder": "@nrwl/node:build",
+          "options": {
+            "outputPath": "dist/apps/authentication/api",
+            "main": "apps/authentication/api/src/main.ts",
+            "tsConfig": "apps/authentication/api/tsconfig.app.json"
+          },
+          "configurations": {
+            "production": {
+              "optimization": true,
+              "extractLicenses": true,
+              "inspect": false
+            }
+          }
+        },
+        "serve": {
+          "builder": "@nrwl/node:execute",
+          "options": {
+            "buildTarget": "authentication-api:build"
+          }
+        },
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": ["apps/authentication/api/**/*.ts"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "apps/authentication/api/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
+    },
+    "authentication-azf": {
+      "root": "apps/authentication/authentication-azf",
+      "sourceRoot": "apps/authentication/authentication-azf/src",
+      "projectType": "application",
+      "prefix": "authentication-azf",
+      "schematics": {},
+      "architect": {
+        "serve": {
+          "builder": "@nrwl/workspace:run-commands",
+          "options": {
+            "commands": [
+              {
+                "command": "node tools/postbuild.js && npm install && npx func start"
+              }
+            ],
+            "cwd": "dist/apps/authentication/authentication-azf"
+          }
+        },
+        "post-build": {
+          "builder": "@nrwl/workspace:run-commands",
+          "options": {
+            "commands": [
+              {
+                "command": "node tools/postbuild.js"
+              }
+            ],
+            "cwd": "dist/apps/authentication/authentication-azf"
+          }
+        },
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": ["apps/authentication/authentication-azf/**/*.ts"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "apps/authentication/authentication-azf/jest.config.js",
+            "tsConfig": "apps/authentication/authentication-azf/tsconfig.spec.json",
+            "passWithNoTests": true
+          }
+        },
+        "build": {
+          "builder": "@nrwl/workspace:run-commands",
+          "options": {
+            "commands": [
+              {
+                "command": "node ./tools/dependenciesBuilder.js && yarn build"
+              }
+            ],
+            "cwd": "apps/authentication/authentication-azf"
+          }
+        }
+      }
+    },
+    "notification-api": {
+      "root": "apps/notification/notification-api",
+      "sourceRoot": "apps/notification/notification-api/src",
+      "projectType": "application",
+      "prefix": "notification-api",
+      "schematics": {},
+      "architect": {
+        "serve": {
+          "builder": "@nrwl/node:execute",
+          "options": {
+            "buildTarget": "notification-api:serve-build"
+          }
+        },
+        "serve-build": {
+          "builder": "@nrwl/node:build",
+          "options": {
+            "outputPath": "dist/apps/notification/api",
+            "main": "apps/notification/notification-api/src/main.ts",
+            "tsConfig": "apps/notification/notification-api/tsconfig.app.json",
+            "assets": [
+              {
+                "input": "apps/notification/notification-api/",
+                "glob": "local.env",
+                "output": "."
+              }
+            ]
+          },
+          "configurations": {
+            "production": {
+              "optimization": true,
+              "extractLicenses": true,
+              "inspect": false
+            }
+          }
+        },
+        "build": {
+          "builder": "@nrwl/node:package",
+          "options": {
+            "outputPath": "dist/apps/notification/notification-api",
+            "main": "apps/notification/notification-api/src/main.ts",
+            "tsConfig": "apps/notification/notification-api/tsconfig.build.json",
+            "packageJson": "apps/notification/notification-api/package.json",
+            "assets": [
+              {
+                "input": "apps/notification/notification-api/",
+                "glob": "tools/postbuild.js",
+                "output": "."
+              },
+              {
+                "input": "apps/notification/notification-api/",
+                "glob": "**/*.html",
+                "output": "."
+              },
+              {
+                "input": "apps/notification/notification-api/",
+                "glob": "local.env",
+                "output": "."
+              }
+            ]
+          },
+          "configurations": {
+            "production": {
+              "optimization": true,
+              "extractLicenses": true,
+              "inspect": false,
+              "fileReplacements": [
+                {
+                  "replace": "apps/notification/notification-api/src/environments/environment.ts",
+                  "with": "apps/notification/notification-api/src/environments/environment.prod.ts"
+                }
+              ]
+            }
+          }
+        },
+        "post-build": {
+          "builder": "@nrwl/workspace:run-commands",
+          "options": {
+            "commands": [
+              {
+                "command": "node tools/postbuild.js && npm install"
+              }
+            ],
+            "cwd": "dist/apps/notification/notification-api"
+          }
+        },
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": ["apps/notification/notification-api/**/*.ts"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "apps/notification/notification-api/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
+    },
+    "notification-azf": {
+      "root": "apps/notification/notification-azf",
+      "sourceRoot": "apps/notification/notification-azf/src",
+      "projectType": "application",
+      "prefix": "notification-azf",
+      "schematics": {},
+      "architect": {
+        "serve": {
+          "builder": "@nrwl/workspace:run-commands",
+          "options": {
+            "commands": [
+              {
+                "command": "node tools/postbuild.js && yarn install && npx func start"
+              }
+            ],
+            "cwd": "dist/apps/notification/notification-azf"
+          }
+        },
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": ["apps/notification/notification-azf/**/*.ts"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "apps/notification/notification-azf/jest.config.js",
+            "tsConfig": "apps/notification/notification-azf/tsconfig.spec.json",
+            "passWithNoTests": true
+          }
+        },
+        "build": {
+          "builder": "@nrwl/workspace:run-commands",
+          "options": {
+            "commands": [
+              {
+                "command": "node tools/dependenciesBuilder.js && yarn build"
+              }
+            ],
+            "cwd": "apps/notification/notification-azf"
+          }
+        },
+        "post-build": {
+          "builder": "@nrwl/workspace:run-commands",
+          "options": {
+            "commands": [
+              {
+                "command": "node tools/postbuild.js"
+              }
+            ],
+            "cwd": "dist/apps/notification/notification-azf"
+          }
+        }
+      }
+    },
+    "profile-api": {
+      "root": "apps/profile/profile-api",
+      "sourceRoot": "apps/profile/profile-api/src",
+      "projectType": "application",
+      "prefix": "profile-api",
+      "schematics": {},
+      "architect": {
+        "build": {
+          "builder": "@nrwl/node:build",
+          "options": {
+            "outputPath": "dist/apps/profile-api",
+            "main": "apps/profile/profile-api/src/main.ts",
+            "tsConfig": "apps/profile/profile-api/tsconfig.app.json"
+          },
+          "configurations": {
+            "production": {
+              "optimization": true,
+              "extractLicenses": true,
+              "inspect": false
+            }
+          }
+        },
+        "serve": {
+          "builder": "@nrwl/node:execute",
+          "options": {
+            "buildTarget": "profile-api:build"
+          }
+        },
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": ["apps/profile/profile-api/**/*.ts"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "apps/profile/profile-api/jest.config.js",
+            "passWithNoTests": true,
+            "silent": true
+          }
+        }
+      }
+    },
+    "profile-core": {
+      "root": "libs/profile/profile-core",
+      "sourceRoot": "libs/profile/profile-core/src",
+      "projectType": "library",
+      "schematics": {},
+      "architect": {
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": ["libs/profile/profile-core/**/*.ts"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/profile/profile-core/jest.config.js",
+            "passWithNoTests": true
+          }
+        },
+        "build": {
+          "builder": "@nrwl/node:package",
+          "options": {
+            "outputPath": "dist/libs/profile-core",
+            "tsConfig": "libs/profile/profile-core/tsconfig.lib.json",
+            "packageJson": "libs/profile/profile-core/package.json",
+            "main": "libs/profile/profile-core/src/index.ts",
+            "assets": ["libs/profile/profile-core/*.md"]
+          }
+        }
+      }
+    },
+    "profile-adapters": {
+      "root": "libs/profile/profile-adapters",
+      "sourceRoot": "libs/profile/profile-adapters/src",
+      "projectType": "library",
+      "schematics": {},
+      "architect": {
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": ["libs/profile/profile-adapters/**/*.ts"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/profile/profile-adapters/jest.config.js",
+            "passWithNoTests": true
+          }
+        },
+        "build": {
+          "builder": "@nrwl/node:package",
+          "options": {
+            "outputPath": "dist/libs/profile-adapters",
+            "tsConfig": "libs/profile/profile-adapters/tsconfig.lib.json",
+            "packageJson": "libs/profile/profile-adapters/package.json",
+            "main": "libs/profile/profile-adapters/src/index.ts",
+            "assets": ["libs/profile/profile-adapters/*.md"]
+          }
+        }
+      }
+    },
+    "profile-azf": {
+      "root": "apps/profile/profile-azf",
+      "sourceRoot": "apps/profile/profile-azf/src",
+      "projectType": "application",
+      "prefix": "profile-azf",
+      "schematics": {},
+      "architect": {
+        "serve": {
+          "builder": "@nrwl/workspace:run-commands",
+          "options": {
+            "commands": [
+              {
+                "command": "node tools/postbuild.js && npm install && npx func start"
+              }
+            ],
+            "cwd": "dist/apps/profile/profile-azf"
+          }
+        },
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": ["apps/profile/profile-azf/**/*.ts"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "apps/profile/profile-azf/jest.config.js",
+            "tsConfig": "apps/profile/profile-azf/tsconfig.spec.json",
+            "passWithNoTests": true
+          }
+        },
+        "build": {
+          "builder": "@nrwl/workspace:run-commands",
+          "options": {
+            "commands": [
+              {
+                "command": "node tools/dependenciesBuilder.js && yarn build"
+              }
+            ],
+            "cwd": "apps/profile/profile-azf"
+          }
+        },
+        "post-build": {
+          "builder": "@nrwl/workspace:run-commands",
+          "options": {
+            "commands": [
+              {
+                "command": "node tools/postbuild.js"
+              }
+            ],
+            "cwd": "dist/apps/profile/profile-azf"
+          }
+        }
+      }
+    },
+    "payment-core": {
+      "root": "libs/payment/payment-core",
+      "sourceRoot": "libs/payment/payment-core/src",
+      "projectType": "library",
+      "schematics": {},
+      "architect": {
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": ["libs/payment/payment-core/**/*.ts"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/payment/payment-core/jest.config.js",
+            "passWithNoTests": true
+          }
+        },
+        "build": {
+          "builder": "@nrwl/node:package",
+          "options": {
+            "outputPath": "dist/libs/payment-core",
+            "tsConfig": "libs/payment/payment-core/tsconfig.lib.json",
+            "packageJson": "libs/payment/payment-core/package.json",
+            "main": "libs/payment/payment-core/src/index.ts",
+            "assets": ["libs/payment/payment-core/*.md"]
+          }
+        }
+      }
+    },
+    "payment-adapters": {
+      "root": "libs/payment/payment-adapters",
+      "sourceRoot": "libs/payment/payment-adapters/src",
+      "projectType": "library",
+      "schematics": {},
+      "architect": {
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": ["libs/payment/payment-adapters/**/*.ts"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/payment/payment-adapters/jest.config.js",
+            "passWithNoTests": true
+          }
+        },
+        "build": {
+          "builder": "@nrwl/node:package",
+          "options": {
+            "outputPath": "dist/libs/payment-adapters",
+            "tsConfig": "libs/payment/payment-adapters/tsconfig.lib.json",
+            "packageJson": "libs/payment/payment-adapters/package.json",
+            "main": "libs/payment/payment-adapters/src/index.ts",
+            "assets": ["libs/payment/payment-adapters/*.md"]
+          }
+        }
+      }
+    },
+    "payment-messages": {
+      "root": "libs/payment/payment-messages",
+      "sourceRoot": "libs/payment/payment-messages/src",
+      "projectType": "library",
+      "schematics": {},
+      "architect": {
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": ["libs/payment/payment-messages/**/*.ts"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/payment/payment-messages/jest.config.js",
+            "passWithNoTests": true
+          }
+        },
+        "build": {
+          "builder": "@nrwl/node:package",
+          "options": {
+            "outputPath": "dist/libs/payment-messages",
+            "tsConfig": "libs/payment/payment-messages/tsconfig.lib.json",
+            "packageJson": "libs/payment/payment-messages/package.json",
+            "main": "libs/payment/payment-messages/src/index.ts",
+            "assets": ["libs/payment/payment-messages/*.md"]
+          }
+        }
+      }
+    },
+    "payment-api": {
+      "root": "apps/payment/payment-api",
+      "sourceRoot": "apps/payment/payment-api/src",
+      "projectType": "application",
+      "prefix": "payment-api",
+      "schematics": {},
+      "architect": {
+        "build": {
+          "builder": "@nrwl/node:build",
+          "options": {
+            "outputPath": "dist/apps/payment/payment-api",
+            "main": "apps/payment/payment-api/src/main.ts",
+            "tsConfig": "apps/payment/payment-api/tsconfig.app.json"
+          },
+          "configurations": {
+            "production": {
+              "optimization": true,
+              "extractLicenses": true,
+              "inspect": false
+            }
+          }
+        },
+        "serve": {
+          "builder": "@nrwl/node:execute",
+          "options": {
+            "buildTarget": "payment-api:build"
+          }
+        },
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": ["apps/payment/payment-api/**/*.ts"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "apps/payment/payment-api/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
+    },
+    "payment-azf": {
+      "root": "apps/payment/payment-azf",
+      "sourceRoot": "apps/payment/payment-azf/src",
+      "projectType": "application",
+      "prefix": "payment-azf",
+      "schematics": {},
+      "architect": {
+        "serve": {
+          "builder": "@nrwl/workspace:run-commands",
+          "options": {
+            "commands": [
+              {
+                "command": "node tools/postbuild.js && npm install && npx func start"
+              }
+            ],
+            "cwd": "dist/apps/payment/payment-azf"
+          }
+        },
+        "post-build": {
+          "builder": "@nrwl/workspace:run-commands",
+          "options": {
+            "commands": [
+              {
+                "command": "node tools/postbuild.js"
+              }
+            ],
+            "cwd": "dist/apps/payment/payment-azf"
+          }
+        },
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": ["apps/payment/payment-azf/**/*.ts"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "apps/payment/payment-azf/jest.config.js",
+            "tsConfig": "apps/payment/payment-azf/tsconfig.spec.json",
+            "passWithNoTests": true
+          }
+        },
+        "build": {
+          "builder": "@nrwl/workspace:run-commands",
+          "options": {
+            "commands": [
+              {
+                "command": "node ./tools/dependenciesBuilder.js && yarn build"
+              }
+            ],
+            "cwd": "apps/payment/payment-azf"
+          }
+        }
+      }
+    },
+    "transaction-api": {
+      "root": "apps/transaction/transaction-api",
+      "sourceRoot": "apps/transaction/transaction-api/src",
+      "projectType": "application",
+      "prefix": "transaction-api",
+      "schematics": {},
+      "architect": {
+        "build": {
+          "builder": "@nrwl/node:build",
+          "options": {
+            "outputPath": "dist/apps/transaction/transaction-api",
+            "main": "apps/transaction/transaction-api/src/main.ts",
+            "tsConfig": "apps/transaction/transaction-api/tsconfig.app.json",
+            "assets": ["apps/transaction/transaction-api/src/assets"]
+          },
+          "configurations": {
+            "production": {
+              "optimization": true,
+              "extractLicenses": true,
+              "inspect": false,
+              "fileReplacements": [
+                {
+                  "replace": "apps/transaction/transaction-api/src/environments/environment.ts",
+                  "with": "apps/transaction/transaction-api/src/environments/environment.prod.ts"
+                }
+              ]
+            }
+          }
+        },
+        "serve": {
+          "builder": "@nrwl/node:execute",
+          "options": {
+            "buildTarget": "transaction-transaction-api:build"
+          }
+        },
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": ["apps/transaction/transaction-api/**/*.ts"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "apps/transaction/transaction-api/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
+    },
+    "transaction-azf": {
+      "root": "apps/transaction/transaction-azf",
+      "sourceRoot": "apps/transaction/transaction-azf/src",
+      "projectType": "application",
+      "prefix": "transaction-azf",
+      "schematics": {},
+      "architect": {
+        "serve": {
+          "builder": "@nrwl/workspace:run-commands",
+          "options": {
+            "commands": [
+              {
+                "command": "npx func start --target transactiontransactionAzf --source ./dist/apps/transaction/transaction-azf"
+              }
+            ],
+            "cwd": "apps/transaction/transaction-azf"
+          }
+        },
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": ["apps/transaction/transaction-azf/**/*.ts"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "apps/transaction/transaction-azf/jest.config.js",
+            "tsConfig": "apps/transaction/transaction-azf/tsconfig.spec.json",
+            "passWithNoTests": true
+          }
+        },
+        "build": {
+          "builder": "@nrwl/workspace:run-commands",
+          "options": {
+            "commands": [
+              {
+                "command": "node tools/dependenciesBuilder.js && yarn build"
+              }
+            ],
+            "cwd": "apps/transaction/transaction-azf"
+          }
+        }
+      }
+    },
+    "pfm-api": {
+      "root": "apps/pfm/pfm-api",
+      "sourceRoot": "apps/pfm/pfm-api/src",
+      "projectType": "application",
+      "prefix": "pfm-api",
+      "schematics": {},
+      "architect": {
+        "build": {
+          "builder": "@nrwl/node:build",
+          "options": {
+            "outputPath": "dist/apps/pfm/pfm-api",
+            "main": "apps/pfm/pfm-api/src/main.ts",
+            "tsConfig": "apps/pfm/pfm-api/tsconfig.app.json"
+          },
+          "configurations": {
+            "production": {
+              "optimization": true,
+              "extractLicenses": true,
+              "inspect": false
+            }
+          }
+        },
+        "serve": {
+          "builder": "@nrwl/node:execute",
+          "options": {
+            "buildTarget": "pfm-api:build"
+          }
+        },
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": ["apps/pfm/pfm-api/**/*.ts"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "apps/pfm/pfm-api/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
+    },
+    "pfm-azf": {
+      "root": "apps/pfm/pfm-azf",
+      "sourceRoot": "apps/pfm/pfm-azf/src",
+      "projectType": "application",
+      "prefix": "pfm-azf",
+      "schematics": {},
+      "architect": {
+        "serve": {
+          "builder": "@nrwl/workspace:run-commands",
+          "options": {
+            "commands": [
+              {
+                "command": "node tools/postbuild.js && npm install && npx func start"
+              }
+            ],
+            "cwd": "dist/apps/pfm/pfm-azf"
+          }
+        },
+        "post-build": {
+          "builder": "@nrwl/workspace:run-commands",
+          "options": {
+            "commands": [
+              {
+                "command": "node tools/postbuild.js"
+              }
+            ],
+            "cwd": "dist/apps/pfm/pfm-azf"
+          }
+        },
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": ["apps/pfm/pfm-azf/**/*.ts"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "apps/pfm/pfm-azf/jest.config.js",
+            "tsConfig": "apps/pfm/pfm-azf/tsconfig.spec.json",
+            "passWithNoTests": true
+          }
+        },
+        "build": {
+          "builder": "@nrwl/workspace:run-commands",
+          "options": {
+            "commands": [
+              {
+                "command": "node ./tools/dependenciesBuilder.js && yarn build"
+              }
+            ],
+            "cwd": "apps/pfm/pfm-azf"
+          }
+        }
+      }
+    },
+    "credit-api": {
+      "root": "apps/credit/credit-api",
+      "sourceRoot": "apps/credit/credit-api/src",
+      "projectType": "application",
+      "prefix": "credit-api",
+      "schematics": {},
+      "architect": {
+        "build": {
+          "builder": "@nrwl/node:build",
+          "options": {
+            "outputPath": "dist/apps/credit/credit-api",
+            "main": "apps/credit/credit-api/src/main.ts",
+            "tsConfig": "apps/credit/credit-api/tsconfig.app.json",
+            "assets": ["apps/credit/credit-api/src/assets"]
+          },
+          "configurations": {
+            "production": {
+              "optimization": true,
+              "extractLicenses": true,
+              "inspect": false,
+              "fileReplacements": [
+                {
+                  "replace": "apps/credit/credit-api/src/environments/environment.ts",
+                  "with": "apps/credit/credit-api/src/environments/environment.prod.ts"
+                }
+              ]
+            }
+          }
+        },
+        "serve": {
+          "builder": "@nrwl/node:execute",
+          "options": {
+            "buildTarget": "credit-api:build"
+          }
+        },
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": ["apps/credit/credit-api/**/*.ts"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "apps/credit/credit-api/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
+    },
+    "credit-azf": {
+      "root": "apps/credit/credit-azf",
+      "sourceRoot": "apps/credit/credit-azf/src",
+      "projectType": "application",
+      "prefix": "credit-azf",
+      "schematics": {},
+      "architect": {
+        "serve": {
+          "builder": "@nrwl/workspace:run-commands",
+          "options": {
+            "commands": [
+              {
+                "command": "node tools/postbuild.js && yarn install && npx func start"
+              }
+            ],
+            "cwd": "dist/apps/credit/credit-azf"
+          }
+        },
+        "post-build": {
+          "builder": "@nrwl/workspace:run-commands",
+          "options": {
+            "commands": [
+              {
+                "command": "node tools/postbuild.js"
+              }
+            ],
+            "cwd": "dist/apps/credit/credit-azf"
+          }
+        },
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": ["apps/credit/credit-azf/**/*.ts"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "apps/credit/credit-azf/jest.config.js",
+            "tsConfig": "apps/credit/credit-azf/tsconfig.spec.json",
+            "passWithNoTests": true
+          }
+        },
+        "build": {
+          "builder": "@nrwl/workspace:run-commands",
+          "options": {
+            "commands": [
+              {
+                "command": "node ./tools/dependenciesBuilder.js && yarn build"
+              }
+            ],
+            "cwd": "apps/credit/credit-azf"
+          }
+        }
+      }
+    },
+    "aggregation-core": {
+      "root": "libs/aggregation/aggregation-core",
+      "sourceRoot": "libs/aggregation/aggregation-core/src",
+      "projectType": "library",
+      "schematics": {},
+      "architect": {
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": ["libs/aggregation/aggregation-core/**/*.ts"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/aggregation/aggregation-core/jest.config.js",
+            "passWithNoTests": true
+          }
+        },
+        "build": {
+          "builder": "@nrwl/node:package",
+          "options": {
+            "outputPath": "dist/libs/aggregation-core",
+            "tsConfig": "libs/aggregation/aggregation-core/tsconfig.lib.json",
+            "packageJson": "libs/aggregation/aggregation-core/package.json",
+            "main": "libs/aggregation/aggregation-core/src/index.ts",
+            "assets": ["libs/aggregation/aggregation-core/*.md"]
+          }
+        }
+      }
+    },
+    "aggregation-adapters": {
+      "root": "libs/aggregation/aggregation-adapters",
+      "sourceRoot": "libs/aggregation/aggregation-adapters/src",
+      "projectType": "library",
+      "schematics": {},
+      "architect": {
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": ["libs/aggregation/aggregation-adapters/**/*.ts"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/workspace:run-commands",
+          "options": {
+            "commands": [
+              {
+                "command": "npx jest --detectOpenHandles --forceExit ."
+              }
+            ],
+            "jestConfig": "libs/aggregation/aggregation-adapters/jest.config.js",
+            "cwd": "libs/aggregation/aggregation-adapters"
+          }
+        },
+        "build": {
+          "builder": "@nrwl/node:package",
+          "options": {
+            "outputPath": "dist/libs/aggregation-adapters",
+            "tsConfig": "libs/aggregation/aggregation-adapters/tsconfig.lib.json",
+            "packageJson": "libs/aggregation/aggregation-adapters/package.json",
+            "main": "libs/aggregation/aggregation-adapters/src/index.ts",
+            "assets": ["libs/aggregation/aggregation-adapters/*.md"]
+          }
+        }
+      }
+    },
+    "aggregation-api": {
+      "root": "apps/aggregation/aggregation-api",
+      "sourceRoot": "apps/aggregation/aggregation-api/src",
+      "projectType": "application",
+      "prefix": "aggregation-api",
+      "schematics": {},
+      "architect": {
+        "build": {
+          "builder": "@nrwl/node:build",
+          "options": {
+            "outputPath": "dist/apps/aggregation/aggregation-api",
+            "main": "apps/aggregation/aggregation-api/src/main.ts",
+            "tsConfig": "apps/aggregation/aggregation-api/tsconfig.app.json"
+          },
+          "configurations": {
+            "production": {
+              "optimization": true,
+              "extractLicenses": true,
+              "inspect": false
+            }
+          }
+        },
+        "serve": {
+          "builder": "@nrwl/node:execute",
+          "options": {
+            "buildTarget": "aggregation-api:build"
+          }
+        },
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": ["apps/aggregation/aggregation-api/**/*.ts"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/workspace:run-commands",
+          "options": {
+            "commands": [
+              {
+                "command": "npx jest --detectOpenHandles --forceExit ."
+              }
+            ],
+            "jestConfig": "apps/aggregation/aggregation-api/jest.config.js",
+            "passWithNoTests": true,
+            "cwd": "apps/aggregation/aggregation-api"
+          }
+        }
+      }
+    },
+    "aggregation-azf": {
+      "root": "apps/aggregation/aggregation-azf",
+      "sourceRoot": "apps/aggregation/aggregation-azf/src",
+      "projectType": "application",
+      "prefix": "aggregation-azf",
+      "schematics": {},
+      "architect": {
+        "serve": {
+          "builder": "@nrwl/workspace:run-commands",
+          "options": {
+            "commands": [
+              {
+                "command": "node tools/postbuild.js && npm install && npx func start"
+              }
+            ],
+            "cwd": "dist/apps/aggregation/aggregation-azf"
+          }
+        },
+        "post-build": {
+          "builder": "@nrwl/workspace:run-commands",
+          "options": {
+            "commands": [
+              {
+                "command": "node tools/postbuild.js"
+              }
+            ],
+            "cwd": "dist/apps/aggregation/aggregation-azf"
+          }
+        },
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": ["apps/aggregation/aggregation-azf/**/*.ts"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "apps/aggregation/aggregation-azf/jest.config.js",
+            "tsConfig": "apps/aggregation/aggregation-azf/tsconfig.spec.json",
+            "passWithNoTests": true
+          }
+        },
+        "build": {
+          "builder": "@nrwl/workspace:run-commands",
+          "options": {
+            "commands": [
+              {
+                "command": "node ./tools/dependenciesBuilder.js && yarn build"
+              }
+            ],
+            "cwd": "apps/aggregation/aggregation-azf"
+          }
+        }
+      }
+    },
+    "profile-messages": {
+      "root": "libs/profile/profile-messages",
+      "sourceRoot": "libs/profile/profile-messages/src",
+      "projectType": "library",
+      "schematics": {},
+      "architect": {
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": ["libs/profile/profile-messages/**/*.ts"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/profile/profile-messages/jest.config.js",
+            "passWithNoTests": true
+          }
+        },
+        "build": {
+          "builder": "@nrwl/node:package",
+          "options": {
+            "outputPath": "dist/libs/profile-messages",
+            "tsConfig": "libs/profile/profile-messages/tsconfig.lib.json",
+            "packageJson": "libs/profile/profile-messages/package.json",
+            "main": "libs/profile/profile-messages/src/index.ts",
+            "assets": ["libs/profile/profile-messages/*.md"]
+          }
+        }
+      }
+    },
+    "algoan": {
+      "root": "libs/algoan",
+      "sourceRoot": "libs/algoan/src",
+      "projectType": "library",
+      "schematics": {},
+      "architect": {
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": ["libs/algoan/**/*.ts"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/algoan/jest.config.js",
+            "passWithNoTests": true
+          }
+        },
+        "build": {
+          "builder": "@nrwl/node:package",
+          "options": {
+            "outputPath": "dist/libs/algoan",
+            "tsConfig": "libs/algoan/tsconfig.lib.json",
+            "packageJson": "libs/algoan/package.json",
+            "main": "libs/algoan/src/index.ts",
+            "assets": ["libs/algoan/*.md"]
+          }
+        }
+      }
+    },
+    "pfm-core": {
+      "root": "libs/pfm/pfm-core",
+      "sourceRoot": "libs/pfm/pfm-core/src",
+      "projectType": "library",
+      "schematics": {},
+      "architect": {
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": ["libs/pfm/pfm-core/**/*.ts"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/pfm/pfm-core/jest.config.js",
+            "passWithNoTests": true
+          }
+        },
+        "build": {
+          "builder": "@nrwl/node:package",
+          "options": {
+            "outputPath": "dist/libs/pfm-core",
+            "tsConfig": "libs/pfm/pfm-core/tsconfig.lib.json",
+            "packageJson": "libs/pfm/pfm-core/package.json",
+            "main": "libs/pfm/pfm-core/src/index.ts",
+            "assets": ["libs/pfm/pfm-core/*.md"]
+          }
+        }
+      }
+    },
+    "pfm-adapters": {
+      "root": "libs/pfm/pfm-adapters",
+      "sourceRoot": "libs/pfm/pfm-adapters/src",
+      "projectType": "library",
+      "schematics": {},
+      "architect": {
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": ["libs/pfm/pfm-adapters/**/*.ts"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/pfm/pfm-adapters/jest.config.js",
+            "passWithNoTests": true
+          }
+        },
+        "build": {
+          "builder": "@nrwl/node:package",
+          "options": {
+            "outputPath": "dist/libs/pfm-adapters",
+            "tsConfig": "libs/pfm/pfm-adapters/tsconfig.lib.json",
+            "packageJson": "libs/pfm/pfm-adapters/package.json",
+            "main": "libs/pfm/pfm-adapters/src/index.ts",
+            "assets": ["libs/pfm/pfm-adapters/*.md"]
+          }
+        }
+      }
+    },
+    "credit-messages": {
+      "root": "libs/credit/credit-messages",
+      "sourceRoot": "libs/credit/credit-messages/src",
+      "projectType": "library",
+      "schematics": {},
+      "architect": {
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": ["libs/credit/credit-messages/**/*.ts"]
+          }
+        },
+        "build": {
+          "builder": "@nrwl/node:package",
+          "options": {
+            "outputPath": "dist/libs/credit-messages",
+            "tsConfig": "libs/credit/credit-messages/tsconfig.lib.json",
+            "packageJson": "libs/credit/credit-messages/package.json",
+            "main": "libs/credit/credit-messages/src/index.ts",
+            "assets": ["libs/credit/credit-messages/*.md"]
+          }
+        }
+      }
+    },
+    "credit-core": {
+      "root": "libs/credit/credit-core",
+      "sourceRoot": "libs/credit/credit-core/src",
+      "projectType": "library",
+      "schematics": {},
+      "architect": {
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/credit/credit-core/**/*.ts"
+            ]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/credit/credit-core/jest.config.js",
+            "passWithNoTests": true
+          }
+        },
+        "build": {
+          "builder": "@nrwl/node:package",
+          "options": {
+            "outputPath": "dist/libs/credit-core",
+            "tsConfig": "libs/credit/credit-core/tsconfig.lib.json",
+            "packageJson": "libs/credit/credit-core/package.json",
+            "main": "libs/credit/credit-core/src/index.ts",
+            "assets": [
+              "libs/credit/credit-core/*.md"
+            ]
+          }
+        }
+      }
+    },
+    "aggregation-messages": {
+      "root": "libs/aggregation/aggregation-messages",
+      "sourceRoot": "libs/aggregation/aggregation-messages/src",
+      "projectType": "library",
+      "schematics": {},
+      "architect": {
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": ["libs/aggregation/aggregation-messages/**/*.ts"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/aggregation/aggregation-messages/jest.config.js",
+            "passWithNoTests": true
+          }
+        },
+        "build": {
+          "builder": "@nrwl/node:package",
+          "options": {
+            "outputPath": "dist/libs/aggregation-messages",
+            "tsConfig": "libs/aggregation/aggregation-messages/tsconfig.lib.json",
+            "packageJson": "libs/aggregation/aggregation-messages/package.json",
+            "main": "libs/aggregation/aggregation-messages/src/index.ts",
+            "assets": ["libs/aggregation/aggregation-messages/*.md"]
+          }
+        }
+      }
+    },
+    "authentication-messages": {
+      "root": "libs/authentication/authentication-messages",
+      "sourceRoot": "libs/authentication/authentication-messages/src",
+      "projectType": "library",
+      "schematics": {},
+      "architect": {
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": ["libs/authentication/authentication-messages/**/*.ts"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/authentication/authentication-messages/jest.config.js",
+            "passWithNoTests": true
+          }
+        },
+        "build": {
+          "builder": "@nrwl/node:package",
+          "options": {
+            "outputPath": "dist/libs/authentication-messages",
+            "tsConfig": "libs/authentication/authentication-messages/tsconfig.lib.json",
+            "packageJson": "libs/authentication/authentication-messages/package.json",
+            "main": "libs/authentication/authentication-messages/src/index.ts",
+            "assets": ["libs/authentication/authentication-messages/*.md"]
+          }
+        }
+      }
+    },
+    "cdp-core": {
+      "root": "libs/cdp/cdp-core",
+      "sourceRoot": "libs/cdp/cdp-core/src",
+      "projectType": "library",
+      "schematics": {},
+      "architect": {
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": ["libs/cdp/cdp-core/**/*.ts"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/cdp/cdp-core/jest.config.js",
+            "passWithNoTests": true
+          }
+        },
+        "build": {
+          "builder": "@nrwl/node:package",
+          "options": {
+            "outputPath": "dist/libs/cdp-core",
+            "tsConfig": "libs/cdp/cdp-core/tsconfig.lib.json",
+            "packageJson": "libs/cdp/cdp-core/package.json",
+            "main": "libs/cdp/cdp-core/src/index.ts",
+            "assets": ["libs/cdp/cdp-core/*.md"]
+          }
+        }
+      }
+    },
+    "cdp-messages": {
+      "root": "libs/cdp/cdp-messages",
+      "sourceRoot": "libs/cdp/cdp-messages/src",
+      "projectType": "library",
+      "schematics": {},
+      "architect": {
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": ["libs/cdp/cdp-messages/**/*.ts"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/cdp/cdp-messages/jest.config.js",
+            "passWithNoTests": true
+          }
+        },
+        "build": {
+          "builder": "@nrwl/node:package",
+          "options": {
+            "outputPath": "dist/libs/cdp-messages",
+            "tsConfig": "libs/cdp/cdp-messages/tsconfig.lib.json",
+            "packageJson": "libs/cdp/cdp-messages/package.json",
+            "main": "libs/cdp/cdp-messages/src/index.ts",
+            "assets": ["libs/cdp/cdp-messages/*.md"]
+          }
+        }
+      }
+    },
+    "http": {
+      "root": "libs/common/http",
+      "sourceRoot": "libs/common/http/src",
+      "projectType": "library",
+      "schematics": {},
+      "architect": {
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": ["libs/common/http/**/*.ts"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/common/http/jest.config.js",
+            "passWithNoTests": true
+          }
+        },
+        "build": {
+          "builder": "@nrwl/node:package",
+          "options": {
+            "outputPath": "dist/libs/http",
+            "tsConfig": "libs/common/http/tsconfig.lib.json",
+            "packageJson": "libs/common/http/package.json",
+            "main": "libs/common/http/src/index.ts",
+            "assets": ["libs/common/http/*.md"]
+          }
+        }
+      }
+    },
+    "notification-messages": {
+      "root": "libs/notification/notification-messages",
+      "sourceRoot": "libs/notification/notification-messages/src",
+      "projectType": "library",
+      "schematics": {},
+      "architect": {
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": ["libs/notification/notification-messages/**/*.ts"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/notification/notification-messages/jest.config.js",
+            "passWithNoTests": true
+          }
+        },
+        "build": {
+          "builder": "@nrwl/node:package",
+          "options": {
+            "outputPath": "dist/libs/notification-messages",
+            "tsConfig": "libs/notification/notification-messages/tsconfig.lib.json",
+            "packageJson": "libs/notification/notification-messages/package.json",
+            "main": "libs/notification/notification-messages/src/index.ts",
+            "assets": ["libs/notification/notification-messages/*.md"]
+          }
+        }
+      }
+    },
+    "cdp-azf": {
+      "root": "apps/cdp/cdp-azf",
+      "sourceRoot": "apps/cdp/cdp-azf/src",
+      "projectType": "application",
+      "prefix": "cdp-azf",
+      "schematics": {},
+      "architect": {
+        "serve": {
+          "builder": "@nrwl/workspace:run-commands",
+          "options": {
+            "commands": [
+              {
+                "command": "node tools/postbuild.js && npm install && npx func start"
+              }
+            ],
+            "cwd": "dist/apps/cdp/cdp-azf"
+          }
+        },
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": ["apps/cdp/cdp-azf/**/*.ts"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "apps/cdp/cdp-azf/jest.config.js",
+            "tsConfig": "apps/cdp/cdp-azf/tsconfig.spec.json",
+            "passWithNoTests": true
+          }
+        },
+        "build": {
+          "builder": "@nrwl/workspace:run-commands",
+          "options": {
+            "commands": [
+              {
+                "command": "node ./tools/dependenciesBuilder.js && yarn build"
+              }
+            ],
+            "cwd": "apps/cdp/cdp-azf"
+          }
+        },
+        "post-build": {
+          "builder": "@nrwl/workspace:run-commands",
+          "options": {
+            "commands": [
+              {
+                "command": "node tools/postbuild.js"
+              }
+            ],
+            "cwd": "dist/apps/cdp/cdp-azf"
+          }
+        }
+      }
+    },
+    "logger-core": {
+      "root": "libs/oney/logger/core",
+      "sourceRoot": "libs/oney/logger/core/src",
+      "projectType": "library",
+      "schematics": {},
+      "architect": {
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": ["libs/oney/logger/core/**/*.ts"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/oney/logger/core/jest.config.js",
+            "passWithNoTests": true
+          }
+        },
+        "build": {
+          "builder": "@nrwl/node:package",
+          "options": {
+            "outputPath": "dist/libs/logger-core",
+            "tsConfig": "libs/oney/logger/core/tsconfig.lib.json",
+            "packageJson": "libs/oney/logger/core/package.json",
+            "main": "libs/oney/logger/core/src/index.ts",
+            "assets": ["libs/oney/logger/core/*.md"]
+          }
+        }
+      }
+    },
+    "result": {
+      "root": "libs/oney/result",
+      "sourceRoot": "libs/oney/result/src",
+      "projectType": "library",
+      "schematics": {},
+      "architect": {
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": ["libs/oney/result/**/*.ts"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/oney/result/jest.config.js",
+            "passWithNoTests": true
+          }
+        },
+        "build": {
+          "builder": "@nrwl/node:package",
+          "options": {
+            "outputPath": "dist/libs/result",
+            "tsConfig": "libs/oney/result/tsconfig.lib.json",
+            "packageJson": "libs/oney/result/package.json",
+            "main": "libs/oney/result/src/index.ts",
+            "assets": ["libs/oney/result/*.md"]
+          }
+        }
+      }
+    },
+    "logger-adapters": {
+      "root": "libs/oney/logger/adapters",
+      "sourceRoot": "libs/oney/logger/adapters/src",
+      "projectType": "library",
+      "schematics": {},
+      "architect": {
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": ["libs/oney/logger/adapters/**/*.ts"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/oney/logger/adapters/jest.config.js",
+            "passWithNoTests": true
+          }
+        },
+        "build": {
+          "builder": "@nrwl/node:package",
+          "options": {
+            "outputPath": "dist/libs/logger-adapters",
+            "tsConfig": "libs/oney/logger/adapters/tsconfig.lib.json",
+            "packageJson": "libs/oney/logger/adapters/package.json",
+            "main": "libs/oney/logger/adapters/src/index.ts",
+            "assets": ["libs/oney/logger/adapters/*.md"]
+          }
+        }
+      }
+    },
+    "subscription-core": {
+      "root": "libs/subscription/subscription-core",
+      "sourceRoot": "libs/subscription/subscription-core/src",
+      "projectType": "library",
+      "schematics": {},
+      "architect": {
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": ["libs/subscription/subscription-core/**/*.ts"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/subscription/subscription-core/jest.config.js",
+            "passWithNoTests": true
+          }
+        },
+        "build": {
+          "builder": "@nrwl/node:package",
+          "options": {
+            "outputPath": "dist/libs/subscription-core",
+            "tsConfig": "libs/subscription/subscription-core/tsconfig.lib.json",
+            "packageJson": "libs/subscription/subscription-core/package.json",
+            "main": "libs/subscription/subscription-core/src/index.ts",
+            "assets": ["libs/subscription/subscription-core/*.md"]
+          }
+        }
+      }
+    },
+    "subscription-adapters": {
+      "root": "libs/subscription/subscription-adapters",
+      "sourceRoot": "libs/subscription/subscription-adapters/src",
+      "projectType": "library",
+      "schematics": {},
+      "architect": {
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": ["libs/subscription/subscription-adapters/**/*.ts"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/subscription/subscription-adapters/jest.config.js",
+            "passWithNoTests": true
+          }
+        },
+        "build": {
+          "builder": "@nrwl/node:package",
+          "options": {
+            "outputPath": "dist/libs/subscription-adapters",
+            "tsConfig": "libs/subscription/subscription-adapters/tsconfig.lib.json",
+            "packageJson": "libs/subscription/subscription-adapters/package.json",
+            "main": "libs/subscription/subscription-adapters/src/index.ts",
+            "assets": ["libs/subscription/subscription-adapters/*.md"]
+          }
+        }
+      }
+    },
+    "subscription-messages": {
+      "root": "libs/subscription/subscription-messages",
+      "sourceRoot": "libs/subscription/subscription-messages/src",
+      "projectType": "library",
+      "schematics": {},
+      "architect": {
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": ["libs/subscription/subscription-messages/**/*.ts"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/subscription/subscription-messages/jest.config.js",
+            "passWithNoTests": true
+          }
+        },
+        "build": {
+          "builder": "@nrwl/node:package",
+          "options": {
+            "outputPath": "dist/libs/subscription-messages",
+            "tsConfig": "libs/subscription/subscription-messages/tsconfig.lib.json",
+            "packageJson": "libs/subscription/subscription-messages/package.json",
+            "main": "libs/subscription/subscription-messages/src/index.ts",
+            "assets": ["libs/subscription/subscription-messages/*.md"]
+          }
+        }
+      }
+    },
+    "subscription-api": {
+      "root": "apps/subscription/subscription-api",
+      "sourceRoot": "apps/subscription/subscription-api/src",
+      "projectType": "application",
+      "prefix": "subscription-api",
+      "schematics": {},
+      "architect": {
+        "build": {
+          "builder": "@nrwl/node:build",
+          "options": {
+            "outputPath": "dist/apps/subscription/subscription-api",
+            "main": "apps/subscription/subscription-api/src/main.ts",
+            "tsConfig": "apps/subscription/subscription-api/tsconfig.app.json"
+          },
+          "configurations": {
+            "production": {
+              "optimization": true,
+              "extractLicenses": true,
+              "inspect": false
+            }
+          }
+        },
+        "serve": {
+          "builder": "@nrwl/node:execute",
+          "options": {
+            "buildTarget": "subscription-api:build"
+          }
+        },
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": ["apps/subscription/subscription-api/**/*.ts"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "apps/subscription/subscription-api/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
+    },
+    "subscription-azf": {
+      "root": "apps/subscription/subscription-azf",
+      "sourceRoot": "apps/subscription/subscription-azf/src",
+      "projectType": "application",
+      "prefix": "subscription-azf",
+      "schematics": {},
+      "architect": {
+        "serve": {
+          "builder": "@nrwl/workspace:run-commands",
+          "options": {
+            "commands": [
+              {
+                "command": "node tools/postbuild.js && npm install && npx func start"
+              }
+            ],
+            "cwd": "dist/apps/subscription/subscription-azf"
+          }
+        },
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": ["apps/subscription/subscription-azf/**/*.ts"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "apps/subscription/subscription-azf/jest.config.js",
+            "tsConfig": "apps/subscription/subscription-azf/tsconfig.spec.json",
+            "passWithNoTests": true
+          }
+        },
+        "build": {
+          "builder": "@nrwl/workspace:run-commands",
+          "options": {
+            "commands": [
+              {
+                "command": "node ./tools/dependenciesBuilder.js && yarn build"
+              }
+            ],
+            "cwd": "apps/subscription/subscription-azf"
+          }
+        },
+        "post-build": {
+          "builder": "@nrwl/workspace:run-commands",
+          "options": {
+            "commands": [
+              {
+                "command": "node tools/postbuild.js"
+              }
+            ],
+            "cwd": "dist/apps/subscription/subscription-azf"
+          }
+        }
+      }
+    },
+    "saga-core": {
+      "root": "libs/saga/core",
+      "sourceRoot": "libs/saga/core/src",
+      "projectType": "library",
+      "schematics": {},
+      "architect": {
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": ["libs/saga/core/**/*.ts"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/saga/core/jest.config.js",
+            "passWithNoTests": true
+          }
+        },
+        "build": {
+          "builder": "@nrwl/node:package",
+          "options": {
+            "outputPath": "dist/libs/saga-core",
+            "tsConfig": "libs/saga/core/tsconfig.lib.json",
+            "packageJson": "libs/saga/core/package.json",
+            "main": "libs/saga/core/src/index.ts",
+            "assets": ["libs/saga/core/*.md"]
+          }
+        }
+      }
+    },
+    "global-context": {
+      "root": "libs/oney/global-context",
+      "sourceRoot": "libs/oney/global-context/src",
+      "projectType": "library",
+      "schematics": {},
+      "architect": {
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": ["libs/oney/global-context/**/*.ts"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/oney/global-context/jest.config.js",
+            "passWithNoTests": true
+          }
+        },
+        "build": {
+          "builder": "@nrwl/node:package",
+          "options": {
+            "outputPath": "dist/libs/global-context",
+            "tsConfig": "libs/oney/global-context/tsconfig.lib.json",
+            "packageJson": "libs/oney/global-context/package.json",
+            "main": "libs/oney/global-context/src/index.ts",
+            "assets": ["libs/oney/global-context/*.md"]
+          }
+        }
+      }
+    },
+    "context": {
+      "root": "libs/oney/context",
+      "sourceRoot": "libs/oney/context/src",
+      "projectType": "library",
+      "schematics": {},
+      "architect": {
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": ["libs/oney/context/**/*.ts"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/oney/context/jest.config.js",
+            "passWithNoTests": true
+          }
+        },
+        "build": {
+          "builder": "@nrwl/node:package",
+          "options": {
+            "outputPath": "dist/libs/context",
+            "tsConfig": "libs/oney/context/tsconfig.lib.json",
+            "packageJson": "libs/oney/context/package.json",
+            "main": "libs/oney/context/src/index.ts",
+            "assets": ["libs/oney/context/*.md"]
+          }
+        }
+      }
+    },
+    "messages-core": {
+      "root": "libs/oney/messages/core",
+      "sourceRoot": "libs/oney/messages/core/src",
+      "projectType": "library",
+      "schematics": {},
+      "architect": {
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/oney/messages/core/**/*.ts"
+            ]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/oney/messages/core/jest.config.js",
+            "passWithNoTests": true
+          }
+        },
+        "build": {
+          "builder": "@nrwl/node:package",
+          "options": {
+            "outputPath": "dist/libs/messages-core",
+            "tsConfig": "libs/oney/messages/core/tsconfig.lib.json",
+            "packageJson": "libs/oney/messages/core/package.json",
+            "main": "libs/oney/messages/core/src/index.ts",
+            "assets": [
+              "libs/oney/messages/core/*.md"
+            ]
+          }
+        }
+      }
+    },
+    "messages-adapters": {
+      "root": "libs/oney/messages/adapters",
+      "sourceRoot": "libs/oney/messages/adapters/src",
+      "projectType": "library",
+      "schematics": {},
+      "architect": {
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/oney/messages/adapters/**/*.ts"
+            ]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/oney/messages/adapters/jest.config.js",
+            "passWithNoTests": true
+          }
+        },
+        "build": {
+          "builder": "@nrwl/node:package",
+          "options": {
+            "outputPath": "dist/libs/messages-adapters",
+            "tsConfig": "libs/oney/messages/adapters/tsconfig.lib.json",
+            "packageJson": "libs/oney/messages/adapters/package.json",
+            "main": "libs/oney/messages/adapters/src/index.ts",
+            "assets": [
+              "libs/oney/messages/adapters/*.md"
+            ]
+          }
+        }
+      }
+    },
+    "core": {
+      "root": "libs/oney/core",
+      "sourceRoot": "libs/oney/core/src",
+      "projectType": "library",
+      "schematics": {},
+      "architect": {
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/oney/core/**/*.ts"
+            ]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/oney/core/jest.config.js",
+            "passWithNoTests": true
+          }
+        },
+        "build": {
+          "builder": "@nrwl/node:package",
+          "options": {
+            "outputPath": "dist/libs/core",
+            "tsConfig": "libs/oney/core/tsconfig.lib.json",
+            "packageJson": "libs/oney/core/package.json",
+            "main": "libs/oney/core/src/index.ts",
+            "assets": [
+              "libs/oney/core/*.md"
+            ]
+          }
+        }
+      }
+    },
+    "saga-adapters": {
+      "root": "libs/saga/adapters",
+      "sourceRoot": "libs/saga/adapters/src",
+      "projectType": "library",
+      "schematics": {},
+      "architect": {
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/saga/adapters/**/*.ts"
+            ]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/saga/adapters/jest.config.js",
+            "passWithNoTests": true
+          }
+        },
+        "build": {
+          "builder": "@nrwl/node:package",
+          "options": {
+            "outputPath": "dist/libs/saga-adapters",
+            "tsConfig": "libs/saga/adapters/tsconfig.lib.json",
+            "packageJson": "libs/saga/adapters/package.json",
+            "main": "libs/saga/adapters/src/index.ts",
+            "assets": [
+              "libs/saga/adapters/*.md"
+            ]
+          }
+        }
+      }
+    },
+    "document-generator": {
+      "root": "libs/document-generator",
+      "sourceRoot": "libs/document-generator/src",
+      "projectType": "library",
+      "schematics": {},
+      "architect": {
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": ["libs/document-generator/**/*.ts"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/document-generator/jest.config.js",
+            "passWithNoTests": true
+          }
+        },
+        "build": {
+          "builder": "@nrwl/node:package",
+          "options": {
+            "outputPath": "dist/libs/document-generator",
+            "tsConfig": "libs/document-generator/tsconfig.lib.json",
+            "packageJson": "libs/document-generator/package.json",
+            "main": "libs/document-generator/src/index.ts",
+            "assets": [
+              "libs/document-generator/*.md",
+              {
+                "input": "libs/document-generator/src/lib/templates/",
+                "glob": "**/*.html",
+                "output": "./src/lib/templates"
+              }
+            ]
+          }
+        }
+      }
+    },
+    "mongoose": {
+      "root": "libs/oney/mongoose",
+      "sourceRoot": "libs/oney/mongoose/src",
+      "projectType": "library",
+      "schematics": {},
+      "architect": {
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": ["libs/oney/mongoose/**/*.ts"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/oney/mongoose/jest.config.js",
+            "passWithNoTests": true
+          }
+        },
+        "build": {
+          "builder": "@nrwl/node:package",
+          "options": {
+            "outputPath": "dist/libs/mongoose",
+            "tsConfig": "libs/oney/mongoose/tsconfig.lib.json",
+            "packageJson": "libs/oney/mongoose/package.json",
+            "main": "libs/oney/mongoose/src/index.ts",
+            "assets": ["libs/oney/mongoose/*.md"]
+          }
+        }
+      }
+    },
+    "test": {
+      "root": "libs/oney/test",
+      "sourceRoot": "libs/oney/test/src",
+      "projectType": "library",
+      "schematics": {},
+      "architect": {
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": ["libs/oney/test/**/*.ts"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/oney/test/jest.config.js",
+            "passWithNoTests": true
+          }
+        },
+        "build": {
+          "builder": "@nrwl/node:package",
+          "options": {
+            "outputPath": "dist/libs/test",
+            "tsConfig": "libs/oney/test/tsconfig.lib.json",
+            "packageJson": "libs/oney/test/package.json",
+            "main": "libs/oney/test/src/index.ts",
+            "assets": ["libs/oney/test/*.md"]
+          }
+        }
+      }
+    },
+    "cdp-api": {
+      "root": "apps/cdp/cdp-api",
+      "sourceRoot": "apps/cdp/cdp-api/src",
+      "projectType": "application",
+      "prefix": "cdp-api",
+      "schematics": {},
+      "architect": {
+        "serve": {
+          "builder": "@nrwl/node:execute",
+          "options": {
+            "buildTarget": "cdp-api:serve-build"
+          }
+        },
+        "serve-build": {
+          "builder": "@nrwl/node:build",
+          "options": {
+            "outputPath": "dist/apps/cdp/api",
+            "main": "apps/cdp/cdp-api/src/main.ts",
+            "tsConfig": "apps/cdp/cdp-api/tsconfig.app.json",
+            "assets": [
+              {
+                "input": "apps/cdp/cdp-api/",
+                "glob": "local.env",
+                "output": "."
+              }
+            ]
+          },
+          "configurations": {
+            "production": {
+              "optimization": true,
+              "extractLicenses": true,
+              "inspect": false
+            }
+          }
+        },
+        "build": {
+          "builder": "@nrwl/node:package",
+          "options": {
+            "outputPath": "dist/apps/cdp/cdp-api",
+            "main": "apps/cdp/cdp-api/src/main.ts",
+            "tsConfig": "apps/cdp/cdp-api/tsconfig.build.json",
+            "packageJson": "apps/cdp/cdp-api/package.json",
+            "assets": [
+              {
+                "input": "apps/cdp/cdp-api/",
+                "glob": "tools/postbuild.js",
+                "output": "."
+              },
+              {
+                "input": "apps/cdp/cdp-api/",
+                "glob": "**/*.html",
+                "output": "."
+              },
+              {
+                "input": "apps/cdp/cdp-api/",
+                "glob": "local.env",
+                "output": "."
+              }
+            ]
+          },
+          "configurations": {
+            "production": {
+              "optimization": true,
+              "extractLicenses": true,
+              "inspect": false,
+              "fileReplacements": [
+                {
+                  "replace": "apps/cdp/cdp-api/src/environments/environment.ts",
+                  "with": "apps/cdp/cdp-api/src/environments/environment.prod.ts"
+                }
+              ]
+            }
+          }
+        },
+        "post-build": {
+          "builder": "@nrwl/workspace:run-commands",
+          "options": {
+            "commands": [
+              {
+                "command": "node tools/postbuild.js && npm install"
+              }
+            ],
+            "cwd": "dist/apps/cdp/cdp-api"
+          }
+        },
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "apps/cdp/cdp-api/**/*.ts"
+            ]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "apps/cdp/cdp-api/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
+    },
+    "messages-test": {
+      "root": "libs/oney/messages/test",
+      "sourceRoot": "libs/oney/messages/test/src",
+      "projectType": "library",
+      "schematics": {},
+      "architect": {
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": ["libs/oney/messages/test/**/*.ts"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/oney/messages/test/jest.config.js",
+            "passWithNoTests": true
+          }
+        },
+        "build": {
+          "builder": "@nrwl/node:package",
+          "options": {
+            "outputPath": "dist/libs/messages-test",
+            "tsConfig": "libs/oney/messages/test/tsconfig.lib.json",
+            "packageJson": "libs/oney/messages/test/package.json",
+            "main": "libs/oney/messages/test/src/index.ts",
+            "assets": ["libs/oney/messages/test/*.md"]
+          }
+        }
+      }
+    }
+  },
+  "cli": {
+    "defaultCollection": "@nrwl/express"
+  }
+}

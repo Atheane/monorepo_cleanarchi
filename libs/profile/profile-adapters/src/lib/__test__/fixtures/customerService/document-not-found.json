@@ -1,0 +1,29 @@
+[
+    {
+        "scope": "https://odb0storage0dev.blob.core.windows.net:443",
+        "method": "GET",
+        "path": "/documents/customer_service_topics_fake_version_number.json",
+        "body": "",
+        "status": 404,
+        "response": "﻿<?xml version=\"1.0\" encoding=\"utf-8\"?><Error><Code>BlobNotFound</Code><Message>The specified blob does not exist.\nRequestId:65ef0063-501e-006a-4b6e-22ab41000000\nTime:2021-03-26T18:34:36.6459893Z</Message></Error>",
+        "rawHeaders": [
+            "Content-Length",
+            "215",
+            "Content-Type",
+            "application/xml",
+            "Server",
+            "Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0",
+            "x-ms-request-id",
+            "65ef0063-501e-006a-4b6e-22ab41000000",
+            "x-ms-client-request-id",
+            "uuid_v4_example",
+            "x-ms-version",
+            "2020-04-08",
+            "x-ms-error-code",
+            "BlobNotFound",
+            "Date",
+            "Fri, 26 Mar 2021 18:34:35 GMT"
+        ],
+        "responseIsBinary": false
+    }
+]

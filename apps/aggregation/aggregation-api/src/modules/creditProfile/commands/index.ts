@@ -1,0 +1,1 @@
+export { CreditProfileCalculatedCommand } from './CreditProfileCalculatedCommand';

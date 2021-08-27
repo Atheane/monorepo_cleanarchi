@@ -1,0 +1,31 @@
+[
+    {
+        "scope": "https://sb-api.xpollens.com:443",
+        "method": "POST",
+        "path": "/api/V1.1/users/tstUsr103/kyc/complementarydiligence",
+        "body": {
+            "type": 20,
+            "status": "Validated"
+        },
+        "status": 201,
+        "response": {
+            "type": "ACC_AGG",
+            "status": "Validated",
+            "creationDate": "2021-01-26T16:31:36",
+            "lastUpdate": "2021-01-26T16:31:36"
+        },
+        "rawHeaders": [
+            "Date",
+            "Tue, 26 Jan 2021 16:31:36 GMT",
+            "Content-Type",
+            "application/json; charset=utf-8",
+            "Content-Length",
+            "111",
+            "Request-Context",
+            "appId=cid-v1:40d43092-8aee-4b2b-8b7f-34d2d69e09b7",
+            "Connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    }
+]

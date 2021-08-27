@@ -1,0 +1,686 @@
+[
+    {
+        "scope": "https://sb-api.xpollens.com:443",
+        "method": "GET",
+        "path": "/api/V1.1/users/eJrkQhMlh",
+        "body": "",
+        "status": 200,
+        "response": {
+            "Id": 2321,
+            "AppUserId": "eJrkQhMlh",
+            "Type": 1,
+            "Role": 2,
+            "Profile": {
+                "Civility": 0,
+                "FirstName": "Facturations",
+                "LastName": "Facturation",
+                "BirthName": null,
+                "Birthdate": "1980-12-06T00:00:00",
+                "Birthcity": "Paris",
+                "BirthCountry": "FR",
+                "Address": {
+                    "Street": "4 RUE VICTOR HUGO",
+                    "ZipCode": "69002",
+                    "City": "LYON",
+                    "Country": "FR"
+                },
+                "PhoneNumber": "33687545695",
+                "Email": "oney_facture@yopmail.com",
+                "Alias": "F.F#eJrkQhMlh",
+                "Picture": {
+                    "Href": null
+                },
+                "EconomicActivity": 11,
+                "Asset": null,
+                "Income": null
+            },
+            "Credentials": null,
+            "Amount": 299139,
+            "DebtBalance": 0,
+            "AccountingBalanceAmount": 349139,
+            "SubAccounts": [
+                {
+                    "Id": 2321,
+                    "AppAccountId": "eJrkQhMlh",
+                    "Amount": 299139,
+                    "AccountingBalanceAmount": 349139,
+                    "DisplayName": "Facturations Facturation",
+                    "CreationDate": "2020-09-23T16:30:02",
+                    "IsDefault": true,
+                    "Iban": "FR7612869000020PC000001SH21",
+                    "IbanHint": "FR76XXXXXXXXXXXXXXXXSH21"
+                }
+            ],
+            "BankAccounts": null,
+            "CBCards": [
+                {
+                    "Id": 1339,
+                    "AppCardId": "card-_5qZUx464",
+                    "Href": "https://rest-pp.s-money.fr/api/bib/sandbox/api/users/eJrkQhMlh/cards/card-_5qZUx464"
+                }
+            ],
+            "Status": 1,
+            "Company": null,
+            "CountryCode": null,
+            "KycStatus": 6,
+            "OnBoardingDate": "2020-09-23T16:30:02"
+        },
+        "rawHeaders": [
+            "Date",
+            "Thu, 15 Apr 2021 19:18:19 GMT",
+            "Content-Type",
+            "application/json; charset=utf-8",
+            "Content-Length",
+            "1091",
+            "Cache-Control",
+            "private",
+            "Request-Context",
+            "appId=cid-v1:40d43092-8aee-4b2b-8b7f-34d2d69e09b7",
+            "Connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "https://sb-api.xpollens.com:443",
+        "method": "POST",
+        "path": "/api/V1.1/users/kTDhDRrHv/payments",
+        "body": {
+            "orderid": "IFDEAED101210001",
+            "beneficiary": {
+                "appaccountid": "eJrkQhMlh"
+            },
+            "sender": {
+                "appaccountid": "kTDhDRrHv"
+            },
+            "amount": 2000,
+            "message": "P2P Recouv",
+            "checkLimits": false,
+            "tag": " -REGLT IMPAY CPTANT-COMPT-FRA-000- ",
+            "processUnpaid": true,
+            "Recurrent": null
+        },
+        "status": 201,
+        "response": {
+            "Id": 22793,
+            "PaymentDate": "2021-04-15T21:18:19.5717561+02:00",
+            "Amount": 1,
+            "Sender": {
+                "Id": 1490,
+                "AppAccountId": "kTDhDRrHv",
+                "DisplayName": "Prenomuserelo Nomuserelo",
+                "Email": "lux-qa-user-2@oney.com",
+                "PhoneNumber": "06 62 61 12 46",
+                "Alias": "mala",
+                "Iban": "FR8612869000020PC0000015E37",
+                "Href": "https://rest-pp.s-money.fr/api/bib/sandbox/api/users/kTDhDRrHv"
+            },
+            "Beneficiary": {
+                "Id": 2321,
+                "AppAccountId": "eJrkQhMlh",
+                "DisplayName": "Facturations Facturation",
+                "Email": "oney_facture@yopmail.com",
+                "PhoneNumber": "33 68 75 45 69 5",
+                "Alias": "F.F#eJrkQhMlh",
+                "Iban": "FR7612869000020PC000001SH21",
+                "Href": "https://rest-pp.s-money.fr/api/bib/sandbox/api/users/eJrkQhMlh"
+            },
+            "Message": "P2P Recouv",
+            "OrderId": "IFDEAED101210001",
+            "Status": 1,
+            "CheckLimits": false,
+            "Tag": " -REGLT IMPAY CPTANT-COMPT-FRA-000- "
+        },
+        "rawHeaders": [
+            "Date",
+            "Thu, 15 Apr 2021 19:18:20 GMT",
+            "Content-Type",
+            "application/json; charset=utf-8",
+            "Content-Length",
+            "770",
+            "Cache-Control",
+            "no-cache",
+            "Pragma",
+            "no-cache",
+            "Expires",
+            "-1",
+            "Location",
+            "https://az-pp-rest.s-money.net/api/bib/sandbox/api/users/kTDhDRrHv/payments/22793",
+            "Request-Context",
+            "appId=cid-v1:40d43092-8aee-4b2b-8b7f-34d2d69e09b7",
+            "Connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "https://sb-api.xpollens.com:443",
+        "method": "PUT",
+        "path": "/api/V1.1/ClientDebts/FDEAED10121/RemainingDebtAmount",
+        "body": {
+            "RemainingDebtAmount": 0
+        },
+        "status": 200,
+        "response": {
+            "OrderId": "FDEAED10121",
+            "AppUserId": "kTDhDRrHv",
+            "Date": "2020-10-30T09:53:21.027Z",
+            "DebtAmount": 2000,
+            "RemainingDebtAmount": 0,
+            "Status": 0,
+            "Reason": "P2P"
+        },
+        "rawHeaders": [
+            "Date",
+            "Thu, 15 Apr 2021 19:18:20 GMT",
+            "Content-Type",
+            "application/json; charset=utf-8",
+            "Content-Length",
+            "147",
+            "Cache-Control",
+            "no-cache",
+            "Pragma",
+            "no-cache",
+            "Expires",
+            "-1",
+            "Request-Context",
+            "appId=cid-v1:40d43092-8aee-4b2b-8b7f-34d2d69e09b7",
+            "Connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "https://sb-api.xpollens.com:443",
+        "method": "PUT",
+        "path": "/api/V1.1/ClientDebts/FDEAED10121/Status",
+        "body": {
+            "Status": 1
+        },
+        "status": 200,
+        "response": {
+            "OrderId": "FDEAED10121",
+            "AppUserId": "kTDhDRrHv",
+            "Date": "2020-10-30T09:53:21.027Z",
+            "DebtAmount": 2000,
+            "RemainingDebtAmount": 0,
+            "Status": 1,
+            "Reason": "P2P"
+        },
+        "rawHeaders": [
+            "Date",
+            "Thu, 15 Apr 2021 19:18:20 GMT",
+            "Content-Type",
+            "application/json; charset=utf-8",
+            "Content-Length",
+            "147",
+            "Cache-Control",
+            "no-cache",
+            "Pragma",
+            "no-cache",
+            "Expires",
+            "-1",
+            "Request-Context",
+            "appId=cid-v1:40d43092-8aee-4b2b-8b7f-34d2d69e09b7",
+            "Connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "https://sb-api.xpollens.com:443",
+        "method": "GET",
+        "path": "/api/V1.1/users/eJrkQhMlh",
+        "body": "",
+        "status": 200,
+        "response": {
+            "Id": 2321,
+            "AppUserId": "eJrkQhMlh",
+            "Type": 1,
+            "Role": 2,
+            "Profile": {
+                "Civility": 0,
+                "FirstName": "Facturations",
+                "LastName": "Facturation",
+                "BirthName": null,
+                "Birthdate": "1980-12-06T00:00:00",
+                "Birthcity": "Paris",
+                "BirthCountry": "FR",
+                "Address": {
+                    "Street": "4 RUE VICTOR HUGO",
+                    "ZipCode": "69002",
+                    "City": "LYON",
+                    "Country": "FR"
+                },
+                "PhoneNumber": "33687545695",
+                "Email": "oney_facture@yopmail.com",
+                "Alias": "F.F#eJrkQhMlh",
+                "Picture": {
+                    "Href": null
+                },
+                "EconomicActivity": 11,
+                "Asset": null,
+                "Income": null
+            },
+            "Credentials": null,
+            "Amount": 299140,
+            "DebtBalance": 0,
+            "AccountingBalanceAmount": 349140,
+            "SubAccounts": [
+                {
+                    "Id": 2321,
+                    "AppAccountId": "eJrkQhMlh",
+                    "Amount": 299140,
+                    "AccountingBalanceAmount": 349140,
+                    "DisplayName": "Facturations Facturation",
+                    "CreationDate": "2020-09-23T16:30:02",
+                    "IsDefault": true,
+                    "Iban": "FR7612869000020PC000001SH21",
+                    "IbanHint": "FR76XXXXXXXXXXXXXXXXSH21"
+                }
+            ],
+            "BankAccounts": null,
+            "CBCards": [
+                {
+                    "Id": 1339,
+                    "AppCardId": "card-_5qZUx464",
+                    "Href": "https://rest-pp.s-money.fr/api/bib/sandbox/api/users/eJrkQhMlh/cards/card-_5qZUx464"
+                }
+            ],
+            "Status": 1,
+            "Company": null,
+            "CountryCode": null,
+            "KycStatus": 6,
+            "OnBoardingDate": "2020-09-23T16:30:02"
+        },
+        "rawHeaders": [
+            "Date",
+            "Thu, 15 Apr 2021 19:18:21 GMT",
+            "Content-Type",
+            "application/json; charset=utf-8",
+            "Content-Length",
+            "1091",
+            "Cache-Control",
+            "private",
+            "Request-Context",
+            "appId=cid-v1:40d43092-8aee-4b2b-8b7f-34d2d69e09b7",
+            "Connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "https://sb-api.xpollens.com:443",
+        "method": "POST",
+        "path": "/api/V1.1/users/kTDhDRrHv/payments",
+        "body": {
+            "orderid": "IFDEAED101230001",
+            "beneficiary": {
+                "appaccountid": "eJrkQhMlh"
+            },
+            "sender": {
+                "appaccountid": "kTDhDRrHv"
+            },
+            "amount": 8000,
+            "message": "P2P Recouv",
+            "checkLimits": false,
+            "tag": " -REGLT IMPAY CPTANT-COMPT-FRA-000- ",
+            "processUnpaid": true,
+            "Recurrent": null
+        },
+        "status": 201,
+        "response": {
+            "Id": 22794,
+            "PaymentDate": "2021-04-15T21:18:21.3101041+02:00",
+            "Amount": 8000,
+            "Sender": {
+                "Id": 1490,
+                "AppAccountId": "kTDhDRrHv",
+                "DisplayName": "Prenomuserelo Nomuserelo",
+                "Email": "lux-qa-user-2@oney.com",
+                "PhoneNumber": "06 62 61 12 46",
+                "Alias": "mala",
+                "Iban": "FR8612869000020PC0000015E37",
+                "Href": "https://rest-pp.s-money.fr/api/bib/sandbox/api/users/kTDhDRrHv"
+            },
+            "Beneficiary": {
+                "Id": 2321,
+                "AppAccountId": "eJrkQhMlh",
+                "DisplayName": "Facturations Facturation",
+                "Email": "oney_facture@yopmail.com",
+                "PhoneNumber": "33 68 75 45 69 5",
+                "Alias": "F.F#eJrkQhMlh",
+                "Iban": "FR7612869000020PC000001SH21",
+                "Href": "https://rest-pp.s-money.fr/api/bib/sandbox/api/users/eJrkQhMlh"
+            },
+            "Message": "P2P Recouv",
+            "OrderId": "IFDEAED101230001",
+            "Status": 1,
+            "CheckLimits": false,
+            "Tag": " -REGLT IMPAY CPTANT-COMPT-FRA-000- "
+        },
+        "rawHeaders": [
+            "Date",
+            "Thu, 15 Apr 2021 19:18:21 GMT",
+            "Content-Type",
+            "application/json; charset=utf-8",
+            "Content-Length",
+            "778",
+            "Cache-Control",
+            "no-cache",
+            "Pragma",
+            "no-cache",
+            "Expires",
+            "-1",
+            "Location",
+            "https://az-pp-rest.s-money.net/api/bib/sandbox/api/users/kTDhDRrHv/payments/22794",
+            "Request-Context",
+            "appId=cid-v1:40d43092-8aee-4b2b-8b7f-34d2d69e09b7",
+            "Connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "https://sb-api.xpollens.com:443",
+        "method": "PUT",
+        "path": "/api/V1.1/ClientDebts/FDEAED10123/RemainingDebtAmount",
+        "body": {
+            "RemainingDebtAmount": 0
+        },
+        "status": 200,
+        "response": {
+            "OrderId": "FDEAED10123",
+            "AppUserId": "kTDhDRrHv",
+            "Date": "2020-10-29T18:09:23.123Z",
+            "DebtAmount": 8000,
+            "RemainingDebtAmount": 0,
+            "Status": 0,
+            "Reason": "P2P"
+        },
+        "rawHeaders": [
+            "Date",
+            "Thu, 15 Apr 2021 19:18:22 GMT",
+            "Content-Type",
+            "application/json; charset=utf-8",
+            "Content-Length",
+            "154",
+            "Cache-Control",
+            "no-cache",
+            "Pragma",
+            "no-cache",
+            "Expires",
+            "-1",
+            "Request-Context",
+            "appId=cid-v1:40d43092-8aee-4b2b-8b7f-34d2d69e09b7",
+            "Connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "https://sb-api.xpollens.com:443",
+        "method": "PUT",
+        "path": "/api/V1.1/ClientDebts/FDEAED10123/Status",
+        "body": {
+            "Status": 1
+        },
+        "status": 200,
+        "response": {
+            "OrderId": "FDEAED10123",
+            "AppUserId": "kTDhDRrHv",
+            "Date": "2020-10-29T18:09:23.123Z",
+            "DebtAmount": 8000,
+            "RemainingDebtAmount": 0,
+            "Status": 1,
+            "Reason": "P2P"
+        },
+        "rawHeaders": [
+            "Date",
+            "Thu, 15 Apr 2021 19:18:22 GMT",
+            "Content-Type",
+            "application/json; charset=utf-8",
+            "Content-Length",
+            "154",
+            "Cache-Control",
+            "no-cache",
+            "Pragma",
+            "no-cache",
+            "Expires",
+            "-1",
+            "Request-Context",
+            "appId=cid-v1:40d43092-8aee-4b2b-8b7f-34d2d69e09b7",
+            "Connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "https://sb-api.xpollens.com:443",
+        "method": "GET",
+        "path": "/api/V1.1/users/eJrkQhMlh",
+        "body": "",
+        "status": 200,
+        "response": {
+            "Id": 2321,
+            "AppUserId": "eJrkQhMlh",
+            "Type": 1,
+            "Role": 2,
+            "Profile": {
+                "Civility": 0,
+                "FirstName": "Facturations",
+                "LastName": "Facturation",
+                "BirthName": null,
+                "Birthdate": "1980-12-06T00:00:00",
+                "Birthcity": "Paris",
+                "BirthCountry": "FR",
+                "Address": {
+                    "Street": "4 RUE VICTOR HUGO",
+                    "ZipCode": "69002",
+                    "City": "LYON",
+                    "Country": "FR"
+                },
+                "PhoneNumber": "33687545695",
+                "Email": "oney_facture@yopmail.com",
+                "Alias": "F.F#eJrkQhMlh",
+                "Picture": {
+                    "Href": null
+                },
+                "EconomicActivity": 11,
+                "Asset": null,
+                "Income": null
+            },
+            "Credentials": null,
+            "Amount": 299141,
+            "DebtBalance": 0,
+            "AccountingBalanceAmount": 349141,
+            "SubAccounts": [
+                {
+                    "Id": 2321,
+                    "AppAccountId": "eJrkQhMlh",
+                    "Amount": 299141,
+                    "AccountingBalanceAmount": 349141,
+                    "DisplayName": "Facturations Facturation",
+                    "CreationDate": "2020-09-23T16:30:02",
+                    "IsDefault": true,
+                    "Iban": "FR7612869000020PC000001SH21",
+                    "IbanHint": "FR76XXXXXXXXXXXXXXXXSH21"
+                }
+            ],
+            "BankAccounts": null,
+            "CBCards": [
+                {
+                    "Id": 1339,
+                    "AppCardId": "card-_5qZUx464",
+                    "Href": "https://rest-pp.s-money.fr/api/bib/sandbox/api/users/eJrkQhMlh/cards/card-_5qZUx464"
+                }
+            ],
+            "Status": 1,
+            "Company": null,
+            "CountryCode": null,
+            "KycStatus": 6,
+            "OnBoardingDate": "2020-09-23T16:30:02"
+        },
+        "rawHeaders": [
+            "Date",
+            "Thu, 15 Apr 2021 19:18:22 GMT",
+            "Content-Type",
+            "application/json; charset=utf-8",
+            "Content-Length",
+            "1091",
+            "Cache-Control",
+            "private",
+            "Request-Context",
+            "appId=cid-v1:40d43092-8aee-4b2b-8b7f-34d2d69e09b7",
+            "Connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "https://sb-api.xpollens.com:443",
+        "method": "POST",
+        "path": "/api/V1.1/users/kTDhDRrHv/payments",
+        "body": {
+            "orderid": "IFDEAED101220001",
+            "beneficiary": {
+                "appaccountid": "eJrkQhMlh"
+            },
+            "sender": {
+                "appaccountid": "kTDhDRrHv"
+            },
+            "amount": 2000,
+            "message": "P2P Recouv",
+            "checkLimits": false,
+            "tag": " -REGLT IMPAY CPTANT-COMPT-FRA-000- ",
+            "processUnpaid": true,
+            "Recurrent": null
+        },
+        "status": 201,
+        "response": {
+            "Id": 22795,
+            "PaymentDate": "2021-04-15T21:18:22.9673943+02:00",
+            "Amount": 2000,
+            "Sender": {
+                "Id": 1490,
+                "AppAccountId": "kTDhDRrHv",
+                "DisplayName": "Prenomuserelo Nomuserelo",
+                "Email": "lux-qa-user-2@oney.com",
+                "PhoneNumber": "06 62 61 12 46",
+                "Alias": "mala",
+                "Iban": "FR8612869000020PC0000015E37",
+                "Href": "https://rest-pp.s-money.fr/api/bib/sandbox/api/users/kTDhDRrHv"
+            },
+            "Beneficiary": {
+                "Id": 2321,
+                "AppAccountId": "eJrkQhMlh",
+                "DisplayName": "Facturations Facturation",
+                "Email": "oney_facture@yopmail.com",
+                "PhoneNumber": "33 68 75 45 69 5",
+                "Alias": "F.F#eJrkQhMlh",
+                "Iban": "FR7612869000020PC000001SH21",
+                "Href": "https://rest-pp.s-money.fr/api/bib/sandbox/api/users/eJrkQhMlh"
+            },
+            "Message": "P2P Recouv",
+            "OrderId": "IFDEAED101220001",
+            "Status": 1,
+            "CheckLimits": false,
+            "Tag": " -REGLT IMPAY CPTANT-COMPT-FRA-000- "
+        },
+        "rawHeaders": [
+            "Date",
+            "Thu, 15 Apr 2021 19:18:23 GMT",
+            "Content-Type",
+            "application/json; charset=utf-8",
+            "Content-Length",
+            "778",
+            "Cache-Control",
+            "no-cache",
+            "Pragma",
+            "no-cache",
+            "Expires",
+            "-1",
+            "Location",
+            "https://az-pp-rest.s-money.net/api/bib/sandbox/api/users/kTDhDRrHv/payments/22795",
+            "Request-Context",
+            "appId=cid-v1:40d43092-8aee-4b2b-8b7f-34d2d69e09b7",
+            "Connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "https://sb-api.xpollens.com:443",
+        "method": "PUT",
+        "path": "/api/V1.1/ClientDebts/FDEAED10122/RemainingDebtAmount",
+        "body": {
+            "RemainingDebtAmount": 0
+        },
+        "status": 200,
+        "response": {
+            "OrderId": "FDEAED10122",
+            "AppUserId": "kTDhDRrHv",
+            "Date": "2020-10-29T17:55:10.11Z",
+            "DebtAmount": 2000,
+            "RemainingDebtAmount": 0,
+            "Status": 0,
+            "Reason": "P2P"
+        },
+        "rawHeaders": [
+            "Date",
+            "Thu, 15 Apr 2021 19:18:23 GMT",
+            "Content-Type",
+            "application/json; charset=utf-8",
+            "Content-Length",
+            "153",
+            "Cache-Control",
+            "no-cache",
+            "Pragma",
+            "no-cache",
+            "Expires",
+            "-1",
+            "Request-Context",
+            "appId=cid-v1:40d43092-8aee-4b2b-8b7f-34d2d69e09b7",
+            "Connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "https://sb-api.xpollens.com:443",
+        "method": "PUT",
+        "path": "/api/V1.1/ClientDebts/FDEAED10122/Status",
+        "body": {
+            "Status": 1
+        },
+        "status": 200,
+        "response": {
+            "OrderId": "FDEAED10122",
+            "AppUserId": "kTDhDRrHv",
+            "Date": "2020-10-29T17:55:10.11Z",
+            "DebtAmount": 2000,
+            "RemainingDebtAmount": 0,
+            "Status": 1,
+            "Reason": "P2P"
+        },
+        "rawHeaders": [
+            "Date",
+            "Thu, 15 Apr 2021 19:18:24 GMT",
+            "Content-Type",
+            "application/json; charset=utf-8",
+            "Content-Length",
+            "153",
+            "Cache-Control",
+            "no-cache",
+            "Pragma",
+            "no-cache",
+            "Expires",
+            "-1",
+            "Request-Context",
+            "appId=cid-v1:40d43092-8aee-4b2b-8b7f-34d2d69e09b7",
+            "Connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    }
+]

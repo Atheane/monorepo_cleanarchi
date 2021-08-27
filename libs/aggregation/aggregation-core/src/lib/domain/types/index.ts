@@ -1,0 +1,13 @@
+export { AggregateAccountsField } from './AggregateAccountsField';
+export { OwnerIdentity } from './OwnerIdentity';
+export { UserProvider } from './UserProvider';
+export { BankAccountType } from './BankAccountType';
+export { CreditInsights, Bureau, Payment } from './CreditInsights';
+export { CreditProfile } from './CreditProfile';
+export { CreditScoring } from './CreditScoring';
+export { ISigninField } from './ISigninField';
+export { BankAccountUsage } from './BankAccountUsage';
+export { AxiosError } from './AxiosError';
+export { Establishment } from './Establishment';
+export { Iban } from './Iban';
+export { TransactionCategory } from './TransactionCategory';

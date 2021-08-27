@@ -1,0 +1,13 @@
+{
+  "name": "@oney/aggregation-adapters",
+  "version": "0.20.0",
+  "publishConfig": {
+    "access": "public",
+    "directory": "../../../dist/libs/aggregation-adapters"
+  },
+  "config": {
+    "mongodbMemoryServer": {
+      "version": "latest"
+    }
+  }
+}

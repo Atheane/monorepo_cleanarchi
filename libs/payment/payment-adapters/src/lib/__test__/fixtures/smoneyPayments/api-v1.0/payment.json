@@ -1,0 +1,80 @@
+[
+    {
+        "scope": "https://sb-api.xpollens.com:443",
+        "method": "POST",
+        "path": "/api/V1.0/users/mala_2/payments",
+        "body": {
+            "orderid": "SMoney0086",
+            "beneficiary": {
+                "appaccountid": "OxREbmNhO"
+            },
+            "sender": {
+                "appaccountid": "mala_2"
+            },
+            "amount": 77,
+            "message": "aze",
+            "checkLimits": false,
+            "tag": " -ECHEANCE3X-DF003-FRA-001-XMp6548787",
+            "processUnpaid": true,
+            "Recurrent": {
+                "RecurrentEndDate": "2020-10-20",
+                "FrequencyType": 0,
+                "RecurrentDays": 15
+            }
+        },
+        "status": 201,
+        "response": {
+            "Id": 538,
+            "PaymentDate": "2020-09-25T12:48:28",
+            "Amount": 77,
+            "Sender": {
+                "Id": 1500,
+                "AppAccountId": "mala_2",
+                "DisplayName": "Prenomusermalaa Nomusermalaa",
+                "Email": "malaikaoney2@yopmail.com",
+                "PhoneNumber": "06 62 61 12 47",
+                "Alias": "malaa",
+                "Iban": "FR3612869000020PC0000015O34",
+                "Href": "https://rest-pp.s-money.fr/api/V1.0/users/mala_2"
+            },
+            "Beneficiary": {
+                "Id": 2323,
+                "AppAccountId": "OxREbmNhO",
+                "DisplayName": "Financements Finance",
+                "Email": "oney_finance@yopmail.com",
+                "PhoneNumber": "33 62 54 78 52 3",
+                "Alias": "F.F#OxREbmNhO",
+                "Iban": "FR2612869000020PC000001SJ42",
+                "Href": "https://rest-pp.s-money.fr/api/V1.0/users/OxREbmNhO"
+            },
+            "Message": "aze",
+            "OrderId": "SMoney0086",
+            "Status": 1,
+            "CheckLimits": true,
+            "Tag": " -ECHEANCE3X-DF003-FRA-001-XMp6548787"
+        },
+        "rawHeaders": [
+            "Date",
+            "Fri, 25 Sep 2020 10:48:29 GMT",
+            "Server",
+            "IWS",
+            "Cache-Control",
+            "no-cache",
+            "Pragma",
+            "no-cache",
+            "Content-Type",
+            "application/json; charset=utf-8",
+            "Expires",
+            "-1",
+            "Location",
+            "https://rest-pp.s-money.fr/api/V1.0/users/mala_2/payments/538",
+            "X-AspNet-Version",
+            "4.0.30319",
+            "Content-Length",
+            "742",
+            "Connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    }
+]

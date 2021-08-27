@@ -1,0 +1,32 @@
+[
+    {
+        "scope": "https://odb-api-management-dev.azure-api.net:443",
+        "method": "GET",
+        "path": "/transactions/user/unknown/transactions",
+        "body": "",
+        "status": 401,
+        "response": {
+            "code": 401,
+            "error": {
+                "message": "invalid token"
+            }
+        },
+        "rawHeaders": [
+            "Content-Length",
+            "48",
+            "Content-Type",
+            "application/json; charset=utf-8",
+            "ETag",
+            "W/\"30-oG/8Y26gK0EnK/TStOHP7w9fqLM\"",
+            "request-context",
+            "appId=cid-v1:f1aa2e94-7b39-4f6b-b9c8-38e62fe89527",
+            "X-Powered-By",
+            "Express",
+            "Date",
+            "Thu, 15 Oct 2020 14:30:53 GMT",
+            "Connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    }
+]

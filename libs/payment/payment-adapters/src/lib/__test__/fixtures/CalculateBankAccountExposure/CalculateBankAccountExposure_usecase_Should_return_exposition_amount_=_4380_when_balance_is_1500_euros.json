@@ -1,0 +1,174 @@
+[
+  {
+    "scope": "https://sb-api.xpollens.com:443",
+    "method": "GET",
+    "path": "/api/V1.1/users/kTDhDRrHv",
+    "body": "",
+    "status": 200,
+    "response": {
+      "Id": 2223,
+      "AppUserId": "kTDhDRrHv",
+      "Type": 1,
+      "Role": 2,
+      "Profile": {
+        "Civility": 0,
+        "FirstName": "Mouhcine",
+        "LastName": "Bahri",
+        "BirthName": null,
+        "Birthdate": "1992-12-06T00:00:00",
+        "Birthcity": "Paris",
+        "BirthCountry": "FR",
+        "Address": {
+          "Street": "55 RUE EMILE ZOLA",
+          "ZipCode": "95870",
+          "City": "BEZONS",
+          "Country": "FR"
+        },
+        "PhoneNumber": "33655223362",
+        "Email": "mbahri@yopmail.com",
+        "Alias": "M.B#kTDhDRrHv",
+        "Picture": {
+          "Href": null
+        },
+        "EconomicActivity": 11,
+        "Asset": null,
+        "Income": null
+      },
+      "Credentials": null,
+      "Amount": 150000,
+      "DebtBalance": 889851,
+      "AccountingBalanceAmount": 393198,
+      "SubAccounts": [
+        {
+          "Id": 2223,
+          "AppAccountId": "kTDhDRrHv",
+          "Amount": 0,
+          "AccountingBalanceAmount": 393198,
+          "DisplayName": "Mouhcine Bahri",
+          "CreationDate": "2020-09-21T10:33:23",
+          "IsDefault": true,
+          "Iban": "FR5212869000020PC000001PR62",
+          "IbanHint": "FR52XXXXXXXXXXXXXXXXPR62"
+        }
+      ],
+      "BankAccounts": [
+        {
+          "Id": 1439,
+          "Href": "https://rest-pp.s-money.fr/api/bib/sandbox/api/users/kTDhDRrHv/bankaccounts/1439"
+        },
+        {
+          "Id": 1440,
+          "Href": "https://rest-pp.s-money.fr/api/bib/sandbox/api/users/kTDhDRrHv/bankaccounts/1440"
+        },
+        {
+          "Id": 1442,
+          "Href": "https://rest-pp.s-money.fr/api/bib/sandbox/api/users/kTDhDRrHv/bankaccounts/1442"
+        },
+        {
+          "Id": 1455,
+          "Href": "https://rest-pp.s-money.fr/api/bib/sandbox/api/users/kTDhDRrHv/bankaccounts/1455"
+        },
+        {
+          "Id": 1521,
+          "Href": "https://rest-pp.s-money.fr/api/bib/sandbox/api/users/kTDhDRrHv/bankaccounts/1521"
+        },
+        {
+          "Id": 1542,
+          "Href": "https://rest-pp.s-money.fr/api/bib/sandbox/api/users/kTDhDRrHv/bankaccounts/1542"
+        },
+        {
+          "Id": 1682,
+          "Href": "https://rest-pp.s-money.fr/api/bib/sandbox/api/users/kTDhDRrHv/bankaccounts/1682"
+        },
+        {
+          "Id": 1708,
+          "Href": "https://rest-pp.s-money.fr/api/bib/sandbox/api/users/kTDhDRrHv/bankaccounts/1708"
+        },
+        {
+          "Id": 1806,
+          "Href": "https://rest-pp.s-money.fr/api/bib/sandbox/api/users/kTDhDRrHv/bankaccounts/1806"
+        },
+        {
+          "Id": 1844,
+          "Href": "https://rest-pp.s-money.fr/api/bib/sandbox/api/users/kTDhDRrHv/bankaccounts/1844"
+        },
+        {
+          "Id": 1845,
+          "Href": "https://rest-pp.s-money.fr/api/bib/sandbox/api/users/kTDhDRrHv/bankaccounts/1845"
+        },
+        {
+          "Id": 1904,
+          "Href": "https://rest-pp.s-money.fr/api/bib/sandbox/api/users/kTDhDRrHv/bankaccounts/1904"
+        },
+        {
+          "Id": 1924,
+          "Href": "https://rest-pp.s-money.fr/api/bib/sandbox/api/users/kTDhDRrHv/bankaccounts/1924"
+        },
+        {
+          "Id": 2216,
+          "Href": "https://rest-pp.s-money.fr/api/bib/sandbox/api/users/kTDhDRrHv/bankaccounts/2216"
+        },
+        {
+          "Id": 2217,
+          "Href": "https://rest-pp.s-money.fr/api/bib/sandbox/api/users/kTDhDRrHv/bankaccounts/2217"
+        },
+        {
+          "Id": 2357,
+          "Href": "https://rest-pp.s-money.fr/api/bib/sandbox/api/users/kTDhDRrHv/bankaccounts/2357"
+        }
+      ],
+      "CBCards": [
+        {
+          "Id": 1323,
+          "AppCardId": "card-Sk-EqA1Bw",
+          "Href": "https://rest-pp.s-money.fr/api/bib/sandbox/api/users/kTDhDRrHv/cards/card-Sk-EqA1Bw"
+        }
+      ],
+      "Status": 1,
+      "Company": null,
+      "CountryCode": null,
+      "KycStatus": 6,
+      "OnBoardingDate": "2020-09-21T10:33:23"
+    },
+    "rawHeaders": [
+      "Date",
+      "Thu, 01 Apr 2021 14:39:46 GMT",
+      "Content-Type",
+      "application/json; charset=utf-8",
+      "Content-Length",
+      "2691",
+      "Cache-Control",
+      "private",
+      "Request-Context",
+      "appId=cid-v1:40d43092-8aee-4b2b-8b7f-34d2d69e09b7",
+      "Connection",
+      "close"
+    ],
+    "responseIsBinary": false
+  },
+  {
+    "scope": "https://sb-api.xpollens.com:443",
+    "method": "PUT",
+    "path": "/api/V1.1/users/kTDhDRrHv/additionalBalance",
+    "body": {
+      "AdditionalBalanceAmount": 438000
+    },
+    "status": 204,
+    "response": "",
+    "rawHeaders": [
+      "Date",
+      "Thu, 01 Apr 2021 14:39:47 GMT",
+      "Cache-Control",
+      "no-cache",
+      "Pragma",
+      "no-cache",
+      "Expires",
+      "-1",
+      "Request-Context",
+      "appId=cid-v1:40d43092-8aee-4b2b-8b7f-34d2d69e09b7",
+      "Connection",
+      "close"
+    ],
+    "responseIsBinary": false
+  }
+]

@@ -1,0 +1,10 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "outDir": "../../../dist/out-tsc",
+    "types": ["node", "express"],
+    "composite": true
+  },
+  "exclude": ["**/*.spec.ts", "**/*.e2e.ts"],
+  "include": ["**/*.ts"]
+}

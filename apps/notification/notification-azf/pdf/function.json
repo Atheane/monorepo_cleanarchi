@@ -1,0 +1,14 @@
+{
+  "bindings": [
+    {
+      "name": "message",
+      "type": "serviceBusTrigger",
+      "direction": "in",
+      "topicName": "topic_odb-notification-generate_pdf",
+      "subscriptionName": "sub_odb-function_pdf",
+      "connection": "PDF_SUBSCRIPTION_POLICY",
+      "accessRights": "listen"
+    }
+  ],
+  "disabled": false
+}

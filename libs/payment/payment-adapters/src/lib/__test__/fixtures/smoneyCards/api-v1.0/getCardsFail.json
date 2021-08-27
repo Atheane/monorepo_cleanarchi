@@ -1,0 +1,30 @@
+[
+    {
+        "scope": "https://sb-api.xpollens.com:443",
+        "method": "GET",
+        "path": "/api/V1.0/users/dummy_account/cards/issued",
+        "body": "",
+        "status": 404,
+        "response": {
+            "Code": 147,
+            "ErrorMessage": "User cannot be found",
+            "Title": "Operation cannot be completed",
+            "Priority": 2
+        },
+        "rawHeaders": [
+            "Date",
+            "Mon, 02 Nov 2020 18:13:44 GMT",
+            "Content-Type",
+            "application/json",
+            "Content-Length",
+            "103",
+            "Connection",
+            "close",
+            "Server",
+            "Kestrel",
+            "Request-Context",
+            "appId=cid-v1:40d43092-8aee-4b2b-8b7f-34d2d69e09b7"
+        ],
+        "responseIsBinary": false
+    }
+]

@@ -1,0 +1,30 @@
+[
+    {
+        "scope": "https://api-staging.fr.oney.io:443",
+        "method": "POST",
+        "path": "/risks_management/bdf/v2/fcc_requests",
+        "body": {
+            "partner_guid": "e2d564e96a1b4bb5a8bef41c48a6bf88",
+            "encrypted_message": "FaN14HyJr1MAe5N/wEZoGYeanZ24DvjOTXcieNyixuO2rC5Sc5UrOIS4R2sGhXoCAk2V3NKh30oTWB1X5XbFKnAFTiWCSeoUqG9yCzgKnXFacHj1xJ63j3qLvvYkH9hTrUDrfgEEVdF7jPF+VOrmScWo00HYVaRvGRuy2k+e5RDe9vUFHYOy/GErFlqeyk6dEP+Act60Y0cjywHQmPsrF+iRIEFtsDhupCzGoeKnZOzjBEnPdbJ5924GpBnhxy5lQUgpTJP4um/Gma+X6otclHBQqF6gTGu4OuJnpOvNuAJuBAR3venuYGJ9bzDqhXoWcf8yr0EU/VuJRHTb9LVlHsLtpha6hQU2c9QlYR81VTL2cCP+CONjeque7oVrIsD+x3HAAMg94TEhqLmaKSPlD7+AGsw14/Q9R6dWLPC4mOqzAv+KZ7wzjOmMYaHZF8BFvg9HGJ51CoQ77+o9huYibBKsJjYhOS6fhEy5myk3iEsXPIn4D7sCLot9XSe2puvNtk/OBmwQwA1UEuR5C7YgJkosihIki4xW+x3iX49zxgQitxb8feHKWNY70yfPd1ym6ifq9KXpeARNIuD0SemtbB1tH/NY2HnrGUzeKS8NS2A="
+        },
+        "status": 200,
+        "response": {
+            "encrypted_message": "LZ7mcAAahhu5BwlZj9+AmkfhxJw7XSAim/RiqHNqLBzrNHtWa/GQ+e9o/F5JeXXs"
+        },
+        "rawHeaders": [
+            "Content-Length",
+            "88",
+            "Content-Type",
+            "application/json; charset=UTF-8",
+            "X-Oney-SSL",
+            "off",
+            "X-Oney-Message-Id",
+            "509eb8fa-d20e-478a-9ba7-62d843082083",
+            "Date",
+            "Wed, 28 Apr 2021 13:19:47 GMT",
+            "Connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    }
+]

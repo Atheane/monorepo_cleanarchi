@@ -1,0 +1,53 @@
+[
+    {
+        "scope": "https://sb-api.xpollens.com:443",
+        "method": "POST",
+        "path": "/api/V1.1/users/UpmekTXcJ/bankaccounts",
+        "body": {
+            "DisplayName": "Beneficiary guy",
+            "Bic": "BACCFR23XXX",
+            "Iban": "FR4112869000020PC000005JN24",
+            "IsMine": false
+        },
+        "status": 201,
+        "response": {
+            "Demands": null,
+            "Id": 3840,
+            "DisplayName": "Beneficiary guy",
+            "Bic": "BAxxxxxxxXX",
+            "Iban": "FR41XXXXXXXXXXXXXXXXJN24",
+            "FirstName": null,
+            "LastName": null,
+            "CompanyName": null,
+            "ZipCode": null,
+            "Email": null,
+            "PhoneNumber": null,
+            "CreationDate": "2021-04-21T22:31:52.2235524+02:00",
+            "ModificationDate": null,
+            "IsMine": false,
+            "Status": 1,
+            "OriginOperation": 1
+        },
+        "rawHeaders": [
+            "Date",
+            "Wed, 21 Apr 2021 20:31:52 GMT",
+            "Content-Type",
+            "application/json; charset=utf-8",
+            "Content-Length",
+            "332",
+            "Cache-Control",
+            "no-cache",
+            "Pragma",
+            "no-cache",
+            "Expires",
+            "-1",
+            "Location",
+            "https://az-pp-rest.s-money.net/api/bib/sandbox/api/users/UpmekTXcJ/bankaccounts/3840",
+            "Request-Context",
+            "appId=cid-v1:40d43092-8aee-4b2b-8b7f-34d2d69e09b7",
+            "Connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    }
+]

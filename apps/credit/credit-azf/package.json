@@ -1,0 +1,34 @@
+{
+    "name": "@oney/credit-azf",
+    "version": "0.0.1",
+    "scripts": {
+        "build": "tsc --project tsconfig.build.json",
+        "build:production": "npm run prestart && npm prune --production",
+        "watch": "tsc --w",
+        "prestart": "npm run build && func extensions install",
+        "start:host": "func start",
+        "start": "npm-run-all --parallel start:host watch",
+        "test": "echo \"No tests yet...\""
+    },
+    "description": "",
+    "dependencies": {
+        "@azure/functions": "^1.2.2",
+        "mongoose": "5.10.19",
+        "reflect-metadata": "^0.1.13",
+        "@oney/common-adapters": "./libs/common-adapters",
+        "@oney/envs": "./libs/envs",
+        "inversify": "^5.0.1",
+        "@oney/messages-core": "./libs/messages-core",
+        "@oney/credit-messages": "./libs/credit-messages",
+        "@oney/ddd": "./libs/ddd",
+        "nock": "^13.0.5",
+        "@oney/logger-adapters": "./libs/logger-adapters",
+        "@oney/logger-core": "./libs/logger-core",
+        "@oney/az-servicebus-adapters": "./libs/az-servicebus-adapters",
+        "@oney/http": "./libs/http",
+        "axios": "^0.21.1",
+        "@oney/common-core": "./libs/common-core",
+        "tslib": "1.10.0"
+    },
+    "devDependencies": {}
+}

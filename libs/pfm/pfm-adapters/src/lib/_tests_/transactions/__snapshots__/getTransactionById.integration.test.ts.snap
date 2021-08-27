@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Get TransactionIdById integration testing should get a specific Smoney P2P transaction 1`] = `
+NonCardTransaction {
+  "amount": AmountPositive {
+    "amount": 1000,
+  },
+  "bankAccountId": "1388",
+  "clearingDate": 2020-09-03T08:23:13.512Z,
+  "conversionRate": null,
+  "counterParty": Object {
+    "fullname": "Jane Doe",
+    "iban": "iban_value",
+    "id": "456",
+  },
+  "currency": "EUR",
+  "date": 2020-09-03T08:23:13.512Z,
+  "direction": "IN",
+  "fees": null,
+  "isDeposit": false,
+  "label": "p2p received",
+  "originalAmount": AmountPositive {
+    "amount": 1000,
+  },
+  "refId": "gaerh",
+  "rejectionReason": null,
+  "status": "CLEARED",
+  "tag": "tag_value",
+  "type": "P2P",
+}
+`;

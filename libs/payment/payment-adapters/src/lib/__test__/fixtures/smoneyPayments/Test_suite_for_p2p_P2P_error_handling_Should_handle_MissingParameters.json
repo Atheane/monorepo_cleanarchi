@@ -1,0 +1,240 @@
+[
+    {
+        "scope": "https://sb-api.xpollens.com:443",
+        "method": "GET",
+        "path": "/api/V1.1/users/mala_1",
+        "body": "",
+        "status": 200,
+        "response": {
+            "Id": 1490,
+            "AppUserId": "mala_1",
+            "Type": 1,
+            "Role": 2,
+            "Profile": {
+                "Civility": 0,
+                "FirstName": "Prenomuserelo",
+                "LastName": "Nomuserelo",
+                "BirthName": "Nomuserelo",
+                "Birthdate": "2000-04-07T00:00:00",
+                "Birthcity": "Paris",
+                "BirthCountry": "FR",
+                "Address": {
+                    "Street": "9 rue Gaston Rebuffat",
+                    "ZipCode": "75019",
+                    "City": "Paris",
+                    "Country": "FR"
+                },
+                "PhoneNumber": "0662611246",
+                "Email": "lux-qa-user-2@oney.com",
+                "Alias": "mala",
+                "Picture": {
+                    "Href": null
+                },
+                "EconomicActivity": 12,
+                "Asset": null,
+                "Income": null
+            },
+            "Credentials": null,
+            "Amount": 69605,
+            "DebtBalance": 0,
+            "AccountingBalanceAmount": 67605,
+            "SubAccounts": [
+                {
+                    "Id": 1490,
+                    "AppAccountId": "mala_1",
+                    "Amount": 69605,
+                    "AccountingBalanceAmount": 67605,
+                    "DisplayName": "Prenomuserelo Nomuserelo",
+                    "CreationDate": "2020-09-01T16:24:46",
+                    "IsDefault": true,
+                    "Iban": "FR8612869000020PC0000015E37",
+                    "IbanHint": "FR861286900002XXXXXXX015EXX"
+                }
+            ],
+            "BankAccounts": [
+                {
+                    "Id": 1560,
+                    "Href": "https://rest-pp.s-money.fr/api/bib/sandbox/api/users/mala_1/bankaccounts/1560"
+                },
+                {
+                    "Id": 1561,
+                    "Href": "https://rest-pp.s-money.fr/api/bib/sandbox/api/users/mala_1/bankaccounts/1561"
+                }
+            ],
+            "CBCards": [
+                {
+                    "Id": 2372,
+                    "AppCardId": "AC-02-dfgpodj",
+                    "Href": "https://rest-pp.s-money.fr/api/bib/sandbox/api/users/mala_1/cards/AC-02-dfgpodj"
+                },
+                {
+                    "Id": 2466,
+                    "AppCardId": "hrtykyrtu",
+                    "Href": "https://rest-pp.s-money.fr/api/bib/sandbox/api/users/mala_1/cards/hrtykyrtu"
+                }
+            ],
+            "Status": 1,
+            "Company": null,
+            "CountryCode": null,
+            "KycStatus": 1,
+            "OnBoardingDate": "2020-09-01T16:24:46"
+        },
+        "rawHeaders": [
+            "Date",
+            "Wed, 28 Apr 2021 17:08:37 GMT",
+            "Content-Type",
+            "application/json; charset=utf-8",
+            "Content-Length",
+            "1396",
+            "Cache-Control",
+            "private",
+            "Request-Context",
+            "appId=cid-v1:40d43092-8aee-4b2b-8b7f-34d2d69e09b7",
+            "Connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "https://sb-api.xpollens.com:443",
+        "method": "GET",
+        "path": "/api/V1.1/users/mala_1",
+        "body": "",
+        "status": 200,
+        "response": {
+            "Id": 1490,
+            "AppUserId": "mala_1",
+            "Type": 1,
+            "Role": 2,
+            "Profile": {
+                "Civility": 0,
+                "FirstName": "Prenomuserelo",
+                "LastName": "Nomuserelo",
+                "BirthName": "Nomuserelo",
+                "Birthdate": "2000-04-07T00:00:00",
+                "Birthcity": "Paris",
+                "BirthCountry": "FR",
+                "Address": {
+                    "Street": "9 rue Gaston Rebuffat",
+                    "ZipCode": "75019",
+                    "City": "Paris",
+                    "Country": "FR"
+                },
+                "PhoneNumber": "0662611246",
+                "Email": "lux-qa-user-2@oney.com",
+                "Alias": "mala",
+                "Picture": {
+                    "Href": null
+                },
+                "EconomicActivity": 12,
+                "Asset": null,
+                "Income": null
+            },
+            "Credentials": null,
+            "Amount": 69605,
+            "DebtBalance": 0,
+            "AccountingBalanceAmount": 67605,
+            "SubAccounts": [
+                {
+                    "Id": 1490,
+                    "AppAccountId": "mala_1",
+                    "Amount": 69605,
+                    "AccountingBalanceAmount": 67605,
+                    "DisplayName": "Prenomuserelo Nomuserelo",
+                    "CreationDate": "2020-09-01T16:24:46",
+                    "IsDefault": true,
+                    "Iban": "FR8612869000020PC0000015E37",
+                    "IbanHint": "FR861286900002XXXXXXX015EXX"
+                }
+            ],
+            "BankAccounts": [
+                {
+                    "Id": 1560,
+                    "Href": "https://rest-pp.s-money.fr/api/bib/sandbox/api/users/mala_1/bankaccounts/1560"
+                },
+                {
+                    "Id": 1561,
+                    "Href": "https://rest-pp.s-money.fr/api/bib/sandbox/api/users/mala_1/bankaccounts/1561"
+                }
+            ],
+            "CBCards": [
+                {
+                    "Id": 2372,
+                    "AppCardId": "AC-02-dfgpodj",
+                    "Href": "https://rest-pp.s-money.fr/api/bib/sandbox/api/users/mala_1/cards/AC-02-dfgpodj"
+                },
+                {
+                    "Id": 2466,
+                    "AppCardId": "hrtykyrtu",
+                    "Href": "https://rest-pp.s-money.fr/api/bib/sandbox/api/users/mala_1/cards/hrtykyrtu"
+                }
+            ],
+            "Status": 1,
+            "Company": null,
+            "CountryCode": null,
+            "KycStatus": 1,
+            "OnBoardingDate": "2020-09-01T16:24:46"
+        },
+        "rawHeaders": [
+            "Date",
+            "Wed, 28 Apr 2021 17:08:37 GMT",
+            "Content-Type",
+            "application/json; charset=utf-8",
+            "Content-Length",
+            "1396",
+            "Cache-Control",
+            "private",
+            "Request-Context",
+            "appId=cid-v1:40d43092-8aee-4b2b-8b7f-34d2d69e09b7",
+            "Connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "https://sb-api.xpollens.com:443",
+        "method": "POST",
+        "path": "/api/V1.1/users/mala_1/payments",
+        "body": {
+            "orderid": "EAFFCE13130",
+            "beneficiary": {
+                "appaccountid": "mala_1"
+            },
+            "sender": {
+                "appaccountid": "mala_1"
+            },
+            "amount": 5000,
+            "message": "aze",
+            "checkLimits": true,
+            "tag": " -VIRT ENTRE CPT CLT-P2PCL-FRA-000-XMp6548787",
+            "processUnpaid": false,
+            "Recurrent": null
+        },
+        "status": 400,
+        "response": {
+            "Code": 704,
+            "ErrorMessage": "MissingParameters",
+            "Title": "L'opération ne peut pas aboutir",
+            "Priority": 2
+        },
+        "rawHeaders": [
+            "Date",
+            "Wed, 28 Apr 2021 17:08:38 GMT",
+            "Content-Type",
+            "application/json; charset=utf-8",
+            "Content-Length",
+            "110",
+            "Cache-Control",
+            "no-cache",
+            "Pragma",
+            "no-cache",
+            "Expires",
+            "-1",
+            "Request-Context",
+            "appId=cid-v1:40d43092-8aee-4b2b-8b7f-34d2d69e09b7",
+            "Connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    }
+]

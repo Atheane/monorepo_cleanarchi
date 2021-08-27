@@ -1,0 +1,13 @@
+export enum TransactionType {
+  CARD = 'CARD',
+  TRANSFER = 'TRANSFER',
+  ATM = 'ATM',
+  PAYBACK = 'PAYBACK',
+  ORDER = 'ORDER',
+  CHECK = 'CHECK',
+  LOAN = 'LOAN',
+  FEES = 'BANK',
+  DEFERRED = 'DEFERRED',
+  DEFERRED_SUMMARY = 'DEFERRED_SUMMARY',
+  P2P = 'P2P',
+}

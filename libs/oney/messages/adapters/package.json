@@ -1,0 +1,9 @@
+{
+  "name": "@oney/messages-adapters",
+  "version": "0.6.0",
+  "config": {
+    "mongodbMemoryServer": {
+      "version": "latest"
+    }
+  }
+}

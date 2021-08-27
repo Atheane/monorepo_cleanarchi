@@ -1,0 +1,59 @@
+[
+    {
+        "scope": "http://127.0.0.1:62938",
+        "method": "GET",
+        "path": "/authentication/partner/token/BDrGknQuf",
+        "body": "",
+        "status": 200,
+        "response": {
+            "uid": "BDrGknQuf",
+            "phone": false,
+            "email": "0305e4d7-3079-40ce-a8a6-d4f1f1ac44c6_pp_de_reve_@lead.oney.com",
+            "pinCode": {
+                "isSet": false,
+                "deviceId": null
+            },
+            "metadata": {
+                "provider": "pp_de_reve",
+                "email": "toto@aao.com"
+            }
+        },
+        "rawHeaders": [
+            "Access-Control-Allow-Origin",
+            "*",
+            "Content-Security-Policy",
+            "default-src 'self';base-uri 'self';block-all-mixed-content;font-src 'self' https: data:;frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests",
+            "X-DNS-Prefetch-Control",
+            "off",
+            "Expect-CT",
+            "max-age=0",
+            "X-Frame-Options",
+            "SAMEORIGIN",
+            "Strict-Transport-Security",
+            "max-age=15552000; includeSubDomains",
+            "X-Download-Options",
+            "noopen",
+            "X-Content-Type-Options",
+            "nosniff",
+            "X-Permitted-Cross-Domain-Policies",
+            "none",
+            "Referrer-Policy",
+            "no-referrer",
+            "X-XSS-Protection",
+            "0",
+            "user_token",
+            "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7InVzZXIiOnsidWlkIjoiQkRyR2tuUXVmIiwiZW1haWwiOiIwMzA1ZTRkNy0zMDc5LTQwY2UtYThhNi1kNGYxZjFhYzQ0YzZfcHBfZGVfcmV2ZV9AbGVhZC5vbmV5LmNvbSJ9fSwicHJvdmlkZXIiOiJvZGIiLCJyb2xlcyI6W3sic2NvcGUiOnsibmFtZSI6ImFnZ3JlZ2F0aW9uIn0sInBlcm1pc3Npb25zIjp7IndyaXRlIjoic2VsZiIsInJlYWQiOiJzZWxmIn19XSwibmFtZSI6Im9kYiIsImlhdCI6MTYxMjI1NTQ3OX0.K9qZc3zM8f2U3Dh3-pqpUKpOLbRN205-vNr8_MDlCFc",
+            "Content-Type",
+            "application/json; charset=utf-8",
+            "Content-Length",
+            "208",
+            "ETag",
+            "W/\"d0-MBgAaYNrd07Ujnx0xblqYS9vFko\"",
+            "Date",
+            "Tue, 02 Feb 2021 08:44:39 GMT",
+            "Connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    }
+]

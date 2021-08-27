@@ -1,0 +1,25 @@
+[
+    {
+        "scope": "https://sb-api.xpollens.com:443",
+        "method": "GET",
+        "path": "/api/V1.0/users/rHZoIXcgy/cards/issued",
+        "body": "",
+        "status": 200,
+        "response": [],
+        "rawHeaders": [
+            "Date",
+            "Mon, 02 Nov 2020 18:17:52 GMT",
+            "Content-Type",
+            "application/json; charset=utf-8",
+            "Content-Length",
+            "2",
+            "Connection",
+            "close",
+            "Server",
+            "Kestrel",
+            "Request-Context",
+            "appId=cid-v1:40d43092-8aee-4b2b-8b7f-34d2d69e09b7"
+        ],
+        "responseIsBinary": false
+    }
+]

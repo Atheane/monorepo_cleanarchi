@@ -1,0 +1,36 @@
+{
+    "name": "@oney/aggregation-azf",
+    "version": "0.0.1",
+    "scripts": {
+        "build": "tsc --project tsconfig.build.json",
+        "build:production": "npm run prestart && npm prune --production",
+        "watch": "tsc --w",
+        "prestart": "npm run build && func extensions install",
+        "start:host": "func start",
+        "start": "npm-run-all --parallel start:host watch"
+    },
+    "description": "",
+    "dependencies": {
+        "reflect-metadata": "^0.1.13",
+        "@azure/functions": "^1.2.2",
+        "http-status": "^1.5.0",
+        "inversify": "^5.0.1",
+        "@oney/ddd": "./libs/ddd",
+        "@oney/messages-core": "./libs/messages-core",
+        "@oney/messages-adapters": "./libs/messages-adapters",
+        "@oney/aggregation-messages": "./libs/aggregation-messages",
+        "@oney/common-core": "./libs/common-core",
+        "mongoose": "5.10.19",
+        "@oney/aggregation-core": "./libs/aggregation-core",
+        "@oney/http": "./libs/http",
+        "@oney/aggregation-adapters": "./libs/aggregation-adapters",
+        "@oney/env": "^0.3.2",
+        "nock": "^13.0.5",
+        "mongodb": "^3.6.4",
+        "@oney/az-servicebus-adapters": "./libs/az-servicebus-adapters",
+        "@oney/logger-adapters": "./libs/logger-adapters",
+        "@oney/logger-core": "./libs/logger-core",
+        "tslib": "1.10.0"
+    },
+    "devDependencies": {}
+}

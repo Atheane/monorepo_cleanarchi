@@ -1,0 +1,197 @@
+[
+    {
+        "scope": "https://sb-api.xpollens.com:443",
+        "method": "PUT",
+        "path": "/api/V1.1/users/zCDOH_UvA",
+        "body": {
+            "Profile": {
+                "EconomicActivity": 11
+            }
+        },
+        "status": 200,
+        "response": {
+            "Id": 2520,
+            "AppUserId": "zCDOH_UvA",
+            "Type": 1,
+            "Role": 2,
+            "Profile": {
+                "Civility": 0,
+                "FirstName": "Com",
+                "LastName": "Employe",
+                "Birthdate": "1988-04-23T00:00:00",
+                "Birthcity": "Paris",
+                "BirthCountry": "FR",
+                "BirthZipCode": null,
+                "Address": {
+                    "Street": "55 RUE VICTOR HUGO",
+                    "ZipCode": "69002",
+                    "City": "LYON",
+                    "Country": "FR"
+                },
+                "PhoneNumber": "0033798563258",
+                "Email": "cas_empl@yopmail.com",
+                "Alias": "C.E#zCDOH_UvA",
+                "Picture": {
+                    "Href": null
+                },
+                "EconomicActivity": 11,
+                "Asset": null,
+                "Income": null
+            },
+            "Credentials": null,
+            "Amount": 0,
+            "AccountingBalanceAmount": 778,
+            "SubAccounts": [
+                {
+                    "Id": 2520,
+                    "AppAccountId": "zCDOH_UvA",
+                    "Amount": 0,
+                    "AccountingBalanceAmount": 778,
+                    "DisplayName": "Com Employe",
+                    "CreationDate": "2020-10-06T15:24:03",
+                    "IsDefault": true,
+                    "Iban": "FR0612869000020PC000001Y059",
+                    "IbanHint": "FR06XXXXXXXXXXXXXXXXY059"
+                }
+            ],
+            "BankAccounts": null,
+            "CBCards": [
+                {
+                    "Id": 1541,
+                    "AppCardId": "card-BjHjzuN5V",
+                    "Href": "https://rest-pp.s-money.fr/api/bib/sandbox/api/users/zCDOH_UvA/cards/card-BjHjzuN5V"
+                },
+                {
+                    "Id": 2290,
+                    "AppCardId": "card-test-samy0001",
+                    "Href": "https://rest-pp.s-money.fr/api/bib/sandbox/api/users/zCDOH_UvA/cards/card-test-samy0001"
+                },
+                {
+                    "Id": 2323,
+                    "AppCardId": "fdfd",
+                    "Href": "https://rest-pp.s-money.fr/api/bib/sandbox/api/users/zCDOH_UvA/cards/fdfd"
+                },
+                {
+                    "Id": 2324,
+                    "AppCardId": "card-_ASRyUKBQ",
+                    "Href": "https://rest-pp.s-money.fr/api/bib/sandbox/api/users/zCDOH_UvA/cards/card-_ASRyUKBQ"
+                },
+                {
+                    "Id": 2325,
+                    "AppCardId": "card-UojzbeMuR",
+                    "Href": "https://rest-pp.s-money.fr/api/bib/sandbox/api/users/zCDOH_UvA/cards/card-UojzbeMuR"
+                },
+                {
+                    "Id": 2327,
+                    "AppCardId": "card-ydoDWgkul",
+                    "Href": "https://rest-pp.s-money.fr/api/bib/sandbox/api/users/zCDOH_UvA/cards/card-ydoDWgkul"
+                },
+                {
+                    "Id": 2328,
+                    "AppCardId": "card-mgaDHRzTW",
+                    "Href": "https://rest-pp.s-money.fr/api/bib/sandbox/api/users/zCDOH_UvA/cards/card-mgaDHRzTW"
+                },
+                {
+                    "Id": 2329,
+                    "AppCardId": "card-sP_icWpP-",
+                    "Href": "https://rest-pp.s-money.fr/api/bib/sandbox/api/users/zCDOH_UvA/cards/card-sP_icWpP-"
+                },
+                {
+                    "Id": 2330,
+                    "AppCardId": "card-rselGjLkQ",
+                    "Href": "https://rest-pp.s-money.fr/api/bib/sandbox/api/users/zCDOH_UvA/cards/card-rselGjLkQ"
+                },
+                {
+                    "Id": 2337,
+                    "AppCardId": "card-hObXQQgye",
+                    "Href": "https://rest-pp.s-money.fr/api/bib/sandbox/api/users/zCDOH_UvA/cards/card-hObXQQgye"
+                },
+                {
+                    "Id": 2341,
+                    "AppCardId": "card-V-YDdnyQC",
+                    "Href": "https://rest-pp.s-money.fr/api/bib/sandbox/api/users/zCDOH_UvA/cards/card-V-YDdnyQC"
+                },
+                {
+                    "Id": 2491,
+                    "AppCardId": "card-MznDqmEQS",
+                    "Href": "https://rest-pp.s-money.fr/api/bib/sandbox/api/users/zCDOH_UvA/cards/card-MznDqmEQS"
+                },
+                {
+                    "Id": 2492,
+                    "AppCardId": "card-ZUxucIANc",
+                    "Href": "https://rest-pp.s-money.fr/api/bib/sandbox/api/users/zCDOH_UvA/cards/card-ZUxucIANc"
+                },
+                {
+                    "Id": 2493,
+                    "AppCardId": "card-fPdKyKFJS",
+                    "Href": "https://rest-pp.s-money.fr/api/bib/sandbox/api/users/zCDOH_UvA/cards/card-fPdKyKFJS"
+                }
+            ],
+            "Status": 1,
+            "Company": null,
+            "CountryCode": null,
+            "KycStatus": 3,
+            "OnBoardingDate": "2020-10-06T15:24:03"
+        },
+        "rawHeaders": [
+            "Date",
+            "Fri, 22 Jan 2021 08:44:16 GMT",
+            "Content-Type",
+            "application/json; charset=utf-8",
+            "Content-Length",
+            "2765",
+            "Cache-Control",
+            "no-cache",
+            "Pragma",
+            "no-cache",
+            "Expires",
+            "-1",
+            "Request-Context",
+            "appId=cid-v1:40d43092-8aee-4b2b-8b7f-34d2d69e09b7",
+            "Connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "http://127.0.0.1:60812",
+        "method": "PATCH",
+        "path": "/payment/user/zCDOH_UvA",
+        "body": {
+            "economicActivity": 11
+        },
+        "status": 200,
+        "response": "",
+        "rawHeaders": [
+            "Access-Control-Allow-Origin",
+            "*",
+            "Content-Security-Policy",
+            "default-src 'self';base-uri 'self';block-all-mixed-content;font-src 'self' https: data:;frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests",
+            "X-DNS-Prefetch-Control",
+            "off",
+            "Expect-CT",
+            "max-age=0",
+            "X-Frame-Options",
+            "SAMEORIGIN",
+            "Strict-Transport-Security",
+            "max-age=15552000; includeSubDomains",
+            "X-Download-Options",
+            "noopen",
+            "X-Content-Type-Options",
+            "nosniff",
+            "X-Permitted-Cross-Domain-Policies",
+            "none",
+            "Referrer-Policy",
+            "no-referrer",
+            "X-XSS-Protection",
+            "0",
+            "Date",
+            "Fri, 22 Jan 2021 08:44:16 GMT",
+            "Connection",
+            "close",
+            "Content-Length",
+            "0"
+        ],
+        "responseIsBinary": false
+    }
+]

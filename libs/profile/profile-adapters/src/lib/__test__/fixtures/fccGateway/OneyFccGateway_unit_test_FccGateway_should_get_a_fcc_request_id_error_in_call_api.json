@@ -1,0 +1,31 @@
+[
+    {
+        "scope": "https://api-staging.fr.oney.io:443",
+        "method": "POST",
+        "path": "/risks_management/bdf/v2/fcc_requests",
+        "body": {
+            "partner_guid": "e2d564e96a1b4bb5a8bef41c48a6bf88",
+            "encrypted_message": "FaN14HyJr1MAe5N/wEZoGRGdHu9r7UXbPZvB0TK8a7Ed71YfUc4cS4QzkdcXMkKeDr+RmvIVpYtLw6wu9x4buOwqgU6WYiB0JLZxztDtdkT/DVkRzUD5O1msMBHP73JXPLuuPFoTNQDov7SwPGtAy6x5b+tU2RtOoxfOHlfcH7ncS4aGD58MIWo5/XQf7jEs6GQIjhhKIncADvgxXc+huud+VoecBAiL1RIFc1Xpz0Cg4LdVq8zh2+b/jTAI8a4ZR9mdpB4Fjtx5KHwJh0KeJhyT1WjrH48HLy1bV7xIUyCpObwsrl5m465QzGBhTANXajMp6PJNr6RD/vXi+hTDgKGGxt5q/67Mo/FzNnMBtIr8CyhB6DTIyyEoBx6+4Lj6zmaYo0kvAsIA0nawXaa2XGcdl52pxKUu2d5mI/L3JJm+WMnhBqCe1tS9TEkbjARkLVljdPAmagFpHD+Rirwd2Jp55qH+o2L278wUXqMf098iOS8zxUkB/6tNPprbJobszGiwRvW70nuX1NdtjFaGUj8XGH9BaBH67anIO4FoiQk+MK3nzTKqHa1I7Aa054P0NNgtUAIF72MhKTGLkMibNQ=="
+        },
+        "status": 500,
+        "response": {
+            "errorCode": "PPJBK97_972-31",
+            "errorMessage": "ERREUR APPLICATIVE CODE 31 PROGRAMME PPJBK97 FONCTION 972 MESSAGE "
+        },
+        "rawHeaders": [
+            "Content-Length",
+            "114",
+            "Content-Type",
+            "application/json; charset=UTF-8",
+            "X-Oney-SSL",
+            "off",
+            "X-Oney-Message-Id",
+            "2a108fc4-984b-4ed8-8d42-9f63bfc7b7b0",
+            "Date",
+            "Wed, 28 Apr 2021 13:35:21 GMT",
+            "Connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    }
+]

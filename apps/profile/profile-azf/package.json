@@ -1,0 +1,36 @@
+{
+    "name": "@oney/profile-azf",
+    "version": "0.0.1",
+    "scripts": {
+        "build": "tsc --project tsconfig.build.json",
+        "build:production": "npm run prestart && npm prune --production",
+        "watch": "tsc --w",
+        "prestart": "npm run build && func extensions install",
+        "start:host": "func start",
+        "start": "npm-run-all --parallel start:host watch"
+    },
+    "description": "",
+    "dependencies": {
+        "@azure/functions": "^1.2.2",
+        "@oney/envs": "./libs/envs",
+        "class-validator": "0.12.2",
+        "http-status": "^1.5.0",
+        "mongoose": "5.10.19",
+        "reflect-metadata": "^0.1.13",
+        "@oney/profile-core": "./libs/profile-core",
+        "@oney/profile-adapters": "./libs/profile-adapters",
+        "inversify": "^5.0.1",
+        "@oney/profile-messages": "./libs/profile-messages",
+        "@oney/messages-core": "./libs/messages-core",
+        "@oney/ddd": "./libs/ddd",
+        "uuid": "^8.3.0",
+        "@oney/common-core": "./libs/common-core",
+        "class-transformer": "0.3.1",
+        "@oney/logger-core": "./libs/logger-core",
+        "@oney/common-adapters": "./libs/common-adapters",
+        "@oney/az-servicebus-adapters": "./libs/az-servicebus-adapters",
+        "@oney/logger-adapters": "./libs/logger-adapters",
+        "tslib": "1.10.0"
+    },
+    "devDependencies": {}
+}

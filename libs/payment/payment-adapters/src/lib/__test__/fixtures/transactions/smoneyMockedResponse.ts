@@ -1,0 +1,25 @@
+export const mockedLimitsSuccess = {
+  GlobalIn: {
+    AnnualAllowance: 4500000,
+    UsedAllowance: 1500,
+    RenewalDate: '2015-09-29T00:00:00',
+    MonthlyAllowance: 300000,
+    MonthlyUsedAllowance: 1500,
+    MonthlyRenewalDate: '2015-09-29T00:00:00',
+    WeeklyAllowance: 750000,
+    WeeklyUsedAllowance: 1500,
+    WeeklyRenewalDate: '2015-09-29T00:00:00',
+  },
+  GlobalOut: {
+    AnnualAllowance: 4500000,
+    UsedAllowance: 1500,
+    RenewalDate: '2015-09-29T00:00:00',
+    MonthlyAllowance: 300000,
+    MonthlyUsedAllowance: 251345,
+    MonthlyRenewalDate: '2015-09-29T00:00:00',
+    WeeklyAllowance: 750000,
+    WeeklyUsedAllowance: 1500,
+    WeeklyRenewalDate: '2015-09-29T00:00:00',
+  },
+  BalanceLimit: 300000,
+};

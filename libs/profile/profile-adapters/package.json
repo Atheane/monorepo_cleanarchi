@@ -1,0 +1,13 @@
+{
+  "name": "@oney/profile-adapters",
+  "version": "0.43.0",
+  "publishConfig": {
+    "access": "public",
+    "directory": "../../../dist/libs/profile-adapters"
+  },
+  "config": {
+    "mongodbMemoryServer": {
+      "version": "latest"
+    }
+  }
+}

@@ -1,0 +1,59 @@
+[
+    {
+        "scope": "https://api-staging.oneytrust.com:443",
+        "method": "POST",
+        "path": "/tulipe/v2/3000001341/events",
+        "body": {
+            "login": "api-3000001341-1@oneytrust.com",
+            "eventReference": "EVENT_199024_AWzclPFyN_uniqueIdUnitTest",
+            "eventType": 97,
+            "eventLabel": "DATAMATCHING",
+            "eventChannel": "APP",
+            "masterReference": "AWzclPFyN",
+            "data": {
+                "gender": "F",
+                "familyName": "Mazen",
+                "birthName": "Mazen",
+                "givenNames": "Mazendk",
+                "birthDate": "1990-02-04",
+                "pfm": {
+                    "familyName": "Mazen",
+                    "givenName": "Mazendk",
+                    "birthDate": "1990-02-04",
+                    "bank": "Boursorama"
+                }
+            }
+        },
+        "status": 200,
+        "response": {
+            "url": "https://api-staging.oneytrust.com/web-services/api/v2/3000001341/events",
+            "eventId": 58215,
+            "eventScore": "0",
+            "scoreStatus": "DONE",
+            "decision": "MATCH"
+        },
+        "rawHeaders": [
+            "Date",
+            "Wed, 10 Mar 2021 13:51:42 GMT",
+            "Server",
+            "Apache",
+            "Access-Control-Allow-Origin",
+            "*",
+            "Access-Control-Allow-Methods",
+            "POST, GET, PUT, OPTIONS, DELETE, PATCH",
+            "Access-Control-Max-Age",
+            "3600",
+            "Access-Control-Allow-Headers",
+            "Origin, X-Requested-With, Content-Type, Accept, x-checksum",
+            "X-Application-Context",
+            "application:8085",
+            "Content-Type",
+            "application/json;charset=UTF-8",
+            "Connection",
+            "close",
+            "Transfer-Encoding",
+            "chunked"
+        ],
+        "responseIsBinary": false
+    }
+]

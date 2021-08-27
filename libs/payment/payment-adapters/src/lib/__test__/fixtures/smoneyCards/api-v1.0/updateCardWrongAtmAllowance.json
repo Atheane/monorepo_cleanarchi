@@ -1,0 +1,64 @@
+[
+    {
+        "scope": "https://sb-api.xpollens.com:443",
+        "method": "GET",
+        "path": "/api/V1.0/users/zCDOH_UvA/cards/issued/card-BjHjzuN5V",
+        "body": "",
+        "status": 200,
+        "response": {
+            "Id": 0,
+            "AppCardId": "card-BjHjzuN5V",
+            "IsAlphaTest": 0,
+            "IsContactlessBlocked": 0,
+            "Network": 3,
+            "Hint": "9396XXXXXXXX2549",
+            "Name": null,
+            "Country": "FR",
+            "Type": 2,
+            "ExpiryDate": "09-2023",
+            "Status": 2,
+            "OpposedReason": null,
+            "AccountId": {
+                "Id": 0,
+                "AppAccountId": "zCDOH_UvA",
+                "DisplayName": "Com Employe",
+                "Iban": "0",
+                "Alias": null,
+                "PhoneNumber": "33659874123",
+                "Email": "cas_empl@yopmail.com",
+                "Href": null
+            },
+            "CreationType": null,
+            "FintechCultureName": "French",
+            "CardLimits": {
+                "Transaction": null,
+                "ATMWeeklyAllowance": 250,
+                "ATMWeeklyUsedAllowance": 0,
+                "MonthlyAllowance": 950,
+                "MonthlyUsedAllowance": 389
+            },
+            "Blocked": 0,
+            "ForeignPaymentBlocked": 0,
+            "InternetPaymentBlocked": 0,
+            "UseRandomPin": 0,
+            "UniqueId": "1286900002JkUHA0eMj0emobEJBodlhg",
+            "BankId": "30007",
+            "CancellationReason": 6
+        },
+        "rawHeaders": [
+            "Date",
+            "Thu, 05 Nov 2020 10:19:39 GMT",
+            "Content-Type",
+            "application/json; charset=utf-8",
+            "Content-Length",
+            "738",
+            "Connection",
+            "close",
+            "Server",
+            "Kestrel",
+            "Request-Context",
+            "appId=cid-v1:40d43092-8aee-4b2b-8b7f-34d2d69e09b7"
+        ],
+        "responseIsBinary": false
+    }
+]

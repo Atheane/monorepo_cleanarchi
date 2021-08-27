@@ -1,0 +1,114 @@
+[
+    {
+      "scope": "https://api-staging.oneytrust.com:443",
+      "method": "POST",
+      "path": "/tulipe/v2/3000001341/cases/SP_2021219_MnDqtMQrm_MAfuN2jT8/files/59227/delete",
+      "body": {
+        "login": "api-3000001341-1@oneytrust.com"
+      },
+      "status": 202,
+      "response": {
+        "url": "https://api-staging.oneytrust.com/web-services/api/v2/3000001341/cases/SP_2021219_MnDqtMQrm_MAfuN2jT8/files/59227/delete"
+      },
+      "rawHeaders": [
+        "Date",
+        "Wed, 24 Feb 2021 16:28:00 GMT",
+        "Server",
+        "Apache",
+        "Access-Control-Allow-Origin",
+        "*",
+        "Access-Control-Allow-Methods",
+        "POST, GET, PUT, OPTIONS, DELETE, PATCH",
+        "Access-Control-Max-Age",
+        "3600",
+        "Access-Control-Allow-Headers",
+        "Origin, X-Requested-With, Content-Type, Accept, x-checksum",
+        "X-Application-Context",
+        "application:8085",
+        "Content-Type",
+        "application/json;charset=UTF-8",
+        "Connection",
+        "close",
+        "Transfer-Encoding",
+        "chunked"
+      ],
+      "responseIsBinary": false
+    },
+    {
+        "scope": "https://api-staging.oneytrust.com:443",
+        "method": "POST",
+        "path": "/tulipe/v2/3000001341/cases/SP_2021219_MnDqtMQrm_MAfuN2jT8/files",
+        "body": "",
+        "status": 200,
+        "response": {
+            "url": "https://api-staging.oneytrust.com/web-services/api/v2/3000001341/cases/SP_2021219_MnDqtMQrm_MAfuN2jT8/files",
+            "fileIds": [
+                "59227"
+            ],
+            "caseReference": "SP_2021219_MnDqtMQrm_MAfuN2jT8"
+        },
+        "rawHeaders": [
+            "Date",
+            "Tue, 02 Mar 2021 14:50:34 GMT",
+            "Server",
+            "Apache",
+            "Access-Control-Allow-Origin",
+            "*",
+            "Access-Control-Allow-Methods",
+            "POST, GET, PUT, OPTIONS, DELETE, PATCH",
+            "Access-Control-Max-Age",
+            "3600",
+            "Access-Control-Allow-Headers",
+            "Origin, X-Requested-With, Content-Type, Accept, x-checksum",
+            "X-Request-ID",
+            "0d6d72f593a14a828bf8958a7fd98059",
+            "X-Application-Context",
+            "application:8085",
+            "Content-Type",
+            "application/json;charset=UTF-8",
+            "Connection",
+            "close",
+            "Transfer-Encoding",
+            "chunked"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "https://api-staging.oneytrust.com:443",
+        "method": "POST",
+        "path": "/tulipe/v2/3000001341/cases/SP_2021219_MnDqtMQrm_MAfuN2jT8/analysis",
+        "body": {
+            "login": "api-3000001341-1@oneytrust.com"
+        },
+        "status": 202,
+        "response": {
+            "url": "https://api-staging.oneytrust.com/web-services/api/v2/3000001341/cases/SP_2021219_MnDqtMQrm_MAfuN2jT8/analysis",
+            "analysisId": "26524"
+        },
+        "rawHeaders": [
+            "Date",
+            "Tue, 02 Mar 2021 14:50:35 GMT",
+            "Server",
+            "Apache",
+            "Access-Control-Allow-Origin",
+            "*",
+            "Access-Control-Allow-Methods",
+            "POST, GET, PUT, OPTIONS, DELETE, PATCH",
+            "Access-Control-Max-Age",
+            "3600",
+            "Access-Control-Allow-Headers",
+            "Origin, X-Requested-With, Content-Type, Accept, x-checksum",
+            "X-Request-ID",
+            "5dd2e4f683c34540879d01cef5a59d28",
+            "X-Application-Context",
+            "application:8085",
+            "Content-Type",
+            "application/json;charset=UTF-8",
+            "Connection",
+            "close",
+            "Transfer-Encoding",
+            "chunked"
+        ],
+        "responseIsBinary": false
+    }
+]

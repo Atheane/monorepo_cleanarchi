@@ -1,0 +1,126 @@
+[
+    {
+        "scope": "https://api.preprod.algoan.com:443",
+        "method": "POST",
+        "path": "/v1/oauth/token",
+        "body": "client_id=oney-score-1&client_secret=42cbb0bd-dbf1-49a7-88e9-6524c195be6c&grant_type=client_credentials",
+        "status": 200,
+        "response": {
+            "access_token": "eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJXTDVieGNMS09VYTJ0NTJNaWh3djhfZVZkbmgyT20zRTR6clB1UlJZTlYwIn0.eyJqdGkiOiIwYmNiMmM0YS0wNDMxLTQyODYtOGJhMy03ZTZiMTBjM2QxZGQiLCJleHAiOjE2MTczNjI3NzYsIm5iZiI6MCwiaWF0IjoxNjE3MzYyNDc2LCJpc3MiOiJodHRwczovL2tleWNsb2FrLnByZXByb2QuYWxnb2FuLmNvbS9hdXRoL3JlYWxtcy9hbGdvYW4iLCJhdWQiOlsicmVzdGhvb2ttYW5hZ2VyIiwiYWdncmVnYXRpb25tYW5hZ2VyIl0sInN1YiI6IjIwOWEyNWQyLTE4OWYtNDRiNS1iNjhlLTNmOWZhMDk3OGIzZSIsInR5cCI6IkJlYXJlciIsImF6cCI6Im9uZXktc2NvcmUtMSIsImF1dGhfdGltZSI6MCwic2Vzc2lvbl9zdGF0ZSI6IjZkNjJjZDMzLWMzYTktNDcyMC1hMTBmLTRjYzUwMmFlNjdjZCIsImFjciI6IjEiLCJyZXNvdXJjZV9hY2Nlc3MiOnsicmVzdGhvb2ttYW5hZ2VyIjp7InJvbGVzIjpbImVkaXRvciIsInJlYWRlciJdfSwiYWdncmVnYXRpb25tYW5hZ2VyIjp7InJvbGVzIjpbIkFERU5fcmVhZGVyIiwiQUNfZWRpdG9yIiwiQlVfcmVhZGVyIiwiQUNfcmVhZGVyIiwiQlVfZWRpdG9yIiwiVFJfZWRpdG9yIiwiVFJfcmVhZGVyIl19LCJvbmV5LXNjb3JlLTEiOnsicm9sZXMiOlsidW1hX3Byb3RlY3Rpb24iXX19LCJzY29wZSI6InByb2ZpbGUgZW1haWwiLCJjbGllbnRJZCI6Im9uZXktc2NvcmUtMSIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwiY2xpZW50SG9zdCI6Ijg3LjIzMS4xMDguOTIiLCJjaGF0Zmxvd0lkcyI6Im5vbmUiLCJvcmdhbml6YXRpb25JZHMiOiI1ZmEyYjRkMGFmMDhmMjAwMmEwMDhkOTYiLCJwcmVmZXJyZWRfdXNlcm5hbWUiOiJzZXJ2aWNlLWFjY291bnQtb25leS1zY29yZS0xIiwiY2xpZW50QWRkcmVzcyI6Ijg3LjIzMS4xMDguOTIifQ.Ar0uCU3ynubZiQQ4oG8mzwu-FUOtFC1lGoAgsx-kGOW4FEk7c3_A3fwluI1IkVQwBJx-IpxTc7WLlsAkMxfMki_tE0elspaQ1oMfeGgaYywpNsVLAFi_R-yHaP004y9UNpkf0jbBF959gGU7_MHJ11S11JXl2uIhBi14GYV3umTXb9V304xtDwQuzss2HQbMM9gamSVKGMXVcjHFaHO0xz9-DKVpsJh-XYNcEswDOt0iEIV_T2QLz_7K7N1wjUg8ph_5Jqc_grcLr4i1tNRgm-wQY-XHxfQTkwLlAtdzBgkN4z5mp06UOD_cggFHTuPOrwXbFJAhDks-ufkG411A-w",
+            "expires_in": 300,
+            "refresh_expires_in": 2592000,
+            "refresh_token": "eyJhbGciOiJIUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJlOTdmYjQ2Ni1lNGIxLTQyNmMtYTRmYS05NDVhZGRmNzA2NGQifQ.eyJqdGkiOiI3MGJmN2JhZi1jMjE2LTQ4NWYtODQ5OC01ODA0ZDA4YjMwOGMiLCJleHAiOjE2MTk5NTQ0NzYsIm5iZiI6MCwiaWF0IjoxNjE3MzYyNDc2LCJpc3MiOiJodHRwczovL2tleWNsb2FrLnByZXByb2QuYWxnb2FuLmNvbS9hdXRoL3JlYWxtcy9hbGdvYW4iLCJhdWQiOiJodHRwczovL2tleWNsb2FrLnByZXByb2QuYWxnb2FuLmNvbS9hdXRoL3JlYWxtcy9hbGdvYW4iLCJzdWIiOiIyMDlhMjVkMi0xODlmLTQ0YjUtYjY4ZS0zZjlmYTA5NzhiM2UiLCJ0eXAiOiJSZWZyZXNoIiwiYXpwIjoib25leS1zY29yZS0xIiwiYXV0aF90aW1lIjowLCJzZXNzaW9uX3N0YXRlIjoiNmQ2MmNkMzMtYzNhOS00NzIwLWExMGYtNGNjNTAyYWU2N2NkIiwicmVzb3VyY2VfYWNjZXNzIjp7InJlc3Rob29rbWFuYWdlciI6eyJyb2xlcyI6WyJlZGl0b3IiLCJyZWFkZXIiXX0sImFnZ3JlZ2F0aW9ubWFuYWdlciI6eyJyb2xlcyI6WyJBREVOX3JlYWRlciIsIkFDX2VkaXRvciIsIkJVX3JlYWRlciIsIkFDX3JlYWRlciIsIkJVX2VkaXRvciIsIlRSX2VkaXRvciIsIlRSX3JlYWRlciJdfSwib25leS1zY29yZS0xIjp7InJvbGVzIjpbInVtYV9wcm90ZWN0aW9uIl19fSwic2NvcGUiOiJwcm9maWxlIGVtYWlsIn0.Aksbjxh9nJlyEzR_dt0aIgR-u0TDAChMlNnQ-aUwjcU",
+            "token_type": "bearer",
+            "not-before-policy": 1565701970,
+            "session_state": "6d62cd33-c3a9-4720-a10f-4cc502ae67cd",
+            "scope": "profile email"
+        },
+        "rawHeaders": [
+            "Date",
+            "Fri, 02 Apr 2021 11:21:16 GMT",
+            "Content-Type",
+            "application/json",
+            "Content-Length",
+            "2767",
+            "Cache-Control",
+            "no-store",
+            "Set-Cookie",
+            "KC_RESTART=; Version=1; Expires=Thu, 01-Jan-1970 00:00:10 GMT; Max-Age=0; Path=/auth/realms/algoan/; Secure; HttpOnly",
+            "Pragma",
+            "no-cache",
+            "Access-Control-Allow-Methods",
+            "GET, POST, PATCH, PUT, DELETE, OPTIONS",
+            "Access-Control-Allow-Headers",
+            "DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type",
+            "Strict-Transport-Security",
+            "max-age=31536000; includeSubDomains",
+            "X-Frame-Options",
+            "SAMEORIGIN",
+            "X-Content-Type-Options",
+            "nosniff",
+            "X-XSS-Protection",
+            "1; mode=block",
+            "Referrer-Policy",
+            "no-referrer",
+            "Via",
+            "1.1 google",
+            "Alt-Svc",
+            "clear",
+            "Connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "https://api.preprod.algoan.com:443",
+        "method": "POST",
+        "path": "/v1/banks-users/6066fdd6c9624826de78b6f7/accounts/6066fdf5c96248acec78b6f8/transactions",
+        "body": [
+            {
+                "reference": "1222",
+                "date": "2019-06-30T22:00:00.000Z",
+                "amount": null,
+                "description": "Expenses",
+                "type": "CHECK",
+                "category": "UNKNOWN",
+                "currency": "EUR",
+                "banksUserCardId": "string",
+                "userDescription": "common expenses",
+                "simplifiedDescription": "string"
+            }
+        ],
+        "status": 207,
+        "response": {
+            "elements": [
+                {
+                    "httpCode": "BAD_REQUEST",
+                    "message": "amount should not be empty",
+                    "resource": {
+                        "organizationId": "5fa2b4d0af08f2002a008d96",
+                        "chatflowId": "none",
+                        "accountId": "6066fdf5c96248acec78b6f8",
+                        "reference": "1222",
+                        "date": "2019-06-30T22:00:00.000Z",
+                        "amount": null,
+                        "description": "Expenses",
+                        "type": "CHECK",
+                        "category": "UNKNOWN",
+                        "currency": "EUR",
+                        "banksUserCardId": "string",
+                        "userDescription": "common expenses",
+                        "simplifiedDescription": "string"
+                    },
+                    "status": 400
+                }
+            ],
+            "metadata": {
+                "failure": 1,
+                "success": 0,
+                "total": 1
+            }
+        },
+        "rawHeaders": [
+            "Date",
+            "Fri, 02 Apr 2021 11:21:16 GMT",
+            "Content-Type",
+            "application/json; charset=utf-8",
+            "Content-Length",
+            "497",
+            "X-Powered-By",
+            "Express",
+            "Access-Control-Allow-Origin",
+            "*",
+            "ETag",
+            "W/\"1f1-8ZdstUU9DN+oWScrhMVkxxxkmSg\"",
+            "Strict-Transport-Security",
+            "max-age=31536000; includeSubDomains",
+            "Via",
+            "1.1 google",
+            "Alt-Svc",
+            "clear",
+            "Connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    }
+]

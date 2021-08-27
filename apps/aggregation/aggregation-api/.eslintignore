@@ -1,0 +1,8 @@
+node_modules
+dist
+coverage
+.docker
+dist
+.eslintrc.js
+jest.config.js
+jest.setup.js

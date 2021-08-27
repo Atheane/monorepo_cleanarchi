@@ -1,0 +1,457 @@
+{
+  "npmScope": "oney",
+  "affected": {
+    "defaultBase": "origin/develop"
+  },
+  "implicitDependencies": {
+    "workspace.json": "*",
+    "package.json": {
+      "dependencies": "*",
+      "devDependencies": "*"
+    },
+    "tsconfig.base.json": "*",
+    "tslint.json": "*",
+    ".eslintrc.json": "*",
+    "nx.json": "*"
+  },
+  "tasksRunnerOptions": {
+    "default": {
+      "runner": "@nrwl/nx-cloud",
+      "options": {
+        "cacheableOperations": [
+          "build",
+          "lint",
+          "test"
+        ],
+        "accessToken": "ODMyZThhOTItMDYxMi00ZDc1LWFiMjAtM2NiYzkyYmNhMTc1fHJlYWQtd3JpdGU=",
+        "canTrackAnalytics": false,
+        "showUsageWarnings": true
+      }
+    }
+  },
+  "projects": {
+    "ddd": {
+      "tags": [
+        "scope:public",
+        "type:util",
+        "target:all"
+      ]
+    },
+    "azf-plugin": {
+      "tags": []
+    },
+    "az-servicebus-adapters": {
+      "tags": [
+        "scope:public",
+        "type:util",
+        "target:all"
+      ]
+    },
+    "rx-events-adapters": {
+      "tags": [
+        "scope:public",
+        "type:util",
+        "target:all"
+      ]
+    },
+    "applicationinsights-enhanced": {
+      "tags": [
+        "scope:public",
+        "type:util",
+        "target:all"
+      ]
+    },
+    "envs": {
+      "tags": [
+        "scope:public",
+        "type:util",
+        "target:all"
+      ]
+    },
+    "common-core": {
+      "tags": [
+        "scope:public",
+        "type:util",
+        "target:all"
+      ]
+    },
+    "common-adapters": {
+      "tags": [
+        "scope:public",
+        "type:util",
+        "target:all"
+      ]
+    },
+    "common-function": {
+      "tags": []
+    },
+    "identity-core": {
+      "tags": [
+        "scope:public",
+        "type:util",
+        "target:all"
+      ]
+    },
+    "identity-adapters": {
+      "tags": [
+        "scope:public",
+        "type:util",
+        "target:all"
+      ]
+    },
+    "authentication-core": {
+      "tags": [
+        "scope:public",
+        "type:util",
+        "target:all",
+        "scope:authentication"
+      ]
+    },
+    "authentication-adapters": {
+      "tags": [
+        "scope:public",
+        "type:util",
+        "target:all",
+        "scope:authentication"
+      ]
+    },
+    "authentication-messages": {
+      "tags": [
+        "scope:public",
+        "type:util",
+        "target:all"
+      ]
+    },
+    "authentication-api": {
+      "tags": [
+        "scope:authentication"
+      ]
+    },
+    "authentication-azf": {
+      "tags": [
+        "scope:authentication"
+      ]
+    },
+    "notification-api": {
+      "tags": [
+        "scope:notification"
+      ]
+    },
+    "notification-azf": {
+      "tags": [
+        "scope:notification"
+      ]
+    },
+    "profile-core": {
+      "tags": [
+        "scope:profile"
+      ]
+    },
+    "profile-adapters": {
+      "tags": [
+        "scope:profile"
+      ]
+    },
+    "profile-messages": {
+      "tags": [
+        "scope:public",
+        "type:util",
+        "target:all"
+      ]
+    },
+    "profile-api": {
+      "tags": [
+        "scope:profile"
+      ]
+    },
+    "profile-azf": {
+      "tags": [
+        "scope:profile"
+      ]
+    },
+    "payment-core": {
+      "tags": [
+        "scope:public",
+        "type:util",
+        "target:all",
+        "scope:payment"
+      ]
+    },
+    "payment-adapters": {
+      "tags": [
+        "scope:public",
+        "type:util",
+        "target:all",
+        "scope:payment"
+      ]
+    },
+    "payment-messages": {
+      "tags": [
+        "scope:public",
+        "type:util",
+        "target:all"
+      ]
+    },
+    "payment-api": {
+      "tags": [
+        "scope:payment"
+      ]
+    },
+    "payment-azf": {
+      "tags": [
+        "scope:payment"
+      ]
+    },
+    "transaction-api": {
+      "tags": []
+    },
+    "transaction-azf": {
+      "tags": []
+    },
+    "pfm-api": {
+      "tags": [
+        "scope:pfm"
+      ]
+    },
+    "pfm-core": {
+      "tags": [
+        "scope:public",
+        "type:util",
+        "target:all"
+      ]
+    },
+    "pfm-adapters": {
+      "tags": [
+        "scope:public",
+        "type:util",
+        "target:all"
+      ]
+    },
+    "pfm-azf": {
+      "tags": [
+        "scope:pfm"
+      ]
+    },
+    "credit-messages": {
+      "tags": [
+        "scope:public",
+        "type:util",
+        "target:all"
+      ]
+    },
+    "credit-core": {
+      "tags": [
+        "scope:public",
+        "type:util",
+        "target:all"
+      ]
+    },
+    "credit-api": {
+      "tags": [
+        "scope:credit"
+      ]
+    },
+    "credit-azf": {
+      "tags": [
+        "scope:credit"
+      ]
+    },
+    "aggregation-core": {
+      "tags": [
+        "scope:public",
+        "type:util",
+        "target:all"
+      ]
+    },
+    "aggregation-adapters": {
+      "tags": [
+        "scope:aggregation"
+      ]
+    },
+    "aggregation-messages": {
+      "tags": [
+        "scope:public",
+        "type:util",
+        "target:all"
+      ]
+    },
+    "aggregation-api": {
+      "tags": [
+        "scope:aggregation"
+      ]
+    },
+    "aggregation-azf": {
+      "tags": [
+        "scope:aggregation"
+      ]
+    },
+    "algoan": {
+      "tags": [
+        "scope:public",
+        "type:util",
+        "target:all"
+      ]
+    },
+    "http": {
+      "tags": [
+        "scope:public",
+        "type:util",
+        "target:all"
+      ]
+    },
+    "notification-messages": {
+      "tags": [
+        "scope:public",
+        "type:util",
+        "target:all"
+      ]
+    },
+    "cdp-azf": {
+      "tags": [
+        "scope:cdp"
+      ]
+    },
+    "cdp-core": {
+      "tags": [
+        "scope:public",
+        "type:util",
+        "target:all"
+      ]
+    },
+    "cdp-messages": {
+      "tags": [
+        "scope:public",
+        "type:util",
+        "target:all"
+      ]
+    },
+    "saga-core": {
+      "tags": [
+        "scope:public",
+        "type:util",
+        "target:all"
+      ]
+    },
+    "logger-core": {
+      "tags": [
+        "scope:public",
+        "type:util",
+        "target:all"
+      ]
+    },
+    "logger-adapters": {
+      "tags": [
+        "scope:public",
+        "type:util",
+        "target:all"
+      ]
+    },
+    "subscription-core": {
+      "tags": [
+        "scope:public",
+        "type:util",
+        "target:all"
+      ]
+    },
+    "result": {
+      "tags": [
+        "scope:public",
+        "type:util",
+        "target:all"
+      ]
+    },
+    "subscription-adapters": {
+      "tags": [
+        "scope:public",
+        "type:util",
+        "target:all"
+      ]
+    },
+    "subscription-messages": {
+      "tags": [
+        "scope:public",
+        "type:util",
+        "target:all"
+      ]
+    },
+    "subscription-api": {
+      "tags": []
+    },
+    "subscription-azf": {
+      "tags": []
+    },
+    "global-context": {
+      "tags": [
+        "scope:public",
+        "type:util",
+        "target:all"
+      ]
+    },
+    "context": {
+      "tags": [
+        "scope:public",
+        "type:util",
+        "target:all"
+      ]
+    },
+    "document-generator": {
+      "tags": [
+        "scope:public",
+        "type:util",
+        "target:all"
+      ]
+    },
+    "messages-core": {
+      "tags": [
+        "scope:public",
+        "type:util",
+        "target:all"
+      ]
+    },
+    "messages-adapters": {
+      "tags": [
+        "scope:public",
+        "type:util",
+        "target:all"
+      ]
+    },
+    "core": {
+      "tags": [
+        "scope:public",
+        "type:util",
+        "target:all"
+      ]
+    },
+    "saga-adapters": {
+      "tags": [
+        "scope:public",
+        "type:util",
+        "target:all"
+      ]
+    },
+    "mongoose": {
+      "tags": [
+        "scope:public",
+        "type:util",
+        "target:all"
+      ]
+    },
+    "test": {
+      "tags": [
+        "scope:public",
+        "type:util",
+        "target:all"
+      ]
+    },
+    "cdp-api": {
+      "tags": []
+    },
+    "messages-test": {
+      "tags": [
+        "scope:public",
+        "type:util",
+        "target:all"
+      ]
+    }
+  }
+}

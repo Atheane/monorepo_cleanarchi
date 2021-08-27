@@ -1,0 +1,144 @@
+[
+    {
+        "scope": "http://localhost:3022",
+        "method": "POST",
+        "path": "/authentication/sca/verifier",
+        "body": {
+            "action": {
+                "type": "ADD_BENEFICIARY",
+                "payload": "eyJ1aWQiOiJVcG1la1RYY0oiLCJiaWMiOiJCQUNDRlIyM1hYWCIsIm5hbWUiOiJCZW5lZmljaWFyeSBndXkiLCJlbWFpbCI6ImxhZ3Jvc3NlbW91bGFAeW9wbWFpbC5jb20iLCJpYmFuIjoiRlI3ODEyODY5MDAwMDIwUEMwMDAwMDVOTTA0In0="
+            }
+        },
+        "status": 403,
+        "response": {
+            "verifierId": "CtxDACVERec44315a10f54a979be006c01ef1132722",
+            "action": {
+                "type": "ADD_BENEFICIARY",
+                "payload": "eyJ1aWQiOiJVcG1la1RYY0oiLCJiaWMiOiJCQUNDRlIyM1hYWCIsIm5hbWUiOiJCZW5lZmljaWFyeSBndXkiLCJlbWFpbCI6ImxhZ3Jvc3NlbW91bGFAeW9wbWFpbC5jb20iLCJpYmFuIjoiRlI3ODEyODY5MDAwMDIwUEMwMDAwMDVOTTA0In0="
+            },
+            "customer": {
+                "uid": "UpmekTXcJ",
+                "email": "zanchi102@yopmail.com"
+            },
+            "status": "PENDING",
+            "valid": false,
+            "factor": "otp",
+            "channel": "sms",
+            "expirationDate": "2021-04-26T16:31:11.623Z",
+            "metadatas": {
+                "otpLength": 8
+            },
+            "code": "2FA_REQUESTED"
+        },
+        "rawHeaders": [
+            "Content-Length",
+            "515",
+            "Content-Type",
+            "application/json; charset=utf-8",
+            "ETag",
+            "W/\"203-yYDNZ8oKQhweuAimXcVE+9XFbXI\"",
+            "request-context",
+            "appId=cid-v1:408cccb6-42ed-4de7-bf6f-d989f4ff6117",
+            "Access-Control-Allow-Origin",
+            "*",
+            "Content-Security-Policy",
+            "default-src 'self';base-uri 'self';block-all-mixed-content;font-src 'self' https: data:;frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests",
+            "X-DNS-Prefetch-Control",
+            "off",
+            "Expect-CT",
+            "max-age=0",
+            "X-Frame-Options",
+            "SAMEORIGIN",
+            "Strict-Transport-Security",
+            "max-age=15552000; includeSubDomains",
+            "X-Download-Options",
+            "noopen",
+            "X-Content-Type-Options",
+            "nosniff",
+            "X-Permitted-Cross-Domain-Policies",
+            "none",
+            "Referrer-Policy",
+            "no-referrer",
+            "X-XSS-Protection",
+            "0",
+            "sca_token",
+            "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ2ZXJpZmllcklkIjoiQ3R4REFDVkVSZWM0NDMxNWExMGY1NGE5NzliZTAwNmMwMWVmMTEzMjcyMiIsImFjdGlvbiI6eyJ0eXBlIjoiQUREX0JFTkVGSUNJQVJZIiwicGF5bG9hZCI6ImV5SjFhV1FpT2lKVmNHMWxhMVJZWTBvaUxDSmlhV01pT2lKQ1FVTkRSbEl5TTFoWVdDSXNJbTVoYldVaU9pSkNaVzVsWm1samFXRnllU0JuZFhraUxDSmxiV0ZwYkNJNklteGhaM0p2YzNObGJXOTFiR0ZBZVc5d2JXRnBiQzVqYjIwaUxDSnBZbUZ1SWpvaVJsSTNPREV5T0RZNU1EQXdNREl3VUVNd01EQXdNRFZPVFRBMEluMD0ifSwiY3VzdG9tZXIiOnsidWlkIjoiVXBtZWtUWGNKIiwiZW1haWwiOiJ6YW5jaGkxMDJAeW9wbWFpbC5jb20ifSwiZmFjdG9yIjoib3RwIiwiY2hhbm5lbCI6InNtcyIsImV4cGlyYXRpb25EYXRlIjoiMjAyMS0wNC0yNlQxNjozMToxMS42MjNaIiwibWV0YWRhdGFzIjp7Im90cExlbmd0aCI6OH0sImlhdCI6MTYxOTQ1MzQ3MSwiZXhwIjoxNjE5NDUzNzcxLCJhdWQiOiJvZGJfYXV0aGVudGljYXRpb25fZGV2IiwiaXNzIjoib2RiX2F1dGhlbnRpY2F0aW9uIn0.RyaQD8bZnpkvuWgyMNzexTqvpet0T1Fe3Sl_8AAQ_gs",
+            "X-Azure-Ref",
+            "0HuaGYAAAAADr6lSW4Qt9Q5xdOiI3OL65TE9OMjFFREdFMTUwOQA0MjJlZjNjMy04NDZhLTQ1ZDMtYWJjMS1hZDUyNzJiMTk4ZDk=",
+            "Date",
+            "Mon, 26 Apr 2021 16:11:11 GMT",
+            "Connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "http://127.0.0.1:62048",
+        "method": "POST",
+        "path": "/payment/user/UpmekTXcJ/beneficiary",
+        "body": {
+            "bic": "BACCFR23XXX",
+            "name": "Beneficiary guy",
+            "email": "lagrossemoula@yopmail.com",
+            "iban": "FR7812869000020PC000005NM04"
+        },
+        "status": 403,
+        "response": {
+            "verifierId": "CtxDACVERec44315a10f54a979be006c01ef1132722",
+            "action": {
+                "type": "ADD_BENEFICIARY",
+                "payload": "eyJ1aWQiOiJVcG1la1RYY0oiLCJiaWMiOiJCQUNDRlIyM1hYWCIsIm5hbWUiOiJCZW5lZmljaWFyeSBndXkiLCJlbWFpbCI6ImxhZ3Jvc3NlbW91bGFAeW9wbWFpbC5jb20iLCJpYmFuIjoiRlI3ODEyODY5MDAwMDIwUEMwMDAwMDVOTTA0In0="
+            },
+            "customer": {
+                "uid": "UpmekTXcJ",
+                "email": "zanchi102@yopmail.com"
+            },
+            "status": "PENDING",
+            "valid": false,
+            "factor": "otp",
+            "channel": "sms",
+            "expirationDate": "2021-04-26T16:31:11.623Z",
+            "metadatas": {
+                "otpLength": 8
+            },
+            "code": "2FA_REQUESTED"
+        },
+        "rawHeaders": [
+            "Access-Control-Allow-Origin",
+            "*",
+            "Content-Security-Policy",
+            "default-src 'self';base-uri 'self';block-all-mixed-content;font-src 'self' https: data:;frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests",
+            "X-DNS-Prefetch-Control",
+            "off",
+            "Expect-CT",
+            "max-age=0",
+            "X-Frame-Options",
+            "SAMEORIGIN",
+            "Strict-Transport-Security",
+            "max-age=15552000; includeSubDomains",
+            "X-Download-Options",
+            "noopen",
+            "X-Content-Type-Options",
+            "nosniff",
+            "X-Permitted-Cross-Domain-Policies",
+            "none",
+            "Referrer-Policy",
+            "no-referrer",
+            "X-XSS-Protection",
+            "0",
+            "sca_token",
+            "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ2ZXJpZmllcklkIjoiQ3R4REFDVkVSZWM0NDMxNWExMGY1NGE5NzliZTAwNmMwMWVmMTEzMjcyMiIsImFjdGlvbiI6eyJ0eXBlIjoiQUREX0JFTkVGSUNJQVJZIiwicGF5bG9hZCI6ImV5SjFhV1FpT2lKVmNHMWxhMVJZWTBvaUxDSmlhV01pT2lKQ1FVTkRSbEl5TTFoWVdDSXNJbTVoYldVaU9pSkNaVzVsWm1samFXRnllU0JuZFhraUxDSmxiV0ZwYkNJNklteGhaM0p2YzNObGJXOTFiR0ZBZVc5d2JXRnBiQzVqYjIwaUxDSnBZbUZ1SWpvaVJsSTNPREV5T0RZNU1EQXdNREl3VUVNd01EQXdNRFZPVFRBMEluMD0ifSwiY3VzdG9tZXIiOnsidWlkIjoiVXBtZWtUWGNKIiwiZW1haWwiOiJ6YW5jaGkxMDJAeW9wbWFpbC5jb20ifSwiZmFjdG9yIjoib3RwIiwiY2hhbm5lbCI6InNtcyIsImV4cGlyYXRpb25EYXRlIjoiMjAyMS0wNC0yNlQxNjozMToxMS42MjNaIiwibWV0YWRhdGFzIjp7Im90cExlbmd0aCI6OH0sImlhdCI6MTYxOTQ1MzQ3MSwiZXhwIjoxNjE5NDUzNzcxLCJhdWQiOiJvZGJfYXV0aGVudGljYXRpb25fZGV2IiwiaXNzIjoib2RiX2F1dGhlbnRpY2F0aW9uIn0.RyaQD8bZnpkvuWgyMNzexTqvpet0T1Fe3Sl_8AAQ_gs",
+            "Content-Type",
+            "application/json; charset=utf-8",
+            "Content-Length",
+            "515",
+            "ETag",
+            "W/\"203-yYDNZ8oKQhweuAimXcVE+9XFbXI\"",
+            "Date",
+            "Mon, 26 Apr 2021 16:11:11 GMT",
+            "Connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    }
+]

@@ -1,0 +1,113 @@
+[
+  {
+    "scope": "https://oney-dev-sandbox.biapi.pro:443",
+    "method": "GET",
+    "path": "/2.0/connectors/7fc67931-e08f-5d13-b870-02cb13269c0d?capabilities=bank&expand=fields,logos",
+    "body": "",
+    "status": 200,
+    "response": {
+      "id": 21,
+      "name": "AXA Banque",
+      "hidden": false,
+      "charged": true,
+      "code": "12548",
+      "beta": false,
+      "color": "b6bcd2",
+      "slug": "AXA",
+      "sync_frequency": null,
+      "months_to_fetch": null,
+      "auth_mechanism": "credentials",
+      "siret": null,
+      "uuid": "7fc67931-e08f-5d13-b870-02cb13269c0d",
+      "restricted": false,
+      "fields": [
+        {
+          "name": "login",
+          "label": "Identifiant",
+          "regex": null,
+          "type": "text",
+          "required": true,
+          "auth_mechanisms": ["credentials"],
+          "connector_sources": ["directaccess"]
+        },
+        {
+          "name": "password",
+          "label": "Code",
+          "regex": "^\\d+$",
+          "type": "password",
+          "required": true,
+          "auth_mechanisms": ["credentials"],
+          "connector_sources": ["directaccess"]
+        }
+      ],
+      "logos": [],
+      "categories": [],
+      "capabilities": [
+        "profile",
+        "document",
+        "banktransferaddrecipient",
+        "bankwealth",
+        "banktransfer",
+        "bank"
+      ],
+      "urls": [
+        "https://connect.axa.fr",
+        "https://espaceclient.axa.fr",
+        "https://assurance-vie.axabanque.fr",
+        "http://www.axabanque.fr",
+        "https://bourse.axabanque.fr",
+        "https://www.axabanque.fr",
+        "https://connexion.adis-assurances.com",
+        "https://www.axa.fr"
+      ],
+      "available_auth_mechanisms": ["credentials"],
+      "account_types": [
+        "card",
+        "madelin",
+        "deposit",
+        "loan",
+        "savings",
+        "market",
+        "perp",
+        "lifeinsurance",
+        "checking",
+        "pea"
+      ],
+      "available_transfer_mechanisms": ["credentials"],
+      "transfer_beneficiary_types": ["recipient"],
+      "transfer_execution_date_types": ["deferred", "first_open_day"],
+      "documents_type": []
+    },
+    "rawHeaders": [
+      "Date",
+      "Wed, 25 Nov 2020 11:06:34 GMT",
+      "Content-Type",
+      "application/json; charset=utf-8",
+      "Content-Length",
+      "1390",
+      "Vary",
+      "Authorization,Origin",
+      "Server",
+      "Budgea/2.19.26 Weboob/1.6+budgea.738",
+      "X-Recruiting",
+      "Budget Insight is hiring! Do not hesitate to contact us at jobs@budget-insight.com or on #budget-insight @ Freenode",
+      "X-Request-ID",
+      "601d2804-eb46-4a19-aa0b-a4806b89b8d0",
+      "X-Varnish",
+      "86967388",
+      "Age",
+      "0",
+      "Via",
+      "1.1 varnish (Varnish/6.1)",
+      "Accept-Ranges",
+      "bytes",
+      "Connection",
+      "close",
+      "Strict-Transport-Security",
+      "max-age=31536000; includeSubDomains; preload",
+      "X-Frame-Options",
+      "DENY"
+    ],
+    "responseIsBinary": false
+  }
+]

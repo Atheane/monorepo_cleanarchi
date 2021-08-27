@@ -1,0 +1,11 @@
+{
+  "disabled": false,
+  "bindings": [
+    {
+      "schedule": "%SCHEDULE_FREQUENCY%",
+      "name": "myTimer",
+      "type": "timerTrigger",
+      "direction": "in"
+    }
+  ]
+}

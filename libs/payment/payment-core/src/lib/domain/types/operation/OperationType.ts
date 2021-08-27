@@ -1,0 +1,16 @@
+export enum OperationType {
+  COP_IN = 504,
+  COP_OUT = 505,
+  SCT_IN = 506,
+  SCT_OUT = 507,
+  SDD_IN = 508,
+  SDD_OUT = 509,
+  COP_IN_REFUND = 510,
+  COP_OUT_REFUND = 511,
+  SCT_IN_REFUND = 512,
+  SCT_OUT_REFUND = 513,
+  SDD_IN_REFUND = 514,
+  SDD_OUT_REFUND = 515,
+  ATM_OUT = 516,
+  ATM_OUT_REFUND = 517,
+}

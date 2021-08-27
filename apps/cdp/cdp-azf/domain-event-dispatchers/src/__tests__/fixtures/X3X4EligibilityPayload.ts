@@ -1,0 +1,22 @@
+export const x3X4EligibilityPayload = {
+  uId: 'test_elig_030',
+  timestamp: 'Tue Mar 16 21:29:22 UTC 2021',
+  eligibility: true,
+  odbData: {
+    nbrOutstanding: null,
+    outstandingAmount: null,
+    accountEligibility: true,
+  },
+  evt7Motive: null,
+  evt8Motive: null,
+  evt9Amiable: null,
+  evt9Motive: null,
+  evt10EncoursCredit: false,
+  evt10Motive: null,
+  evt11Bloque: null,
+  evt11Motive: null,
+  evt12Motive: null,
+  title: 'X3X4_ELIGIBILITY_CALCULATED',
+  productCode: 'DFX3X4',
+  productLabel: 'Eligibilité au x3x4',
+};

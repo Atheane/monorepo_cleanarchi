@@ -1,0 +1,107 @@
+[
+    {
+        "scope": "https://api-staging.oneytrust.com:443",
+        "method": "POST",
+        "path": "/tulipe/v2/3000001341/events",
+        "body": {
+            "login": "api-3000001341-1@oneytrust.com",
+            "eventReference": "EVENT_199024_QsDfgHjKln_uniqueIdUnitTest",
+            "eventType": 97,
+            "eventLabel": "DATAMATCHING",
+            "eventChannel": "APP",
+            "masterReference": "QsDfgHjKln",
+            "data": {
+                "gender": "F",
+                "familyName": "Mazen",
+                "birthName": "Mazen",
+                "givenNames": "Mazendk",
+                "birthDate": "1990-02-04",
+                "pfm": {
+                    "identity": "Mazen Mazendk",
+                    "bank": "Boursorama"
+                }
+            }
+        },
+        "status": 200,
+        "response": {
+            "url": "https://api-staging.oneytrust.com/web-services/api/v2/3000001341/events",
+            "eventId": 58217,
+            "eventScore": "100",
+            "scoreStatus": "DONE",
+            "decision": "MATCH"
+        },
+        "rawHeaders": [
+            "Date",
+            "Tue, 30 Mar 2021 12:05:51 GMT",
+            "Server",
+            "Apache",
+            "Access-Control-Allow-Origin",
+            "*",
+            "Access-Control-Allow-Methods",
+            "POST, GET, PUT, OPTIONS, DELETE, PATCH",
+            "Access-Control-Max-Age",
+            "3600",
+            "Access-Control-Allow-Headers",
+            "Origin, X-Requested-With, Content-Type, Accept, x-checksum",
+            "X-Request-ID",
+            "bfb44de0d7cd4adca74f2adc2b13e855",
+            "X-Application-Context",
+            "application:8085",
+            "Content-Type",
+            "application/json;charset=UTF-8",
+            "Connection",
+            "close",
+            "Transfer-Encoding",
+            "chunked"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "http://127.0.0.1:50633",
+        "method": "POST",
+        "path": "/profile/user/QsDfgHjKln/verify-bankaccount-owner",
+        "body": {
+            "identity": "Mazen Mazendk",
+            "bankName": "Boursorama"
+        },
+        "status": 200,
+        "response": {
+            "isOwnerBankAccount": true
+        },
+        "rawHeaders": [
+            "Access-Control-Allow-Origin",
+            "*",
+            "Content-Security-Policy",
+            "default-src 'self';base-uri 'self';block-all-mixed-content;font-src 'self' https: data:;frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests",
+            "X-DNS-Prefetch-Control",
+            "off",
+            "Expect-CT",
+            "max-age=0",
+            "X-Frame-Options",
+            "SAMEORIGIN",
+            "Strict-Transport-Security",
+            "max-age=15552000; includeSubDomains",
+            "X-Download-Options",
+            "noopen",
+            "X-Content-Type-Options",
+            "nosniff",
+            "X-Permitted-Cross-Domain-Policies",
+            "none",
+            "Referrer-Policy",
+            "no-referrer",
+            "X-XSS-Protection",
+            "0",
+            "Content-Type",
+            "application/json; charset=utf-8",
+            "Content-Length",
+            "27",
+            "ETag",
+            "W/\"1b-tws0u102ph3eHeA0iEXEp0nKYA4\"",
+            "Date",
+            "Tue, 30 Mar 2021 12:05:51 GMT",
+            "Connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    }
+]

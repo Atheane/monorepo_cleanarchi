@@ -1,0 +1,56 @@
+[
+    {
+        "scope": "https://odb0storage0dev.blob.core.windows.net:443",
+        "method": "PUT",
+        "path": "/documents/aggregation_terms_fake_version.json?comp=properties",
+        "body": "",
+        "status": 404,
+        "response": "﻿<?xml version=\"1.0\" encoding=\"utf-8\"?><Error><Code>BlobNotFound</Code><Message>The specified blob does not exist.\nRequestId:76e28975-801e-0043-23d5-204961000000\nTime:2021-03-24T17:43:10.7786101Z</Message></Error>",
+        "rawHeaders": [
+            "Content-Length",
+            "215",
+            "Content-Type",
+            "application/xml",
+            "Server",
+            "Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0",
+            "x-ms-request-id",
+            "76e28975-801e-0043-23d5-204961000000",
+            "x-ms-client-request-id",
+            "1a8beb76-7396-4e44-bdf3-073c64e7a29c",
+            "x-ms-version",
+            "2020-04-08",
+            "x-ms-error-code",
+            "BlobNotFound",
+            "Date",
+            "Wed, 24 Mar 2021 17:43:10 GMT"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "https://odb0storage0dev.blob.core.windows.net:443",
+        "method": "GET",
+        "path": "/documents/aggregation_terms_fake_version.json",
+        "body": "",
+        "status": 404,
+        "response": "﻿<?xml version=\"1.0\" encoding=\"utf-8\"?><Error><Code>BlobNotFound</Code><Message>The specified blob does not exist.\nRequestId:f2f7ea20-201e-0075-57d5-20927c000000\nTime:2021-03-24T17:43:10.7863311Z</Message></Error>",
+        "rawHeaders": [
+            "Content-Length",
+            "215",
+            "Content-Type",
+            "application/xml",
+            "Server",
+            "Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0",
+            "x-ms-request-id",
+            "f2f7ea20-201e-0075-57d5-20927c000000",
+            "x-ms-client-request-id",
+            "4685622a-88fd-4fa1-aacd-252ca0141532",
+            "x-ms-version",
+            "2020-04-08",
+            "x-ms-error-code",
+            "BlobNotFound",
+            "Date",
+            "Wed, 24 Mar 2021 17:43:10 GMT"
+        ],
+        "responseIsBinary": false
+    }
+]

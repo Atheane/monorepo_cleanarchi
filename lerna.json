@@ -1,0 +1,14 @@
+{
+  "packages": [
+    "libs/**"
+  ],
+  "version": "independent",
+  "command": {
+    "publish": {
+      "conventionalCommits": true,
+      "yes": true,
+      "message": "[skipci] ***NO_CI*** bump version number"
+    }
+  }
+}
+

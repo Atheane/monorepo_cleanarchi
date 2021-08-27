@@ -1,0 +1,27 @@
+[
+    {
+        "scope": "https://sb-api.xpollens.com:443",
+        "method": "GET",
+        "path": "/api/V1.1/users/UpmekTXcJ/cards/card-BGBpCxjZO/PINDisplay?ChannelCode=66&PublicKey=LS0tLS1CRUdJTiBQVUJMSUMgS0VZLS0tLS0KTUlJQ0lqQU5CZ2txaGtpRzl3MEJBUUVGQUFPQ0FnOEFNSUlDQ2dLQ0FnRUE1YnQ3UzZvSy9kNldNdUZvQk9SNktKcnJyc1oxRWhtR3VIMnRMMkc4T1d6UmY4L1ltaHRxY3NXQWxIU3pQRHJUeDdxbktVUWRObFVHN1hGVEswanZoWnduazVpcVh6WEJsSElaakFHTklLcXFOcG5KSkt6SHYreUhPNGdFY3dEQVFtZUdSbVNkMVRkcGlhKzlSNUtKOEJsMFZPUSttb3FBTjhQL1ZnQUFla2d0U3ZqbHl1UURjTm9qVEFZVEp0RjRkYnR4YldJcHM3U3FPckFNUFJySmNGeUs5dzFSVUxKeElIQnFFdzJQYTRVVldFeUE0djRmYm44VGlNcjNpOU9MZURFdERnZElOLys5aHduRng2Wm5nZnBEK3IrQ210WS9yY0ljYUZBYWN3emJFaDBDdERCL1loVUh2c3lUeXU3SjZYN0xzaFU5dVdkMUJEWWwvNUwxK3o2QnRaQjgvaUtQT1lpMHNNM2tRZDNWUWh1QXFHaXJpOUZVZGNmeVNMM2NSRlc4di9Ma0tYL1JWL29NOW5RNmpNajZmd0pIcmdGYnNybU9JQVhyNXV4ZWxkUExJTlB2RVplRFBpVEx4TnlodUkyN1lMYnZZNFllbmtoek93ZkRSOS82dEFkWFJDSitraVBTUXUwa1hvbjByY1o5WlkxY1FZWDlUSUg2MUxJUnJMWEpHdGFuL1BYVnpnY1IvVXlGUXFXamJJVlIvZFVVdi9mUzRwWFUrUEp3TUNzdWZsQXlwbTFpOEJwVk5zejA1amw4RlV6T1ZQNUFUeTdQNkZNNlA0d1NjRHphWnpCaVkvSFU2Nm9mbVZJQ2p2M0d3dHkxTnYrVnhUdTQwSUsyZmo4NzZvNHduNU5Ma0swMCtFUEVZYjFrYUFvRExkV290dnNhOU9QdHdpRUNBd0VBQVE9PQotLS0tLUVORCBQVUJMSUMgS0VZLS0tLS0=",
+        "body": "",
+        "status": 200,
+        "response": {
+            "pinBlock": "D5DRGj6F1po=",
+            "ktaKey": "g7JDPvyJfB1QdGcXD3Inqw==",
+            "ktkKey": "WJcfDICWyhpQAl7Rzg/9sBImpWCHpA7cOHm/SbRLg4P0XF/dZEzGPX58iCg1A6I36vX6j2cA7mAksWHaA0rTHtAlSCpcm1zNeAoYC7ZiBHUOVXJjThPix2YMHUT15WCn3OrcOcqFHTOoDwRu2t+RHJTUOvzN2RiXe6lDWx0D2GW8euCs6JguucrjbwvzITs9Kf9IFG98f3lUE2eUar5QPBP9CzsVM1+Xe1mIsNSK/+QERXDOyl4tgyU035h5Ot75EglExM6ullYUBlHC9VTG5Ls7UMkRf4VZKQYSsRiNelaQt33+q7YzhHWWtIs1HAo5NLdoO0AI/iEoln7ZMOWi3g=="
+        },
+        "rawHeaders": [
+            "Date",
+            "Wed, 21 Apr 2021 19:27:36 GMT",
+            "Content-Type",
+            "application/json; charset=utf-8",
+            "Content-Length",
+            "419",
+            "Request-Context",
+            "appId=cid-v1:40d43092-8aee-4b2b-8b7f-34d2d69e09b7",
+            "Connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    }
+]

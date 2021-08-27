@@ -1,0 +1,45 @@
+[
+    {
+        "scope": "https://pad-staging.api-ot.com:443",
+        "method": "POST",
+        "path": "/api/v2/acquisitions",
+        "body": "payload=%7B%22caseReference%22%3A%22SP_202124_unitTestPhoneStep01_uniqueIdUnitTest%22%2C%22masterReference%22%3A%22unitTestPhoneStep01%22%2C%22entityReference%22%3A3000001341%2C%22caseType%22%3A60%2C%22language%22%3A%22FR%22%2C%22channel%22%3A%22APP%22%2C%22callbackUrl%22%3A%22https%3A%2F%2Fcallback-azf-url.fr%22%2C%22formData%22%3A%7B%22email%22%3A%22nacimiphone8%40yopmail.com%22%2C%22phone%22%3A%22%2B33633335552%22%7D%7D",
+        "status": 201,
+        "response": {
+          "location": "https://pad-staging.api-ot.com/api/v2/static/dist/index.html?technicalId=DF870AA14041BEDDFD8635A7A94116E549751D4A9BEC4A70171F0125B101504E7A00015A41121DE3B29AF7A7D09CE841FA499DD6201FC8381441833BC78208F4&token=1Ah4Eam1"
+        },
+        "rawHeaders": [
+            "Date",
+            "Fri, 02 Apr 2021 11:54:30 GMT",
+            "Server",
+            "Apache",
+            "X-Content-Type-Options",
+            "nosniff",
+            "X-Xss-Protection",
+            "1; mode=block",
+            "Cache-Control",
+            "no-cache, no-store, private, max-age=0",
+            "Pragma",
+            "no-cache",
+            "Access-Control-Allow-Origin",
+            "*",
+            "Access-Control-Allow-Methods",
+            "GET, POST, PUT, DELETE, OPTIONS",
+            "Access-Control-Allow-Headers",
+            "Content-Type, X-Authentication",
+            "Location",
+            "https://pad-staging.api-ot.com/api/v2/static/dist/index.html?technicalId=DF870AA14041BEDDFD8635A7A94116E549751D4A9BEC4A70171F0125B101504E7A00015A41121DE3B29AF7A7D09CE841FA499DD6201FC8381441833BC78208F4&token=1Ah4Eam1",
+            "Content-Security-Policy",
+            "frame-ancestors 'none'",
+            "X-Frame-Options",
+            "DENY",
+            "Content-Length",
+            "319",
+            "Connection",
+            "close",
+            "Content-Type",
+            "application/json"
+        ],
+        "responseIsBinary": false
+    }
+]

@@ -1,0 +1,8 @@
+{
+  "name": "@oney/authentication-messages",
+  "version": "0.6.0",
+  "publishConfig": {
+    "access": "public",
+    "directory": "../../../dist/libs/authentication-messages"
+  }
+}

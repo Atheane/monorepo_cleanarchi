@@ -1,0 +1,8 @@
+{
+  "name": "@oney/cdp-messages",
+  "version": "0.6.1",
+  "publishConfig": {
+    "access": "public",
+    "directory": "../../../dist/libs/cdp-messages"
+  }
+}

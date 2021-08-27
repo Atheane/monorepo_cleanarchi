@@ -1,0 +1,29 @@
+{
+    "name": "subscription-azf",
+    "version": "0.0.1",
+    "scripts": {
+        "build": "tsc --project tsconfig.build.json",
+        "build:production": "npm run prestart && npm prune --production",
+        "watch": "tsc --w",
+        "prestart": "npm run build && func extensions install",
+        "start:host": "func start",
+        "start": "npm-run-all --parallel start:host watch"
+    },
+    "description": "",
+    "dependencies": {
+        "@azure/functions": "^1.2.2",
+        "@oney/envs": "./libs/envs",
+        "@oney/subscription-core": "./libs/subscription-core",
+        "@oney/logger-adapters": "./libs/logger-adapters",
+        "@oney/logger-core": "./libs/logger-core",
+        "inversify": "^5.0.1",
+        "@oney/subscription-adapters": "./libs/subscription-adapters",
+        "mongoose": "5.10.19",
+        "reflect-metadata": "^0.1.13",
+        "moment": "^2.24.0",
+        "nock": "^13.0.5",
+        "mongodb": "^3.6.4",
+        "tslib": "1.10.0"
+    },
+    "devDependencies": {}
+}

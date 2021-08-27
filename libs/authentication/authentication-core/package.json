@@ -1,0 +1,8 @@
+{
+  "name": "@oney/authentication-core",
+  "version": "0.12.2",
+  "publishConfig": {
+    "access": "public",
+    "directory": "../../../dist/libs/authentication-core"
+  }
+}

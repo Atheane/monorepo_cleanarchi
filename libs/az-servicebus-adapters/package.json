@@ -1,0 +1,13 @@
+{
+  "name": "@oney/az-servicebus-adapters",
+  "version": "0.10.0",
+  "publishConfig": {
+    "access": "public",
+    "directory": "../../dist/libs/az-servicebus-adapters"
+  },
+  "config": {
+    "mongodbMemoryServer": {
+      "version": "latest"
+    }
+  }
+}

@@ -1,0 +1,62 @@
+[
+    {
+        "scope": "http://127.0.0.1:54427",
+        "method": "POST",
+        "path": "/aggregation/auth/signin",
+        "body": {
+            "bankId": "338178e6-3d01-564f-9a7b-52ca442459bf"
+        },
+        "status": 400,
+        "response": {
+            "message": "You have an error in your request's body. Check 'errors' field for more details!",
+            "errors": [
+                {
+                    "target": {
+                        "bankId": "338178e6-3d01-564f-9a7b-52ca442459bf"
+                    },
+                    "property": "form",
+                    "children": [],
+                    "constraints": {
+                        "isDefined": "form should not be null or undefined",
+                        "isArray": "form must be an array"
+                    }
+                }
+            ]
+        },
+        "rawHeaders": [
+            "Access-Control-Allow-Origin",
+            "*",
+            "Content-Security-Policy",
+            "default-src 'self';base-uri 'self';block-all-mixed-content;font-src 'self' https: data:;frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests",
+            "X-DNS-Prefetch-Control",
+            "off",
+            "Expect-CT",
+            "max-age=0",
+            "X-Frame-Options",
+            "SAMEORIGIN",
+            "Strict-Transport-Security",
+            "max-age=15552000; includeSubDomains",
+            "X-Download-Options",
+            "noopen",
+            "X-Content-Type-Options",
+            "nosniff",
+            "X-Permitted-Cross-Domain-Policies",
+            "none",
+            "Referrer-Policy",
+            "no-referrer",
+            "X-XSS-Protection",
+            "0",
+            "Content-Type",
+            "application/json; charset=utf-8",
+            "Content-Length",
+            "299",
+            "ETag",
+            "W/\"12b-37OKLwGgJDr3vedlA3ONKzYMI10\"",
+            "Date",
+            "Thu, 01 Apr 2021 22:21:53 GMT",
+            "Connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    }
+]

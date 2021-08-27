@@ -1,0 +1,82 @@
+[
+  {
+    "scope": "https://dev-api.onbadi.com:443",
+    "method": "POST",
+    "path": "/payment/p2p",
+    "body": {
+      "ref": 7,
+      "amount": 399,
+      "message": "Financement 3x",
+      "senderId": "K-oZktdWv",
+      "contractNumber": "azeaze"
+    },
+    "status": 201,
+    "response": {
+      "events": [],
+      "id": "AAAABA41430",
+      "amount": 399,
+      "beneficiary": {
+        "id": "K-oZktdWv"
+      },
+      "message": "Financement 3x",
+      "tag": {
+        "ref": 7,
+        "outstandingCode": "",
+        "operationCodeType": "FINANCEMENT3X",
+        "productCode": "DF003",
+        "countryCode": "FRA",
+        "subscriptionMontlyNumber": "000",
+        "senderType": "bank_credit_account",
+        "beneficiaryType": "user_account",
+        "checkLimits": false,
+        "checkUnPaid": false,
+        "contractNumber": "azeaze",
+        "generateUnpaid": false,
+        "verifyLimits": false,
+        "subscriptionMonthlyNumber": "000",
+        "generatedTag": " -FINANCEMENT3X     -DF003-FRA-000-azeaze"
+      },
+      "orderId": "AAAABA41430",
+      "recurrence": null,
+      "sender": {
+        "id": "Jr_eBSwkR"
+      },
+      "executionDate": "2020-10-24T15:07:39.152Z"
+    },
+    "rawHeaders": [
+      "Content-Length",
+      "646",
+      "Content-Type",
+      "application/json; charset=utf-8",
+      "ETag",
+      "W/\"286-/fxrtgfW6RjutkB79yo33v+f/GY\"",
+      "Access-Control-Allow-Origin",
+      "*",
+      "Content-Security-Policy",
+      "default-src 'self';base-uri 'self';block-all-mixed-content;font-src 'self' https: data:;frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests",
+      "X-DNS-Prefetch-Control",
+      "off",
+      "Expect-CT",
+      "max-age=0",
+      "X-Frame-Options",
+      "SAMEORIGIN",
+      "Strict-Transport-Security",
+      "max-age=15552000; includeSubDomains",
+      "X-Download-Options",
+      "noopen",
+      "X-Content-Type-Options",
+      "nosniff",
+      "X-Permitted-Cross-Domain-Policies",
+      "none",
+      "Referrer-Policy",
+      "no-referrer",
+      "X-XSS-Protection",
+      "0",
+      "Date",
+      "Sat, 24 Oct 2020 15:07:43 GMT",
+      "Connection",
+      "close"
+    ],
+    "responseIsBinary": false
+  }
+]

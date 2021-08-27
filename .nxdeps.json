@@ -1,0 +1,1330 @@
+{
+  "graph": {
+    "nodes": {
+      "az-servicebus-adapters": {
+        "name": "az-servicebus-adapters",
+        "type": "lib",
+        "data": {
+          "root": "libs/az-servicebus-adapters",
+          "sourceRoot": "libs/az-servicebus-adapters/src",
+          "projectType": "library",
+          "schematics": {},
+          "architect": {
+            "lint": {
+              "builder": "@nrwl/linter:eslint",
+              "options": {
+                "lintFilePatterns": [
+                  "libs/az-servicebus-adapters/**/*.ts"
+                ]
+              }
+            },
+            "test": {
+              "builder": "@nrwl/jest:jest",
+              "options": {
+                "jestConfig": "libs/az-servicebus-adapters/jest.config.js",
+                "passWithNoTests": true
+              }
+            },
+            "build": {
+              "builder": "@nrwl/node:package",
+              "options": {
+                "outputPath": "dist/libs/az-servicebus-adapters",
+                "tsConfig": "libs/az-servicebus-adapters/tsconfig.lib.json",
+                "packageJson": "libs/az-servicebus-adapters/package.json",
+                "main": "libs/az-servicebus-adapters/src/index.ts",
+                "assets": [
+                  "libs/az-servicebus-adapters/*.md"
+                ]
+              }
+            }
+          },
+          "tags": [
+            "scope:public",
+            "type:util",
+            "target:all"
+          ],
+          "files": [
+            {
+              "file": "libs/az-servicebus-adapters/.eslintrc.json",
+              "hash": "54ac39535a2c03d4d0fc2eb6e52564638ae3b2e6",
+              "ext": ".json"
+            },
+            {
+              "file": "libs/az-servicebus-adapters/CHANGELOG.md",
+              "hash": "15d6a1580890f14cc74d5665525477fdb383cec7",
+              "ext": ".md"
+            },
+            {
+              "file": "libs/az-servicebus-adapters/jest.config.js",
+              "hash": "46d4e9b3b4eb00ef2cecbf58703b4e1ddfd0d6d3",
+              "ext": ".js"
+            },
+            {
+              "file": "libs/az-servicebus-adapters/package.json",
+              "hash": "95b5c6d519b395443613b8e2dcb1b50bad6d8afb",
+              "ext": ".json"
+            },
+            {
+              "file": "libs/az-servicebus-adapters/README.md",
+              "hash": "7539ab27eadf63e7c3684654d38eea785b49c7d6",
+              "ext": ".md"
+            },
+            {
+              "file": "libs/az-servicebus-adapters/src/index.ts",
+              "hash": "9c2e60407739b7a153b53813d8f86a37f47c622d",
+              "ext": ".ts"
+            },
+            {
+              "file": "libs/az-servicebus-adapters/src/lib/azure/__test__/EventBus.unit.spec.ts",
+              "hash": "372a02cc84adb61c1c5e524ed2d0fc0c0e4d664f",
+              "ext": ".ts"
+            },
+            {
+              "file": "libs/az-servicebus-adapters/src/lib/azure/build.ts",
+              "hash": "03b7013b43f19206f8542558b9974e18b18d4572",
+              "ext": ".ts"
+            },
+            {
+              "file": "libs/az-servicebus-adapters/src/lib/azure/index.ts",
+              "hash": "8d6a18fb066a1d652ec6ba608be96098183bb622",
+              "ext": ".ts"
+            },
+            {
+              "file": "libs/az-servicebus-adapters/src/lib/azure/services/AzureEventBusDispatcher.ts",
+              "hash": "068f09d4b35a5a4658d407da9c1c00a1f13ffaeb",
+              "ext": ".ts"
+            },
+            {
+              "file": "libs/az-servicebus-adapters/src/lib/azure/services/AzureEventBusReceiver.ts",
+              "hash": "dab326a921d26d427f566b68a0a94a411025f60d",
+              "ext": ".ts"
+            },
+            {
+              "file": "libs/az-servicebus-adapters/src/lib/azure/services/AzureServiceBus.ts",
+              "hash": "679a469fc35beebbf7686bb00b1460957257a055",
+              "ext": ".ts"
+            },
+            {
+              "file": "libs/az-servicebus-adapters/src/lib/azure/services/index.ts",
+              "hash": "d6f6fe83c3cadd93e726eeb543d74630b2969344",
+              "ext": ".ts"
+            },
+            {
+              "file": "libs/az-servicebus-adapters/src/lib/azure/services/ServiceBus.ts",
+              "hash": "3bfd4fd3d031a2aa87bfda80a927d2445051dc4e",
+              "ext": ".ts"
+            },
+            {
+              "file": "libs/az-servicebus-adapters/src/lib/index.ts",
+              "hash": "dc119e3bd247bd008951b9e10f4fde1a2fdc5ba9",
+              "ext": ".ts"
+            },
+            {
+              "file": "libs/az-servicebus-adapters/tsconfig.json",
+              "hash": "62ebbd946474cea997e774d20fffc4d585c184f3",
+              "ext": ".json"
+            },
+            {
+              "file": "libs/az-servicebus-adapters/tsconfig.lib.json",
+              "hash": "037d796f286235dce67c9e648d2d42adcc61ccd7",
+              "ext": ".json"
+            },
+            {
+              "file": "libs/az-servicebus-adapters/tsconfig.spec.json",
+              "hash": "515f3c22221a8154f100bd36f521abb82a7462ab",
+              "ext": ".json"
+            }
+          ]
+        }
+      },
+      "rx-events-adapters": {
+        "name": "rx-events-adapters",
+        "type": "lib",
+        "data": {
+          "root": "libs/rx-events-adapters",
+          "sourceRoot": "libs/rx-events-adapters/src",
+          "projectType": "library",
+          "schematics": {},
+          "architect": {
+            "lint": {
+              "builder": "@nrwl/linter:eslint",
+              "options": {
+                "lintFilePatterns": [
+                  "libs/rx-events-adapters/**/*.ts"
+                ]
+              }
+            },
+            "test": {
+              "builder": "@nrwl/jest:jest",
+              "options": {
+                "jestConfig": "libs/rx-events-adapters/jest.config.js",
+                "passWithNoTests": true
+              }
+            },
+            "build": {
+              "builder": "@nrwl/node:package",
+              "options": {
+                "outputPath": "dist/libs/rx-events-adapters",
+                "tsConfig": "libs/rx-events-adapters/tsconfig.lib.json",
+                "packageJson": "libs/rx-events-adapters/package.json",
+                "main": "libs/rx-events-adapters/src/index.ts",
+                "assets": [
+                  "libs/rx-events-adapters/*.md"
+                ]
+              }
+            }
+          },
+          "tags": [
+            "scope:public",
+            "type:util",
+            "target:all"
+          ],
+          "files": [
+            {
+              "file": "libs/rx-events-adapters/.eslintrc.json",
+              "hash": "54ac39535a2c03d4d0fc2eb6e52564638ae3b2e6",
+              "ext": ".json"
+            },
+            {
+              "file": "libs/rx-events-adapters/CHANGELOG.md",
+              "hash": "40cdc2a3729526baf227dbfdaf5e7e3d86007308",
+              "ext": ".md"
+            },
+            {
+              "file": "libs/rx-events-adapters/jest.config.js",
+              "hash": "21dc63a08e90ff775551a1bf543ed4970be3a124",
+              "ext": ".js"
+            },
+            {
+              "file": "libs/rx-events-adapters/package.json",
+              "hash": "3b06ab383e7e1b316b2b84418de9980a59ec0030",
+              "ext": ".json"
+            },
+            {
+              "file": "libs/rx-events-adapters/README.md",
+              "hash": "0c621162b6ac6aab2272b49f051506ff5cf87928",
+              "ext": ".md"
+            },
+            {
+              "file": "libs/rx-events-adapters/src/index.ts",
+              "hash": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+              "ext": ".ts"
+            },
+            {
+              "file": "libs/rx-events-adapters/src/lib/index.ts",
+              "hash": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+              "ext": ".ts"
+            },
+            {
+              "file": "libs/rx-events-adapters/src/lib/rx/index.ts",
+              "hash": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+              "ext": ".ts"
+            },
+            {
+              "file": "libs/rx-events-adapters/src/lib/rx/services/RxEventDispatcher.ts",
+              "hash": "f708ec1145b4e4654a6a444d0a042a06478a67d8",
+              "ext": ".ts"
+            },
+            {
+              "file": "libs/rx-events-adapters/src/lib/rx/services/RxEventReceiver.ts",
+              "hash": "a26b13fcf08774fbc87ad65cca39be7ba3f91507",
+              "ext": ".ts"
+            },
+            {
+              "file": "libs/rx-events-adapters/tsconfig.json",
+              "hash": "62ebbd946474cea997e774d20fffc4d585c184f3",
+              "ext": ".json"
+            },
+            {
+              "file": "libs/rx-events-adapters/tsconfig.lib.json",
+              "hash": "037d796f286235dce67c9e648d2d42adcc61ccd7",
+              "ext": ".json"
+            },
+            {
+              "file": "libs/rx-events-adapters/tsconfig.spec.json",
+              "hash": "515f3c22221a8154f100bd36f521abb82a7462ab",
+              "ext": ".json"
+            }
+          ]
+        }
+      },
+      "profile-adapters": {
+        "name": "profile-adapters",
+        "type": "lib",
+        "data": {
+          "root": "libs/profile-adapters",
+          "sourceRoot": "libs/profile-adapters/src",
+          "projectType": "library",
+          "schematics": {},
+          "architect": {
+            "lint": {
+              "builder": "@nrwl/linter:eslint",
+              "options": {
+                "lintFilePatterns": [
+                  "libs/profile-adapters/**/*.ts"
+                ]
+              }
+            },
+            "test": {
+              "builder": "@nrwl/jest:jest",
+              "options": {
+                "jestConfig": "libs/profile-adapters/jest.config.js",
+                "passWithNoTests": true
+              }
+            },
+            "build": {
+              "builder": "@nrwl/node:package",
+              "options": {
+                "outputPath": "dist/libs/profile-adapters",
+                "tsConfig": "libs/profile-adapters/tsconfig.lib.json",
+                "packageJson": "libs/profile-adapters/package.json",
+                "main": "libs/profile-adapters/src/index.ts",
+                "assets": [
+                  "libs/profile-adapters/*.md"
+                ]
+              }
+            }
+          },
+          "tags": [
+            "scope:public",
+            "type:util",
+            "target:all"
+          ],
+          "files": [
+            {
+              "file": "libs/profile-adapters/.eslintrc.json",
+              "hash": "54ac39535a2c03d4d0fc2eb6e52564638ae3b2e6",
+              "ext": ".json"
+            },
+            {
+              "file": "libs/profile-adapters/CHANGELOG.md",
+              "hash": "c2656ce6ce0c235f3c3a8048bbd52f9071a336b8",
+              "ext": ".md"
+            },
+            {
+              "file": "libs/profile-adapters/jest.config.js",
+              "hash": "ebdf1f5338f91b622e13964583db74d1a043d622",
+              "ext": ".js"
+            },
+            {
+              "file": "libs/profile-adapters/package.json",
+              "hash": "67677a66115664d44e018a80f2e20d5a32d2164c",
+              "ext": ".json"
+            },
+            {
+              "file": "libs/profile-adapters/README.md",
+              "hash": "552116d9ccb0091c3a591bd63c47038866b793fb",
+              "ext": ".md"
+            },
+            {
+              "file": "libs/profile-adapters/src/index.ts",
+              "hash": "f9e8aaeafc851c0191716003fe512759f52fc176",
+              "ext": ".ts"
+            },
+            {
+              "file": "libs/profile-adapters/src/lib/__test__/profile.unit.test.ts",
+              "hash": "260d76a01a7b366a8cbab210405ec9ffa7071e44",
+              "ext": ".ts"
+            },
+            {
+              "file": "libs/profile-adapters/src/lib/adapters/build.ts",
+              "hash": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+              "ext": ".ts"
+            },
+            {
+              "file": "libs/profile-adapters/src/lib/adapters/index.ts",
+              "hash": "cc8017101981de71a7d5ae1380dcd5c80edbe8d1",
+              "ext": ".ts"
+            },
+            {
+              "file": "libs/profile-adapters/src/lib/adapters/mappers/ProfileMapper.ts",
+              "hash": "79cfdb170d8f6906b21696022e5b5ab19895a745",
+              "ext": ".ts"
+            },
+            {
+              "file": "libs/profile-adapters/src/lib/adapters/models/LegacyMdbProfile.ts",
+              "hash": "0e7274dfe3bb314685c84cf36bc9fd974b451ed2",
+              "ext": ".ts"
+            },
+            {
+              "file": "libs/profile-adapters/src/lib/adapters/repositories/OdbProfileRepository.ts",
+              "hash": "f1ac5f210e819058ff6d10dedaf01743c4b93e21",
+              "ext": ".ts"
+            },
+            {
+              "file": "libs/profile-adapters/src/lib/index.ts",
+              "hash": "d8623c33dea4425d5016d177d5d4c33a6fb67dcf",
+              "ext": ".ts"
+            },
+            {
+              "file": "libs/profile-adapters/tsconfig.json",
+              "hash": "62ebbd946474cea997e774d20fffc4d585c184f3",
+              "ext": ".json"
+            },
+            {
+              "file": "libs/profile-adapters/tsconfig.lib.json",
+              "hash": "b76cc06e4f16a1bce41c8a252685ea29dfa071a8",
+              "ext": ".json"
+            },
+            {
+              "file": "libs/profile-adapters/tsconfig.spec.json",
+              "hash": "515f3c22221a8154f100bd36f521abb82a7462ab",
+              "ext": ".json"
+            }
+          ]
+        }
+      },
+      "common-adapters": {
+        "name": "common-adapters",
+        "type": "lib",
+        "data": {
+          "root": "libs/common-adapters",
+          "sourceRoot": "libs/common-adapters/src",
+          "projectType": "library",
+          "schematics": {},
+          "architect": {
+            "lint": {
+              "builder": "@nrwl/linter:eslint",
+              "options": {
+                "lintFilePatterns": [
+                  "libs/common-adapters/**/*.ts"
+                ]
+              }
+            },
+            "test": {
+              "builder": "@nrwl/jest:jest",
+              "options": {
+                "jestConfig": "libs/common-adapters/jest.config.js",
+                "passWithNoTests": true
+              }
+            },
+            "build": {
+              "builder": "@nrwl/node:package",
+              "options": {
+                "outputPath": "dist/libs/common-adapters",
+                "tsConfig": "libs/common-adapters/tsconfig.lib.json",
+                "packageJson": "libs/common-adapters/package.json",
+                "main": "libs/common-adapters/src/index.ts",
+                "assets": [
+                  "libs/common-adapters/*.md"
+                ]
+              }
+            }
+          },
+          "tags": [
+            "scope:public",
+            "type:util",
+            "target:all"
+          ],
+          "files": [
+            {
+              "file": "libs/common-adapters/.eslintrc.json",
+              "hash": "54ac39535a2c03d4d0fc2eb6e52564638ae3b2e6",
+              "ext": ".json"
+            },
+            {
+              "file": "libs/common-adapters/CHANGELOG.md",
+              "hash": "e8a5fb00f1ac486109749bd5d5d3c45557e90822",
+              "ext": ".md"
+            },
+            {
+              "file": "libs/common-adapters/jest.config.js",
+              "hash": "41a30828d582af69f5b8e573ac19528edbd38971",
+              "ext": ".js"
+            },
+            {
+              "file": "libs/common-adapters/package.json",
+              "hash": "8b566a5e925d8e835aca2956be23283cc0ffc34c",
+              "ext": ".json"
+            },
+            {
+              "file": "libs/common-adapters/README.md",
+              "hash": "086ec95665f08a1fd2c157ec8772987c7df2c96a",
+              "ext": ".md"
+            },
+            {
+              "file": "libs/common-adapters/src/index.ts",
+              "hash": "6feeec03b88cc755eef714c93be835a4fc6c40a3",
+              "ext": ".ts"
+            },
+            {
+              "file": "libs/common-adapters/src/lib/adapters/build.ts",
+              "hash": "c83103f68c15a863fb74399fde5c66dc38d55d3f",
+              "ext": ".ts"
+            },
+            {
+              "file": "libs/common-adapters/src/lib/adapters/index.ts",
+              "hash": "7670506652babf4d0a3c5dca2623e025b67a449f",
+              "ext": ".ts"
+            },
+            {
+              "file": "libs/common-adapters/src/lib/adapters/persistences/index.ts",
+              "hash": "028f4c93f9f2c1655fde6d67bc5c3247f66f3740",
+              "ext": ".ts"
+            },
+            {
+              "file": "libs/common-adapters/src/lib/adapters/persistences/inmemory/index.ts",
+              "hash": "2dd97a6a346f3cabe34743dda987f7cc489ea034",
+              "ext": ".ts"
+            },
+            {
+              "file": "libs/common-adapters/src/lib/adapters/persistences/inmemory/InMemoryQueryService.ts",
+              "hash": "54be3f35bad4518f47f32e3bd105d4c1b27ba9fb",
+              "ext": ".ts"
+            },
+            {
+              "file": "libs/common-adapters/src/lib/adapters/persistences/inmemory/InMemoryWriteService.ts",
+              "hash": "d5cd15854026823098e3add5bb311fb69891ec4e",
+              "ext": ".ts"
+            },
+            {
+              "file": "libs/common-adapters/src/lib/adapters/persistences/mongodb/index.ts",
+              "hash": "a7011995cbb54da72d879b45d820eead1d3960cf",
+              "ext": ".ts"
+            },
+            {
+              "file": "libs/common-adapters/src/lib/adapters/persistences/mongodb/MongoDbQueryService.ts",
+              "hash": "f2d0ac2da736d4042850f002897ab94b16bdb253",
+              "ext": ".ts"
+            },
+            {
+              "file": "libs/common-adapters/src/lib/adapters/persistences/mongodb/MongoDbWriteService.ts",
+              "hash": "f8fdc0feeb2355891f07ddc9fb5daeb748fbe531",
+              "ext": ".ts"
+            },
+            {
+              "file": "libs/common-adapters/src/lib/index.ts",
+              "hash": "b9ec8058fd5687d3a31af5506ef7466ebeebd14a",
+              "ext": ".ts"
+            },
+            {
+              "file": "libs/common-adapters/tsconfig.json",
+              "hash": "62ebbd946474cea997e774d20fffc4d585c184f3",
+              "ext": ".json"
+            },
+            {
+              "file": "libs/common-adapters/tsconfig.lib.json",
+              "hash": "037d796f286235dce67c9e648d2d42adcc61ccd7",
+              "ext": ".json"
+            },
+            {
+              "file": "libs/common-adapters/tsconfig.spec.json",
+              "hash": "515f3c22221a8154f100bd36f521abb82a7462ab",
+              "ext": ".json"
+            }
+          ]
+        }
+      },
+      "profile-core": {
+        "name": "profile-core",
+        "type": "lib",
+        "data": {
+          "root": "libs/profile-core",
+          "sourceRoot": "libs/profile-core/src",
+          "projectType": "library",
+          "schematics": {},
+          "architect": {
+            "lint": {
+              "builder": "@nrwl/linter:eslint",
+              "options": {
+                "lintFilePatterns": [
+                  "libs/profile-core/**/*.ts"
+                ]
+              }
+            },
+            "test": {
+              "builder": "@nrwl/jest:jest",
+              "options": {
+                "jestConfig": "libs/profile-core/jest.config.js",
+                "passWithNoTests": true
+              }
+            },
+            "build": {
+              "builder": "@nrwl/node:package",
+              "options": {
+                "outputPath": "dist/libs/profile-core",
+                "tsConfig": "libs/profile-core/tsconfig.lib.json",
+                "packageJson": "libs/profile-core/package.json",
+                "main": "libs/profile-core/src/index.ts",
+                "assets": [
+                  "libs/profile-core/*.md"
+                ]
+              }
+            }
+          },
+          "tags": [
+            "scope:public",
+            "type:util",
+            "target:all"
+          ],
+          "files": [
+            {
+              "file": "libs/profile-core/.eslintrc.json",
+              "hash": "54ac39535a2c03d4d0fc2eb6e52564638ae3b2e6",
+              "ext": ".json"
+            },
+            {
+              "file": "libs/profile-core/CHANGELOG.md",
+              "hash": "c2656ce6ce0c235f3c3a8048bbd52f9071a336b8",
+              "ext": ".md"
+            },
+            {
+              "file": "libs/profile-core/jest.config.js",
+              "hash": "01cae3db0cd5c05efb657392bbf63cfca8f419c0",
+              "ext": ".js"
+            },
+            {
+              "file": "libs/profile-core/package.json",
+              "hash": "a37a52cb0c42e049fa242f5474c337abf98828f7",
+              "ext": ".json"
+            },
+            {
+              "file": "libs/profile-core/README.md",
+              "hash": "494145654411cc8e3c4d8e3504a144bc00d0be50",
+              "ext": ".md"
+            },
+            {
+              "file": "libs/profile-core/src/index.ts",
+              "hash": "ce5f7e5e1a1768200584c9360b12cf245cf9f6d8",
+              "ext": ".ts"
+            },
+            {
+              "file": "libs/profile-core/src/lib/domain/entities/Profile.ts",
+              "hash": "720e4a8e10b4698d15d0a77ea7caba641a731e08",
+              "ext": ".ts"
+            },
+            {
+              "file": "libs/profile-core/src/lib/domain/index.ts",
+              "hash": "037f2f706f13d86c2f3d4789c04c572852570c76",
+              "ext": ".ts"
+            },
+            {
+              "file": "libs/profile-core/src/lib/domain/models/index.ts",
+              "hash": "ec91eb4feb581cce9a94fe9e966f7a38dc5a568b",
+              "ext": ".ts"
+            },
+            {
+              "file": "libs/profile-core/src/lib/domain/models/ProfileError.ts",
+              "hash": "23fc18ec84ba768e79d810110cd71c67463fa3d0",
+              "ext": ".ts"
+            },
+            {
+              "file": "libs/profile-core/src/lib/domain/repositories/index.ts",
+              "hash": "a01742b37c29aa3ce10b891cfe9e1062569c6cf1",
+              "ext": ".ts"
+            },
+            {
+              "file": "libs/profile-core/src/lib/domain/repositories/read/index.ts",
+              "hash": "d4823ce3cd8b5347502b1b37d6657d613899c0ab",
+              "ext": ".ts"
+            },
+            {
+              "file": "libs/profile-core/src/lib/domain/repositories/read/ProfileRepositoryRead.ts",
+              "hash": "25fefa7e6e4fbc514970e11b9076f76854edaa9c",
+              "ext": ".ts"
+            },
+            {
+              "file": "libs/profile-core/src/lib/domain/types/index.ts",
+              "hash": "553d017151e74f0ba6793ed56b7a574410e94218",
+              "ext": ".ts"
+            },
+            {
+              "file": "libs/profile-core/src/lib/domain/types/Status.ts",
+              "hash": "f2655470c36ac6b5896dd40c65c031d8f0020668",
+              "ext": ".ts"
+            },
+            {
+              "file": "libs/profile-core/src/lib/domain/types/Steps.ts",
+              "hash": "1a812b24739b74057b6521457cda519a8d864cdc",
+              "ext": ".ts"
+            },
+            {
+              "file": "libs/profile-core/src/lib/domain/valuesObjects/Address.ts",
+              "hash": "8bc7d33ecfe2393d0281c52811366e7365e16d50",
+              "ext": ".ts"
+            },
+            {
+              "file": "libs/profile-core/src/lib/domain/valuesObjects/index.ts",
+              "hash": "d4e226a7043d4e552a8b563a1742ce045b7409fa",
+              "ext": ".ts"
+            },
+            {
+              "file": "libs/profile-core/src/lib/domain/valuesObjects/KYC.ts",
+              "hash": "a47a0bcd9f47b75fe24655cb08361d7910555791",
+              "ext": ".ts"
+            },
+            {
+              "file": "libs/profile-core/src/lib/domain/valuesObjects/ProfileInformations.ts",
+              "hash": "e4f28254f663e69dd30731ec54b932abd1986d5b",
+              "ext": ".ts"
+            },
+            {
+              "file": "libs/profile-core/src/lib/Identifiers.ts",
+              "hash": "05589cf436681ba986f2a342869548d4758cad19",
+              "ext": ".ts"
+            },
+            {
+              "file": "libs/profile-core/src/lib/index.ts",
+              "hash": "caeefe34ff04d8c10ea1f3aa79e808f4ceb0d7eb",
+              "ext": ".ts"
+            },
+            {
+              "file": "libs/profile-core/src/lib/usecases/GetUserInfos.ts",
+              "hash": "125e75883920332b06479571b96f48a610f85d8b",
+              "ext": ".ts"
+            },
+            {
+              "file": "libs/profile-core/src/lib/usecases/index.ts",
+              "hash": "4d88e9316da662f2f85aeb487c3c86a0b578d0a9",
+              "ext": ".ts"
+            },
+            {
+              "file": "libs/profile-core/tsconfig.json",
+              "hash": "62ebbd946474cea997e774d20fffc4d585c184f3",
+              "ext": ".json"
+            },
+            {
+              "file": "libs/profile-core/tsconfig.lib.json",
+              "hash": "037d796f286235dce67c9e648d2d42adcc61ccd7",
+              "ext": ".json"
+            },
+            {
+              "file": "libs/profile-core/tsconfig.spec.json",
+              "hash": "515f3c22221a8154f100bd36f521abb82a7462ab",
+              "ext": ".json"
+            }
+          ]
+        }
+      },
+      "common-core": {
+        "name": "common-core",
+        "type": "lib",
+        "data": {
+          "root": "libs/common-core",
+          "sourceRoot": "libs/common-core/src",
+          "projectType": "library",
+          "schematics": {},
+          "architect": {
+            "lint": {
+              "builder": "@nrwl/linter:eslint",
+              "options": {
+                "lintFilePatterns": [
+                  "libs/common-core/**/*.ts"
+                ]
+              }
+            },
+            "test": {
+              "builder": "@nrwl/jest:jest",
+              "options": {
+                "jestConfig": "libs/common-core/jest.config.js",
+                "passWithNoTests": true
+              }
+            },
+            "build": {
+              "builder": "@nrwl/node:package",
+              "options": {
+                "outputPath": "dist/libs/common-core",
+                "tsConfig": "libs/common-core/tsconfig.lib.json",
+                "packageJson": "libs/common-core/package.json",
+                "main": "libs/common-core/src/index.ts",
+                "assets": [
+                  "libs/common-core/*.md"
+                ]
+              }
+            }
+          },
+          "tags": [
+            "scope:public",
+            "type:util",
+            "target:all"
+          ],
+          "files": [
+            {
+              "file": "libs/common-core/.eslintrc.json",
+              "hash": "54ac39535a2c03d4d0fc2eb6e52564638ae3b2e6",
+              "ext": ".json"
+            },
+            {
+              "file": "libs/common-core/CHANGELOG.md",
+              "hash": "73c044c4933ac5ceb90a582625e9198e6c1712b8",
+              "ext": ".md"
+            },
+            {
+              "file": "libs/common-core/jest.config.js",
+              "hash": "3171e394e9919f6c2141baae23ae4309d640927c",
+              "ext": ".js"
+            },
+            {
+              "file": "libs/common-core/package.json",
+              "hash": "4f91df46695a4d3ac7798af172f46eac5e19e2b0",
+              "ext": ".json"
+            },
+            {
+              "file": "libs/common-core/README.md",
+              "hash": "ab55998cf447a57ae9db568e24c7b23bcd9f1c28",
+              "ext": ".md"
+            },
+            {
+              "file": "libs/common-core/src/index.ts",
+              "hash": "6cc86e18ecc2d4c31f1e50366ed6b70dc6711037",
+              "ext": ".ts"
+            },
+            {
+              "file": "libs/common-core/src/lib/domain/CoreTypes.ts",
+              "hash": "76d07ebd69b44dd2557fd9b95e7720aa35114458",
+              "ext": ".ts"
+            },
+            {
+              "file": "libs/common-core/src/lib/domain/index.ts",
+              "hash": "8c3c1e6942b4ec5af5ce68de1fa52301efa6ad8e",
+              "ext": ".ts"
+            },
+            {
+              "file": "libs/common-core/src/lib/domain/mapper/Mapper.ts",
+              "hash": "f524c399dfbd8aa9d8f48618ad988ac163ef976a",
+              "ext": ".ts"
+            },
+            {
+              "file": "libs/common-core/src/lib/domain/models/DomainError.ts",
+              "hash": "010b1ed0908320982d4af1c0fcddfa161f7c8e87",
+              "ext": ".ts"
+            },
+            {
+              "file": "libs/common-core/src/lib/domain/models/index.ts",
+              "hash": "86c3c4ee0a4de0af42aa450737156b716f5ad7af",
+              "ext": ".ts"
+            },
+            {
+              "file": "libs/common-core/src/lib/domain/models/Kernel.ts",
+              "hash": "928ba145749a09ebca7edb21ea188680f5fd1038",
+              "ext": ".ts"
+            },
+            {
+              "file": "libs/common-core/src/lib/domain/models/Mapper.ts",
+              "hash": "f524c399dfbd8aa9d8f48618ad988ac163ef976a",
+              "ext": ".ts"
+            },
+            {
+              "file": "libs/common-core/src/lib/domain/models/Usecase.ts",
+              "hash": "c0de28a0b8542538cfebd29476d3b46147d522e3",
+              "ext": ".ts"
+            },
+            {
+              "file": "libs/common-core/src/lib/domain/persistence/index.ts",
+              "hash": "de72824b6949aafc9096cf4c9e94979ac0506bbb",
+              "ext": ".ts"
+            },
+            {
+              "file": "libs/common-core/src/lib/domain/persistence/query/QueryService.ts",
+              "hash": "f37f8f3c55bbc23901d60f38444460e8ed6e2fe5",
+              "ext": ".ts"
+            },
+            {
+              "file": "libs/common-core/src/lib/domain/persistence/write/WriteService.ts",
+              "hash": "2c10a30859dd90da7857e0921678f5946849dc1d",
+              "ext": ".ts"
+            },
+            {
+              "file": "libs/common-core/src/lib/domain/services/index.ts",
+              "hash": "23f3ca6fe19cc29deb7c9d12b542a855f37f9603",
+              "ext": ".ts"
+            },
+            {
+              "file": "libs/common-core/src/lib/domain/services/JSONSanitizer.ts",
+              "hash": "3651cbb8ff69d70dbeb591961ac4ede6f03988c7",
+              "ext": ".ts"
+            },
+            {
+              "file": "libs/common-core/src/lib/domain/services/JSONSerializer.ts",
+              "hash": "7ee0bd1a0856707813d9ae6a92deef97f1c13300",
+              "ext": ".ts"
+            },
+            {
+              "file": "libs/common-core/src/lib/domain/types/ClassType.ts",
+              "hash": "3e777665c0aa9edb48a50e5941591a8e7d70a05a",
+              "ext": ".ts"
+            },
+            {
+              "file": "libs/common-core/src/lib/domain/types/Dictionary.ts",
+              "hash": "0fdde3781e482a5eb43285263bb3dcd7872c7211",
+              "ext": ".ts"
+            },
+            {
+              "file": "libs/common-core/src/lib/domain/types/index.ts",
+              "hash": "0778eedd7f6baeeefddf90cd471fd997cd7ee53e",
+              "ext": ".ts"
+            },
+            {
+              "file": "libs/common-core/src/lib/domain/types/NonFunctionPropertyNames.ts",
+              "hash": "558d9813aeb486ffd38cf6469afb93a869b33476",
+              "ext": ".ts"
+            },
+            {
+              "file": "libs/common-core/src/lib/domain/types/NonMethodKeys.ts",
+              "hash": "9de5f8933e404e67ddb8537f85b3872fd0d9e23f",
+              "ext": ".ts"
+            },
+            {
+              "file": "libs/common-core/src/lib/domain/types/OneKey.ts",
+              "hash": "70e0396c3fe1ab0b6efeb36185d91610463c28f7",
+              "ext": ".ts"
+            },
+            {
+              "file": "libs/common-core/src/lib/domain/types/PartialExceptFor.ts",
+              "hash": "d4d60b9532ad89a9b1ca9e4fd03cb1d1baadd963",
+              "ext": ".ts"
+            },
+            {
+              "file": "libs/common-core/src/lib/domain/types/Public.ts",
+              "hash": "b3c91430178613c5fe968a225c1418df05f825a2",
+              "ext": ".ts"
+            },
+            {
+              "file": "libs/common-core/src/lib/domain/types/PublicProperties.ts",
+              "hash": "552705123da186e7a9c12f11e899b58456f5099d",
+              "ext": ".ts"
+            },
+            {
+              "file": "libs/common-core/src/lib/domain/types/RemoveMethods.ts",
+              "hash": "6def3c37f6194c419da4d68e6ec804167758687f",
+              "ext": ".ts"
+            },
+            {
+              "file": "libs/common-core/src/lib/index.ts",
+              "hash": "707f4a612327157a1bda0e5700fd26e9bca38519",
+              "ext": ".ts"
+            },
+            {
+              "file": "libs/common-core/tsconfig.json",
+              "hash": "62ebbd946474cea997e774d20fffc4d585c184f3",
+              "ext": ".json"
+            },
+            {
+              "file": "libs/common-core/tsconfig.lib.json",
+              "hash": "037d796f286235dce67c9e648d2d42adcc61ccd7",
+              "ext": ".json"
+            },
+            {
+              "file": "libs/common-core/tsconfig.spec.json",
+              "hash": "515f3c22221a8154f100bd36f521abb82a7462ab",
+              "ext": ".json"
+            }
+          ]
+        }
+      },
+      "profile-api": {
+        "name": "profile-api",
+        "type": "app",
+        "data": {
+          "root": "apps/profile-api",
+          "sourceRoot": "apps/profile-api/src",
+          "projectType": "application",
+          "prefix": "profile-api",
+          "schematics": {},
+          "architect": {
+            "build": {
+              "builder": "@nrwl/node:build",
+              "options": {
+                "outputPath": "dist/apps/profile-api",
+                "main": "apps/profile-api/src/main.ts",
+                "tsConfig": "apps/profile-api/tsconfig.app.json"
+              },
+              "configurations": {
+                "production": {
+                  "optimization": true,
+                  "extractLicenses": true,
+                  "inspect": false,
+                  "fileReplacements": [
+                    {
+                      "replace": "apps/profile-api/src/environments/environment.ts",
+                      "with": "apps/profile-api/src/environments/environment.prod.ts"
+                    }
+                  ]
+                }
+              }
+            },
+            "serve": {
+              "builder": "@nrwl/node:execute",
+              "options": {
+                "buildTarget": "profile-api:build"
+              }
+            },
+            "lint": {
+              "builder": "@nrwl/linter:eslint",
+              "options": {
+                "lintFilePatterns": [
+                  "apps/profile-api/**/*.ts"
+                ]
+              }
+            },
+            "test": {
+              "builder": "@nrwl/jest:jest",
+              "options": {
+                "jestConfig": "apps/profile-api/jest.config.js",
+                "passWithNoTests": true
+              }
+            }
+          },
+          "tags": [],
+          "files": [
+            {
+              "file": "apps/profile-api/.eslintrc.json",
+              "hash": "54ac39535a2c03d4d0fc2eb6e52564638ae3b2e6",
+              "ext": ".json"
+            },
+            {
+              "file": "apps/profile-api/jest.config.js",
+              "hash": "4aa13bd847368b7376988c5d9495fb8f8061ade2",
+              "ext": ".js"
+            },
+            {
+              "file": "apps/profile-api/src/__test__/profile.unit.test.ts",
+              "hash": "d535650544c2044de55b2b572971c1d85869d88f",
+              "ext": ".ts"
+            },
+            {
+              "file": "apps/profile-api/src/config/di/AppKernel.ts",
+              "hash": "ae56e1c0eed1bbb51f52604a8843cfa9284aead7",
+              "ext": ".ts"
+            },
+            {
+              "file": "apps/profile-api/src/config/server/Envs.ts",
+              "hash": "1320eff021a32098a2a1d72675fe9b4fa1dba6e1",
+              "ext": ".ts"
+            },
+            {
+              "file": "apps/profile-api/src/config/server/express.ts",
+              "hash": "87768be9c111dab5d41e74129fb92a5c02135b95",
+              "ext": ".ts"
+            },
+            {
+              "file": "apps/profile-api/src/main.ts",
+              "hash": "5954ff897cdfd6472cac53116521a46fe71e0503",
+              "ext": ".ts"
+            },
+            {
+              "file": "apps/profile-api/src/modules/.gitkeep",
+              "hash": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+              "ext": ""
+            },
+            {
+              "file": "apps/profile-api/src/modules/index.ts",
+              "hash": "a9ddbc78810e3ea09c5ed0cef3d3e5a97bd936ec",
+              "ext": ".ts"
+            },
+            {
+              "file": "apps/profile-api/src/modules/profile/controllers/ProfileController.ts",
+              "hash": "68f71f910862efdc8bf09218d55e7724abf94e57",
+              "ext": ".ts"
+            },
+            {
+              "file": "apps/profile-api/src/modules/profile/index.ts",
+              "hash": "e46e787a477078a055fbcf0d4ce22b26f2be2b1e",
+              "ext": ".ts"
+            },
+            {
+              "file": "apps/profile-api/test.env",
+              "hash": "c272a2a34c243c58c070c5f3a750103b010880a9",
+              "ext": ".env"
+            },
+            {
+              "file": "apps/profile-api/tsconfig.app.json",
+              "hash": "1aa669b4d18f2c4105cf78e1fcf3c16ba3ff10a4",
+              "ext": ".json"
+            },
+            {
+              "file": "apps/profile-api/tsconfig.json",
+              "hash": "63dbe35fb282d5f9ac4a724607173e6316269e29",
+              "ext": ".json"
+            },
+            {
+              "file": "apps/profile-api/tsconfig.spec.json",
+              "hash": "29efa430b2bdc66ba23466f95844248e171c8de4",
+              "ext": ".json"
+            }
+          ]
+        }
+      },
+      "ddd": {
+        "name": "ddd",
+        "type": "lib",
+        "data": {
+          "root": "libs/ddd",
+          "sourceRoot": "libs/ddd/src",
+          "projectType": "library",
+          "schematics": {},
+          "architect": {
+            "lint": {
+              "builder": "@nrwl/linter:eslint",
+              "options": {
+                "lintFilePatterns": [
+                  "libs/ddd/**/*.ts"
+                ]
+              }
+            },
+            "test": {
+              "builder": "@nrwl/jest:jest",
+              "options": {
+                "jestConfig": "libs/ddd/jest.config.js",
+                "passWithNoTests": true
+              }
+            },
+            "build": {
+              "builder": "@nrwl/node:package",
+              "options": {
+                "outputPath": "dist/libs/ddd",
+                "tsConfig": "libs/ddd/tsconfig.lib.json",
+                "packageJson": "libs/ddd/package.json",
+                "main": "libs/ddd/src/index.ts",
+                "assets": [
+                  "libs/ddd/*.md"
+                ]
+              }
+            }
+          },
+          "tags": [
+            "scope:public",
+            "type:util",
+            "target:all"
+          ],
+          "files": [
+            {
+              "file": "libs/ddd/.eslintrc.json",
+              "hash": "54ac39535a2c03d4d0fc2eb6e52564638ae3b2e6",
+              "ext": ".json"
+            },
+            {
+              "file": "libs/ddd/CHANGELOG.md",
+              "hash": "a6d7d101cf92c61b55d401f5a22fb310d88efeac",
+              "ext": ".md"
+            },
+            {
+              "file": "libs/ddd/jest.config.js",
+              "hash": "bd84da1f4fb2b15c8fed4e2d7ed4afc7870eb2e0",
+              "ext": ".js"
+            },
+            {
+              "file": "libs/ddd/package.json",
+              "hash": "26029676fe488afbf9c7e8a89cbfd6afdaf37086",
+              "ext": ".json"
+            },
+            {
+              "file": "libs/ddd/README.md",
+              "hash": "3c87200bc3d3affa837400d936071de8cedc52a7",
+              "ext": ".md"
+            },
+            {
+              "file": "libs/ddd/src/index.ts",
+              "hash": "87d4860038338220295fd08a7949dd3a88b607a2",
+              "ext": ".ts"
+            },
+            {
+              "file": "libs/ddd/src/lib/core.ts",
+              "hash": "e99dd8af80201a2d3717fd4bfd2e476ace70e791",
+              "ext": ".ts"
+            },
+            {
+              "file": "libs/ddd/src/lib/di/inversify.ts",
+              "hash": "52ee673c37f5d2fdabf246961881d3931091ef5f",
+              "ext": ".ts"
+            },
+            {
+              "file": "libs/ddd/src/lib/domain/decorators/Event.ts",
+              "hash": "900b1d434dad54a37061b0605201d36a34ad2cd9",
+              "ext": ".ts"
+            },
+            {
+              "file": "libs/ddd/src/lib/domain/entities/AggregateRoot.ts",
+              "hash": "365b43f9dca48fdc77e99b49d7f5b1acf5fc7035",
+              "ext": ".ts"
+            },
+            {
+              "file": "libs/ddd/src/lib/domain/entities/DomainEvent.ts",
+              "hash": "d4d63d594cc13ef5728b5abd1a4ca7b174924707",
+              "ext": ".ts"
+            },
+            {
+              "file": "libs/ddd/src/lib/domain/entities/DomainEventProducer.ts",
+              "hash": "99e17387fe7c90fb9c1d597cab88156a4b2fb047",
+              "ext": ".ts"
+            },
+            {
+              "file": "libs/ddd/src/lib/domain/entities/Entity.ts",
+              "hash": "e79e1daa6b915193dea853851665ea3d7fc32d5a",
+              "ext": ".ts"
+            },
+            {
+              "file": "libs/ddd/src/lib/domain/entities/index.ts",
+              "hash": "745f537dc3a5f18f8a38dd0c0adacc3247d83e78",
+              "ext": ".ts"
+            },
+            {
+              "file": "libs/ddd/src/lib/domain/gateways/DomainEventHandler.ts",
+              "hash": "b7a7e8a1ebdf9f05b22ec78ce520466f207f4ec6",
+              "ext": ".ts"
+            },
+            {
+              "file": "libs/ddd/src/lib/domain/gateways/index.ts",
+              "hash": "adfb4c5f2801acf70faddcbf9c04acc2a026f50b",
+              "ext": ".ts"
+            },
+            {
+              "file": "libs/ddd/src/lib/domain/index.ts",
+              "hash": "48406daa842c4e6d87953d15424c1e40a74a29f2",
+              "ext": ".ts"
+            },
+            {
+              "file": "libs/ddd/src/lib/domain/models/EventErrors.ts",
+              "hash": "44db1fd62f81c53c64edc8c880934b7522808b71",
+              "ext": ".ts"
+            },
+            {
+              "file": "libs/ddd/src/lib/domain/models/EventSubscription.ts",
+              "hash": "53162b7279c1fb92d9a6e06244e7bb7025dbd448",
+              "ext": ".ts"
+            },
+            {
+              "file": "libs/ddd/src/lib/domain/models/index.ts",
+              "hash": "79e72ff436def5dee99fd2b7b067d39e98185d73",
+              "ext": ".ts"
+            },
+            {
+              "file": "libs/ddd/src/lib/domain/services/EventDispatcher.ts",
+              "hash": "bd44eed261132c37e220af25d95beb6a476ef816",
+              "ext": ".ts"
+            },
+            {
+              "file": "libs/ddd/src/lib/domain/services/EventReceiver.ts",
+              "hash": "4d4ddbea74ded89bf62f93c8719ae3edb0218080",
+              "ext": ".ts"
+            },
+            {
+              "file": "libs/ddd/src/lib/domain/services/index.ts",
+              "hash": "b4939294aecc60e2b2a88e55ae00b0bfc0d8fb54",
+              "ext": ".ts"
+            },
+            {
+              "file": "libs/ddd/src/lib/domain/services/MessagingPlugin.ts",
+              "hash": "d0296d3f453934bfc3b00b5bd36bec3283e7c337",
+              "ext": ".ts"
+            },
+            {
+              "file": "libs/ddd/src/lib/domain/types/DomainEventProps.ts",
+              "hash": "4652f88ef0ab98948d5d19049ccd42b1bc9a3878",
+              "ext": ".ts"
+            },
+            {
+              "file": "libs/ddd/src/lib/domain/types/index.ts",
+              "hash": "8f631cf40113d27a9dc5f9cc550ccf1ce3f7bc40",
+              "ext": ".ts"
+            },
+            {
+              "file": "libs/ddd/tsconfig.json",
+              "hash": "62ebbd946474cea997e774d20fffc4d585c184f3",
+              "ext": ".json"
+            },
+            {
+              "file": "libs/ddd/tsconfig.lib.json",
+              "hash": "037d796f286235dce67c9e648d2d42adcc61ccd7",
+              "ext": ".json"
+            },
+            {
+              "file": "libs/ddd/tsconfig.spec.json",
+              "hash": "515f3c22221a8154f100bd36f521abb82a7462ab",
+              "ext": ".json"
+            }
+          ]
+        }
+      }
+    },
+    "dependencies": {
+      "az-servicebus-adapters": [
+        {
+          "type": "static",
+          "source": "az-servicebus-adapters",
+          "target": "ddd"
+        },
+        {
+          "type": "static",
+          "source": "az-servicebus-adapters",
+          "target": "common-core"
+        }
+      ],
+      "rx-events-adapters": [
+        {
+          "type": "static",
+          "source": "rx-events-adapters",
+          "target": "ddd"
+        }
+      ],
+      "profile-adapters": [
+        {
+          "type": "static",
+          "source": "profile-adapters",
+          "target": "profile-core"
+        },
+        {
+          "type": "static",
+          "source": "profile-adapters",
+          "target": "common-core"
+        },
+        {
+          "type": "static",
+          "source": "profile-adapters",
+          "target": "common-adapters"
+        }
+      ],
+      "common-adapters": [
+        {
+          "type": "static",
+          "source": "common-adapters",
+          "target": "common-core"
+        }
+      ],
+      "profile-core": [
+        {
+          "type": "static",
+          "source": "profile-core",
+          "target": "ddd"
+        },
+        {
+          "type": "static",
+          "source": "profile-core",
+          "target": "common-core"
+        }
+      ],
+      "common-core": [],
+      "profile-api": [
+        {
+          "type": "static",
+          "source": "profile-api",
+          "target": "profile-core"
+        },
+        {
+          "type": "static",
+          "source": "profile-api",
+          "target": "common-core"
+        },
+        {
+          "type": "static",
+          "source": "profile-api",
+          "target": "profile-adapters"
+        },
+        {
+          "type": "static",
+          "source": "profile-api",
+          "target": "common-adapters"
+        }
+      ],
+      "ddd": [
+        {
+          "type": "static",
+          "source": "ddd",
+          "target": "common-core"
+        }
+      ]
+    }
+  },
+  "affectedProjects": [],
+  "criticalPath": []
+}

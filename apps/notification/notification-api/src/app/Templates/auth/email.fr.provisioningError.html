@@ -1,0 +1,45 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<body>
+  <p>
+    Bonjour,
+  </p>
+  <p>Une erreur est survenue lors du provisioning de l'utilisateur {{message.uid}} :</p>
+  <div>
+    <table>
+      <tbody>
+        <tr>
+          <td>Id</td>
+          <td>{{message.uid}}</td>
+        </tr>
+        <tr>
+          <td>Email</td>
+          <td>{{message.email}}</td>
+        </tr>
+        <tr>
+          <td>Provisioning Step</td>
+          <td>{{message.step}}</td>
+        </tr>
+        <tr>
+          <td>Error Name</td>
+          <td>{{message.name}}</td>
+        </tr>
+        <tr>
+          <td>Error Message</td>
+          <td>{{message.message}}</td>
+        </tr>
+        <tr>
+          <td>Error Cause</td>
+          <td>{{message.cause}}</td>
+        </tr>
+        <tr>
+          <td>Provisioning Base Url</td>
+          <td>{{message.authBaseUrl}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</body>
+
+</html>

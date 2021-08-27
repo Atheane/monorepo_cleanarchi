@@ -1,0 +1,24 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<body>
+<h1>
+  Bonjour,
+</h1>
+<p>
+  Une erreur est survenue lors de l’enrôlement ICG de l'utilisateur suivant:
+  <br>
+  USER ID: {{ topic_msg.data.user.uid }}
+  <br>
+  USER EMAIL: {{ topic_msg.data.user.email }}
+  <br>
+  <br>
+  STEP: {{ topic_msg.data.triggerEventPayloadBody.step }}
+  <br>
+  TYPE: {{ topic_msg.data.type }}
+  <br>
+  MESSAGE: {{ topic_msg.data.message }}
+  <br>
+  PROVISIONING URL: {{ topic_msg.data.refAuthUrl }}
+</p>
+</body>
+</html>

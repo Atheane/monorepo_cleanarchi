@@ -1,0 +1,31 @@
+export class Identifiers {
+  static readonly profileRepositoryRead = Symbol.for('ProfileRepositoryRead');
+  static readonly profileRepositoryWrite = Symbol.for('ProfileRepositoryWrite');
+  static readonly otpRepositoryRead = Symbol.for('OtpRepositoryRead');
+  static readonly otpRepositoryWrite = Symbol.for('OtpRepositoryWrite');
+  static readonly tipsRepositoryRead = Symbol.for('TipsRepositoryRead');
+  static readonly tipsProvider = Symbol.for('TipsProvider');
+  static readonly kycRepository = Symbol.for('KycRepository');
+  static readonly facematchGateway = Symbol.for('FacematchGateway');
+  static readonly customerGateway = Symbol.for('customerGateway');
+  static readonly folderGateway = Symbol.for('FolderGateway');
+  static readonly userGateway = Symbol.for('userGateway');
+  static readonly bankAccountGateway = Symbol.for('BankAccountGateway');
+  static readonly idGenerator = Symbol.for('IdGenerator');
+  static readonly otpGateway = Symbol.for('OtpGateway');
+  static readonly storageGateway = Symbol.for('storageGateway');
+  static readonly kycGateway = Symbol.for('kycGateway');
+  static readonly contractGateway = Symbol.for('ContractGateway');
+  static readonly b2bCustomerGateway = Symbol.for('B2BCustomerGateway');
+  static readonly getCustomerSituations = Symbol.for('GetCustomerSituations');
+  static readonly featureFlagContract = Symbol.for('featureFlagContract');
+  static readonly featureFlagProfileStatusSaga = Symbol.for('featureFlagProfileStatusSaga');
+  static readonly digitalIdentityGateway = Symbol.for('digitalIdentityGateway');
+  static readonly contractDocumentGateway = Symbol.for('ContractDocumentGateway');
+  static readonly updateProfileEligibility = Symbol.for('UpdateProfileEligibility');
+  static readonly ficpGateway = Symbol.for('FicpGateway');
+  static readonly scoringDataRecoveryGateway = Symbol.for('ScoringDataRecoveryGateway');
+  static readonly fccGateway = Symbol.for('FccGateway');
+  static readonly documentsReferentialGateway = Symbol.for('DocumentsReferentialGateway');
+  static readonly updateProfileStatus = Symbol.for('UpdateProfileStatus');
+}

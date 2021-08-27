@@ -1,0 +1,1846 @@
+[
+    {
+        "scope": "https://rest-pp.s-money.fr:443",
+        "method": "GET",
+        "path": "/api/bib/sandbox/api/users/OsYFhvKAT",
+        "body": "",
+        "status": 200,
+        "response": {
+            "Id": 1388,
+            "AppUserId": "OsYFhvKAT",
+            "Type": 1,
+            "Role": 2,
+            "Profile": {
+                "Civility": 0,
+                "FirstName": "Corinne",
+                "LastName": "Berthier",
+                "Birthdate": "1965-12-06T00:00:00",
+                "Birthcity": "Bobigny",
+                "BirthCountry": "FR",
+                "Address": {
+                    "Street": "temporary street",
+                    "ZipCode": "75001",
+                    "City": "Paris",
+                    "Country": "FR"
+                },
+                "PhoneNumber": "33646776779",
+                "Email": "jardin08@yopmail.com",
+                "Alias": "Corinne_Berthier#OsYFhvKAT",
+                "Picture": {
+                    "Href": null
+                },
+                "EconomicActivity": 11
+            },
+            "Credentials": null,
+            "Amount": 218969,
+            "AccountingBalanceAmount": 421054,
+            "SubAccounts": [
+                {
+                    "Id": 1388,
+                    "AppAccountId": "OsYFhvKAT",
+                    "Amount": 218969,
+                    "AccountingBalanceAmount": 421054,
+                    "DisplayName": "Corinne Berthier",
+                    "CreationDate": "2020-08-13T16:54:15",
+                    "IsDefault": true,
+                    "Iban": "FR8112869000020PC0000012K39",
+                    "IbanHint": "FR81XXXXXXXXXXXXXXXX2K39"
+                }
+            ],
+            "BankAccounts": [
+                {
+                    "Id": 992,
+                    "Href": "https://rest-pp.s-money.fr/api/bib/sandbox/api/users/OsYFhvKAT/bankaccounts/992"
+                },
+                {
+                    "Id": 996,
+                    "Href": "https://rest-pp.s-money.fr/api/bib/sandbox/api/users/OsYFhvKAT/bankaccounts/996"
+                },
+                {
+                    "Id": 1011,
+                    "Href": "https://rest-pp.s-money.fr/api/bib/sandbox/api/users/OsYFhvKAT/bankaccounts/1011"
+                }
+            ],
+            "CBCards": [
+                {
+                    "Id": 1180,
+                    "AppCardId": "card-HClWrKwT2",
+                    "Href": "https://rest-pp.s-money.fr/api/bib/sandbox/api/users/OsYFhvKAT/cards/card-HClWrKwT2"
+                }
+            ],
+            "Status": 1,
+            "Company": null,
+            "CountryCode": null
+        },
+        "rawHeaders": [
+            "Date",
+            "Tue, 06 Oct 2020 09:59:21 GMT",
+            "Server",
+            "IWS",
+            "Cache-Control",
+            "private",
+            "Content-Type",
+            "application/json; charset=utf-8",
+            "X-AspNet-Version",
+            "4.0.30319",
+            "Content-Length",
+            "1272",
+            "Connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "https://dev-api.onbadi.com:443",
+        "method": "GET",
+        "path": "/aggregation/users/OsYFhvKAT/accounts",
+        "body": "",
+        "status": 200,
+        "response": [
+            {
+                "id": "8241",
+                "balance": 985.51,
+                "name": "LCL",
+                "currency": "EUR",
+                "aggregated": true,
+                "establishment": {
+                    "name": null
+                },
+                "number": "04000391840W",
+                "metadatas": {
+                    "iban": "FR1730002040000000391840W02"
+                }
+            },
+            {
+                "id": "8253",
+                "balance": 3023.78,
+                "name": "Connecteur Test - Compte chèque EUR",
+                "currency": "EUR",
+                "aggregated": true,
+                "establishment": {
+                    "name": null
+                },
+                "number": "3002900000",
+                "metadatas": {
+                    "iban": "EX6713335395899300290000026"
+                }
+            },
+            {
+                "id": "8254",
+                "balance": 4435.7,
+                "name": "Connecteur Test - Compte chèque USD",
+                "currency": "USD",
+                "aggregated": true,
+                "establishment": {
+                    "name": null
+                },
+                "number": "3002900001",
+                "metadatas": {
+                    "iban": "EX6713335395899300290000123"
+                }
+            },
+            {
+                "id": "8255",
+                "balance": 0,
+                "name": "Connecteur Test - Compte carte débit différé",
+                "currency": "EUR",
+                "aggregated": true,
+                "establishment": {
+                    "name": null
+                },
+                "number": "XXXXXXXXXX982605",
+                "metadatas": {
+                    "iban": "EX6713335395899300290000220"
+                }
+            }
+        ],
+        "rawHeaders": [
+            "Content-Length",
+            "843",
+            "Content-Type",
+            "application/json; charset=utf-8",
+            "ETag",
+            "W/\"34b-CJL7vnzkjF+Nxs8UkDcUTOz19Yg\"",
+            "Set-Cookie",
+            "TiPMix=63.2015514947481; path=/; HttpOnly; Domain=odb-aggregation-dev.azurewebsites.net:443; Max-Age=3600",
+            "Set-Cookie",
+            "x-ms-routing-name=self; path=/; HttpOnly; Domain=odb-aggregation-dev.azurewebsites.net:443; Max-Age=3600",
+            "X-Powered-By",
+            "Express",
+            "Access-Control-Allow-Origin",
+            "*",
+            "request-context",
+            "appId=cid-v1:8d302c50-ae95-4575-a384-8792e95297ab",
+            "X-Azure-Ref",
+            "0+j98XwAAAABLflk7/UytSoxLkYKWbqHvUEFSMDJFREdFMDYxMAA0MjJlZjNjMy04NDZhLTQ1ZDMtYWJjMS1hZDUyNzJiMTk4ZDk=",
+            "Date",
+            "Tue, 06 Oct 2020 09:59:23 GMT",
+            "Connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "https://dev-api.onbadi.com:443",
+        "method": "GET",
+        "path": "/aggregation/banks",
+        "body": "",
+        "status": 200,
+        "response": [
+            {
+                "uid": "3da1697b-59b0-5bb4-8ec8-08125c3390ce",
+                "form": [
+                    {
+                        "label": "Code utilisateur",
+                        "name": "login",
+                        "type": "text",
+                        "validation": null,
+                        "options": null
+                    },
+                    {
+                        "label": "Mot de passe",
+                        "name": "password",
+                        "type": "password",
+                        "validation": null,
+                        "options": null
+                    }
+                ],
+                "logo": "https://logo.clearbit.com/americanexpress.com?size=200",
+                "name": "American Express",
+                "code": "16820",
+                "featured": false
+            },
+            {
+                "uid": "c46cf6d6-2d7d-5ba6-9f78-e0bcb3597921",
+                "form": [
+                    {
+                        "label": "Identifiant",
+                        "name": "login",
+                        "type": "text",
+                        "validation": null,
+                        "options": null
+                    },
+                    {
+                        "label": "Mot de passe",
+                        "name": "password",
+                        "type": "password",
+                        "validation": null,
+                        "options": null
+                    }
+                ],
+                "logo": "https://logo.clearbit.com/creditmutuel.fr?size=200",
+                "name": "Arkea Banque Privée",
+                "code": "15589",
+                "featured": false
+            },
+            {
+                "uid": "7fc67931-e08f-5d13-b870-02cb13269c0d",
+                "form": [
+                    {
+                        "label": "Identifiant",
+                        "name": "login",
+                        "type": "text",
+                        "validation": null,
+                        "options": null
+                    },
+                    {
+                        "label": "Code",
+                        "name": "password",
+                        "type": "password",
+                        "validation": "^\\d+$",
+                        "options": null
+                    }
+                ],
+                "logo": "https://logo.clearbit.com/carlisi.com?size=200",
+                "name": "AXA Banque",
+                "code": "12548",
+                "featured": false
+            },
+            {
+                "uid": "2df1722e-c8a2-5d48-8467-c449b3c8d884",
+                "form": [
+                    {
+                        "label": "Identifiant",
+                        "name": "login",
+                        "type": "text",
+                        "validation": null,
+                        "options": null
+                    },
+                    {
+                        "label": "Mot de passee",
+                        "name": "password",
+                        "type": "password",
+                        "validation": null,
+                        "options": null
+                    }
+                ],
+                "logo": "https://logo.clearbit.com/www.ibps.mediterranee.banquepopulaire.fr?size=200",
+                "name": "Banque Chaix",
+                "code": "10178",
+                "featured": false
+            },
+            {
+                "uid": "0322c5cc-a8f8-5884-a4f7-06298354c89c",
+                "form": [
+                    {
+                        "label": "Identifiant",
+                        "name": "login",
+                        "type": "text",
+                        "validation": null,
+                        "options": null
+                    },
+                    {
+                        "label": "Code confidentiel",
+                        "name": "password",
+                        "type": "password",
+                        "validation": "^\\d{6}$",
+                        "options": null
+                    }
+                ],
+                "logo": "https://logo.clearbit.com/banque-courtois.fr?size=200",
+                "name": "Banque Courtois",
+                "code": "10268",
+                "featured": false
+            },
+            {
+                "uid": "45cfea87-4f13-54f2-afe9-3d3a8be2d7b5",
+                "form": [
+                    {
+                        "label": "Identifiant client",
+                        "name": "login",
+                        "type": "text",
+                        "validation": null,
+                        "options": null
+                    },
+                    {
+                        "label": "Code personnel",
+                        "name": "password",
+                        "type": "password",
+                        "validation": "^\\d+$",
+                        "options": null
+                    },
+                    {
+                        "label": "Numéro d'usager",
+                        "name": "nuser",
+                        "type": "text",
+                        "validation": "^[A-Z0-9]{0,8}$",
+                        "options": null
+                    }
+                ],
+                "logo": null,
+                "name": "Banque de la Réunion",
+                "code": "12169",
+                "featured": false
+            },
+            {
+                "uid": "434bab62-427b-59c9-8a83-1864509d8b94",
+                "form": [
+                    {
+                        "label": "Numéro d'abonné",
+                        "name": "login",
+                        "type": "text",
+                        "validation": null,
+                        "options": null
+                    },
+                    {
+                        "label": "Code secret",
+                        "name": "password",
+                        "type": "password",
+                        "validation": null,
+                        "options": null
+                    }
+                ],
+                "logo": null,
+                "name": "Banque de Nouvelle-Calédonie",
+                "code": "14889",
+                "featured": false
+            },
+            {
+                "uid": "6ab3181e-531d-58d2-89d8-dba62ca0172b",
+                "form": [
+                    {
+                        "label": "Identifiant",
+                        "name": "login",
+                        "type": "text",
+                        "validation": "^[a-zA-Z0-9]{8,10}$",
+                        "options": null
+                    },
+                    {
+                        "label": "Code secret",
+                        "name": "password",
+                        "type": "password",
+                        "validation": "^\\d{8}$",
+                        "options": null
+                    }
+                ],
+                "logo": "https://logo.clearbit.com/services01634.groupedr.fr?size=200",
+                "name": "Banque Edmond de Rothschild",
+                "code": "42529",
+                "featured": false
+            },
+            {
+                "uid": "4ceb1f22-7c97-5d9e-82db-dd0bcce43cf6",
+                "form": [
+                    {
+                        "label": "Identifiant",
+                        "name": "login",
+                        "type": "text",
+                        "validation": null,
+                        "options": null
+                    },
+                    {
+                        "label": "Mot de passe",
+                        "name": "password",
+                        "type": "password",
+                        "validation": null,
+                        "options": null
+                    }
+                ],
+                "logo": "https://logo.clearbit.com/www.becm.fr?size=200",
+                "name": "Banque Européenne Crédit Mutuel",
+                "code": "11899",
+                "featured": false
+            },
+            {
+                "uid": "7fbc75ed-f93c-5155-9a58-1e2ce0515afc",
+                "form": [
+                    {
+                        "label": "Numéro d'abonné",
+                        "name": "login",
+                        "type": "text",
+                        "validation": "^\\d{9}$",
+                        "options": null
+                    },
+                    {
+                        "label": "Code secret",
+                        "name": "password",
+                        "type": "password",
+                        "validation": "^.{1,12}$",
+                        "options": null
+                    }
+                ],
+                "logo": "https://logo.clearbit.com/clients.banque-fiducial.fr?size=200",
+                "name": "Banque Fiducial",
+                "code": "13179",
+                "featured": false
+            },
+            {
+                "uid": "872c244f-5819-5984-81f6-58c55d08696f",
+                "form": [
+                    {
+                        "label": "Identifiant",
+                        "name": "login",
+                        "type": "text",
+                        "validation": "^\\d{7}$",
+                        "options": null
+                    },
+                    {
+                        "label": "Code secret",
+                        "name": "password",
+                        "type": "password",
+                        "validation": "^\\d{6}$",
+                        "options": null
+                    }
+                ],
+                "logo": null,
+                "name": "Banque Française Commerciale Océan Indien",
+                "code": "18719",
+                "featured": false
+            },
+            {
+                "uid": "c097e6f9-6804-59ad-a438-75e7e6ec6c70",
+                "form": [
+                    {
+                        "label": "Identifiant",
+                        "name": "login",
+                        "type": "text",
+                        "validation": "^\\d+$",
+                        "options": null
+                    },
+                    {
+                        "label": "Code confidentiel",
+                        "name": "password",
+                        "type": "password",
+                        "validation": "^\\d{6}$",
+                        "options": null
+                    }
+                ],
+                "logo": "https://logo.clearbit.com/banque-kolb.fr?size=200",
+                "name": "Banque Kolb",
+                "code": "13259",
+                "featured": false
+            },
+            {
+                "uid": "585c0f20-e436-587c-85fc-47f661edc62f",
+                "form": [
+                    {
+                        "label": "Identifiant",
+                        "name": "login",
+                        "type": "text",
+                        "validation": null,
+                        "options": null
+                    },
+                    {
+                        "label": "Code confidentiel",
+                        "name": "password",
+                        "type": "password",
+                        "validation": "^\\d{6}$",
+                        "options": null
+                    }
+                ],
+                "logo": null,
+                "name": "Banque Laydernier",
+                "code": "10228",
+                "featured": false
+            },
+            {
+                "uid": "3a960590-220b-59ba-a0a6-24276ce67440",
+                "form": [
+                    {
+                        "label": "Numéro de compte",
+                        "name": "login",
+                        "type": "text",
+                        "validation": "^\\d+$",
+                        "options": null
+                    },
+                    {
+                        "label": "Clé d'accès",
+                        "name": "password",
+                        "type": "password",
+                        "validation": null,
+                        "options": null
+                    }
+                ],
+                "logo": null,
+                "name": "Banque Michel Inchauspé",
+                "code": "17959",
+                "featured": false
+            },
+            {
+                "uid": "0ae1d298-9318-5b2f-8574-78ed4a663af4",
+                "form": [
+                    {
+                        "label": "Identifiant",
+                        "name": "login",
+                        "type": "text",
+                        "validation": null,
+                        "options": null
+                    },
+                    {
+                        "label": "Code confidentiel",
+                        "name": "password",
+                        "type": "password",
+                        "validation": "^\\d{6}$",
+                        "options": null
+                    }
+                ],
+                "logo": "https://logo.clearbit.com/banque-nuger.fr?size=200",
+                "name": "Banque Nuger",
+                "code": "13489",
+                "featured": false
+            },
+            {
+                "uid": "de508df8-aa37-537e-a05f-1379526dfa84",
+                "form": [
+                    {
+                        "validation": null,
+                        "options": [
+                            {
+                                "name": "Alsace Lorraine Champagne",
+                                "value": "www.ibps.bpalc.banquepopulaire.fr"
+                            },
+                            {
+                                "name": "Aquitaine Centre atlantique",
+                                "value": "www.ibps.bpaca.banquepopulaire.fr"
+                            },
+                            {
+                                "name": "Auvergne Rhône Alpes",
+                                "value": "www.ibps.bpaura.banquepopulaire.fr"
+                            },
+                            {
+                                "name": "Banque de savoie",
+                                "value": "www.ibps.banquedesavoie.banquepopulaire.fr"
+                            },
+                            {
+                                "name": "Bourgogne-Franche Comté",
+                                "value": "www.ibps.bpbfc.banquepopulaire.fr"
+                            },
+                            {
+                                "name": "Grand Ouest",
+                                "value": "www.ibps.bpgo.banquepopulaire.fr"
+                            },
+                            {
+                                "name": "Méditerranée",
+                                "value": "www.ibps.mediterranee.banquepopulaire.fr"
+                            },
+                            {
+                                "name": "Nord",
+                                "value": "www.ibps.nord.banquepopulaire.fr"
+                            },
+                            {
+                                "name": "Occitane",
+                                "value": "www.ibps.occitane.banquepopulaire.fr"
+                            },
+                            {
+                                "name": "Rives de Paris",
+                                "value": "www.ibps.rivesparis.banquepopulaire.fr"
+                            },
+                            {
+                                "name": "Sud",
+                                "value": "www.ibps.sud.banquepopulaire.fr"
+                            },
+                            {
+                                "name": "Val de France",
+                                "value": "www.ibps.valdefrance.banquepopulaire.fr"
+                            }
+                        ],
+                        "type": "list",
+                        "name": "website",
+                        "label": "Région"
+                    },
+                    {
+                        "label": "Identifiant",
+                        "name": "login",
+                        "type": "text",
+                        "validation": "^[a-zA-Z0-9]+$",
+                        "options": null
+                    },
+                    {
+                        "label": "Mot de passe",
+                        "name": "password",
+                        "type": "password",
+                        "validation": "^\\d{8}$",
+                        "options": null
+                    }
+                ],
+                "logo": "https://logo.clearbit.com/banquepopulaire.fr?size=200",
+                "name": "Banque Populaire",
+                "code": "10107",
+                "featured": true
+            },
+            {
+                "uid": "744293d7-1558-5484-8df5-b574c7aaf610",
+                "form": [
+                    {
+                        "label": "Numéro d'abonné",
+                        "name": "login",
+                        "type": "text",
+                        "validation": null,
+                        "options": null
+                    },
+                    {
+                        "label": "Mot de passe",
+                        "name": "password",
+                        "type": "password",
+                        "validation": "^\\d+$",
+                        "options": null
+                    }
+                ],
+                "logo": null,
+                "name": "Banque Pouyanne",
+                "code": "11989",
+                "featured": false
+            },
+            {
+                "uid": "b2d19fb9-e715-5f25-98e0-6301ff37bdc1",
+                "form": [
+                    {
+                        "label": "Identifiant",
+                        "name": "login",
+                        "type": "text",
+                        "validation": null,
+                        "options": null
+                    },
+                    {
+                        "label": "Code confidentiel",
+                        "name": "password",
+                        "type": "password",
+                        "validation": "^\\d{6}$",
+                        "options": null
+                    }
+                ],
+                "logo": "https://logo.clearbit.com/www.banque-rhone-alpes.fr?size=200",
+                "name": "Banque Rhône-Alpes",
+                "code": "10468",
+                "featured": false
+            },
+            {
+                "uid": "a00e7a5d-5b65-5aba-a383-b5dc2e03421e",
+                "form": [
+                    {
+                        "label": "Identifiant",
+                        "name": "login",
+                        "type": "text",
+                        "validation": null,
+                        "options": null
+                    },
+                    {
+                        "label": "Code confidentiel",
+                        "name": "password",
+                        "type": "password",
+                        "validation": "^\\d{6}$",
+                        "options": null
+                    }
+                ],
+                "logo": "https://logo.clearbit.com/tarneaud.fr?size=200",
+                "name": "Banque Tarneaud",
+                "code": "10558",
+                "featured": false
+            },
+            {
+                "uid": "b51af868-4972-5e70-9009-7c3f5cc1a06b",
+                "form": [
+                    {
+                        "label": "Identifiant",
+                        "name": "login",
+                        "type": "text",
+                        "validation": null,
+                        "options": null
+                    },
+                    {
+                        "label": "Mot de passe",
+                        "name": "password",
+                        "type": "password",
+                        "validation": null,
+                        "options": null
+                    }
+                ],
+                "logo": "https://logo.clearbit.com/banquetransatlantique.com?size=200",
+                "name": "Banque Transatlantique",
+                "code": "30568",
+                "featured": false
+            },
+            {
+                "uid": "646e8e7f-0163-5d75-a95a-27438f82c1de",
+                "form": [
+                    {
+                        "label": "Identifiant",
+                        "name": "login",
+                        "type": "text",
+                        "validation": null,
+                        "options": null
+                    },
+                    {
+                        "label": "Date de naissance",
+                        "name": "birthdate",
+                        "type": "date",
+                        "validation": "\\d{4}-\\d{2}-\\d{2}$|\\d{2}\\/\\d{2}\\/\\d{4}$",
+                        "options": null
+                    },
+                    {
+                        "label": "Code secret",
+                        "name": "password",
+                        "type": "password",
+                        "validation": "^\\d+$",
+                        "options": null
+                    }
+                ],
+                "logo": "https://logo.clearbit.com/bforbank.com?size=200",
+                "name": "BforBank",
+                "code": "16218",
+                "featured": false
+            },
+            {
+                "uid": "f711dd7a-6289-5bda-b3a4-f2febda8c046",
+                "form": [
+                    {
+                        "label": "Numéro client",
+                        "name": "login",
+                        "type": "text",
+                        "validation": "^[0-9]{5,10}$",
+                        "options": null
+                    },
+                    {
+                        "label": "Code secret",
+                        "name": "password",
+                        "type": "password",
+                        "validation": "^(\\d{6})$",
+                        "options": null
+                    }
+                ],
+                "logo": "https://logo.clearbit.com/mabanque.bnpparibas?size=200",
+                "name": "BNP Paribas",
+                "code": "30004",
+                "featured": true
+            },
+            {
+                "uid": "3419e4da-31ad-5b69-b84e-617282e61099",
+                "form": [
+                    {
+                        "label": "Numéro de carte",
+                        "name": "cardnumber",
+                        "type": "text",
+                        "validation": null,
+                        "options": null
+                    },
+                    {
+                        "label": "Numéro de client",
+                        "name": "login",
+                        "type": "text",
+                        "validation": null,
+                        "options": null
+                    },
+                    {
+                        "label": "Mot de passe de l'application mobile",
+                        "name": "password",
+                        "type": "password",
+                        "validation": null,
+                        "options": null
+                    }
+                ],
+                "logo": "https://logo.clearbit.com/bnpparibasfortis.com?size=200",
+                "name": "BNP Paribas Fortis",
+                "code": "00131",
+                "featured": false
+            },
+            {
+                "uid": "01756bd4-bb82-531c-bc39-79aaedd21449",
+                "form": [
+                    {
+                        "label": "Numéro client",
+                        "name": "login",
+                        "type": "text",
+                        "validation": "^\\d+$",
+                        "options": null
+                    },
+                    {
+                        "label": "Mot de passe",
+                        "name": "password",
+                        "type": "password",
+                        "validation": "^\\d+$",
+                        "options": null
+                    }
+                ],
+                "logo": "https://logo.clearbit.com/antilles-guyane.bnpparibas.net?size=200",
+                "name": "BNP Paribas Guyane",
+                "code": "11729",
+                "featured": false
+            },
+            {
+                "uid": "9f5876cd-c30e-5f3a-afca-5880cfd31e23",
+                "form": [
+                    {
+                        "label": "Numéro client",
+                        "name": "login",
+                        "type": "text",
+                        "validation": null,
+                        "options": null
+                    },
+                    {
+                        "label": "Mot de passe",
+                        "name": "password",
+                        "type": "password",
+                        "validation": null,
+                        "options": null
+                    }
+                ],
+                "logo": "https://logo.clearbit.com/bnpparibas.pl?size=200",
+                "name": "BNP Paribas Réunion",
+                "code": "41919",
+                "featured": false
+            },
+            {
+                "uid": "07d76adf-ae35-5b38-aca8-67aafba13169",
+                "form": [
+                    {
+                        "label": "Identifiant",
+                        "name": "login",
+                        "type": "text",
+                        "validation": "^[0-9]+$",
+                        "options": null
+                    },
+                    {
+                        "label": "Mot de passe",
+                        "name": "password",
+                        "type": "password",
+                        "validation": "^[a-zA-Z0-9]+$",
+                        "options": null
+                    }
+                ],
+                "logo": "https://logo.clearbit.com/boursorama.com?size=200",
+                "name": "Boursorama",
+                "code": "40618",
+                "featured": true
+            },
+            {
+                "uid": "86504cdf-cda6-54e5-b51a-a96e17cc8410",
+                "form": [
+                    {
+                        "label": "Identifiant",
+                        "name": "login",
+                        "type": "text",
+                        "validation": null,
+                        "options": null
+                    },
+                    {
+                        "label": "Mot de passe",
+                        "name": "password",
+                        "type": "password",
+                        "validation": null,
+                        "options": null
+                    }
+                ],
+                "logo": "https://logo.clearbit.com/bred.fr?size=200",
+                "name": "Bred",
+                "code": "10107",
+                "featured": false
+            },
+            {
+                "uid": "13949b61-e3e6-50ed-9d82-451943ec35d0",
+                "form": [
+                    {
+                        "label": "Identifiant client",
+                        "name": "login",
+                        "type": "text",
+                        "validation": "^[0-9]+$",
+                        "options": null
+                    },
+                    {
+                        "label": "Code personnel",
+                        "name": "password",
+                        "type": "password",
+                        "validation": "^\\d{8}$",
+                        "options": null
+                    },
+                    {
+                        "validation": null,
+                        "options": [
+                            {
+                                "name": "Côte d'Azur",
+                                "value": "18315"
+                            },
+                            {
+                                "name": "Auvergne et Limousin",
+                                "value": "18715"
+                            },
+                            {
+                                "name": "Nord France Europe",
+                                "value": "16275"
+                            },
+                            {
+                                "name": "Bretagne-Pays De Loire",
+                                "value": "14445"
+                            },
+                            {
+                                "name": "Loire Drôme Ardèche",
+                                "value": "14265"
+                            },
+                            {
+                                "name": "Provence Alpes Corse",
+                                "value": "11315"
+                            },
+                            {
+                                "name": "Ile De France",
+                                "value": "17515"
+                            },
+                            {
+                                "name": "Loire-Centre",
+                                "value": "14505"
+                            },
+                            {
+                                "name": "Grand Est Europe",
+                                "value": "15135"
+                            },
+                            {
+                                "name": "Normandie",
+                                "value": "11425"
+                            },
+                            {
+                                "name": "Aquitaine Poitou-Charentes",
+                                "value": "13335"
+                            },
+                            {
+                                "name": "Midi-Pyrénées",
+                                "value": "13135"
+                            },
+                            {
+                                "name": "Rhône Alpes",
+                                "value": "13825"
+                            },
+                            {
+                                "name": "Languedoc-Roussillon",
+                                "value": "13485"
+                            },
+                            {
+                                "name": "Bourgogne Franche-Comté",
+                                "value": "12135"
+                            }
+                        ],
+                        "type": "list",
+                        "name": "website",
+                        "label": "Région"
+                    }
+                ],
+                "logo": "https://logo.clearbit.com/caisse-epargne-ile-de-france.fr?size=200",
+                "name": "Caisse d'Épargne Particuliers",
+                "code": "16188",
+                "featured": true
+            },
+            {
+                "uid": "3000b0e0-8a93-59e7-a351-ad5625ec19a3",
+                "form": [
+                    {
+                        "label": "Identifiant Internet",
+                        "name": "login",
+                        "type": "text",
+                        "validation": null,
+                        "options": null
+                    },
+                    {
+                        "label": "Code d'accès",
+                        "name": "password",
+                        "type": "password",
+                        "validation": "^\\d+$",
+                        "options": null
+                    }
+                ],
+                "logo": "https://logo.clearbit.com/carrefour.com?size=200",
+                "name": "Carrefour Banque",
+                "code": "19870",
+                "featured": false
+            },
+            {
+                "uid": "e9606d38-6b0f-5f76-b573-61a4d00a927d",
+                "form": [
+                    {
+                        "label": "Identifiant",
+                        "name": "login",
+                        "type": "text",
+                        "validation": null,
+                        "options": null
+                    },
+                    {
+                        "label": "Mot de passe",
+                        "name": "password",
+                        "type": "password",
+                        "validation": null,
+                        "options": null
+                    }
+                ],
+                "logo": "https://logo.clearbit.com/www.cic.fr/?size=200",
+                "name": "CIC",
+                "code": "30066",
+                "featured": false
+            },
+            {
+                "uid": "025daf3c-0140-5f6d-a4a8-b7423c97f745",
+                "form": [
+                    {
+                        "label": "Identifiant",
+                        "name": "login",
+                        "type": "text",
+                        "validation": "^(PRO|[0-9]{3})(-?[0-9]{3}){2}-?[0-9]{1}$",
+                        "options": null
+                    },
+                    {
+                        "label": "Code d'accès",
+                        "name": "password",
+                        "type": "password",
+                        "validation": "^[0-9]+$",
+                        "options": null
+                    }
+                ],
+                "logo": "https://logo.clearbit.com/nickel.fr?size=200",
+                "name": "Compte Nickel",
+                "code": "16598",
+                "featured": false
+            },
+            {
+                "uid": "d840908d-5157-5819-8296-474fa4534564",
+                "form": [
+                    {
+                        "label": "N° de compte",
+                        "name": "login",
+                        "type": "text",
+                        "validation": "^\\d{11}$",
+                        "options": null
+                    },
+                    {
+                        "label": "Code personnel",
+                        "name": "password",
+                        "type": "password",
+                        "validation": "^\\d{6}$",
+                        "options": null
+                    },
+                    {
+                        "validation": null,
+                        "options": [
+                            {
+                                "name": "Alpes Provence",
+                                "value": "m.ca-alpesprovence.fr"
+                            },
+                            {
+                                "name": "Alsace-Vosges",
+                                "value": "m.ca-alsace-vosges.fr"
+                            },
+                            {
+                                "name": "Anjou Maine",
+                                "value": "m.ca-anjou-maine.fr"
+                            },
+                            {
+                                "name": "Aquitaine",
+                                "value": "m.ca-aquitaine.fr"
+                            },
+                            {
+                                "name": "Atlantique Vendée",
+                                "value": "m.ca-atlantique-vendee.fr"
+                            },
+                            {
+                                "name": "Brie Picardie",
+                                "value": "m.ca-briepicardie.fr"
+                            },
+                            {
+                                "name": "Centre France",
+                                "value": "m.ca-centrefrance.fr"
+                            },
+                            {
+                                "name": "Centre Loire",
+                                "value": "m.ca-centreloire.fr"
+                            },
+                            {
+                                "name": "Centre Ouest",
+                                "value": "m.ca-centreouest.fr"
+                            },
+                            {
+                                "name": "Centre Est",
+                                "value": "m.ca-centrest.fr"
+                            },
+                            {
+                                "name": "Champagne Bourgogne",
+                                "value": "m.ca-cb.fr"
+                            },
+                            {
+                                "name": "Charente-Maritime Deux-Sèvres",
+                                "value": "m.ca-cmds.fr"
+                            },
+                            {
+                                "name": "Charente Périgord",
+                                "value": "m.ca-charente-perigord.fr"
+                            },
+                            {
+                                "name": "Corse",
+                                "value": "m.ca-corse.fr"
+                            },
+                            {
+                                "name": "Côtes d'Armor",
+                                "value": "m.ca-cotesdarmor.fr"
+                            },
+                            {
+                                "name": "Des Savoie",
+                                "value": "m.ca-des-savoie.fr"
+                            },
+                            {
+                                "name": "Finistere",
+                                "value": "m.ca-finistere.fr"
+                            },
+                            {
+                                "name": "Franche-Comté",
+                                "value": "m.ca-franchecomte.fr"
+                            },
+                            {
+                                "name": "Guadeloupe",
+                                "value": "m.ca-guadeloupe.fr"
+                            },
+                            {
+                                "name": "Ile-de-France",
+                                "value": "m.ca-paris.fr"
+                            },
+                            {
+                                "name": "Ille-et-Vilaine",
+                                "value": "m.ca-illeetvilaine.fr"
+                            },
+                            {
+                                "name": "Languedoc",
+                                "value": "m.ca-languedoc.fr"
+                            },
+                            {
+                                "name": "Loire Haute Loire",
+                                "value": "m.ca-loirehauteloire.fr"
+                            },
+                            {
+                                "name": "Lorraine",
+                                "value": "m.ca-lorraine.fr"
+                            },
+                            {
+                                "name": "Martinique Guyane",
+                                "value": "m.ca-martinique.fr"
+                            },
+                            {
+                                "name": "Morbihan",
+                                "value": "m.ca-morbihan.fr"
+                            },
+                            {
+                                "name": "Nord de France",
+                                "value": "m.ca-norddefrance.fr"
+                            },
+                            {
+                                "name": "Nord Est",
+                                "value": "m.ca-nord-est.fr"
+                            },
+                            {
+                                "name": "Nord Midi-Pyrénées",
+                                "value": "m.ca-nmp.fr"
+                            },
+                            {
+                                "name": "Normandie",
+                                "value": "m.ca-normandie.fr"
+                            },
+                            {
+                                "name": "Normandie Seine",
+                                "value": "m.ca-normandie-seine.fr"
+                            },
+                            {
+                                "name": "Provence Côte d'Azur",
+                                "value": "m.ca-pca.fr"
+                            },
+                            {
+                                "name": "Pyrénées Gascogne",
+                                "value": "m.lefil.com"
+                            },
+                            {
+                                "name": "Réunion",
+                                "value": "m.ca-reunion.fr"
+                            },
+                            {
+                                "name": "Sud Méditerranée",
+                                "value": "m.ca-sudmed.fr"
+                            },
+                            {
+                                "name": "Sud Rhône Alpes",
+                                "value": "m.ca-sudrhonealpes.fr"
+                            },
+                            {
+                                "name": "Toulouse 31",
+                                "value": "m.ca-toulouse31.fr"
+                            },
+                            {
+                                "name": "Tourraine Poitou",
+                                "value": "m.ca-tourainepoitou.fr"
+                            },
+                            {
+                                "name": "Val de France",
+                                "value": "m.ca-valdefrance.fr"
+                            }
+                        ],
+                        "type": "list",
+                        "name": "website",
+                        "label": "Région"
+                    }
+                ],
+                "logo": "https://logo.clearbit.com/credit-agricole.fr?size=200",
+                "name": "Crédit Agricole",
+                "code": "30006",
+                "featured": true
+            },
+            {
+                "uid": "bd6e3615-a45f-5f9e-80c2-a6714081d9ce",
+                "form": [
+                    {
+                        "label": "Code utilisateur",
+                        "name": "login",
+                        "type": "text",
+                        "validation": "\\d+",
+                        "options": null
+                    },
+                    {
+                        "label": "Code confidentiel",
+                        "name": "password",
+                        "type": "password",
+                        "validation": "^\\d+$",
+                        "options": null
+                    },
+                    {
+                        "label": "Numéro d'utilisateur (optionnel)",
+                        "name": "nuser",
+                        "type": "text",
+                        "validation": "^\\d{0,8}$",
+                        "options": null
+                    }
+                ],
+                "logo": "https://logo.clearbit.com/credit-cooperatif.coop?size=200",
+                "name": "Crédit Coopératif",
+                "code": "42559",
+                "featured": false
+            },
+            {
+                "uid": "cdff375f-8353-56dc-9d58-1c159f21740e",
+                "form": [
+                    {
+                        "label": "Identifiant",
+                        "name": "login",
+                        "type": "text",
+                        "validation": null,
+                        "options": null
+                    },
+                    {
+                        "label": "Code confidentiel",
+                        "name": "password",
+                        "type": "password",
+                        "validation": "^\\d{6}$",
+                        "options": null
+                    }
+                ],
+                "logo": "https://logo.clearbit.com/groupe-credit-du-nord.com?size=200",
+                "name": "Crédit du Nord",
+                "code": "30076",
+                "featured": false
+            },
+            {
+                "uid": "cc9da113-55dc-50bd-bf9d-9261dfdfbb31",
+                "form": [
+                    {
+                        "validation": null,
+                        "options": [
+                            {
+                                "name": "Grand Ouest",
+                                "value": "www.ibps.cmgo.creditmaritime.groupe.banquepopulaire.fr"
+                            }
+                        ],
+                        "type": "list",
+                        "name": "website",
+                        "label": "Région"
+                    },
+                    {
+                        "label": "Identifiant",
+                        "name": "login",
+                        "type": "text",
+                        "validation": null,
+                        "options": null
+                    },
+                    {
+                        "label": "Mot de passe",
+                        "name": "password",
+                        "type": "password",
+                        "validation": null,
+                        "options": null
+                    }
+                ],
+                "logo": "https://logo.clearbit.com/creditmaritime.fr?size=200",
+                "name": "Crédit Maritime",
+                "code": "17219",
+                "featured": false
+            },
+            {
+                "uid": "fc6e059f-c3e6-52d7-8139-6e5e0297fe24",
+                "form": [
+                    {
+                        "label": "Identifiant",
+                        "name": "login",
+                        "type": "text",
+                        "validation": null,
+                        "options": null
+                    },
+                    {
+                        "label": "Mot de passe",
+                        "name": "password",
+                        "type": "password",
+                        "validation": null,
+                        "options": null
+                    }
+                ],
+                "logo": "https://logo.clearbit.com/creditmutuel.fr?size=200",
+                "name": "Crédit Mutuel",
+                "code": "10278",
+                "featured": true
+            },
+            {
+                "uid": "ab3acf4c-cfbc-5b9f-b6d9-cd4eb1838cd4",
+                "form": [
+                    {
+                        "label": "Identifiant",
+                        "name": "login",
+                        "type": "text",
+                        "validation": null,
+                        "options": null
+                    },
+                    {
+                        "label": "Mot de passe",
+                        "name": "password",
+                        "type": "password",
+                        "validation": null,
+                        "options": null
+                    }
+                ],
+                "logo": "https://logo.clearbit.com/creditmutuel.fr?size=200",
+                "name": "Crédit Mutuel de Bretagne",
+                "code": "15589",
+                "featured": false
+            },
+            {
+                "uid": "f1309fa1-f1fd-51fd-ad9a-a7aba985ce67",
+                "form": [
+                    {
+                        "label": "Identifiant",
+                        "name": "login",
+                        "type": "text",
+                        "validation": null,
+                        "options": null
+                    },
+                    {
+                        "label": "Mot de passe",
+                        "name": "password",
+                        "type": "password",
+                        "validation": null,
+                        "options": null
+                    }
+                ],
+                "logo": "https://logo.clearbit.com/creditmutuel.fr?size=200",
+                "name": "Crédit Mutuel du Sud Ouest",
+                "code": "15589",
+                "featured": false
+            },
+            {
+                "uid": "b247dd6e-4ccc-598c-9f12-ea740465e2f0",
+                "form": [
+                    {
+                        "label": "Identifiant",
+                        "name": "login",
+                        "type": "text",
+                        "validation": null,
+                        "options": null
+                    },
+                    {
+                        "label": "Mot de passe",
+                        "name": "password",
+                        "type": "password",
+                        "validation": null,
+                        "options": null
+                    }
+                ],
+                "logo": "https://logo.clearbit.com/fortuneo.fr?size=200",
+                "name": "Fortuneo",
+                "code": "14518",
+                "featured": false
+            },
+            {
+                "uid": "96651e36-a0bf-5369-9a92-8461e6010a91",
+                "form": [
+                    {
+                        "label": "Numéro client",
+                        "name": "login",
+                        "type": "text",
+                        "validation": null,
+                        "options": null
+                    },
+                    {
+                        "label": "Code d'accès",
+                        "name": "password",
+                        "type": "password",
+                        "validation": "^\\d{6}$",
+                        "options": null
+                    }
+                ],
+                "logo": "https://logo.clearbit.com/groupama.fr?size=200",
+                "name": "Groupama",
+                "code": "18370",
+                "featured": false
+            },
+            {
+                "uid": "5b2ebdf0-9ab2-5e0d-a6d4-26c255f9d2d0",
+                "form": [
+                    {
+                        "label": "Identifiant",
+                        "name": "login",
+                        "type": "text",
+                        "validation": "^[0-9]+$",
+                        "options": null
+                    },
+                    {
+                        "label": "Code secret",
+                        "name": "password",
+                        "type": "password",
+                        "validation": "^(\\d{6})$",
+                        "options": null
+                    }
+                ],
+                "logo": "https://logo.clearbit.com/hellobank.fr?size=200",
+                "name": "Hello bank!",
+                "code": "30004",
+                "featured": false
+            },
+            {
+                "uid": "9efdf972-573a-50e0-9245-2d9e310d7f61",
+                "form": [
+                    {
+                        "label": "Identifiant",
+                        "name": "login",
+                        "type": "text",
+                        "validation": null,
+                        "options": null
+                    },
+                    {
+                        "label": "Mot de passe",
+                        "name": "password",
+                        "type": "password",
+                        "validation": null,
+                        "options": null
+                    },
+                    {
+                        "label": "Réponse secrète",
+                        "name": "secret",
+                        "type": "password",
+                        "validation": null,
+                        "options": null
+                    }
+                ],
+                "logo": "https://logo.clearbit.com/hsbc.com?size=200",
+                "name": "HSBC France",
+                "code": "30056",
+                "featured": false
+            },
+            {
+                "uid": "a3959e20-9fc8-53e8-a442-66e4940db567",
+                "form": [
+                    {
+                        "label": "Numéro client",
+                        "name": "login",
+                        "type": "text",
+                        "validation": "^(\\d{1,10})$",
+                        "options": null
+                    },
+                    {
+                        "label": "Code secret",
+                        "name": "password",
+                        "type": "password",
+                        "validation": "^(\\d{6})$",
+                        "options": null
+                    },
+                    {
+                        "label": "Date de naissance",
+                        "name": "birthday",
+                        "type": "date",
+                        "validation": null,
+                        "options": null
+                    }
+                ],
+                "logo": "https://logo.clearbit.com/ing.fr?size=200",
+                "name": "ING France",
+                "code": "30438",
+                "featured": false
+            },
+            {
+                "uid": "33f88657-7ab0-5dbe-b8c3-c98e614afc28",
+                "form": [
+                    {
+                        "label": "Identifiant",
+                        "name": "login",
+                        "type": "text",
+                        "validation": null,
+                        "options": null
+                    },
+                    {
+                        "label": "Mot de passe",
+                        "name": "password",
+                        "type": "password",
+                        "validation": "^(\\d{6})$",
+                        "options": null
+                    }
+                ],
+                "logo": "https://logo.clearbit.com/labanquepostale.fr?size=200",
+                "name": "La Banque Postale",
+                "code": "20041",
+                "featured": true
+            },
+            {
+                "uid": "ad5928c7-89ce-5977-a66d-3360e3aa4029",
+                "form": [
+                    {
+                        "label": "Identifiant",
+                        "name": "login",
+                        "type": "text",
+                        "validation": null,
+                        "options": null
+                    },
+                    {
+                        "label": "Code personnel",
+                        "name": "password",
+                        "type": "password",
+                        "validation": null,
+                        "options": null
+                    }
+                ],
+                "logo": "https://logo.clearbit.com/lcl.fr?size=200",
+                "name": "LCL",
+                "code": "30002",
+                "featured": true
+            },
+            {
+                "uid": "6d1876e3-06ea-5d96-aaed-c53f51aacc2b",
+                "form": [
+                    {
+                        "label": "N° d'abonné",
+                        "name": "login",
+                        "type": "text",
+                        "validation": null,
+                        "options": null
+                    },
+                    {
+                        "label": "Code confidentiel",
+                        "name": "password",
+                        "type": "password",
+                        "validation": null,
+                        "options": null
+                    },
+                    {
+                        "label": "Mot secret",
+                        "name": "secret",
+                        "type": "password",
+                        "validation": null,
+                        "options": null
+                    }
+                ],
+                "logo": "https://logo.clearbit.com/milleis.fr?size=200",
+                "name": "Milleis",
+                "code": "30588",
+                "featured": false
+            },
+            {
+                "uid": "306b84f8-78ad-5a90-93ed-3e5cdb01344a",
+                "form": [
+                    {
+                        "label": "Identifiant",
+                        "name": "login",
+                        "type": "text",
+                        "validation": null,
+                        "options": null
+                    },
+                    {
+                        "label": "Code d'accès",
+                        "name": "password",
+                        "type": "password",
+                        "validation": null,
+                        "options": null
+                    }
+                ],
+                "logo": "https://logo.clearbit.com/monabanq.com?size=200",
+                "name": "Monabanq",
+                "code": "14690",
+                "featured": false
+            },
+            {
+                "uid": "1f6220d2-cc45-541e-b4ef-6a3c3dd92421",
+                "form": [
+                    {
+                        "label": "Email",
+                        "name": "login",
+                        "type": "text",
+                        "validation": "^.+$",
+                        "options": null
+                    },
+                    {
+                        "label": "Password",
+                        "name": "password",
+                        "type": "password",
+                        "validation": null,
+                        "options": null
+                    }
+                ],
+                "logo": "https://logo.clearbit.com/n26.com?size=200",
+                "name": "N26",
+                "code": "10011",
+                "featured": false
+            },
+            {
+                "uid": "b4d3c990-055b-5bc2-9ab2-bfb77dd60255",
+                "form": [],
+                "logo": "https://logo.clearbit.com/orangebank.fr?size=200",
+                "name": "Orange Bank",
+                "code": "18370",
+                "featured": false
+            },
+            {
+                "uid": "97efac6f-7e5e-55a0-8223-1f68388655eb",
+                "form": [
+                    {
+                        "label": "Identifiant",
+                        "name": "login",
+                        "type": "text",
+                        "validation": null,
+                        "options": null
+                    },
+                    {
+                        "label": "Mot de passe",
+                        "name": "password",
+                        "type": "password",
+                        "validation": null,
+                        "options": null
+                    }
+                ],
+                "logo": "https://logo.clearbit.com/psa-banque-france.com?size=200",
+                "name": "PSA Banque",
+                "code": "14749",
+                "featured": false
+            },
+            {
+                "uid": "8f2b0418-c344-574e-8438-fc0878ade068",
+                "form": [
+                    {
+                        "label": "Phone number",
+                        "name": "login",
+                        "type": "text",
+                        "validation": "^(?:(?:\\+|)\\d{2,}|0)\\s*[1-9](?:[\\s.-]*\\d){5,14}$",
+                        "options": null
+                    },
+                    {
+                        "label": "PIN Code",
+                        "name": "password",
+                        "type": "password",
+                        "validation": "^\\d{4}$",
+                        "options": null
+                    }
+                ],
+                "logo": "https://logo.clearbit.com/revolutionparts.com?size=200",
+                "name": "Revolut",
+                "code": "REVO",
+                "featured": false
+            },
+            {
+                "uid": "f5c29767-1bc8-5337-9e4e-68a0fbd91c9a",
+                "form": [
+                    {
+                        "label": "Code client",
+                        "name": "login",
+                        "type": "text",
+                        "validation": null,
+                        "options": null
+                    },
+                    {
+                        "label": "Code secret",
+                        "name": "password",
+                        "type": "password",
+                        "validation": null,
+                        "options": null
+                    }
+                ],
+                "logo": "https://logo.clearbit.com/socgen.com?size=200",
+                "name": "Société Générale",
+                "code": "30003",
+                "featured": true
+            }
+        ],
+        "rawHeaders": [
+            "Content-Length",
+            "23288",
+            "Content-Type",
+            "application/json; charset=utf-8",
+            "ETag",
+            "W/\"5af8-9/d5cidFjJPpHq27THhpY+48348\"",
+            "Set-Cookie",
+            "TiPMix=46.7985588343807; path=/; HttpOnly; Domain=odb-aggregation-dev.azurewebsites.net:443; Max-Age=3600",
+            "Set-Cookie",
+            "x-ms-routing-name=self; path=/; HttpOnly; Domain=odb-aggregation-dev.azurewebsites.net:443; Max-Age=3600",
+            "X-Powered-By",
+            "Express",
+            "Access-Control-Allow-Origin",
+            "*",
+            "request-context",
+            "appId=cid-v1:8d302c50-ae95-4575-a384-8792e95297ab",
+            "X-Azure-Ref",
+            "0+z98XwAAAADtc24cz6oXT5jJflB/f0vrUEFSMDJFREdFMDYxMwA0MjJlZjNjMy04NDZhLTQ1ZDMtYWJjMS1hZDUyNzJiMTk4ZDk=",
+            "Date",
+            "Tue, 06 Oct 2020 09:59:24 GMT",
+            "Connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "http://127.0.0.1:4000",
+        "method": "GET",
+        "path": "/users/OsYFhvKAT/accounts",
+        "body": "",
+        "status": 200,
+        "response": [
+            {
+                "id": "1388",
+                "name": "Corinne Berthier",
+                "number": null,
+                "currency": "EUR",
+                "balance": "2189.69",
+                "metadatas": {
+                    "iban": "FR8112869000020PC0000012K39"
+                },
+                "bank": {
+                    "name": "Oney Banque Digitale",
+                    "logo": "https://logo.clearbit.com/oney.fr?size=200",
+                    "source": "odb"
+                }
+            },
+            {
+                "id": "8241",
+                "name": "LCL",
+                "number": "04000391840W",
+                "currency": "EUR",
+                "balance": "985.51",
+                "metadatas": {
+                    "iban": "FR1730002040000000391840W02"
+                },
+                "bank": {
+                    "name": "LCL",
+                    "logo": "https://logo.clearbit.com/lcl.fr?size=200",
+                    "source": "aggregation"
+                }
+            },
+            {
+                "id": "8253",
+                "name": "Connecteur Test - Compte chèque EUR",
+                "number": "3002900000",
+                "currency": "EUR",
+                "balance": "3023.78",
+                "metadatas": {
+                    "iban": "EX6713335395899300290000026"
+                },
+                "bank": {
+                    "name": null,
+                    "logo": null,
+                    "source": "aggregation"
+                }
+            },
+            {
+                "id": "8254",
+                "name": "Connecteur Test - Compte chèque USD",
+                "number": "3002900001",
+                "currency": "USD",
+                "balance": "4435.7",
+                "metadatas": {
+                    "iban": "EX6713335395899300290000123"
+                },
+                "bank": {
+                    "name": null,
+                    "logo": null,
+                    "source": "aggregation"
+                }
+            },
+            {
+                "id": "8255",
+                "name": "Connecteur Test - Compte carte débit différé",
+                "number": "XXXXXXXXXX982605",
+                "currency": "EUR",
+                "balance": "0",
+                "metadatas": {
+                    "iban": "EX6713335395899300290000220"
+                },
+                "bank": {
+                    "name": null,
+                    "logo": null,
+                    "source": "aggregation"
+                }
+            }
+        ],
+        "rawHeaders": [
+            "X-Powered-By",
+            "Express",
+            "Content-Type",
+            "application/json; charset=utf-8",
+            "Content-Length",
+            "1171",
+            "ETag",
+            "W/\"493-l6mZh9r97B5Tnf3La2ABtdmYnv0\"",
+            "Date",
+            "Tue, 06 Oct 2020 09:59:24 GMT",
+            "Connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    }
+]

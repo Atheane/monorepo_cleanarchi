@@ -1,0 +1,175 @@
+[
+  {
+    "scope": "http://localhost:3022",
+    "method": "GET",
+    "path": "/profile/user/zARoItBES",
+    "body": "",
+    "status": 200,
+    "response": {
+      "uid": "zARoItBES",
+      "email": "chlm6@yopmail.com",
+      "biometric_key": null,
+      "is_validated": true,
+      "profile": {
+        "status" : "onBoarding",
+        "phone" : "+33643454453",
+        "birth_city" : "Bxfj",
+        "birth_country" : "AD",
+        "birth_date" : "1993-01-24T23:00:00.000Z",
+        "birth_name" : "chalom",
+        "first_name" : "ellezam",
+        "honorific_code" : "2",
+        "earnings_amount": null,
+        "economic_activity": null,
+        "fiscal_country": null,
+        "legal_name": null
+      },
+      "steps": [
+        "address",
+        "fiscalStatus",
+        "contract"
+      ]
+    },
+    "rawHeaders": [
+      "Content-Length",
+      "488",
+      "Content-Type",
+      "application/json; charset=utf-8",
+      "ETag",
+      "W/\"1e8-mmRFbjHAZMEOswmjPq3eoHl6WxI\"",
+      "request-context",
+      "appId=cid-v1:9d34efb3-28c4-4eb1-b1ff-5c04b9a6bbfa",
+      "Access-Control-Allow-Origin",
+      "*",
+      "Content-Security-Policy",
+      "default-src 'self';base-uri 'self';block-all-mixed-content;font-src 'self' https: data:;frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests",
+      "X-DNS-Prefetch-Control",
+      "off",
+      "Expect-CT",
+      "max-age=0",
+      "X-Frame-Options",
+      "SAMEORIGIN",
+      "Strict-Transport-Security",
+      "max-age=15552000; includeSubDomains",
+      "X-Download-Options",
+      "noopen",
+      "X-Content-Type-Options",
+      "nosniff",
+      "X-Permitted-Cross-Domain-Policies",
+      "none",
+      "Referrer-Policy",
+      "no-referrer",
+      "X-XSS-Protection",
+      "0",
+      "X-Azure-Ref",
+      "0S7kmYAAAAADYiWTJQ7iUQI/sX8P+uytaUEFSMDJFREdFMDYxMAA0MjJlZjNjMy04NDZhLTQ1ZDMtYWJjMS1hZDUyNzJiMTk4ZDk=",
+      "Date",
+      "Fri, 12 Feb 2021 17:22:19 GMT",
+      "Connection",
+      "close"
+    ],
+    "responseIsBinary": false
+  },
+  {
+    "scope": "https://sb-api.xpollens.com:443",
+    "method": "POST",
+    "path": "/api/V1.1/users",
+    "body": {
+      "AppUserId": "zARoItBES",
+      "CountryCode": "FR",
+      "Profile": {
+        "Address": {
+          "City": "Créteil",
+          "Country": "FR",
+          "Street": "5 rue paul cezanne",
+          "ZipCode": "94000"
+        },
+        "Alias": "e.c#zARoItBES",
+        "BirthCity": "Bxfj",
+        "BirthCountry": "AD",
+        "Birthdate": "1993-01-24T23:00:00.000Z",
+        "Civility": "1",
+        "Email": "chlm6@yopmail.com",
+        "FirstName": "ellezam",
+        "LastName": "chalom",
+        "BirthName": "chalom",
+        "Phonenumber": "+33643454453"
+      }
+    },
+    "status": 201,
+    "response": {
+      "Id": 4604,
+      "AppUserId": "zARoItBES",
+      "Type": 1,
+      "Role": 1,
+      "Profile": {
+        "Civility": 1,
+        "FirstName": "ellezam",
+        "LastName": "chalom",
+        "BirthName": "chalom",
+        "Birthdate": "1993-01-24T23:00:00.000Z",
+        "Birthcity": "Bxfj",
+        "BirthCountry": "AD",
+        "BirthZipCode": null,
+        "Address": {
+          "Street": "5 rue paul cezanne",
+          "ZipCode": "94000",
+          "City": "Créteil",
+          "Country": "FR"
+        },
+        "PhoneNumber": "0033643454453",
+        "Email": "chlm6@yopmail.com",
+        "Alias": "e.c#zARoItBES",
+        "Picture": {
+          "Href": null
+        },
+        "EconomicActivity": null,
+        "Asset": null,
+        "Income": null
+      },
+      "Credentials": null,
+      "Amount": 0,
+      "AccountingBalanceAmount": 0,
+      "SubAccounts": [
+        {
+          "Id": 4604,
+          "AppAccountId": "zARoItBES",
+          "Amount": 0,
+          "AccountingBalanceAmount": 0,
+          "DisplayName": "ellezam chalom",
+          "CreationDate": "2021-02-12T18:22:21.1439024+01:00",
+          "IsDefault": true,
+          "Iban": "FR7412869000020PC000003JW39",
+          "IbanHint": "FR74XXXXXXXXXXXXXXXXJW39"
+        }
+      ],
+      "BankAccounts": null,
+      "CBCards": null,
+      "Status": 1,
+      "Company": null,
+      "CountryCode": null,
+      "OnBoardingDate": "2021-02-12T18:22:21.1439024+01:00"
+    },
+    "rawHeaders": [
+      "Date",
+      "Fri, 12 Feb 2021 17:22:21 GMT",
+      "Content-Type",
+      "application/json; charset=utf-8",
+      "Content-Length",
+      "927",
+      "Cache-Control",
+      "no-cache",
+      "Pragma",
+      "no-cache",
+      "Expires",
+      "-1",
+      "Location",
+      "https://az-pp-rest.s-money.net/api/bib/sandbox/api/users/zARoItBES",
+      "Request-Context",
+      "appId=cid-v1:40d43092-8aee-4b2b-8b7f-34d2d69e09b7",
+      "Connection",
+      "close"
+    ],
+    "responseIsBinary": false
+  }
+]

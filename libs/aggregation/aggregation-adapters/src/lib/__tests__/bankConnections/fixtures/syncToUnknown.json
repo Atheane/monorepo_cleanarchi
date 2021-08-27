@@ -1,0 +1,371 @@
+[
+  {
+    "scope": "https://oney-dev-sandbox.biapi.pro:443",
+    "method": "GET",
+    "path": "/2.0/connectors/338178e6-3d01-564f-9a7b-52ca442459bf?capabilities=bank&expand=fields,logos",
+    "body": "",
+    "status": 200,
+    "response": {
+      "id": 59,
+      "name": "Connecteur de test",
+      "hidden": true,
+      "charged": false,
+      "code": null,
+      "beta": false,
+      "color": "5c2963",
+      "slug": "EXA",
+      "sync_frequency": null,
+      "months_to_fetch": null,
+      "auth_mechanism": "credentials",
+      "siret": null,
+      "uuid": "338178e6-3d01-564f-9a7b-52ca442459bf",
+      "restricted": false,
+      "fields": [
+        {
+          "name": "login",
+          "label": "Identifiant",
+          "regex": null,
+          "type": "text",
+          "required": true,
+          "auth_mechanisms": ["credentials"],
+          "connector_sources": ["openapi", "directaccess"]
+        },
+        {
+          "name": "password",
+          "label": "Code (1234)",
+          "regex": null,
+          "type": "password",
+          "required": true,
+          "auth_mechanisms": ["credentials"],
+          "connector_sources": ["openapi", "directaccess"]
+        },
+        {
+          "name": "openapiwebsite",
+          "label": "Cas d'usage (openapi)",
+          "regex": null,
+          "type": "list",
+          "required": false,
+          "auth_mechanisms": ["webauth", "credentials"],
+          "connector_sources": ["openapi"],
+          "values": [
+            {
+              "label": "Particuliers",
+              "value": "par"
+            },
+            {
+              "label": "Professionnels",
+              "value": "pro"
+            },
+            {
+              "label": "WrongPass",
+              "value": "wrongpass"
+            },
+            {
+              "label": "AdditionalInformationNeeded",
+              "value": "additionalInformationNeeded"
+            },
+            {
+              "label": "WebsiteUnavailable",
+              "value": "websiteUnavailable"
+            },
+            {
+              "label": "ActionNeeded",
+              "value": "actionNeeded"
+            },
+            {
+              "label": "Bug",
+              "value": "bug"
+            },
+            {
+              "label": "ShortDecoupled",
+              "value": "shortDecoupled"
+            },
+            {
+              "label": "Double OTP",
+              "value": "doubleotp"
+            },
+            {
+              "label": "SCARequired",
+              "value": "SCARequired"
+            },
+            {
+              "label": "webauthRequired",
+              "value": "webauthRequired"
+            },
+            {
+              "label": "passwordExpired",
+              "value": "passwordExpired"
+            },
+            {
+              "label": "LongDecoupled",
+              "value": "longDecoupled"
+            },
+            {
+              "label": "SCARequiredAndDecoupled",
+              "value": "SCARequiredAndDecoupled"
+            },
+            {
+              "label": "SCARequiredAndOTP",
+              "value": "SCARequiredAndOTP"
+            },
+            {
+              "label": "Website not supported",
+              "value": "notSupported"
+            },
+            {
+              "label": "otp_transfer",
+              "value": "otp_transfer"
+            },
+            {
+              "label": "AppValidationCancelled",
+              "value": "AppValidationCancelled"
+            },
+            {
+              "label": "AppValidationExpired",
+              "value": "AppValidationExpired"
+            }
+          ]
+        },
+        {
+          "name": "directaccesswebsite",
+          "label": "Cas d'usage (directaccess)",
+          "regex": null,
+          "type": "list",
+          "required": false,
+          "auth_mechanisms": ["webauth", "credentials"],
+          "connector_sources": ["directaccess"],
+          "values": [
+            {
+              "label": "Particuliers",
+              "value": "par"
+            },
+            {
+              "label": "Professionnels",
+              "value": "pro"
+            },
+            {
+              "label": "WrongPass",
+              "value": "wrongpass"
+            },
+            {
+              "label": "AdditionalInformationNeeded",
+              "value": "additionalInformationNeeded"
+            },
+            {
+              "label": "WebsiteUnavailable",
+              "value": "websiteUnavailable"
+            },
+            {
+              "label": "ActionNeeded",
+              "value": "actionNeeded"
+            },
+            {
+              "label": "Bug",
+              "value": "bug"
+            },
+            {
+              "label": "ShortDecoupled",
+              "value": "shortDecoupled"
+            },
+            {
+              "label": "Double OTP",
+              "value": "doubleotp"
+            },
+            {
+              "label": "SCARequired",
+              "value": "SCARequired"
+            },
+            {
+              "label": "passwordExpired",
+              "value": "passwordExpired"
+            },
+            {
+              "label": "LongDecoupled",
+              "value": "longDecoupled"
+            },
+            {
+              "label": "SCARequiredAndDecoupled",
+              "value": "SCARequiredAndDecoupled"
+            },
+            {
+              "label": "SCARequiredAndOTP",
+              "value": "SCARequiredAndOTP"
+            },
+            {
+              "label": "Website not supported",
+              "value": "notSupported"
+            },
+            {
+              "label": "otp_transfer",
+              "value": "otp_transfer"
+            },
+            {
+              "label": "AppValidationCancelled",
+              "value": "AppValidationCancelled"
+            },
+            {
+              "label": "AppValidationExpired",
+              "value": "AppValidationExpired"
+            }
+          ]
+        }
+      ],
+      "logos": [],
+      "categories": [],
+      "capabilities": [
+        "contact",
+        "profile",
+        "document",
+        "transfer",
+        "banktransferaddrecipient",
+        "bankwealth",
+        "banktransfer",
+        "bank"
+      ],
+      "urls": [],
+      "available_auth_mechanisms": ["webauth", "credentials"],
+      "account_types": ["card", "perco", "loan", "pee", "savings", "market", "lifeinsurance", "checking"],
+      "available_transfer_mechanisms": ["webauth", "credentials"],
+      "transfer_beneficiary_types": ["recipient", "iban"],
+      "transfer_execution_date_types": ["deferred", "first_open_day"],
+      "documents_type": []
+    },
+    "rawHeaders": [
+      "Date",
+      "Wed, 25 Nov 2020 11:08:56 GMT",
+      "Content-Type",
+      "application/json; charset=utf-8",
+      "Content-Length",
+      "3733",
+      "Vary",
+      "Authorization,Origin",
+      "Server",
+      "Budgea/2.19.26 Weboob/1.6+budgea.738",
+      "X-Recruiting",
+      "Budget Insight is hiring! Do not hesitate to contact us at jobs@budget-insight.com or on #budget-insight @ Freenode",
+      "X-Request-ID",
+      "c974a6fa-b0c9-40d5-9c92-e2fe42508ab0",
+      "X-Varnish",
+      "87131114",
+      "Age",
+      "0",
+      "Via",
+      "1.1 varnish (Varnish/6.1)",
+      "Accept-Ranges",
+      "bytes",
+      "Connection",
+      "close",
+      "Strict-Transport-Security",
+      "max-age=31536000; includeSubDomains; preload",
+      "X-Frame-Options",
+      "DENY"
+    ],
+    "responseIsBinary": false
+  },
+  {
+    "scope": "https://oney-dev-sandbox.biapi.pro:443",
+    "method": "POST",
+    "path": "/2.0/auth/init",
+    "body": {
+      "client_id": "11571068",
+      "client_secret": "NND6d9s2uAmLixdSVUaw6ilXNKXp0i4t"
+    },
+    "status": 200,
+    "response": {
+      "auth_token": "8GV25jB6eEUyFUEmei56zTOiiTL5v_RQCZU4u_7OHM2dAVVjDYGRRRww6d0qKN2qBFKaQbn2svHP8QF7OYIwDnRJxwONQ3heJpZxvmxfDmA7pimLnMSxFc7JUnxUJGzQ",
+      "type": "permanent",
+      "id_user": 26
+    },
+    "rawHeaders": [
+      "Date",
+      "Wed, 25 Nov 2020 11:08:56 GMT",
+      "Content-Type",
+      "application/json; charset=utf-8",
+      "Content-Length",
+      "182",
+      "Vary",
+      "Authorization,Origin",
+      "Server",
+      "Budgea/2.19.26 Weboob/1.6+budgea.738",
+      "X-Recruiting",
+      "Budget Insight is hiring! Do not hesitate to contact us at jobs@budget-insight.com or on #budget-insight @ Freenode",
+      "X-Request-ID",
+      "f92225d0-ad12-4697-b92f-5581ac317310",
+      "X-Varnish",
+      "74844005",
+      "Age",
+      "0",
+      "Via",
+      "1.1 varnish (Varnish/6.1)",
+      "Accept-Ranges",
+      "bytes",
+      "Connection",
+      "close",
+      "Strict-Transport-Security",
+      "max-age=31536000; includeSubDomains; preload",
+      "X-Frame-Options",
+      "DENY"
+    ],
+    "responseIsBinary": false
+  },
+  {
+    "scope": "https://oney-dev-sandbox.biapi.pro:443",
+    "method": "POST",
+    "path": "/2.0/users/me/connections",
+    "body": {
+      "connector_uuid": "338178e6-3d01-564f-9a7b-52ca442459bf",
+      "openapiwebsite": "shortDecoupled",
+      "login": "Identifiant",
+      "password": "1234"
+    },
+    "status": 202,
+    "response": {
+      "id": 26,
+      "id_user": 26,
+      "id_connector": 59,
+      "last_update": null,
+      "created": "2020-11-25 12:08:57",
+      "active": true,
+      "last_push": null,
+      "next_try": "2020-11-26 13:08:58",
+      "state": "decoupled",
+      "error": "decoupled",
+      "error_message": "You need to confirm the connection on your bank website",
+      "expire": "2020-11-25 14:08:57",
+      "id_provider": 59,
+      "id_bank": 59,
+      "connector_uuid": "338178e6-3d01-564f-9a7b-52ca442459bf",
+      "description": "You need to confirm the connection on your bank website",
+      "id_connection": 26
+    },
+    "rawHeaders": [
+      "Date",
+      "Wed, 25 Nov 2020 11:08:58 GMT",
+      "Content-Type",
+      "application/json; charset=utf-8",
+      "Content-Length",
+      "510",
+      "Vary",
+      "Authorization,Origin",
+      "Server",
+      "Budgea/2.19.26 Weboob/1.6+budgea.738",
+      "X-Recruiting",
+      "Budget Insight is hiring! Do not hesitate to contact us at jobs@budget-insight.com or on #budget-insight @ Freenode",
+      "X-Request-ID",
+      "b31a04d2-c328-479e-802a-22be95981e94",
+      "X-Varnish",
+      "87131117",
+      "Age",
+      "0",
+      "Via",
+      "1.1 varnish (Varnish/6.1)",
+      "Connection",
+      "close",
+      "Strict-Transport-Security",
+      "max-age=31536000; includeSubDomains; preload",
+      "X-Frame-Options",
+      "DENY"
+    ],
+    "responseIsBinary": false
+  }
+]

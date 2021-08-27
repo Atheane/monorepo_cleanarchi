@@ -1,0 +1,8 @@
+{
+  "name": "@oney/authentication-adapters",
+  "version": "0.20.0",
+  "publishConfig": {
+    "access": "public",
+    "directory": "../../../dist/libs/authentication-adapters"
+  }
+}

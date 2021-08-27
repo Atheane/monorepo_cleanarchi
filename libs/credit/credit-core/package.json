@@ -1,0 +1,8 @@
+{
+  "name": "@oney/credit-core",
+  "version": "0.2.2",
+  "publishConfig": {
+    "access": "public",
+    "directory": "../../../dist/libs/credit-core"
+  }
+}

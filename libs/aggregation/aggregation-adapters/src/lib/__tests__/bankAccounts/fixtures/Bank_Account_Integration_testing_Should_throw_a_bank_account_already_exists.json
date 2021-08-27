@@ -1,0 +1,2845 @@
+[
+    {
+        "scope": "https://oney-dev-sandbox.biapi.pro:443",
+        "method": "GET",
+        "path": "/2.0/connectors/338178e6-3d01-564f-9a7b-52ca442459bf?capabilities=bank&expand=fields,logos",
+        "body": "",
+        "status": 200,
+        "response": {
+            "id": 59,
+            "name": "Connecteur de test",
+            "hidden": false,
+            "charged": false,
+            "code": null,
+            "beta": false,
+            "color": "5c2963",
+            "slug": "EXA",
+            "sync_frequency": null,
+            "months_to_fetch": null,
+            "auth_mechanism": "credentials",
+            "siret": null,
+            "uuid": "338178e6-3d01-564f-9a7b-52ca442459bf",
+            "restricted": false,
+            "fields": [
+                {
+                    "name": "login",
+                    "label": "Identifiant",
+                    "regex": null,
+                    "type": "text",
+                    "required": true,
+                    "auth_mechanisms": [
+                        "credentials"
+                    ],
+                    "connector_sources": [
+                        "openapi",
+                        "directaccess"
+                    ]
+                },
+                {
+                    "name": "password",
+                    "label": "Code (1234)",
+                    "regex": null,
+                    "type": "password",
+                    "required": true,
+                    "auth_mechanisms": [
+                        "credentials"
+                    ],
+                    "connector_sources": [
+                        "openapi",
+                        "directaccess"
+                    ]
+                },
+                {
+                    "name": "openapiwebsite",
+                    "label": "Cas d'usage (openapi)",
+                    "regex": null,
+                    "type": "list",
+                    "required": false,
+                    "auth_mechanisms": [
+                        "webauth",
+                        "credentials"
+                    ],
+                    "connector_sources": [
+                        "openapi"
+                    ],
+                    "values": [
+                        {
+                            "label": "Particuliers",
+                            "value": "par"
+                        },
+                        {
+                            "label": "Professionnels",
+                            "value": "pro"
+                        },
+                        {
+                            "label": "WrongPass",
+                            "value": "wrongpass"
+                        },
+                        {
+                            "label": "AdditionalInformationNeeded",
+                            "value": "additionalInformationNeeded"
+                        },
+                        {
+                            "label": "WebsiteUnavailable",
+                            "value": "websiteUnavailable"
+                        },
+                        {
+                            "label": "ActionNeeded",
+                            "value": "actionNeeded"
+                        },
+                        {
+                            "label": "Bug",
+                            "value": "bug"
+                        },
+                        {
+                            "label": "ShortDecoupled",
+                            "value": "shortDecoupled"
+                        },
+                        {
+                            "label": "Double OTP",
+                            "value": "doubleotp"
+                        },
+                        {
+                            "label": "SCARequired",
+                            "value": "SCARequired"
+                        },
+                        {
+                            "label": "webauthRequired",
+                            "value": "webauthRequired"
+                        },
+                        {
+                            "label": "passwordExpired",
+                            "value": "passwordExpired"
+                        },
+                        {
+                            "label": "LongDecoupled",
+                            "value": "longDecoupled"
+                        },
+                        {
+                            "label": "SCARequiredAndDecoupled",
+                            "value": "SCARequiredAndDecoupled"
+                        },
+                        {
+                            "label": "SCARequiredAndOTP",
+                            "value": "SCARequiredAndOTP"
+                        },
+                        {
+                            "label": "Website not supported",
+                            "value": "notSupported"
+                        },
+                        {
+                            "label": "otp_transfer",
+                            "value": "otp_transfer"
+                        },
+                        {
+                            "label": "AppValidationCancelled",
+                            "value": "AppValidationCancelled"
+                        },
+                        {
+                            "label": "AppValidationExpired",
+                            "value": "AppValidationExpired"
+                        }
+                    ]
+                },
+                {
+                    "name": "directaccesswebsite",
+                    "label": "Cas d'usage (directaccess)",
+                    "regex": null,
+                    "type": "list",
+                    "required": false,
+                    "auth_mechanisms": [
+                        "webauth",
+                        "credentials"
+                    ],
+                    "connector_sources": [
+                        "directaccess"
+                    ],
+                    "values": [
+                        {
+                            "label": "Particuliers",
+                            "value": "par"
+                        },
+                        {
+                            "label": "Professionnels",
+                            "value": "pro"
+                        },
+                        {
+                            "label": "WrongPass",
+                            "value": "wrongpass"
+                        },
+                        {
+                            "label": "AdditionalInformationNeeded",
+                            "value": "additionalInformationNeeded"
+                        },
+                        {
+                            "label": "WebsiteUnavailable",
+                            "value": "websiteUnavailable"
+                        },
+                        {
+                            "label": "ActionNeeded",
+                            "value": "actionNeeded"
+                        },
+                        {
+                            "label": "Bug",
+                            "value": "bug"
+                        },
+                        {
+                            "label": "ShortDecoupled",
+                            "value": "shortDecoupled"
+                        },
+                        {
+                            "label": "Double OTP",
+                            "value": "doubleotp"
+                        },
+                        {
+                            "label": "SCARequired",
+                            "value": "SCARequired"
+                        },
+                        {
+                            "label": "passwordExpired",
+                            "value": "passwordExpired"
+                        },
+                        {
+                            "label": "LongDecoupled",
+                            "value": "longDecoupled"
+                        },
+                        {
+                            "label": "SCARequiredAndDecoupled",
+                            "value": "SCARequiredAndDecoupled"
+                        },
+                        {
+                            "label": "SCARequiredAndOTP",
+                            "value": "SCARequiredAndOTP"
+                        },
+                        {
+                            "label": "Website not supported",
+                            "value": "notSupported"
+                        },
+                        {
+                            "label": "otp_transfer",
+                            "value": "otp_transfer"
+                        },
+                        {
+                            "label": "AppValidationCancelled",
+                            "value": "AppValidationCancelled"
+                        },
+                        {
+                            "label": "AppValidationExpired",
+                            "value": "AppValidationExpired"
+                        }
+                    ]
+                }
+            ],
+            "logos": [],
+            "categories": [],
+            "capabilities": [
+                "contact",
+                "banktransferaddrecipient",
+                "banktransfer",
+                "bankwealth",
+                "transfer",
+                "bank",
+                "document",
+                "profile"
+            ],
+            "urls": [],
+            "available_auth_mechanisms": [
+                "webauth",
+                "credentials"
+            ],
+            "account_types": [
+                "pee",
+                "loan",
+                "checking",
+                "savings",
+                "card",
+                "market",
+                "lifeinsurance",
+                "perco"
+            ],
+            "available_transfer_mechanisms": [
+                "webauth",
+                "credentials"
+            ],
+            "transfer_beneficiary_types": [
+                "iban",
+                "recipient"
+            ],
+            "transfer_execution_date_types": [
+                "first_open_day",
+                "deferred"
+            ],
+            "documents_type": []
+        },
+        "rawHeaders": [
+            "Date",
+            "Thu, 15 Apr 2021 19:31:39 GMT",
+            "Content-Type",
+            "application/json; charset=utf-8",
+            "Content-Length",
+            "3734",
+            "Connection",
+            "close",
+            "Vary",
+            "Authorization,Origin",
+            "Server",
+            "Budgea/2.21.22 Weboob/1.6+budgea.885",
+            "X-Recruiting",
+            "Budget Insight is hiring! Do not hesitate to contact us at jobs@budget-insight.com or on #budget-insight @ Freenode",
+            "X-Request-ID",
+            "ae91f9b6-dd13-4bd3-9db3-7610e64dbc17",
+            "Strict-Transport-Security",
+            "max-age=31536000; includeSubDomains; preload",
+            "X-Frame-Options",
+            "DENY"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "https://oney-dev-sandbox.biapi.pro:443",
+        "method": "POST",
+        "path": "/2.0/auth/init",
+        "body": {
+            "client_id": "11571068",
+            "client_secret": "NND6d9s2uAmLixdSVUaw6ilXNKXp0i4t"
+        },
+        "status": 200,
+        "response": {
+            "auth_token": "KsWcVXzqodBS4Af/DBvcCHTnzE4DEtd4_v18j_/gEnw49Fwr1NG2fTCs5WUCeGtBldPzhdbi9QY_UgNbEN2q0WZCQFq6KWXnK4Bcr/DUt6xbgaBuHRf_K3fQk7BiogYQ",
+            "type": "permanent",
+            "id_user": 3499
+        },
+        "rawHeaders": [
+            "Date",
+            "Thu, 15 Apr 2021 19:31:40 GMT",
+            "Content-Type",
+            "application/json; charset=utf-8",
+            "Content-Length",
+            "184",
+            "Connection",
+            "close",
+            "Vary",
+            "Authorization,Origin",
+            "Server",
+            "Budgea/2.21.22 Weboob/1.6+budgea.885",
+            "X-Recruiting",
+            "Budget Insight is hiring! Do not hesitate to contact us at jobs@budget-insight.com or on #budget-insight @ Freenode",
+            "X-Request-ID",
+            "71976b28-e8d1-4875-a1b5-bbcd5f4795f1",
+            "Strict-Transport-Security",
+            "max-age=31536000; includeSubDomains; preload",
+            "X-Frame-Options",
+            "DENY"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "https://oney-dev-sandbox.biapi.pro:443",
+        "method": "POST",
+        "path": "/2.0/users/me/connections",
+        "body": {
+            "connector_uuid": "338178e6-3d01-564f-9a7b-52ca442459bf",
+            "openapiwebsite": "par",
+            "login": "Identifiant",
+            "password": "1234"
+        },
+        "status": 200,
+        "response": {
+            "id": 3221,
+            "id_user": 3499,
+            "id_connector": 59,
+            "last_update": null,
+            "created": "2021-04-15 21:31:41",
+            "active": true,
+            "last_push": null,
+            "next_try": null,
+            "state": null,
+            "error": null,
+            "error_message": null,
+            "expire": null,
+            "id_provider": 59,
+            "id_bank": 59,
+            "connector_uuid": "338178e6-3d01-564f-9a7b-52ca442459bf"
+        },
+        "rawHeaders": [
+            "Date",
+            "Thu, 15 Apr 2021 19:31:44 GMT",
+            "Content-Type",
+            "application/json; charset=utf-8",
+            "Content-Length",
+            "318",
+            "Connection",
+            "close",
+            "Vary",
+            "Authorization,Origin",
+            "Server",
+            "Budgea/2.21.22 Weboob/1.6+budgea.885",
+            "X-Recruiting",
+            "Budget Insight is hiring! Do not hesitate to contact us at jobs@budget-insight.com or on #budget-insight @ Freenode",
+            "X-Request-ID",
+            "ecc48ce7-d3df-451b-9feb-e2c34d51f9e3",
+            "Strict-Transport-Security",
+            "max-age=31536000; includeSubDomains; preload",
+            "X-Frame-Options",
+            "DENY"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "https://oney-dev-sandbox.biapi.pro:443",
+        "method": "GET",
+        "path": "/2.0/connectors/338178e6-3d01-564f-9a7b-52ca442459bf?capabilities=bank&expand=fields,logos",
+        "body": "",
+        "status": 200,
+        "response": {
+            "id": 59,
+            "name": "Connecteur de test",
+            "hidden": false,
+            "charged": false,
+            "code": null,
+            "beta": false,
+            "color": "5c2963",
+            "slug": "EXA",
+            "sync_frequency": null,
+            "months_to_fetch": null,
+            "auth_mechanism": "credentials",
+            "siret": null,
+            "uuid": "338178e6-3d01-564f-9a7b-52ca442459bf",
+            "restricted": false,
+            "fields": [
+                {
+                    "name": "login",
+                    "label": "Identifiant",
+                    "regex": null,
+                    "type": "text",
+                    "required": true,
+                    "auth_mechanisms": [
+                        "credentials"
+                    ],
+                    "connector_sources": [
+                        "openapi",
+                        "directaccess"
+                    ]
+                },
+                {
+                    "name": "password",
+                    "label": "Code (1234)",
+                    "regex": null,
+                    "type": "password",
+                    "required": true,
+                    "auth_mechanisms": [
+                        "credentials"
+                    ],
+                    "connector_sources": [
+                        "openapi",
+                        "directaccess"
+                    ]
+                },
+                {
+                    "name": "openapiwebsite",
+                    "label": "Cas d'usage (openapi)",
+                    "regex": null,
+                    "type": "list",
+                    "required": false,
+                    "auth_mechanisms": [
+                        "webauth",
+                        "credentials"
+                    ],
+                    "connector_sources": [
+                        "openapi"
+                    ],
+                    "values": [
+                        {
+                            "label": "Particuliers",
+                            "value": "par"
+                        },
+                        {
+                            "label": "Professionnels",
+                            "value": "pro"
+                        },
+                        {
+                            "label": "WrongPass",
+                            "value": "wrongpass"
+                        },
+                        {
+                            "label": "AdditionalInformationNeeded",
+                            "value": "additionalInformationNeeded"
+                        },
+                        {
+                            "label": "WebsiteUnavailable",
+                            "value": "websiteUnavailable"
+                        },
+                        {
+                            "label": "ActionNeeded",
+                            "value": "actionNeeded"
+                        },
+                        {
+                            "label": "Bug",
+                            "value": "bug"
+                        },
+                        {
+                            "label": "ShortDecoupled",
+                            "value": "shortDecoupled"
+                        },
+                        {
+                            "label": "Double OTP",
+                            "value": "doubleotp"
+                        },
+                        {
+                            "label": "SCARequired",
+                            "value": "SCARequired"
+                        },
+                        {
+                            "label": "webauthRequired",
+                            "value": "webauthRequired"
+                        },
+                        {
+                            "label": "passwordExpired",
+                            "value": "passwordExpired"
+                        },
+                        {
+                            "label": "LongDecoupled",
+                            "value": "longDecoupled"
+                        },
+                        {
+                            "label": "SCARequiredAndDecoupled",
+                            "value": "SCARequiredAndDecoupled"
+                        },
+                        {
+                            "label": "SCARequiredAndOTP",
+                            "value": "SCARequiredAndOTP"
+                        },
+                        {
+                            "label": "Website not supported",
+                            "value": "notSupported"
+                        },
+                        {
+                            "label": "otp_transfer",
+                            "value": "otp_transfer"
+                        },
+                        {
+                            "label": "AppValidationCancelled",
+                            "value": "AppValidationCancelled"
+                        },
+                        {
+                            "label": "AppValidationExpired",
+                            "value": "AppValidationExpired"
+                        }
+                    ]
+                },
+                {
+                    "name": "directaccesswebsite",
+                    "label": "Cas d'usage (directaccess)",
+                    "regex": null,
+                    "type": "list",
+                    "required": false,
+                    "auth_mechanisms": [
+                        "webauth",
+                        "credentials"
+                    ],
+                    "connector_sources": [
+                        "directaccess"
+                    ],
+                    "values": [
+                        {
+                            "label": "Particuliers",
+                            "value": "par"
+                        },
+                        {
+                            "label": "Professionnels",
+                            "value": "pro"
+                        },
+                        {
+                            "label": "WrongPass",
+                            "value": "wrongpass"
+                        },
+                        {
+                            "label": "AdditionalInformationNeeded",
+                            "value": "additionalInformationNeeded"
+                        },
+                        {
+                            "label": "WebsiteUnavailable",
+                            "value": "websiteUnavailable"
+                        },
+                        {
+                            "label": "ActionNeeded",
+                            "value": "actionNeeded"
+                        },
+                        {
+                            "label": "Bug",
+                            "value": "bug"
+                        },
+                        {
+                            "label": "ShortDecoupled",
+                            "value": "shortDecoupled"
+                        },
+                        {
+                            "label": "Double OTP",
+                            "value": "doubleotp"
+                        },
+                        {
+                            "label": "SCARequired",
+                            "value": "SCARequired"
+                        },
+                        {
+                            "label": "passwordExpired",
+                            "value": "passwordExpired"
+                        },
+                        {
+                            "label": "LongDecoupled",
+                            "value": "longDecoupled"
+                        },
+                        {
+                            "label": "SCARequiredAndDecoupled",
+                            "value": "SCARequiredAndDecoupled"
+                        },
+                        {
+                            "label": "SCARequiredAndOTP",
+                            "value": "SCARequiredAndOTP"
+                        },
+                        {
+                            "label": "Website not supported",
+                            "value": "notSupported"
+                        },
+                        {
+                            "label": "otp_transfer",
+                            "value": "otp_transfer"
+                        },
+                        {
+                            "label": "AppValidationCancelled",
+                            "value": "AppValidationCancelled"
+                        },
+                        {
+                            "label": "AppValidationExpired",
+                            "value": "AppValidationExpired"
+                        }
+                    ]
+                }
+            ],
+            "logos": [],
+            "categories": [],
+            "capabilities": [
+                "contact",
+                "banktransferaddrecipient",
+                "banktransfer",
+                "bankwealth",
+                "transfer",
+                "bank",
+                "document",
+                "profile"
+            ],
+            "urls": [],
+            "available_auth_mechanisms": [
+                "webauth",
+                "credentials"
+            ],
+            "account_types": [
+                "pee",
+                "loan",
+                "checking",
+                "savings",
+                "card",
+                "market",
+                "lifeinsurance",
+                "perco"
+            ],
+            "available_transfer_mechanisms": [
+                "webauth",
+                "credentials"
+            ],
+            "transfer_beneficiary_types": [
+                "iban",
+                "recipient"
+            ],
+            "transfer_execution_date_types": [
+                "first_open_day",
+                "deferred"
+            ],
+            "documents_type": []
+        },
+        "rawHeaders": [
+            "Date",
+            "Thu, 15 Apr 2021 19:31:44 GMT",
+            "Content-Type",
+            "application/json; charset=utf-8",
+            "Content-Length",
+            "3734",
+            "Connection",
+            "close",
+            "Vary",
+            "Authorization,Origin",
+            "Server",
+            "Budgea/2.21.22 Weboob/1.6+budgea.885",
+            "X-Recruiting",
+            "Budget Insight is hiring! Do not hesitate to contact us at jobs@budget-insight.com or on #budget-insight @ Freenode",
+            "X-Request-ID",
+            "fda29841-cdbb-481c-af9f-72b1a40d203a",
+            "Strict-Transport-Security",
+            "max-age=31536000; includeSubDomains; preload",
+            "X-Frame-Options",
+            "DENY"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "https://oney-dev-sandbox.biapi.pro:443",
+        "method": "GET",
+        "path": "/2.0/users/me/connections/3221/accounts?all",
+        "body": "",
+        "status": 200,
+        "response": {
+            "balance": 1115847.56,
+            "balances": {
+                "EUR": 1110650.99,
+                "USD": 5196.57
+            },
+            "coming_balances": {
+                "EUR": 1110249.29,
+                "USD": 5196.57
+            },
+            "accounts": [
+                {
+                    "id": 23978,
+                    "id_connection": 3221,
+                    "id_user": 3499,
+                    "id_source": 6346,
+                    "id_parent": null,
+                    "number": "3002900000",
+                    "webid": "3002900000",
+                    "original_name": "Compte chèque",
+                    "balance": 69.65,
+                    "coming": null,
+                    "display": true,
+                    "last_update": null,
+                    "deleted": null,
+                    "disabled": "2021-04-15 21:31:43",
+                    "iban": "EX6713335395899300290000026",
+                    "currency": {
+                        "id": "EUR",
+                        "symbol": "€",
+                        "prefix": false,
+                        "crypto": false,
+                        "precision": 2,
+                        "marketcap": null,
+                        "datetime": null,
+                        "name": "Euro"
+                    },
+                    "id_type": 2,
+                    "bookmarked": 0,
+                    "name": "Compte chèque",
+                    "error": null,
+                    "usage": "PRIV",
+                    "ownership": "owner",
+                    "company_name": null,
+                    "opening_date": null,
+                    "bic": "CDTBFRBIXXX",
+                    "coming_balance": 69.65,
+                    "formatted_balance": "69,65 €",
+                    "type": "checking",
+                    "information": {},
+                    "loan": null
+                },
+                {
+                    "id": 23979,
+                    "id_connection": 3221,
+                    "id_user": 3499,
+                    "id_source": 6346,
+                    "id_parent": null,
+                    "number": "3002900001",
+                    "webid": "3002900001",
+                    "original_name": "Compte chèque USD",
+                    "balance": 5196.57,
+                    "coming": null,
+                    "display": true,
+                    "last_update": null,
+                    "deleted": null,
+                    "disabled": "2021-04-15 21:31:43",
+                    "iban": "EX6713335395899300290000123",
+                    "currency": {
+                        "id": "USD",
+                        "symbol": "$",
+                        "prefix": false,
+                        "crypto": false,
+                        "precision": 2,
+                        "marketcap": null,
+                        "datetime": null,
+                        "name": "US Dollar"
+                    },
+                    "id_type": 2,
+                    "bookmarked": 0,
+                    "name": "Compte chèque USD",
+                    "error": null,
+                    "usage": "PRIV",
+                    "ownership": "owner",
+                    "company_name": null,
+                    "opening_date": null,
+                    "bic": "CDTBFRBIXXX",
+                    "coming_balance": 5196.57,
+                    "formatted_balance": "5196,57 $",
+                    "type": "checking",
+                    "information": {},
+                    "loan": null
+                },
+                {
+                    "id": 23980,
+                    "id_connection": 3221,
+                    "id_user": 3499,
+                    "id_source": 6346,
+                    "id_parent": null,
+                    "number": "XXXXXXXXXX982605",
+                    "webid": "3002900002",
+                    "original_name": "Compte carte débit différé",
+                    "balance": 0,
+                    "coming": -401.7,
+                    "display": true,
+                    "last_update": null,
+                    "deleted": null,
+                    "disabled": "2021-04-15 21:31:43",
+                    "iban": "EX6713335395899300290000220",
+                    "currency": {
+                        "id": "EUR",
+                        "symbol": "€",
+                        "prefix": false,
+                        "crypto": false,
+                        "precision": 2,
+                        "marketcap": null,
+                        "datetime": null,
+                        "name": "Euro"
+                    },
+                    "id_type": 8,
+                    "bookmarked": 0,
+                    "name": "Compte carte débit différé",
+                    "error": null,
+                    "usage": "PRIV",
+                    "ownership": "owner",
+                    "company_name": null,
+                    "opening_date": null,
+                    "bic": "CDTBFRBIXXX",
+                    "coming_balance": -401.7,
+                    "formatted_balance": "0 €",
+                    "type": "card",
+                    "information": {},
+                    "loan": null
+                },
+                {
+                    "id": 23981,
+                    "id_connection": 3221,
+                    "id_user": 3499,
+                    "id_source": 6347,
+                    "id_parent": null,
+                    "number": "3002900003",
+                    "webid": "3002900003",
+                    "original_name": "Livret A",
+                    "balance": 3629.05,
+                    "coming": null,
+                    "display": true,
+                    "last_update": null,
+                    "deleted": null,
+                    "disabled": "2021-04-15 21:31:44",
+                    "iban": "EX6713335395899300290000317",
+                    "currency": {
+                        "id": "EUR",
+                        "symbol": "€",
+                        "prefix": false,
+                        "crypto": false,
+                        "precision": 2,
+                        "marketcap": null,
+                        "datetime": null,
+                        "name": "Euro"
+                    },
+                    "id_type": 3,
+                    "bookmarked": 0,
+                    "name": "Livret A",
+                    "error": null,
+                    "usage": "PRIV",
+                    "ownership": "owner",
+                    "company_name": null,
+                    "opening_date": null,
+                    "bic": "CDTBFRBIXXX",
+                    "coming_balance": 3629.05,
+                    "formatted_balance": "3629,05 €",
+                    "type": "savings",
+                    "information": {},
+                    "loan": null
+                },
+                {
+                    "id": 23982,
+                    "id_connection": 3221,
+                    "id_user": 3499,
+                    "id_source": 6347,
+                    "id_parent": null,
+                    "number": "3002900004",
+                    "webid": "3002900004",
+                    "original_name": "Assurance Vie",
+                    "balance": 324157.33,
+                    "coming": null,
+                    "display": true,
+                    "last_update": null,
+                    "deleted": null,
+                    "disabled": "2021-04-15 21:31:44",
+                    "iban": "EX6713335395899300290000414",
+                    "currency": {
+                        "id": "EUR",
+                        "symbol": "€",
+                        "prefix": false,
+                        "crypto": false,
+                        "precision": 2,
+                        "marketcap": null,
+                        "datetime": null,
+                        "name": "Euro"
+                    },
+                    "id_type": 9,
+                    "bookmarked": 0,
+                    "name": "Assurance Vie",
+                    "error": null,
+                    "usage": "PRIV",
+                    "ownership": "owner",
+                    "company_name": null,
+                    "opening_date": null,
+                    "bic": "CDTBFRBIXXX",
+                    "coming_balance": 324157.33,
+                    "formatted_balance": "324157,33 €",
+                    "type": "lifeinsurance",
+                    "calculated": [
+                        "valuation",
+                        "diff",
+                        "diff_percent",
+                        "prev_diff",
+                        "prev_diff_percent"
+                    ],
+                    "valuation": 0,
+                    "diff": 0,
+                    "diff_percent": 0,
+                    "prev_diff": 0,
+                    "prev_diff_percent": 0,
+                    "information": {},
+                    "loan": null
+                },
+                {
+                    "id": 23983,
+                    "id_connection": 3221,
+                    "id_user": 3499,
+                    "id_source": 6347,
+                    "id_parent": null,
+                    "number": "3002900005",
+                    "webid": "3002900005",
+                    "original_name": "Comptes titres",
+                    "balance": 245279.31,
+                    "coming": null,
+                    "display": true,
+                    "last_update": null,
+                    "deleted": null,
+                    "disabled": "2021-04-15 21:31:44",
+                    "iban": "EX6713335395899300290000511",
+                    "currency": {
+                        "id": "EUR",
+                        "symbol": "€",
+                        "prefix": false,
+                        "crypto": false,
+                        "precision": 2,
+                        "marketcap": null,
+                        "datetime": null,
+                        "name": "Euro"
+                    },
+                    "id_type": 6,
+                    "bookmarked": 0,
+                    "name": "Comptes titres",
+                    "error": null,
+                    "usage": "PRIV",
+                    "ownership": "owner",
+                    "company_name": null,
+                    "opening_date": null,
+                    "bic": "CDTBFRBIXXX",
+                    "coming_balance": 245279.31,
+                    "formatted_balance": "245279,31 €",
+                    "type": "market",
+                    "calculated": [
+                        "valuation",
+                        "diff",
+                        "diff_percent",
+                        "prev_diff",
+                        "prev_diff_percent"
+                    ],
+                    "valuation": 0,
+                    "diff": 0,
+                    "diff_percent": 0,
+                    "prev_diff": 0,
+                    "prev_diff_percent": 0,
+                    "information": {},
+                    "loan": null
+                },
+                {
+                    "id": 23984,
+                    "id_connection": 3221,
+                    "id_user": 3499,
+                    "id_source": 6347,
+                    "id_parent": null,
+                    "number": "3002900006",
+                    "webid": "3002900006",
+                    "original_name": "Plan d'épargne entreprise",
+                    "balance": 346833.3,
+                    "coming": null,
+                    "display": true,
+                    "last_update": null,
+                    "deleted": null,
+                    "disabled": "2021-04-15 21:31:44",
+                    "iban": "EX6713335395899300290000608",
+                    "currency": {
+                        "id": "EUR",
+                        "symbol": "€",
+                        "prefix": false,
+                        "crypto": false,
+                        "precision": 2,
+                        "marketcap": null,
+                        "datetime": null,
+                        "name": "Euro"
+                    },
+                    "id_type": 10,
+                    "bookmarked": 0,
+                    "name": "Plan d'épargne entreprise",
+                    "error": null,
+                    "usage": "PRIV",
+                    "ownership": "owner",
+                    "company_name": null,
+                    "opening_date": null,
+                    "bic": "CDTBFRBIXXX",
+                    "coming_balance": 346833.3,
+                    "formatted_balance": "346833,30 €",
+                    "type": "pee",
+                    "calculated": [
+                        "valuation",
+                        "diff",
+                        "diff_percent",
+                        "prev_diff",
+                        "prev_diff_percent"
+                    ],
+                    "valuation": 0,
+                    "diff": 0,
+                    "diff_percent": 0,
+                    "prev_diff": 0,
+                    "prev_diff_percent": 0,
+                    "information": {},
+                    "loan": null
+                },
+                {
+                    "id": 23985,
+                    "id_connection": 3221,
+                    "id_user": 3499,
+                    "id_source": 6347,
+                    "id_parent": 23978,
+                    "number": "3002900007",
+                    "webid": "3002900007",
+                    "original_name": "Crédit Immobilier",
+                    "balance": -1664.93,
+                    "coming": null,
+                    "display": false,
+                    "last_update": null,
+                    "deleted": null,
+                    "disabled": "2021-04-15 21:31:44",
+                    "iban": null,
+                    "currency": {
+                        "id": "EUR",
+                        "symbol": "€",
+                        "prefix": false,
+                        "crypto": false,
+                        "precision": 2,
+                        "marketcap": null,
+                        "datetime": null,
+                        "name": "Euro"
+                    },
+                    "id_type": 5,
+                    "bookmarked": 0,
+                    "name": "Crédit Immobilier",
+                    "error": null,
+                    "usage": null,
+                    "ownership": null,
+                    "company_name": null,
+                    "opening_date": null,
+                    "bic": null,
+                    "coming_balance": -1664.93,
+                    "formatted_balance": "-1664,93 €",
+                    "type": "loan",
+                    "information": {},
+                    "loan": {
+                        "id": 2620,
+                        "id_account": 23985,
+                        "contact_name": null,
+                        "total_amount": -4994.78,
+                        "available_amount": null,
+                        "used_amount": null,
+                        "subscription_date": null,
+                        "maturity_date": null,
+                        "next_payment_amount": 166.493,
+                        "next_payment_date": null,
+                        "rate": null,
+                        "nb_payments_left": null,
+                        "nb_payments_done": null,
+                        "nb_payments_total": null,
+                        "last_payment_amount": null,
+                        "last_payment_date": null,
+                        "account_label": null,
+                        "insurance_label": null,
+                        "duration": null,
+                        "type": "loan"
+                    }
+                },
+                {
+                    "id": 23986,
+                    "id_connection": 3221,
+                    "id_user": 3499,
+                    "id_source": 6347,
+                    "id_parent": null,
+                    "number": "3002900008",
+                    "webid": "3002900008",
+                    "original_name": "Compte PERCO",
+                    "balance": 190682.35,
+                    "coming": null,
+                    "display": true,
+                    "last_update": null,
+                    "deleted": null,
+                    "disabled": "2021-04-15 21:31:44",
+                    "iban": "EX6713335395899300290000802",
+                    "currency": {
+                        "id": "EUR",
+                        "symbol": "€",
+                        "prefix": false,
+                        "crypto": false,
+                        "precision": 2,
+                        "marketcap": null,
+                        "datetime": null,
+                        "name": "Euro"
+                    },
+                    "id_type": 11,
+                    "bookmarked": 0,
+                    "name": "Compte PERCO",
+                    "error": null,
+                    "usage": "PRIV",
+                    "ownership": "owner",
+                    "company_name": null,
+                    "opening_date": null,
+                    "bic": "CDTBFRBIXXX",
+                    "coming_balance": 190682.35,
+                    "formatted_balance": "190682,35 €",
+                    "type": "perco",
+                    "calculated": [
+                        "valuation",
+                        "diff",
+                        "diff_percent",
+                        "prev_diff",
+                        "prev_diff_percent"
+                    ],
+                    "valuation": 0,
+                    "diff": 0,
+                    "diff_percent": 0,
+                    "prev_diff": 0,
+                    "prev_diff_percent": 0,
+                    "information": {},
+                    "loan": null
+                }
+            ],
+            "total": 9
+        },
+        "rawHeaders": [
+            "Date",
+            "Thu, 15 Apr 2021 19:31:46 GMT",
+            "Content-Type",
+            "application/json; charset=utf-8",
+            "Content-Length",
+            "8564",
+            "Connection",
+            "close",
+            "Vary",
+            "Authorization,Origin",
+            "Server",
+            "Budgea/2.21.22 Weboob/1.6+budgea.885",
+            "X-Recruiting",
+            "Budget Insight is hiring! Do not hesitate to contact us at jobs@budget-insight.com or on #budget-insight @ Freenode",
+            "X-Request-ID",
+            "159d006d-a310-410a-a598-d1b30a305cde",
+            "Strict-Transport-Security",
+            "max-age=31536000; includeSubDomains; preload",
+            "X-Frame-Options",
+            "DENY"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "https://oney-dev-sandbox.biapi.pro:443",
+        "method": "GET",
+        "path": "/2.0/account_types",
+        "body": "",
+        "status": 200,
+        "response": {
+            "accounttypes": [
+                {
+                    "id": 1,
+                    "name": "unknown",
+                    "is_invest": false,
+                    "weboob_type_id": 0,
+                    "display_name_p": "Inconnu",
+                    "display_name": "Inconnu",
+                    "color": null,
+                    "product": "all",
+                    "id_parent": null
+                },
+                {
+                    "id": 2,
+                    "name": "checking",
+                    "is_invest": false,
+                    "weboob_type_id": 1,
+                    "display_name_p": "Comptes courants",
+                    "display_name": "Compte courant",
+                    "color": null,
+                    "product": "bank",
+                    "id_parent": null
+                },
+                {
+                    "id": 3,
+                    "name": "savings",
+                    "is_invest": false,
+                    "weboob_type_id": 2,
+                    "display_name_p": "Comptes épargne",
+                    "display_name": "Compte épargne",
+                    "color": null,
+                    "product": "wealth",
+                    "id_parent": null
+                },
+                {
+                    "id": 4,
+                    "name": "deposit",
+                    "is_invest": false,
+                    "weboob_type_id": 3,
+                    "display_name_p": "Comptes de dépots",
+                    "display_name": "Compte de dépots",
+                    "color": null,
+                    "product": "wealth",
+                    "id_parent": null
+                },
+                {
+                    "id": 5,
+                    "name": "loan",
+                    "is_invest": false,
+                    "weboob_type_id": 4,
+                    "display_name_p": "Comptes de prets",
+                    "display_name": "Compte de prets",
+                    "color": null,
+                    "product": "wealth",
+                    "id_parent": null
+                },
+                {
+                    "id": 6,
+                    "name": "market",
+                    "is_invest": true,
+                    "weboob_type_id": 5,
+                    "display_name_p": "Comptes titres",
+                    "display_name": "Compte titres",
+                    "color": null,
+                    "product": "wealth",
+                    "id_parent": null
+                },
+                {
+                    "id": 7,
+                    "name": "joint",
+                    "is_invest": false,
+                    "weboob_type_id": 6,
+                    "display_name_p": "Comptes joints",
+                    "display_name": "Comptes joint",
+                    "color": null,
+                    "product": "wealth",
+                    "id_parent": null
+                },
+                {
+                    "id": 8,
+                    "name": "card",
+                    "is_invest": false,
+                    "weboob_type_id": 7,
+                    "display_name_p": "Comptes carte",
+                    "display_name": "Compte carte",
+                    "color": null,
+                    "product": "bank",
+                    "id_parent": null
+                },
+                {
+                    "id": 9,
+                    "name": "lifeinsurance",
+                    "is_invest": true,
+                    "weboob_type_id": 8,
+                    "display_name_p": "Assurances vie",
+                    "display_name": "Assurance vie",
+                    "color": null,
+                    "product": "wealth",
+                    "id_parent": 6
+                },
+                {
+                    "id": 10,
+                    "name": "pee",
+                    "is_invest": true,
+                    "weboob_type_id": 9,
+                    "display_name_p": "Plans épargne entreprise",
+                    "display_name": "Plan épargne entreprise",
+                    "color": null,
+                    "product": "wealth",
+                    "id_parent": 6
+                },
+                {
+                    "id": 11,
+                    "name": "perco",
+                    "is_invest": true,
+                    "weboob_type_id": 10,
+                    "display_name_p": "Plans épargne retraite",
+                    "display_name": "Plan épargne retraite",
+                    "color": null,
+                    "product": "wealth",
+                    "id_parent": 6
+                },
+                {
+                    "id": 12,
+                    "name": "article83",
+                    "is_invest": true,
+                    "weboob_type_id": 11,
+                    "display_name_p": "Articles 83",
+                    "display_name": "Article 83",
+                    "color": null,
+                    "product": "wealth",
+                    "id_parent": 6
+                },
+                {
+                    "id": 13,
+                    "name": "rsp",
+                    "is_invest": true,
+                    "weboob_type_id": 12,
+                    "display_name_p": "Réserve spéciale de participation",
+                    "display_name": "Réserve spéciale de participation",
+                    "color": null,
+                    "product": "wealth",
+                    "id_parent": 6
+                },
+                {
+                    "id": 14,
+                    "name": "pea",
+                    "is_invest": true,
+                    "weboob_type_id": 13,
+                    "display_name_p": "Plan d'épargne en actions",
+                    "display_name": "Plan d'épargne en actions",
+                    "color": null,
+                    "product": "wealth",
+                    "id_parent": 6
+                },
+                {
+                    "id": 15,
+                    "name": "capitalisation",
+                    "is_invest": true,
+                    "weboob_type_id": 14,
+                    "display_name_p": "Contrat de capitalisation",
+                    "display_name": "Contrat de capitalisation",
+                    "color": null,
+                    "product": "wealth",
+                    "id_parent": 6
+                },
+                {
+                    "id": 16,
+                    "name": "perp",
+                    "is_invest": true,
+                    "weboob_type_id": 15,
+                    "display_name_p": "Plan d'épargne retraite populaire",
+                    "display_name": "Plan d'épargne retraite populaire",
+                    "color": null,
+                    "product": "wealth",
+                    "id_parent": 6
+                },
+                {
+                    "id": 17,
+                    "name": "madelin",
+                    "is_invest": true,
+                    "weboob_type_id": 16,
+                    "display_name_p": "Contrat retraite Madelin",
+                    "display_name": "Contrat retraite Madelin",
+                    "color": null,
+                    "product": "wealth",
+                    "id_parent": 6
+                },
+                {
+                    "id": 18,
+                    "name": "mortgage",
+                    "is_invest": false,
+                    "weboob_type_id": 17,
+                    "display_name_p": "Crédits immobiliers",
+                    "display_name": "Crédit immobilier",
+                    "color": null,
+                    "product": "wealth",
+                    "id_parent": 5
+                },
+                {
+                    "id": 19,
+                    "name": "consumercredit",
+                    "is_invest": false,
+                    "weboob_type_id": 18,
+                    "display_name_p": "Crédits à la consommation",
+                    "display_name": "Crédit à la consommation",
+                    "color": null,
+                    "product": "wealth",
+                    "id_parent": 5
+                },
+                {
+                    "id": 20,
+                    "name": "revolvingcredit",
+                    "is_invest": false,
+                    "weboob_type_id": 19,
+                    "display_name_p": "Crédits renouvelables",
+                    "display_name": "Crédit renouvelable",
+                    "color": null,
+                    "product": "wealth",
+                    "id_parent": 5
+                },
+                {
+                    "id": 21,
+                    "name": "per",
+                    "is_invest": true,
+                    "weboob_type_id": 20,
+                    "display_name_p": "Plans épargne retraite",
+                    "display_name": "Plan épargne retraite",
+                    "color": null,
+                    "product": "wealth",
+                    "id_parent": 6
+                },
+                {
+                    "id": 22,
+                    "name": "real_estate",
+                    "is_invest": true,
+                    "weboob_type_id": 21,
+                    "display_name_p": "Placements immobiliers",
+                    "display_name": "Placement immobilier",
+                    "color": null,
+                    "product": "wealth",
+                    "id_parent": 6
+                }
+            ],
+            "total": 22
+        },
+        "rawHeaders": [
+            "Date",
+            "Thu, 15 Apr 2021 19:31:46 GMT",
+            "Content-Type",
+            "application/json; charset=utf-8",
+            "Content-Length",
+            "4567",
+            "Connection",
+            "close",
+            "Vary",
+            "Authorization,Origin",
+            "Server",
+            "Budgea/2.21.22 Weboob/1.6+budgea.885",
+            "X-Recruiting",
+            "Budget Insight is hiring! Do not hesitate to contact us at jobs@budget-insight.com or on #budget-insight @ Freenode",
+            "X-Request-ID",
+            "7d264a0f-c354-4672-ab88-36b83d8913cd",
+            "Strict-Transport-Security",
+            "max-age=31536000; includeSubDomains; preload",
+            "X-Frame-Options",
+            "DENY"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "https://oney-dev-sandbox.biapi.pro:443",
+        "method": "POST",
+        "path": "/2.0/users/me/connections/3221/accounts/23978?all",
+        "body": {
+            "name": "Compte chèque"
+        },
+        "status": 200,
+        "response": {
+            "id": 23978,
+            "id_connection": 3221,
+            "id_user": 3499,
+            "id_source": 6346,
+            "id_parent": null,
+            "number": "3002900000",
+            "webid": "3002900000",
+            "original_name": "Compte chèque",
+            "balance": 69.65,
+            "coming": null,
+            "display": true,
+            "last_update": null,
+            "deleted": null,
+            "disabled": "2021-04-15 21:31:43",
+            "iban": "EX6713335395899300290000026",
+            "currency": {
+                "id": "EUR",
+                "symbol": "€",
+                "prefix": false,
+                "crypto": false,
+                "precision": 2,
+                "marketcap": null,
+                "datetime": null,
+                "name": "Euro"
+            },
+            "id_type": 2,
+            "bookmarked": 0,
+            "name": "Compte chèque",
+            "error": null,
+            "usage": "PRIV",
+            "ownership": "owner",
+            "company_name": null,
+            "opening_date": null,
+            "bic": "CDTBFRBIXXX",
+            "coming_balance": 69.65,
+            "formatted_balance": "69,65 €",
+            "type": "checking",
+            "information": {},
+            "loan": null
+        },
+        "rawHeaders": [
+            "Date",
+            "Thu, 15 Apr 2021 19:31:47 GMT",
+            "Content-Type",
+            "application/json; charset=utf-8",
+            "Content-Length",
+            "789",
+            "Connection",
+            "close",
+            "Vary",
+            "Authorization,Origin",
+            "Server",
+            "Budgea/2.21.22 Weboob/1.6+budgea.885",
+            "X-Recruiting",
+            "Budget Insight is hiring! Do not hesitate to contact us at jobs@budget-insight.com or on #budget-insight @ Freenode",
+            "X-Request-ID",
+            "1644d790-0228-4bba-9cfb-fa8e21ed42c6",
+            "Strict-Transport-Security",
+            "max-age=31536000; includeSubDomains; preload",
+            "X-Frame-Options",
+            "DENY"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "https://oney-dev-sandbox.biapi.pro:443",
+        "method": "POST",
+        "path": "/2.0/users/me/connections/3221/accounts/23980?all",
+        "body": {
+            "name": "Compte carte débit différé"
+        },
+        "status": 200,
+        "response": {
+            "id": 23980,
+            "id_connection": 3221,
+            "id_user": 3499,
+            "id_source": 6346,
+            "id_parent": null,
+            "number": "XXXXXXXXXX982605",
+            "webid": "3002900002",
+            "original_name": "Compte carte débit différé",
+            "balance": 0,
+            "coming": -401.7,
+            "display": true,
+            "last_update": null,
+            "deleted": null,
+            "disabled": "2021-04-15 21:31:43",
+            "iban": "EX6713335395899300290000220",
+            "currency": {
+                "id": "EUR",
+                "symbol": "€",
+                "prefix": false,
+                "crypto": false,
+                "precision": 2,
+                "marketcap": null,
+                "datetime": null,
+                "name": "Euro"
+            },
+            "id_type": 8,
+            "bookmarked": 0,
+            "name": "Compte carte débit différé",
+            "error": null,
+            "usage": "PRIV",
+            "ownership": "owner",
+            "company_name": null,
+            "opening_date": null,
+            "bic": "CDTBFRBIXXX",
+            "coming_balance": -401.7,
+            "formatted_balance": "0 €",
+            "type": "card",
+            "information": {},
+            "loan": null
+        },
+        "rawHeaders": [
+            "Date",
+            "Thu, 15 Apr 2021 19:31:47 GMT",
+            "Content-Type",
+            "application/json; charset=utf-8",
+            "Content-Length",
+            "822",
+            "Connection",
+            "close",
+            "Vary",
+            "Authorization,Origin",
+            "Server",
+            "Budgea/2.21.22 Weboob/1.6+budgea.885",
+            "X-Recruiting",
+            "Budget Insight is hiring! Do not hesitate to contact us at jobs@budget-insight.com or on #budget-insight @ Freenode",
+            "X-Request-ID",
+            "122b9794-9d54-4ca8-98f3-345119797bc0",
+            "Strict-Transport-Security",
+            "max-age=31536000; includeSubDomains; preload",
+            "X-Frame-Options",
+            "DENY"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "https://oney-dev-sandbox.biapi.pro:443",
+        "method": "PUT",
+        "path": "/2.0/users/me/connections/3221/accounts/23978,23980?all",
+        "body": {
+            "disabled": false
+        },
+        "status": 200,
+        "response": {
+            "accounts": [
+                {
+                    "id": 23978,
+                    "id_connection": 3221,
+                    "id_user": 3499,
+                    "id_source": 6346,
+                    "id_parent": null,
+                    "number": "3002900000",
+                    "webid": "3002900000",
+                    "original_name": "Compte chèque",
+                    "balance": 69.65,
+                    "coming": null,
+                    "display": true,
+                    "last_update": null,
+                    "deleted": null,
+                    "disabled": null,
+                    "iban": "EX6713335395899300290000026",
+                    "currency": {
+                        "id": "EUR",
+                        "symbol": "€",
+                        "prefix": false,
+                        "crypto": false,
+                        "precision": 2,
+                        "marketcap": null,
+                        "datetime": null,
+                        "name": "Euro"
+                    },
+                    "id_type": 2,
+                    "bookmarked": 0,
+                    "name": "Compte chèque",
+                    "error": null,
+                    "usage": "PRIV",
+                    "ownership": "owner",
+                    "company_name": null,
+                    "opening_date": null,
+                    "bic": "CDTBFRBIXXX",
+                    "coming_balance": 69.65,
+                    "formatted_balance": "69,65 €",
+                    "type": "checking",
+                    "information": {},
+                    "loan": null
+                },
+                {
+                    "id": 23980,
+                    "id_connection": 3221,
+                    "id_user": 3499,
+                    "id_source": 6346,
+                    "id_parent": null,
+                    "number": "XXXXXXXXXX982605",
+                    "webid": "3002900002",
+                    "original_name": "Compte carte débit différé",
+                    "balance": 0,
+                    "coming": -401.7,
+                    "display": true,
+                    "last_update": null,
+                    "deleted": null,
+                    "disabled": null,
+                    "iban": "EX6713335395899300290000220",
+                    "currency": {
+                        "id": "EUR",
+                        "symbol": "€",
+                        "prefix": false,
+                        "crypto": false,
+                        "precision": 2,
+                        "marketcap": null,
+                        "datetime": null,
+                        "name": "Euro"
+                    },
+                    "id_type": 8,
+                    "bookmarked": 0,
+                    "name": "Compte carte débit différé",
+                    "error": null,
+                    "usage": "PRIV",
+                    "ownership": "owner",
+                    "company_name": null,
+                    "opening_date": null,
+                    "bic": "CDTBFRBIXXX",
+                    "coming_balance": -401.7,
+                    "formatted_balance": "0 €",
+                    "type": "card",
+                    "information": {},
+                    "loan": null
+                }
+            ]
+        },
+        "rawHeaders": [
+            "Date",
+            "Thu, 15 Apr 2021 19:31:49 GMT",
+            "Content-Type",
+            "application/json; charset=utf-8",
+            "Content-Length",
+            "1595",
+            "Connection",
+            "close",
+            "Vary",
+            "Authorization,Origin",
+            "Server",
+            "Budgea/2.21.22 Weboob/1.6+budgea.885",
+            "X-Recruiting",
+            "Budget Insight is hiring! Do not hesitate to contact us at jobs@budget-insight.com or on #budget-insight @ Freenode",
+            "X-Request-ID",
+            "82567dcc-8498-4983-acb2-9bcbf0bc41ae",
+            "Strict-Transport-Security",
+            "max-age=31536000; includeSubDomains; preload",
+            "X-Frame-Options",
+            "DENY"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "https://oney-dev-sandbox.biapi.pro:443",
+        "method": "GET",
+        "path": "/2.0/users/me/connections/3221/informations",
+        "body": "",
+        "status": 200,
+        "response": {},
+        "rawHeaders": [
+            "Date",
+            "Thu, 15 Apr 2021 19:31:49 GMT",
+            "Content-Type",
+            "application/json; charset=utf-8",
+            "Content-Length",
+            "2",
+            "Connection",
+            "close",
+            "Vary",
+            "Authorization,Origin",
+            "Server",
+            "Budgea/2.21.22 Weboob/1.6+budgea.885",
+            "X-Recruiting",
+            "Budget Insight is hiring! Do not hesitate to contact us at jobs@budget-insight.com or on #budget-insight @ Freenode",
+            "Stale",
+            "1",
+            "X-Request-ID",
+            "78f4e617-751b-489f-b870-241ca2fa9361",
+            "Strict-Transport-Security",
+            "max-age=31536000; includeSubDomains; preload",
+            "X-Frame-Options",
+            "DENY"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "https://oney-dev-sandbox.biapi.pro:443",
+        "method": "GET",
+        "path": "/2.0/users/me/connections/3221/informations",
+        "body": "",
+        "status": 200,
+        "response": {},
+        "rawHeaders": [
+            "Date",
+            "Thu, 15 Apr 2021 19:31:51 GMT",
+            "Content-Type",
+            "application/json; charset=utf-8",
+            "Content-Length",
+            "2",
+            "Connection",
+            "close",
+            "Vary",
+            "Authorization,Origin",
+            "Server",
+            "Budgea/2.21.22 Weboob/1.6+budgea.885",
+            "X-Recruiting",
+            "Budget Insight is hiring! Do not hesitate to contact us at jobs@budget-insight.com or on #budget-insight @ Freenode",
+            "Stale",
+            "1",
+            "X-Request-ID",
+            "a99f5c59-d05a-431e-8b44-2e9138168d14",
+            "Strict-Transport-Security",
+            "max-age=31536000; includeSubDomains; preload",
+            "X-Frame-Options",
+            "DENY"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "https://oney-dev-sandbox.biapi.pro:443",
+        "method": "GET",
+        "path": "/2.0/users/me/connections/3221/informations",
+        "body": "",
+        "status": 200,
+        "response": {},
+        "rawHeaders": [
+            "Date",
+            "Thu, 15 Apr 2021 19:31:52 GMT",
+            "Content-Type",
+            "application/json; charset=utf-8",
+            "Content-Length",
+            "2",
+            "Connection",
+            "close",
+            "Vary",
+            "Authorization,Origin",
+            "Server",
+            "Budgea/2.21.22 Weboob/1.6+budgea.885",
+            "X-Recruiting",
+            "Budget Insight is hiring! Do not hesitate to contact us at jobs@budget-insight.com or on #budget-insight @ Freenode",
+            "Stale",
+            "1",
+            "X-Request-ID",
+            "6aee8b41-e8e9-4a5b-b6fe-b86437e28534",
+            "Strict-Transport-Security",
+            "max-age=31536000; includeSubDomains; preload",
+            "X-Frame-Options",
+            "DENY"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "https://oney-dev-sandbox.biapi.pro:443",
+        "method": "GET",
+        "path": "/2.0/connectors/338178e6-3d01-564f-9a7b-52ca442459bf?capabilities=bank&expand=fields,logos",
+        "body": "",
+        "status": 200,
+        "response": {
+            "id": 59,
+            "name": "Connecteur de test",
+            "hidden": false,
+            "charged": false,
+            "code": null,
+            "beta": false,
+            "color": "5c2963",
+            "slug": "EXA",
+            "sync_frequency": null,
+            "months_to_fetch": null,
+            "auth_mechanism": "credentials",
+            "siret": null,
+            "uuid": "338178e6-3d01-564f-9a7b-52ca442459bf",
+            "restricted": false,
+            "fields": [
+                {
+                    "name": "login",
+                    "label": "Identifiant",
+                    "regex": null,
+                    "type": "text",
+                    "required": true,
+                    "auth_mechanisms": [
+                        "credentials"
+                    ],
+                    "connector_sources": [
+                        "openapi",
+                        "directaccess"
+                    ]
+                },
+                {
+                    "name": "password",
+                    "label": "Code (1234)",
+                    "regex": null,
+                    "type": "password",
+                    "required": true,
+                    "auth_mechanisms": [
+                        "credentials"
+                    ],
+                    "connector_sources": [
+                        "openapi",
+                        "directaccess"
+                    ]
+                },
+                {
+                    "name": "openapiwebsite",
+                    "label": "Cas d'usage (openapi)",
+                    "regex": null,
+                    "type": "list",
+                    "required": false,
+                    "auth_mechanisms": [
+                        "webauth",
+                        "credentials"
+                    ],
+                    "connector_sources": [
+                        "openapi"
+                    ],
+                    "values": [
+                        {
+                            "label": "Particuliers",
+                            "value": "par"
+                        },
+                        {
+                            "label": "Professionnels",
+                            "value": "pro"
+                        },
+                        {
+                            "label": "WrongPass",
+                            "value": "wrongpass"
+                        },
+                        {
+                            "label": "AdditionalInformationNeeded",
+                            "value": "additionalInformationNeeded"
+                        },
+                        {
+                            "label": "WebsiteUnavailable",
+                            "value": "websiteUnavailable"
+                        },
+                        {
+                            "label": "ActionNeeded",
+                            "value": "actionNeeded"
+                        },
+                        {
+                            "label": "Bug",
+                            "value": "bug"
+                        },
+                        {
+                            "label": "ShortDecoupled",
+                            "value": "shortDecoupled"
+                        },
+                        {
+                            "label": "Double OTP",
+                            "value": "doubleotp"
+                        },
+                        {
+                            "label": "SCARequired",
+                            "value": "SCARequired"
+                        },
+                        {
+                            "label": "webauthRequired",
+                            "value": "webauthRequired"
+                        },
+                        {
+                            "label": "passwordExpired",
+                            "value": "passwordExpired"
+                        },
+                        {
+                            "label": "LongDecoupled",
+                            "value": "longDecoupled"
+                        },
+                        {
+                            "label": "SCARequiredAndDecoupled",
+                            "value": "SCARequiredAndDecoupled"
+                        },
+                        {
+                            "label": "SCARequiredAndOTP",
+                            "value": "SCARequiredAndOTP"
+                        },
+                        {
+                            "label": "Website not supported",
+                            "value": "notSupported"
+                        },
+                        {
+                            "label": "otp_transfer",
+                            "value": "otp_transfer"
+                        },
+                        {
+                            "label": "AppValidationCancelled",
+                            "value": "AppValidationCancelled"
+                        },
+                        {
+                            "label": "AppValidationExpired",
+                            "value": "AppValidationExpired"
+                        }
+                    ]
+                },
+                {
+                    "name": "directaccesswebsite",
+                    "label": "Cas d'usage (directaccess)",
+                    "regex": null,
+                    "type": "list",
+                    "required": false,
+                    "auth_mechanisms": [
+                        "webauth",
+                        "credentials"
+                    ],
+                    "connector_sources": [
+                        "directaccess"
+                    ],
+                    "values": [
+                        {
+                            "label": "Particuliers",
+                            "value": "par"
+                        },
+                        {
+                            "label": "Professionnels",
+                            "value": "pro"
+                        },
+                        {
+                            "label": "WrongPass",
+                            "value": "wrongpass"
+                        },
+                        {
+                            "label": "AdditionalInformationNeeded",
+                            "value": "additionalInformationNeeded"
+                        },
+                        {
+                            "label": "WebsiteUnavailable",
+                            "value": "websiteUnavailable"
+                        },
+                        {
+                            "label": "ActionNeeded",
+                            "value": "actionNeeded"
+                        },
+                        {
+                            "label": "Bug",
+                            "value": "bug"
+                        },
+                        {
+                            "label": "ShortDecoupled",
+                            "value": "shortDecoupled"
+                        },
+                        {
+                            "label": "Double OTP",
+                            "value": "doubleotp"
+                        },
+                        {
+                            "label": "SCARequired",
+                            "value": "SCARequired"
+                        },
+                        {
+                            "label": "passwordExpired",
+                            "value": "passwordExpired"
+                        },
+                        {
+                            "label": "LongDecoupled",
+                            "value": "longDecoupled"
+                        },
+                        {
+                            "label": "SCARequiredAndDecoupled",
+                            "value": "SCARequiredAndDecoupled"
+                        },
+                        {
+                            "label": "SCARequiredAndOTP",
+                            "value": "SCARequiredAndOTP"
+                        },
+                        {
+                            "label": "Website not supported",
+                            "value": "notSupported"
+                        },
+                        {
+                            "label": "otp_transfer",
+                            "value": "otp_transfer"
+                        },
+                        {
+                            "label": "AppValidationCancelled",
+                            "value": "AppValidationCancelled"
+                        },
+                        {
+                            "label": "AppValidationExpired",
+                            "value": "AppValidationExpired"
+                        }
+                    ]
+                }
+            ],
+            "logos": [],
+            "categories": [],
+            "capabilities": [
+                "contact",
+                "banktransferaddrecipient",
+                "banktransfer",
+                "bankwealth",
+                "transfer",
+                "bank",
+                "document",
+                "profile"
+            ],
+            "urls": [],
+            "available_auth_mechanisms": [
+                "webauth",
+                "credentials"
+            ],
+            "account_types": [
+                "pee",
+                "loan",
+                "checking",
+                "savings",
+                "card",
+                "market",
+                "lifeinsurance",
+                "perco"
+            ],
+            "available_transfer_mechanisms": [
+                "webauth",
+                "credentials"
+            ],
+            "transfer_beneficiary_types": [
+                "iban",
+                "recipient"
+            ],
+            "transfer_execution_date_types": [
+                "first_open_day",
+                "deferred"
+            ],
+            "documents_type": []
+        },
+        "rawHeaders": [
+            "Date",
+            "Thu, 15 Apr 2021 19:31:52 GMT",
+            "Content-Type",
+            "application/json; charset=utf-8",
+            "Content-Length",
+            "3734",
+            "Connection",
+            "close",
+            "Vary",
+            "Authorization,Origin",
+            "Server",
+            "Budgea/2.21.22 Weboob/1.6+budgea.885",
+            "X-Recruiting",
+            "Budget Insight is hiring! Do not hesitate to contact us at jobs@budget-insight.com or on #budget-insight @ Freenode",
+            "Stale",
+            "1",
+            "X-Request-ID",
+            "ff516aa7-0fd6-4638-b73a-316aeecc1275",
+            "Strict-Transport-Security",
+            "max-age=31536000; includeSubDomains; preload",
+            "X-Frame-Options",
+            "DENY"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "https://dev-api.onbadi.com:443",
+        "method": "POST",
+        "path": "/profile/user/azeazhgauipzeaz/verify-bankaccount-owner",
+        "body": {
+            "bankName": "Connecteur de test"
+        },
+        "status": 404,
+        "response": {
+            "name": "ProfileNotFound",
+            "message": "PROFILE_NOT_FOUND"
+        },
+        "rawHeaders": [
+            "Content-Length",
+            "56",
+            "Content-Type",
+            "application/json; charset=utf-8",
+            "ETag",
+            "W/\"38-fxcuMCxTmTYhccU51He2xdb0mzg\"",
+            "request-context",
+            "appId=cid-v1:9d34efb3-28c4-4eb1-b1ff-5c04b9a6bbfa",
+            "Access-Control-Allow-Origin",
+            "*",
+            "Content-Security-Policy",
+            "default-src 'self';base-uri 'self';block-all-mixed-content;font-src 'self' https: data:;frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests",
+            "X-DNS-Prefetch-Control",
+            "off",
+            "Expect-CT",
+            "max-age=0",
+            "X-Frame-Options",
+            "SAMEORIGIN",
+            "Strict-Transport-Security",
+            "max-age=15552000; includeSubDomains",
+            "X-Download-Options",
+            "noopen",
+            "X-Content-Type-Options",
+            "nosniff",
+            "X-Permitted-Cross-Domain-Policies",
+            "none",
+            "Referrer-Policy",
+            "no-referrer",
+            "X-XSS-Protection",
+            "0",
+            "X-Azure-Ref",
+            "0qZR4YAAAAACcWQmSK1r2RqoIAbLQ/+u2TVJTMjBFREdFMDMyMAA0MjJlZjNjMy04NDZhLTQ1ZDMtYWJjMS1hZDUyNzJiMTk4ZDk=",
+            "Date",
+            "Thu, 15 Apr 2021 19:31:53 GMT",
+            "Connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "https://oney-dev-sandbox.biapi.pro:443",
+        "method": "POST",
+        "path": "/2.0/users/me/connections/3221/accounts/23978?all",
+        "body": {
+            "name": "Compte chèque"
+        },
+        "status": 200,
+        "response": {
+            "id": 23978,
+            "id_connection": 3221,
+            "id_user": 3499,
+            "id_source": 6346,
+            "id_parent": null,
+            "number": "3002900000",
+            "webid": "3002900000",
+            "original_name": "Compte chèque",
+            "balance": 5090.19,
+            "coming": null,
+            "display": true,
+            "last_update": "2021-04-15 21:31:50",
+            "deleted": null,
+            "disabled": null,
+            "iban": "EX6713335395899300290000026",
+            "currency": {
+                "id": "EUR",
+                "symbol": "€",
+                "prefix": false,
+                "crypto": false,
+                "precision": 2,
+                "marketcap": null,
+                "datetime": null,
+                "name": "Euro"
+            },
+            "id_type": 2,
+            "bookmarked": 0,
+            "name": "Compte chèque",
+            "error": null,
+            "usage": "PRIV",
+            "ownership": "owner",
+            "company_name": null,
+            "opening_date": null,
+            "bic": "CDTBFRBIXXX",
+            "coming_balance": 5090.19,
+            "formatted_balance": "5090,19 €",
+            "type": "checking",
+            "information": {},
+            "loan": null
+        },
+        "rawHeaders": [
+            "Date",
+            "Thu, 15 Apr 2021 19:31:54 GMT",
+            "Content-Type",
+            "application/json; charset=utf-8",
+            "Content-Length",
+            "795",
+            "Connection",
+            "close",
+            "Vary",
+            "Authorization,Origin",
+            "Server",
+            "Budgea/2.21.22 Weboob/1.6+budgea.885",
+            "X-Recruiting",
+            "Budget Insight is hiring! Do not hesitate to contact us at jobs@budget-insight.com or on #budget-insight @ Freenode",
+            "Stale",
+            "1",
+            "X-Request-ID",
+            "fa386af8-6082-4389-8e0a-1ec8fda26fe3",
+            "Strict-Transport-Security",
+            "max-age=31536000; includeSubDomains; preload",
+            "X-Frame-Options",
+            "DENY"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "https://oney-dev-sandbox.biapi.pro:443",
+        "method": "POST",
+        "path": "/2.0/users/me/connections/3221/accounts/23980?all",
+        "body": {
+            "name": "Compte carte débit différé"
+        },
+        "status": 200,
+        "response": {
+            "id": 23980,
+            "id_connection": 3221,
+            "id_user": 3499,
+            "id_source": 6346,
+            "id_parent": 23978,
+            "number": "XXXXXXXXXX982605",
+            "webid": "3002900002",
+            "original_name": "Compte carte débit différé",
+            "balance": 0,
+            "coming": -401.7,
+            "display": true,
+            "last_update": "2021-04-15 21:31:51",
+            "deleted": null,
+            "disabled": null,
+            "iban": "EX6713335395899300290000220",
+            "currency": {
+                "id": "EUR",
+                "symbol": "€",
+                "prefix": false,
+                "crypto": false,
+                "precision": 2,
+                "marketcap": null,
+                "datetime": null,
+                "name": "Euro"
+            },
+            "id_type": 8,
+            "bookmarked": 0,
+            "name": "Compte carte débit différé",
+            "error": null,
+            "usage": "PRIV",
+            "ownership": "owner",
+            "company_name": null,
+            "opening_date": null,
+            "bic": "CDTBFRBIXXX",
+            "coming_balance": -401.7,
+            "formatted_balance": "0 €",
+            "type": "card",
+            "information": {},
+            "loan": null
+        },
+        "rawHeaders": [
+            "Date",
+            "Thu, 15 Apr 2021 19:31:54 GMT",
+            "Content-Type",
+            "application/json; charset=utf-8",
+            "Content-Length",
+            "823",
+            "Connection",
+            "close",
+            "Vary",
+            "Authorization,Origin",
+            "Server",
+            "Budgea/2.21.22 Weboob/1.6+budgea.885",
+            "X-Recruiting",
+            "Budget Insight is hiring! Do not hesitate to contact us at jobs@budget-insight.com or on #budget-insight @ Freenode",
+            "Stale",
+            "1",
+            "X-Request-ID",
+            "3a37cf03-46b1-4549-8942-9fd92d44e7cd",
+            "Strict-Transport-Security",
+            "max-age=31536000; includeSubDomains; preload",
+            "X-Frame-Options",
+            "DENY"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "https://oney-dev-sandbox.biapi.pro:443",
+        "method": "PUT",
+        "path": "/2.0/users/me/connections/3221/accounts/23978,23980?all",
+        "body": {
+            "disabled": false
+        },
+        "status": 200,
+        "response": {
+            "accounts": [
+                {
+                    "id": 23978,
+                    "id_connection": 3221,
+                    "id_user": 3499,
+                    "id_source": 6346,
+                    "id_parent": null,
+                    "number": "3002900000",
+                    "webid": "3002900000",
+                    "original_name": "Compte chèque",
+                    "balance": 5090.19,
+                    "coming": null,
+                    "display": true,
+                    "last_update": "2021-04-15 21:31:50",
+                    "deleted": null,
+                    "disabled": null,
+                    "iban": "EX6713335395899300290000026",
+                    "currency": {
+                        "id": "EUR",
+                        "symbol": "€",
+                        "prefix": false,
+                        "crypto": false,
+                        "precision": 2,
+                        "marketcap": null,
+                        "datetime": null,
+                        "name": "Euro"
+                    },
+                    "id_type": 2,
+                    "bookmarked": 0,
+                    "name": "Compte chèque",
+                    "error": null,
+                    "usage": "PRIV",
+                    "ownership": "owner",
+                    "company_name": null,
+                    "opening_date": null,
+                    "bic": "CDTBFRBIXXX",
+                    "coming_balance": 5090.19,
+                    "formatted_balance": "5090,19 €",
+                    "type": "checking",
+                    "information": {},
+                    "loan": null
+                },
+                {
+                    "id": 23980,
+                    "id_connection": 3221,
+                    "id_user": 3499,
+                    "id_source": 6346,
+                    "id_parent": 23978,
+                    "number": "XXXXXXXXXX982605",
+                    "webid": "3002900002",
+                    "original_name": "Compte carte débit différé",
+                    "balance": 0,
+                    "coming": -401.7,
+                    "display": true,
+                    "last_update": "2021-04-15 21:31:51",
+                    "deleted": null,
+                    "disabled": null,
+                    "iban": "EX6713335395899300290000220",
+                    "currency": {
+                        "id": "EUR",
+                        "symbol": "€",
+                        "prefix": false,
+                        "crypto": false,
+                        "precision": 2,
+                        "marketcap": null,
+                        "datetime": null,
+                        "name": "Euro"
+                    },
+                    "id_type": 8,
+                    "bookmarked": 0,
+                    "name": "Compte carte débit différé",
+                    "error": null,
+                    "usage": "PRIV",
+                    "ownership": "owner",
+                    "company_name": null,
+                    "opening_date": null,
+                    "bic": "CDTBFRBIXXX",
+                    "coming_balance": -401.7,
+                    "formatted_balance": "0 €",
+                    "type": "card",
+                    "information": {},
+                    "loan": null
+                }
+            ]
+        },
+        "rawHeaders": [
+            "Date",
+            "Thu, 15 Apr 2021 19:31:55 GMT",
+            "Content-Type",
+            "application/json; charset=utf-8",
+            "Content-Length",
+            "1636",
+            "Connection",
+            "close",
+            "Vary",
+            "Authorization,Origin",
+            "Server",
+            "Budgea/2.21.22 Weboob/1.6+budgea.885",
+            "X-Recruiting",
+            "Budget Insight is hiring! Do not hesitate to contact us at jobs@budget-insight.com or on #budget-insight @ Freenode",
+            "Stale",
+            "1",
+            "X-Request-ID",
+            "fca88b1e-57b5-42b0-a14e-d976185c8520",
+            "Strict-Transport-Security",
+            "max-age=31536000; includeSubDomains; preload",
+            "X-Frame-Options",
+            "DENY"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "https://oney-dev-sandbox.biapi.pro:443",
+        "method": "GET",
+        "path": "/2.0/users/me/connections/3221/informations",
+        "body": "",
+        "status": 200,
+        "response": {
+            "owner": {
+                "name": "Monsieur Honoré Émile"
+            }
+        },
+        "rawHeaders": [
+            "Date",
+            "Thu, 15 Apr 2021 19:31:55 GMT",
+            "Content-Type",
+            "application/json; charset=utf-8",
+            "Content-Length",
+            "46",
+            "Connection",
+            "close",
+            "Vary",
+            "Authorization,Origin",
+            "Server",
+            "Budgea/2.21.22 Weboob/1.6+budgea.885",
+            "X-Recruiting",
+            "Budget Insight is hiring! Do not hesitate to contact us at jobs@budget-insight.com or on #budget-insight @ Freenode",
+            "Stale",
+            "1",
+            "X-Request-ID",
+            "a4ae0062-cf12-4879-85cc-a3fa2fc2b342",
+            "Strict-Transport-Security",
+            "max-age=31536000; includeSubDomains; preload",
+            "X-Frame-Options",
+            "DENY"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "https://oney-dev-sandbox.biapi.pro:443",
+        "method": "GET",
+        "path": "/2.0/connectors/338178e6-3d01-564f-9a7b-52ca442459bf?capabilities=bank&expand=fields,logos",
+        "body": "",
+        "status": 200,
+        "response": {
+            "id": 59,
+            "name": "Connecteur de test",
+            "hidden": false,
+            "charged": false,
+            "code": null,
+            "beta": false,
+            "color": "5c2963",
+            "slug": "EXA",
+            "sync_frequency": null,
+            "months_to_fetch": null,
+            "auth_mechanism": "credentials",
+            "siret": null,
+            "uuid": "338178e6-3d01-564f-9a7b-52ca442459bf",
+            "restricted": false,
+            "fields": [
+                {
+                    "name": "login",
+                    "label": "Identifiant",
+                    "regex": null,
+                    "type": "text",
+                    "required": true,
+                    "auth_mechanisms": [
+                        "credentials"
+                    ],
+                    "connector_sources": [
+                        "openapi",
+                        "directaccess"
+                    ]
+                },
+                {
+                    "name": "password",
+                    "label": "Code (1234)",
+                    "regex": null,
+                    "type": "password",
+                    "required": true,
+                    "auth_mechanisms": [
+                        "credentials"
+                    ],
+                    "connector_sources": [
+                        "openapi",
+                        "directaccess"
+                    ]
+                },
+                {
+                    "name": "openapiwebsite",
+                    "label": "Cas d'usage (openapi)",
+                    "regex": null,
+                    "type": "list",
+                    "required": false,
+                    "auth_mechanisms": [
+                        "webauth",
+                        "credentials"
+                    ],
+                    "connector_sources": [
+                        "openapi"
+                    ],
+                    "values": [
+                        {
+                            "label": "Particuliers",
+                            "value": "par"
+                        },
+                        {
+                            "label": "Professionnels",
+                            "value": "pro"
+                        },
+                        {
+                            "label": "WrongPass",
+                            "value": "wrongpass"
+                        },
+                        {
+                            "label": "AdditionalInformationNeeded",
+                            "value": "additionalInformationNeeded"
+                        },
+                        {
+                            "label": "WebsiteUnavailable",
+                            "value": "websiteUnavailable"
+                        },
+                        {
+                            "label": "ActionNeeded",
+                            "value": "actionNeeded"
+                        },
+                        {
+                            "label": "Bug",
+                            "value": "bug"
+                        },
+                        {
+                            "label": "ShortDecoupled",
+                            "value": "shortDecoupled"
+                        },
+                        {
+                            "label": "Double OTP",
+                            "value": "doubleotp"
+                        },
+                        {
+                            "label": "SCARequired",
+                            "value": "SCARequired"
+                        },
+                        {
+                            "label": "webauthRequired",
+                            "value": "webauthRequired"
+                        },
+                        {
+                            "label": "passwordExpired",
+                            "value": "passwordExpired"
+                        },
+                        {
+                            "label": "LongDecoupled",
+                            "value": "longDecoupled"
+                        },
+                        {
+                            "label": "SCARequiredAndDecoupled",
+                            "value": "SCARequiredAndDecoupled"
+                        },
+                        {
+                            "label": "SCARequiredAndOTP",
+                            "value": "SCARequiredAndOTP"
+                        },
+                        {
+                            "label": "Website not supported",
+                            "value": "notSupported"
+                        },
+                        {
+                            "label": "otp_transfer",
+                            "value": "otp_transfer"
+                        },
+                        {
+                            "label": "AppValidationCancelled",
+                            "value": "AppValidationCancelled"
+                        },
+                        {
+                            "label": "AppValidationExpired",
+                            "value": "AppValidationExpired"
+                        }
+                    ]
+                },
+                {
+                    "name": "directaccesswebsite",
+                    "label": "Cas d'usage (directaccess)",
+                    "regex": null,
+                    "type": "list",
+                    "required": false,
+                    "auth_mechanisms": [
+                        "webauth",
+                        "credentials"
+                    ],
+                    "connector_sources": [
+                        "directaccess"
+                    ],
+                    "values": [
+                        {
+                            "label": "Particuliers",
+                            "value": "par"
+                        },
+                        {
+                            "label": "Professionnels",
+                            "value": "pro"
+                        },
+                        {
+                            "label": "WrongPass",
+                            "value": "wrongpass"
+                        },
+                        {
+                            "label": "AdditionalInformationNeeded",
+                            "value": "additionalInformationNeeded"
+                        },
+                        {
+                            "label": "WebsiteUnavailable",
+                            "value": "websiteUnavailable"
+                        },
+                        {
+                            "label": "ActionNeeded",
+                            "value": "actionNeeded"
+                        },
+                        {
+                            "label": "Bug",
+                            "value": "bug"
+                        },
+                        {
+                            "label": "ShortDecoupled",
+                            "value": "shortDecoupled"
+                        },
+                        {
+                            "label": "Double OTP",
+                            "value": "doubleotp"
+                        },
+                        {
+                            "label": "SCARequired",
+                            "value": "SCARequired"
+                        },
+                        {
+                            "label": "passwordExpired",
+                            "value": "passwordExpired"
+                        },
+                        {
+                            "label": "LongDecoupled",
+                            "value": "longDecoupled"
+                        },
+                        {
+                            "label": "SCARequiredAndDecoupled",
+                            "value": "SCARequiredAndDecoupled"
+                        },
+                        {
+                            "label": "SCARequiredAndOTP",
+                            "value": "SCARequiredAndOTP"
+                        },
+                        {
+                            "label": "Website not supported",
+                            "value": "notSupported"
+                        },
+                        {
+                            "label": "otp_transfer",
+                            "value": "otp_transfer"
+                        },
+                        {
+                            "label": "AppValidationCancelled",
+                            "value": "AppValidationCancelled"
+                        },
+                        {
+                            "label": "AppValidationExpired",
+                            "value": "AppValidationExpired"
+                        }
+                    ]
+                }
+            ],
+            "logos": [],
+            "categories": [],
+            "capabilities": [
+                "contact",
+                "banktransferaddrecipient",
+                "banktransfer",
+                "bankwealth",
+                "transfer",
+                "bank",
+                "document",
+                "profile"
+            ],
+            "urls": [],
+            "available_auth_mechanisms": [
+                "webauth",
+                "credentials"
+            ],
+            "account_types": [
+                "pee",
+                "loan",
+                "checking",
+                "savings",
+                "card",
+                "market",
+                "lifeinsurance",
+                "perco"
+            ],
+            "available_transfer_mechanisms": [
+                "webauth",
+                "credentials"
+            ],
+            "transfer_beneficiary_types": [
+                "iban",
+                "recipient"
+            ],
+            "transfer_execution_date_types": [
+                "first_open_day",
+                "deferred"
+            ],
+            "documents_type": []
+        },
+        "rawHeaders": [
+            "Date",
+            "Thu, 15 Apr 2021 19:31:56 GMT",
+            "Content-Type",
+            "application/json; charset=utf-8",
+            "Content-Length",
+            "3734",
+            "Connection",
+            "close",
+            "Vary",
+            "Authorization,Origin",
+            "Server",
+            "Budgea/2.21.22 Weboob/1.6+budgea.885",
+            "X-Recruiting",
+            "Budget Insight is hiring! Do not hesitate to contact us at jobs@budget-insight.com or on #budget-insight @ Freenode",
+            "Stale",
+            "1",
+            "X-Request-ID",
+            "48bf408a-d632-4ec0-8018-a9c85c763a60",
+            "Strict-Transport-Security",
+            "max-age=31536000; includeSubDomains; preload",
+            "X-Frame-Options",
+            "DENY"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "https://dev-api.onbadi.com:443",
+        "method": "POST",
+        "path": "/profile/user/azeazhgauipzeaz/verify-bankaccount-owner",
+        "body": {
+            "identity": "Monsieur Honoré Émile",
+            "bankName": "Connecteur de test"
+        },
+        "status": 404,
+        "response": {
+            "name": "ProfileNotFound",
+            "message": "PROFILE_NOT_FOUND"
+        },
+        "rawHeaders": [
+            "Content-Length",
+            "56",
+            "Content-Type",
+            "application/json; charset=utf-8",
+            "ETag",
+            "W/\"38-fxcuMCxTmTYhccU51He2xdb0mzg\"",
+            "request-context",
+            "appId=cid-v1:9d34efb3-28c4-4eb1-b1ff-5c04b9a6bbfa",
+            "Access-Control-Allow-Origin",
+            "*",
+            "Content-Security-Policy",
+            "default-src 'self';base-uri 'self';block-all-mixed-content;font-src 'self' https: data:;frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests",
+            "X-DNS-Prefetch-Control",
+            "off",
+            "Expect-CT",
+            "max-age=0",
+            "X-Frame-Options",
+            "SAMEORIGIN",
+            "Strict-Transport-Security",
+            "max-age=15552000; includeSubDomains",
+            "X-Download-Options",
+            "noopen",
+            "X-Content-Type-Options",
+            "nosniff",
+            "X-Permitted-Cross-Domain-Policies",
+            "none",
+            "Referrer-Policy",
+            "no-referrer",
+            "X-XSS-Protection",
+            "0",
+            "X-Azure-Ref",
+            "0rJR4YAAAAADQJBv04oTvQol9NXw/2hmzTVJTMjBFREdFMDMxMQA0MjJlZjNjMy04NDZhLTQ1ZDMtYWJjMS1hZDUyNzJiMTk4ZDk=",
+            "Date",
+            "Thu, 15 Apr 2021 19:31:56 GMT",
+            "Connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "https://oney-dev-sandbox.biapi.pro:443",
+        "method": "DELETE",
+        "path": "/2.0/users/me/connections/3221",
+        "body": "",
+        "status": 200,
+        "response": {},
+        "rawHeaders": [
+            "Date",
+            "Thu, 15 Apr 2021 19:31:57 GMT",
+            "Content-Type",
+            "application/json; charset=utf-8",
+            "Content-Length",
+            "2",
+            "Connection",
+            "close",
+            "Vary",
+            "Authorization,Origin",
+            "Server",
+            "Budgea/2.21.22 Weboob/1.6+budgea.885",
+            "X-Recruiting",
+            "Budget Insight is hiring! Do not hesitate to contact us at jobs@budget-insight.com or on #budget-insight @ Freenode",
+            "X-Request-ID",
+            "978d7b65-f578-4c05-a494-c608fa4a195c",
+            "Strict-Transport-Security",
+            "max-age=31536000; includeSubDomains; preload",
+            "X-Frame-Options",
+            "DENY"
+        ],
+        "responseIsBinary": false
+    }
+]

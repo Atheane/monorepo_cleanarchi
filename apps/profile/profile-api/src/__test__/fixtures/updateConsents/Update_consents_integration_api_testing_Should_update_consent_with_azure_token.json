@@ -1,0 +1,28 @@
+[
+    {
+        "scope": "http://127.0.0.1:52315",
+        "method": "PUT",
+        "path": "/profile/user/AWzclPFyN/consents",
+        "body": {
+            "oney_cnil": true,
+            "partners_cnil": true
+        },
+        "status": 404,
+        "response": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n<meta charset=\"utf-8\">\n<title>Error</title>\n</head>\n<body>\n<pre>Cannot PUT /profile/user/AWzclPFyN/consents</pre>\n</body>\n</html>\n",
+        "rawHeaders": [
+            "Content-Security-Policy",
+            "default-src 'none'",
+            "X-Content-Type-Options",
+            "nosniff",
+            "Content-Type",
+            "text/html; charset=utf-8",
+            "Content-Length",
+            "170",
+            "Date",
+            "Fri, 02 Apr 2021 09:07:55 GMT",
+            "Connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    }
+]

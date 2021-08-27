@@ -1,0 +1,39 @@
+[
+    {
+        "scope": "https://api-staging.oney.io:443",
+        "method": "GET",
+        "path": "/b2b/customers/v2/customer_situations?person_ids.application_person_id=beGe_flCm&person_ids.application_code=BQ_DIGIT&person_ids.application_person_id_field=SID&fields=internal_incidents%2Ccredit_accounts_situation",
+        "body": "",
+        "status": 200,
+        "response": {
+            "customer_flag": "0",
+            "internal_incidents": {
+                "store_credit_limit_blocked_flag": "0",
+                "vplus_credit_limit_blocked_flag": "0",
+                "reconfiguration_flag": "0",
+                "indebtedness_flag": "0"
+            }
+        },
+        "rawHeaders": [
+            "Cache-Control",
+            "no-store, must-revalidate, no-cache",
+            "Pragma",
+            "no-cache",
+            "Content-Length",
+            "171",
+            "Content-Type",
+            "application/json; charset=UTF-8",
+            "Expires",
+            "Tue, 27 Apr 2021 13:35:13 GMT",
+            "X-Oney-SSL",
+            "on",
+            "X-Oney-Message-Id",
+            "ad20574d-6a53-4ed6-9924-38f37f412d26",
+            "Date",
+            "Tue, 27 Apr 2021 13:35:13 GMT",
+            "Connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    }
+]

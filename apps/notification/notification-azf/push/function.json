@@ -1,0 +1,14 @@
+{
+  "bindings": [
+    {
+      "name": "message",
+      "type": "serviceBusTrigger",
+      "direction": "in",
+      "topicName": "topic_odb-notification-send_push",
+      "subscriptionName": "sub_odb-function_push",
+      "connection": "PUSH_SUBSCRIPTION_POLICY",
+      "accessRights": "listen"
+    }
+  ],
+  "disabled": false
+}

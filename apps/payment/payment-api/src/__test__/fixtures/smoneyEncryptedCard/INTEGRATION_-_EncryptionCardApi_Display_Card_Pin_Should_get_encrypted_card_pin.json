@@ -1,0 +1,140 @@
+[
+    {
+        "scope": "http://localhost:3022",
+        "method": "GET",
+        "path": "/authentication/sca/verifier",
+        "body": "",
+        "status": 200,
+        "response": {
+            "verifierId": "DibFqmkuo",
+            "action": {
+                "type": "DISPLAY_CARD_PIN",
+                "payload": "eyJ1aWQiOiJVcG1la1RYY0oiLCJjYXJkSWQiOiJjYXJkLUJHQnBDeGpaTyIsInJzYVB1YmxpY0tleSI6IkxTMHRMUzFDUlVkSlRpQlFWVUpNU1VNZ1MwVlpMUzB0TFMwS1RVbEpRMGxxUVU1Q1oydHhhR3RwUnpsM01FSkJVVVZHUVVGUFEwRm5PRUZOU1VsRFEyZExRMEZuUlVFMVluUTNVelp2U3k5a05sZE5kVVp2UWs5U05rdEtjbkp5YzFveFJXaHRSM1ZJTW5STU1rYzRUMWQ2VW1ZNEwxbHRhSFJ4WTNOWFFXeElVM3BRUkhKVWVEZHhia3RWVVdST2JGVkhOMWhHVkVzd2FuWm9XbmR1YXpWcGNWaDZXRUpzU0VsYWFrRkhUa2xMY1hGT2NHNUtTa3Q2U0hZcmVVaFBOR2RGWTNkRVFWRnRaVWRTYlZOa01WUmtjR2xoS3psU05VdEtPRUpzTUZaUFVTdHRiM0ZCVGpoUUwxWm5RVUZsYTJkMFUzWnFiSGwxVVVSalRtOXFWRUZaVkVwMFJqUmtZblI0WWxkSmNITTNVM0ZQY2tGTlVGSnlTbU5HZVVzNWR6RlNWVXhLZUVsSVFuRkZkekpRWVRSVlZsZEZlVUUwZGpSbVltNDRWR2xOY2pOcE9VOU1aVVJGZEVSblpFbE9MeXM1YUhkdVJuZzJXbTVuWm5CRUszSXJRMjEwV1M5eVkwbGpZVVpCWVdOM2VtSkZhREJEZEVSQ0wxbG9WVWgyYzNsVWVYVTNTalpZTjB4emFGVTVkVmRrTVVKRVdXd3ZOVXd4SzNvMlFuUmFRamd2YVV0UVQxbHBNSE5OTTJ0UlpETldVV2gxUVhGSGFYSnBPVVpWWkdObWVWTk1NMk5TUmxjNGRpOU1hMHRZTDFKV0wyOU5PVzVSTm1wTmFqWm1kMHBJY21kR1luTnliVTlKUVZoeU5YVjRaV3hrVUV4SlRsQjJSVnBsUkZCcFZFeDRUbmxvZFVreU4xbE1ZblpaTkZsbGJtdG9lazkzWmtSU09TODJkRUZrV0ZKRFNpdHJhVkJUVVhVd2ExaHZiakJ5WTFvNVdsa3hZMUZaV0RsVVNVZzJNVXhKVW5KTVdFcEhkR0Z1TDFCWVZucG5ZMUl2VlhsR1VYRlhhbUpKVmxJdlpGVlZkaTltVXpSd1dGVXJVRXAzVFVOemRXWnNRWGx3YlRGcE9FSndWazV6ZWpBMWFtdzRSbFY2VDFaUU5VRlVlVGRRTmtaTk5sQTBkMU5qUkhwaFducENhVmt2U0ZVMk5tOW1iVlpKUTJwMk0wZDNkSGt4VG5ZclZuaFVkVFF3U1VzeVptbzROelp2TkhkdU5VNU1hMHN3TUN0RlVFVlpZakZyWVVGdlJFeGtWMjkwZG5OaE9VOVFkSGRwUlVOQmQwVkJRVkU5UFFvdExTMHRMVVZPUkNCUVZVSk1TVU1nUzBWWkxTMHRMUzA9In0="
+            },
+            "customer": {
+                "uid": "UpmekTXcJ",
+                "email": "zanchi102@yopmail.com"
+            },
+            "status": "DONE",
+            "valid": false,
+            "factor": "otp",
+            "channel": "email",
+            "expirationDate": "2021-04-27T08:50:36.603Z",
+            "metadatas": {},
+            "code": "2FA_REQUESTED"
+        },
+        "rawHeaders": [
+            "Content-Length",
+            "1772",
+            "Content-Type",
+            "application/json; charset=utf-8",
+            "ETag",
+            "W/\"6ec-sJXOlu3z3vzurDU0+jdVnK8XHug\"",
+            "request-context",
+            "appId=cid-v1:408cccb6-42ed-4de7-bf6f-d989f4ff6117",
+            "Access-Control-Allow-Origin",
+            "*",
+            "Content-Security-Policy",
+            "default-src 'self';base-uri 'self';block-all-mixed-content;font-src 'self' https: data:;frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests",
+            "X-DNS-Prefetch-Control",
+            "off",
+            "Expect-CT",
+            "max-age=0",
+            "X-Frame-Options",
+            "SAMEORIGIN",
+            "Strict-Transport-Security",
+            "max-age=15552000; includeSubDomains",
+            "X-Download-Options",
+            "noopen",
+            "X-Content-Type-Options",
+            "nosniff",
+            "X-Permitted-Cross-Domain-Policies",
+            "none",
+            "Referrer-Policy",
+            "no-referrer",
+            "X-XSS-Protection",
+            "0",
+            "X-Azure-Ref",
+            "0l8+HYAAAAADC5CFZimbBQoNtIuK+rZqxTE9OMjFFREdFMDExMQA0MjJlZjNjMy04NDZhLTQ1ZDMtYWJjMS1hZDUyNzJiMTk4ZDk=",
+            "Date",
+            "Tue, 27 Apr 2021 08:47:19 GMT",
+            "Connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "https://sb-api.xpollens.com:443",
+        "method": "GET",
+        "path": "/api/V1.1/users/UpmekTXcJ/cards/card-BGBpCxjZO/PINDisplay?ChannelCode=66&PublicKey=LS0tLS1CRUdJTiBQVUJMSUMgS0VZLS0tLS0KTUlJQ0lqQU5CZ2txaGtpRzl3MEJBUUVGQUFPQ0FnOEFNSUlDQ2dLQ0FnRUE1YnQ3UzZvSy9kNldNdUZvQk9SNktKcnJyc1oxRWhtR3VIMnRMMkc4T1d6UmY4L1ltaHRxY3NXQWxIU3pQRHJUeDdxbktVUWRObFVHN1hGVEswanZoWnduazVpcVh6WEJsSElaakFHTklLcXFOcG5KSkt6SHYreUhPNGdFY3dEQVFtZUdSbVNkMVRkcGlhKzlSNUtKOEJsMFZPUSttb3FBTjhQL1ZnQUFla2d0U3ZqbHl1UURjTm9qVEFZVEp0RjRkYnR4YldJcHM3U3FPckFNUFJySmNGeUs5dzFSVUxKeElIQnFFdzJQYTRVVldFeUE0djRmYm44VGlNcjNpOU9MZURFdERnZElOLys5aHduRng2Wm5nZnBEK3IrQ210WS9yY0ljYUZBYWN3emJFaDBDdERCL1loVUh2c3lUeXU3SjZYN0xzaFU5dVdkMUJEWWwvNUwxK3o2QnRaQjgvaUtQT1lpMHNNM2tRZDNWUWh1QXFHaXJpOUZVZGNmeVNMM2NSRlc4di9Ma0tYL1JWL29NOW5RNmpNajZmd0pIcmdGYnNybU9JQVhyNXV4ZWxkUExJTlB2RVplRFBpVEx4TnlodUkyN1lMYnZZNFllbmtoek93ZkRSOS82dEFkWFJDSitraVBTUXUwa1hvbjByY1o5WlkxY1FZWDlUSUg2MUxJUnJMWEpHdGFuL1BYVnpnY1IvVXlGUXFXamJJVlIvZFVVdi9mUzRwWFUrUEp3TUNzdWZsQXlwbTFpOEJwVk5zejA1amw4RlV6T1ZQNUFUeTdQNkZNNlA0d1NjRHphWnpCaVkvSFU2Nm9mbVZJQ2p2M0d3dHkxTnYrVnhUdTQwSUsyZmo4NzZvNHduNU5Ma0swMCtFUEVZYjFrYUFvRExkV290dnNhOU9QdHdpRUNBd0VBQVE9PQotLS0tLUVORCBQVUJMSUMgS0VZLS0tLS0=",
+        "body": "",
+        "status": 200,
+        "response": {
+            "pinBlock": "D5DRGj6F1po=",
+            "ktaKey": "g7JDPvyJfB1QdGcXD3Inqw==",
+            "ktkKey": "WJcfDICWyhpQAl7Rzg/9sBImpWCHpA7cOHm/SbRLg4P0XF/dZEzGPX58iCg1A6I36vX6j2cA7mAksWHaA0rTHtAlSCpcm1zNeAoYC7ZiBHUOVXJjThPix2YMHUT15WCn3OrcOcqFHTOoDwRu2t+RHJTUOvzN2RiXe6lDWx0D2GW8euCs6JguucrjbwvzITs9Kf9IFG98f3lUE2eUar5QPBP9CzsVM1+Xe1mIsNSK/+QERXDOyl4tgyU035h5Ot75EglExM6ullYUBlHC9VTG5Ls7UMkRf4VZKQYSsRiNelaQt33+q7YzhHWWtIs1HAo5NLdoO0AI/iEoln7ZMOWi3g=="
+        },
+        "rawHeaders": [
+            "Date",
+            "Tue, 27 Apr 2021 08:47:20 GMT",
+            "Content-Type",
+            "application/json; charset=utf-8",
+            "Content-Length",
+            "419",
+            "Request-Context",
+            "appId=cid-v1:40d43092-8aee-4b2b-8b7f-34d2d69e09b7",
+            "Connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "http://127.0.0.1:60091",
+        "method": "POST",
+        "path": "/payment/accounts/UpmekTXcJ/card/card-BGBpCxjZO/displaypin",
+        "body": {
+            "rsaPublicKey": "LS0tLS1CRUdJTiBQVUJMSUMgS0VZLS0tLS0KTUlJQ0lqQU5CZ2txaGtpRzl3MEJBUUVGQUFPQ0FnOEFNSUlDQ2dLQ0FnRUE1YnQ3UzZvSy9kNldNdUZvQk9SNktKcnJyc1oxRWhtR3VIMnRMMkc4T1d6UmY4L1ltaHRxY3NXQWxIU3pQRHJUeDdxbktVUWRObFVHN1hGVEswanZoWnduazVpcVh6WEJsSElaakFHTklLcXFOcG5KSkt6SHYreUhPNGdFY3dEQVFtZUdSbVNkMVRkcGlhKzlSNUtKOEJsMFZPUSttb3FBTjhQL1ZnQUFla2d0U3ZqbHl1UURjTm9qVEFZVEp0RjRkYnR4YldJcHM3U3FPckFNUFJySmNGeUs5dzFSVUxKeElIQnFFdzJQYTRVVldFeUE0djRmYm44VGlNcjNpOU9MZURFdERnZElOLys5aHduRng2Wm5nZnBEK3IrQ210WS9yY0ljYUZBYWN3emJFaDBDdERCL1loVUh2c3lUeXU3SjZYN0xzaFU5dVdkMUJEWWwvNUwxK3o2QnRaQjgvaUtQT1lpMHNNM2tRZDNWUWh1QXFHaXJpOUZVZGNmeVNMM2NSRlc4di9Ma0tYL1JWL29NOW5RNmpNajZmd0pIcmdGYnNybU9JQVhyNXV4ZWxkUExJTlB2RVplRFBpVEx4TnlodUkyN1lMYnZZNFllbmtoek93ZkRSOS82dEFkWFJDSitraVBTUXUwa1hvbjByY1o5WlkxY1FZWDlUSUg2MUxJUnJMWEpHdGFuL1BYVnpnY1IvVXlGUXFXamJJVlIvZFVVdi9mUzRwWFUrUEp3TUNzdWZsQXlwbTFpOEJwVk5zejA1amw4RlV6T1ZQNUFUeTdQNkZNNlA0d1NjRHphWnpCaVkvSFU2Nm9mbVZJQ2p2M0d3dHkxTnYrVnhUdTQwSUsyZmo4NzZvNHduNU5Ma0swMCtFUEVZYjFrYUFvRExkV290dnNhOU9QdHdpRUNBd0VBQVE9PQotLS0tLUVORCBQVUJMSUMgS0VZLS0tLS0="
+        },
+        "status": 200,
+        "response": {
+            "pinBlock": "D5DRGj6F1po=",
+            "ktaKey": "g7JDPvyJfB1QdGcXD3Inqw==",
+            "ktkKey": "WJcfDICWyhpQAl7Rzg/9sBImpWCHpA7cOHm/SbRLg4P0XF/dZEzGPX58iCg1A6I36vX6j2cA7mAksWHaA0rTHtAlSCpcm1zNeAoYC7ZiBHUOVXJjThPix2YMHUT15WCn3OrcOcqFHTOoDwRu2t+RHJTUOvzN2RiXe6lDWx0D2GW8euCs6JguucrjbwvzITs9Kf9IFG98f3lUE2eUar5QPBP9CzsVM1+Xe1mIsNSK/+QERXDOyl4tgyU035h5Ot75EglExM6ullYUBlHC9VTG5Ls7UMkRf4VZKQYSsRiNelaQt33+q7YzhHWWtIs1HAo5NLdoO0AI/iEoln7ZMOWi3g=="
+        },
+        "rawHeaders": [
+            "Access-Control-Allow-Origin",
+            "*",
+            "Content-Security-Policy",
+            "default-src 'self';base-uri 'self';block-all-mixed-content;font-src 'self' https: data:;frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests",
+            "X-DNS-Prefetch-Control",
+            "off",
+            "Expect-CT",
+            "max-age=0",
+            "X-Frame-Options",
+            "SAMEORIGIN",
+            "Strict-Transport-Security",
+            "max-age=15552000; includeSubDomains",
+            "X-Download-Options",
+            "noopen",
+            "X-Content-Type-Options",
+            "nosniff",
+            "X-Permitted-Cross-Domain-Policies",
+            "none",
+            "Referrer-Policy",
+            "no-referrer",
+            "X-XSS-Protection",
+            "0",
+            "Content-Type",
+            "application/json; charset=utf-8",
+            "Content-Length",
+            "419",
+            "ETag",
+            "W/\"1a3-RXNF+EuCbHPInJhtLWfG/NHG4Gc\"",
+            "Date",
+            "Tue, 27 Apr 2021 08:47:20 GMT",
+            "Connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    }
+]

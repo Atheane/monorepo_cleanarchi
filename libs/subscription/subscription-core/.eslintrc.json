@@ -1,0 +1,3 @@
+{ "extends": "../../../.eslintrc.json", "ignorePatterns": ["!**/*"], "rules": {
+  "no-case-declarations": "off"
+} }
